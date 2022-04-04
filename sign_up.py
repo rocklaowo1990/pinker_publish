@@ -72,8 +72,10 @@ for user_file in user_files:
 
     data['pics'] = pics
     data['token'] = ''
-    if not 'avatar' in data.keys() or not 'info' in data.keys():
-        print('监测到非法文件夹，跳过')
+    if not 'avatar' in data.keys():
+        print('缺少 000.jpg 文件，跳过处理')
+    elif not 'info' in data.keys():
+        print('缺少 info.txt 文件，跳过处理')
     else:
         print('发现一个合法文件，正在载入...')
         users.append(data)
