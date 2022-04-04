@@ -6,11 +6,6 @@ import os
 
 
 def getHtml(url):
-    # 代理
-    proxies = {
-        'http': 'http://127.0.0.1:1082',
-        'https': 'http://127.0.0.1:1082'
-    }
     # 请求头
     headers = {
         'connection': 'keep-alive',
@@ -267,5 +262,5 @@ def getImages():
         print('访问第1层页面失败, 错误码: %e' % home_res.status_code)
         return
 
-
-getImages()
+if __name__ == '__main__':
+    getImages()
