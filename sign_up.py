@@ -61,11 +61,10 @@ for user_file in user_files:
         elif '003'.upper() in file.upper():
             pics[2] = user_path + file
         # 检查txt文件
-        elif '.txt'.upper() in file.upper() or '.json'.upper() in file.upper():
+        elif 'info.txt'.upper() in file.upper() or 'info.json'.upper() in file.upper():
             # 读取josn文件
-            content_info_open = open(
-                user_path + file, encoding='UTF-8')
-            data['info'] = json.loads(content_info_open.read())
+            content_info_open = open(user_path + file, encoding='UTF-8', errors='ignore')
+            data['info'] = json.loads(content_info_open.read().strip())
             content_info_open.close()
 
     Util.fileDel(pics)
@@ -157,7 +156,7 @@ for user in users:
 
     # 检查账号是否已经存在
     check_res = Api.checkAccount(api_url, account)
-    if check_res == 200 or check_res == 404:
+    if check_res != 200:
         print('跳过处理...')
         continue
 

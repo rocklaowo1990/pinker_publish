@@ -15,6 +15,8 @@ class Util:
                 list.remove(list[index])
             elif list[index][0] == '.' or list[index][0] == '_':
                 list.remove(list[index])
+            elif list[index] == 'server':
+                list.remove(list[index])
             else:
                 index += 1
 
@@ -22,7 +24,7 @@ class Util:
     def fileDel(list: list):
         index = 0
         while index < len(list):
-            if list[index][:1] == '.':
+            if list[index][:1] == '.' or list[index][:1] == '_':
                 list.remove(list[index])
             elif list[index] == '':
                 list.remove(list[index])

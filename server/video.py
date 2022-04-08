@@ -29,7 +29,7 @@ class Video:
             compress = 'ffmpeg -y -i {} -r 25 -pix_fmt yuv420p -vcodec libx264 -preset slow -vf scale=-1:720 -profile:v baseline  -crf 28 -acodec aac -b:v 720k -strict -5 {}'.format(
                 video_path, out_path)
             isRun = os.system(compress)
-            thr = threading.Thread(target=isRun)
+            thr = threading.Thread(target = isRun)
             thr.start()
             thr.join()
             print('视频 %s 压缩完成: ' % out_path)
@@ -56,21 +56,21 @@ class Video:
         fileName = video_path.split('.')
         pics = []
         _index = index
-        while _index < 4:
-            start = _index
-            timer = video_duration - start
-            if start != 0 and video_duration >= 30:
-                start = random.randint(5, video_duration - 20)
-                timer = 20
+        while _index < 3:
+            start_time = _index
+            play_time = video_duration - start_time
+            if start_time != 0 and video_duration >= 30:
+                start_time = random.randint(5, video_duration - 20)
+                play_time = 20
             compress = 'ffmpeg -loglevel quiet -ss %d -t %d -y -i %s -pix_fmt yuvj420p -vf select="eq(pict_type\,I)" -frames:v 1 -f image2 %s' % (
-              start, timer, video_path, fileName[0] + '_截屏00' + str(_index + 1) + '.jpg')
+              start_time, play_time, video_path, fileName[0] + '_截屏00' + str(_index + 1) + '.png')
             print('即将抽取视频帧...')
-            Timer.waitTime(2)
-            call_os = os.system(compress)
-            thr = threading.Thread(target=call_os)
+            Timer.waitTime(1)
+            isRun = os.system(compress)
+            thr = threading.Thread(target = isRun)
             thr.start()
             thr.join()
-            pics.append(fileName[0] + '_截屏00' + str(_index + 1) + '.jpg')
-            print('视频帧 %s 抽取完成...' % fileName[0] + '000' + str(_index + 1) + '.jpg')
+            pics.append(fileName[0] + '_截屏00' + str(_index + 1) + '.png')
+            print('视频帧 %s 抽取完成...' % fileName[0] + '000' + str(_index + 1) + '.png')
             _index += 1
         return pics

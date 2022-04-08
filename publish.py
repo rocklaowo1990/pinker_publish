@@ -44,21 +44,22 @@ for user_file in user_files:
 
     # 用户文件的目录名
     user_path = works_path + user_file + letter
-    print('正在检索文件夹: %s' % user_path)
+    print('正在检索用户文件夹: %s' % user_path)
 
     # 得到用户文件夹里的所有文件
     contents_files = os.listdir(user_path)
+    Util.fileDel(contents_files)
     if len(contents_files) < 2:
-        print('检测到空文件夹：跳过不处理')
+        print('文件数量不符合要求：跳过不处理')
         continue
 
     # 读取josn文件
     # josn 统一用 user.txt
     user_info = ''
     for txt in contents_files:
-        if '.txt'.upper() in txt.upper() or '.json'.upper() in txt.upper():
-            user_info_open = open(user_path + txt, encoding='UTF-8')
-            user_info = json.loads(user_info_open.read())
+        if 'user.txt'.upper() in txt.upper() or 'user.json'.upper() in txt.upper():
+            with open(user_path + txt, encoding='UTF-8', errors='ignore') as user_info_open:
+                user_info = json.loads(user_info_open.read().strip())
             user_info_open.close()
 
     # 储存用户信息
@@ -80,7 +81,7 @@ for user_file in user_files:
     # 遍历所有的推文文件夹
     for content_file in contents_files:
         content_path = user_path + content_file + letter
-
+        print('正在检索推文文件夹：%s' % content_path)
         medias = os.listdir(content_path)
         Util.fileDel(medias)
 
@@ -90,6 +91,9 @@ for user_file in user_files:
         content_data_duration = 0
         content_data_info = {}
 
+        content_data['pass'] = False
+
+
         # 读取图片和视频的路径
         for media in medias:
             if '.png'.upper() in media.upper() or '.jpg'.upper() in media.upper() or '.jpeg'.upper() in media.upper():
@@ -98,24 +102,27 @@ for user_file in user_files:
                 content_data_video = (content_path + media)
                 content_data_duration = math.ceil((VideoFileClip(
                     content_path + media).duration))
-            elif '.txt'.upper() in media.upper() or '.json'.upper() in media.upper():
+            elif media == 'pass':
+                content_data['pass'] = True
+            elif 'content.txt'.upper() in media.upper() or 'content.json'.upper() in media.upper():
                 # 读取josn文件
-                # josn 统一用 user.txt
-                content_info_open = open(
-                    content_path + media, encoding='UTF-8')
-                content_data_info = json.loads(content_info_open.read())
+                content_info_open = open(content_path + media, encoding='UTF-8', errors='ignore')
+                content_data_info = json.loads(content_info_open.read().strip())
                 content_info_open.close()
-        if content_data_video != '' and 4 - len(content_data_pics) > 0:
+        if content_data_video != '' and 3 - len(content_data_pics) > 0:
             video_pics = Video.getImage(content_data_video, content_data_duration, len(content_data_pics))
             content_data_pics.extend(video_pics)
+        if content_data_video == '' or content_data_pics == [] or content_data_info == {}:
+            continue
         content_data['pics'] = content_data_pics
         content_data['video'] = content_data_video
         content_data['duration'] = content_data_duration
         content_data['info'] = content_data_info
+        content_data['path'] = content_path
         data['contents'].append(content_data)
     
     if data['contents'] == [] or data['info'] == '':
-        print('检测到非法文件夹，跳过')
+        print('检测到空的推文文件夹，跳过处理')
     else:
         print('检测到合法文件夹，正在载入...')
         users.append(data)
@@ -257,6 +264,11 @@ while index < index_max:
             groups = work['groups']
             print('---------------------------------------------------------------------')
             print('即将处理用户：' + account + ' 的第 ' + str(index + 1) + ' 条推文')
+
+            if work['contents'][index]['pass'] == True:
+                print('检测到跳过标记：跳过处理')
+                continue
+
             Timer.waitTime(wait_time)
             # 这里是登录模块
             # token = ’‘ 表示没有登录过，执行登录方法
@@ -354,9 +366,15 @@ while index < index_max:
                 # 如果存在的话，则会跳过
                 video_upload = Aws.upload(api_url, video_path, Util.getType(
                     video_path), accessKey, secretKey, region, bucket)
-                if video_upload == '1' or video_upload == '-1':
+                if video_upload == '-1':
                     print('跳过处理')
+                    if is_can_delete:
+                        print('删除压缩文件...')
+                        os.remove(video_path)
                     continue
+                
+                video_md5 = Util.getFileMd5(video_path)
+                video_url = 'public/' + video_md5 + '.' + Util.getType(video_path)
 
                 for pic_path in pics_path:
                     pic_md5 = Util.getFileMd5(pic_path)
@@ -365,11 +383,9 @@ while index < index_max:
                     if pic_upload != '-1':
                         data_pics.append(
                            'public/' + pic_md5 + '.' + Util.getType(pic_path))
-                if len(data_pics) < 4:
-                    print('检测到了视频，图片数量不够发布推文，跳过处理')
-                    continue
-                publish_data['video'] = '{"url":"%s","format":"%s","duration":"%s","snapshot_url":"%s","previews_urls":"%s,%s,%s"}' % (video_upload, Util.getType(
-                    video_path), video_duration, data_pics[0], data_pics[1], data_pics[2], data_pics[3])
+                
+                publish_data['video'] = '{"url":"%s","format":"%s","duration":"%s","snapshot_url":"%s","previews_urls":"%s,%s,%s"}' % (video_url, Util.getType(
+                    video_path), video_duration, data_pics[0], data_pics[0], data_pics[1], data_pics[2])
 
             # 如果是空的，说明没有视频，那就当成图片推文去发
             else:
@@ -401,6 +417,11 @@ while index < index_max:
                     continue
             elif publish == 200:
                 succ += 1
+
+            # 创建标记，标记为已经处理过
+            passFlie = open(work['contents'][index]['path'] + 'pass','w')
+            passFlie.close()
+            
 
             if is_can_delete:
                 print('删除压缩文件...')
