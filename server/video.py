@@ -1,6 +1,7 @@
 import os
 import random
 import threading
+import time
 
 from server.timer import Timer
 
@@ -26,13 +27,14 @@ class Video:
         # 第二步：打开文件，看下大小是否需要压缩
         fpsize = os.path.getsize(video_path) / 1024 / 1024
         if fpsize >= 150.0:  # 大于150MB的视频需要压缩
-            compress = 'ffmpeg -y -i {} -r 25 -pix_fmt yuv420p -vcodec libx264 -preset slow -vf scale=-1:720 -profile:v baseline  -crf 28 -acodec aac -b:v 720k -strict -5 {}'.format(
+            print('正在压缩视频 %s : (%s)' % (out_path, time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())))
+            compress = 'ffmpeg -y -i {} -r 25 -pix_fmt yuv420p -vcodec libx264 -preset slow -vf scale=-2:720 -profile:v baseline  -crf 28 -acodec aac -b:v 720k -strict -5 {}'.format(
                 video_path, out_path)
             isRun = os.system(compress)
             thr = threading.Thread(target = isRun)
             thr.start()
             thr.join()
-            print('视频 %s 压缩完成: ' % out_path)
+            print('视频 %s 压缩完成: (%s)' % (out_path, time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())))
             return out_path
         else:
             print('视频文件大小达标，无需压缩...')
@@ -59,9 +61,12 @@ class Video:
         while _index < 3:
             start_time = _index
             play_time = video_duration - start_time
-            if start_time != 0 and video_duration >= 30:
+            if video_duration >= 30:
                 start_time = random.randint(5, video_duration - 20)
                 play_time = 20
+            else:
+                start_time = random.randint(5, video_duration)
+                play_time = video_duration - start_time
             compress = 'ffmpeg -loglevel quiet -ss %d -t %d -y -i %s -pix_fmt yuvj420p -vf select="eq(pict_type\,I)" -frames:v 1 -f image2 %s' % (
               start_time, play_time, video_path, fileName[0] + '_截屏00' + str(_index + 1) + '.png')
             print('即将抽取视频帧...')

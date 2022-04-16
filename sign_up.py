@@ -89,13 +89,13 @@ while not environment:
     environment_input = input('请输入环境(0: 测试环境  1: 正式环境)：')
     if environment_input == '' or environment_input == '0':
         print('注册到测试环境服务器')
-        api_url = 'https://api.pkpinfo.xyz'
-        server_url = 'https://interface.pkpinfo.xyz'
+        api_url = 'https://www.pkappdev.xyz'
+        server_url = 'https://www.pkwebdev.xyz'
         environment = True
     elif environment_input == '1':
         print('注册到正式线服务器')
-        api_url = 'https://api.pinkersms.xyz'
-        server_url = 'https://interface.pinkerwbs.xyz'
+        api_url = 'https://www.pkapp.buzz'
+        server_url = 'https://www.pkweb.buzz'
         environment = True
     else:
         print('环境输入错误，请重新输入')
@@ -123,7 +123,7 @@ else:
     exit()
 
 # 开始登陆后台
-logoin_server_res = Api.loginServer(server_url, 'admin', '123456')
+logoin_server_res = Api.loginServer(server_url, 'admin', 'Abc123213.')
 if logoin_server_res == '' or logoin_server_res == '-1':
     print('后台账号登陆失败，无法继续操作，程序即将推出...')
     exit()

@@ -1,3 +1,4 @@
+import time
 from server.util import Util
 from boto3.session import Session
 
@@ -25,7 +26,7 @@ class Aws:
             print('文件已存在: ' + 'public/' + upload_key)
             return '1'
 
-        print('正在上传文件：' + file_path)
+        print('正在上传文件：' + file_path + '：(' +  time.strftime("%Y-%m-%d %H:%M:%S", time.localtime()) + ')')
         try:
             s3.Bucket(bucket).put_object(
                 Key='public/' + upload_key, Body=upload_data, ACL='public-read-write')
@@ -33,5 +34,5 @@ class Aws:
             print('上传文件出错：' + str(e))
             return '-1'
 
-        print('文件上传成功: public/' + upload_key)
+        print('文件上传成功: public/' + upload_key + '：(' + time.strftime("%Y-%m-%d %H:%M:%S", time.localtime()) + ')')
         return 'public/' + upload_key

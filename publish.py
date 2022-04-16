@@ -72,11 +72,8 @@ for user_file in user_files:
     # 去除非文件夹
     Util.dirDel(contents_files, user_path)
 
-    # 算出最大的推文数量
-    if(len(contents_files) > index_max):
-        index_max = len(contents_files)
+    
 
-    contents_all += len(contents_files)
 
     # 遍历所有的推文文件夹
     for content_file in contents_files:
@@ -93,6 +90,15 @@ for user_file in user_files:
 
         content_data['pass'] = False
 
+        for media in medias:
+            if media == 'pass':
+                content_data['pass'] = True
+
+
+        if content_data['pass']:
+            print('检测到 pass 文件，跳过...')
+            continue
+
 
         # 读取图片和视频的路径
         for media in medias:
@@ -102,8 +108,6 @@ for user_file in user_files:
                 content_data_video = (content_path + media)
                 content_data_duration = math.ceil((VideoFileClip(
                     content_path + media).duration))
-            elif media == 'pass':
-                content_data['pass'] = True
             elif 'content.txt'.upper() in media.upper() or 'content.json'.upper() in media.upper():
                 # 读取josn文件
                 content_info_open = open(content_path + media, encoding='UTF-8', errors='ignore')
@@ -112,7 +116,7 @@ for user_file in user_files:
         if content_data_video != '' and 3 - len(content_data_pics) > 0:
             video_pics = Video.getImage(content_data_video, content_data_duration, len(content_data_pics))
             content_data_pics.extend(video_pics)
-        if content_data_video == '' or content_data_pics == [] or content_data_info == {}:
+        if content_data_pics == [] or content_data_info == {}:
             continue
         content_data['pics'] = content_data_pics
         content_data['video'] = content_data_video
@@ -120,12 +124,18 @@ for user_file in user_files:
         content_data['info'] = content_data_info
         content_data['path'] = content_path
         data['contents'].append(content_data)
-    
-    if data['contents'] == [] or data['info'] == '':
-        print('检测到空的推文文件夹，跳过处理')
-    else:
+
+        contents_all += 1
+
+        # 算出最大的推文数量
+        if(len(data['contents']) > index_max):
+            index_max = len(data['contents'])
+
+    if data['contents'] != [] and data['info'] != '':
         print('检测到合法文件夹，正在载入...')
         users.append(data)
+    
+    
 
 
 print('本次要处理的用户：' + str(len(users)) + ' 推文总数量：' + str(contents_all))
@@ -141,11 +151,11 @@ while not environment:
     environment_input = input('请输入环境(0: 测试环境  1: 正式环境)：')
     if environment_input == '' or environment_input == '0':
         print('资源将上传到测试环境服务器')
-        api_url = 'https://api.pkpinfo.xyz'
+        api_url = 'https://www.pkappdev.xyz'
         environment = True
     elif environment_input == '1':
         print('资源将上传到正式线服务器')
-        api_url = 'https://api.pinkersms.xyz'
+        api_url = 'https://www.pkapp.buzz'
         environment = True
     else:
         print('环境输入错误，请重新输入')
@@ -332,6 +342,9 @@ while index < index_max:
                         if group['groupName'] == content_info['payGroupIdName']:
                             publish_data['payGroupId'] = group['groupId']
                             break
+                if not 'payGroupId' in publish_data.keys():
+                    print('没有找到相关的订阅组设置：跳过处理...')
+                    continue
                 publish_data['payPrice'] = content_info['payPrice']
 
             elif content_info['payPermissionType'] == 4:
@@ -381,8 +394,7 @@ while index < index_max:
                     pic_upload = Aws.upload(api_url, pic_path, Util.getType(
                         pic_path), accessKey, secretKey, region, bucket)
                     if pic_upload != '-1':
-                        data_pics.append(
-                           'public/' + pic_md5 + '.' + Util.getType(pic_path))
+                        data_pics.append('public/' + pic_md5 + '.' + Util.getType(pic_path))
                 
                 publish_data['video'] = '{"url":"%s","format":"%s","duration":"%s","snapshot_url":"%s","previews_urls":"%s,%s,%s"}' % (video_url, Util.getType(
                     video_path), video_duration, data_pics[0], data_pics[0], data_pics[1], data_pics[2])
@@ -398,12 +410,10 @@ while index < index_max:
                     if pic_upload == '1' or pic_upload == '-1':
                         failed += 1
                     data_pics.append('public/' + pic_md5 + '.' + Util.getType(pic_path))
-
-                if failed > len(pics_path) / 2:
-                    print('跳过处理')
-                    continue
                 publish_data['pics'] = ','.join(data_pics)
 
+            print(publish_data)
+            print(token)
             # 开始执行发推
             # 调用发推的接口
             publish = Api.publish(api_url, token, publish_data, account)
@@ -423,7 +433,7 @@ while index < index_max:
             passFlie.close()
             
 
-            if is_can_delete:
+            if video_path != '' and is_can_delete:
                 print('删除压缩文件...')
                 os.remove(video_path)
 

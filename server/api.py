@@ -14,7 +14,7 @@ class Api:
             'Content-Type': 'application/json',
         }
         print('正在获取平台设置')
-        res = requests.get(api_url + url, headers=headers)
+        res = requests.get(api_url + url, headers=headers, verify=False)
         res_json = res.json()
 
         data['enKey'] = 'pinker.' + res_json['data']['encryptConfig']['enKey']
@@ -54,7 +54,7 @@ class Api:
             'accountType': 1 if str(account).isdigit() else 2,
         }
         print('正在登录：' + account)
-        res = requests.post(api_url + url, data=data, headers=headers)
+        res = requests.post(api_url + url, data=data, headers=headers, verify=False)
         res_json = res.json()
         if res.status_code == 200:
             if res_json['code'] == 200:
@@ -82,7 +82,7 @@ class Api:
         }) 
         print('正在登录后台账号：' + account)
         
-        res = requests.post(server_url + url, data=data, headers=headers)
+        res = requests.post(server_url + url, data=data, headers=headers, verify=False)
         res_json = res.json()
         if res.status_code == 200:
             if res_json['code'] == 200:
@@ -106,7 +106,7 @@ class Api:
             'token': token
         }
         print('正在获取用户 %s 订阅组信息' % account)
-        res = requests.get(api_url + url, headers=headers)
+        res = requests.get(api_url + url, headers=headers, verify=False)
         res_json = res.json()
         if res.status_code == 200:
             if res_json['code'] == 200:
@@ -131,7 +131,7 @@ class Api:
             'token': token
         }
         print('正在发布推文')
-        res = requests.post(api_url + url, headers=headers, data=data)
+        res = requests.post(api_url + url, headers=headers, data=data,verify=False)
         res_json = res.json()
         if res.status_code == 200:
             if res_json['code'] == 200:
@@ -158,7 +158,7 @@ class Api:
             'account': account,
         }
         print('正在验证账号 %s 是否已经存在...' % account)
-        res = requests.get(api_url + url, headers=headers, params=data)
+        res = requests.get(api_url + url, headers=headers, params=data,verify=False)
         res_json = res.json()
         if res.status_code == 200:
             if res_json['code'] == -1:
@@ -198,7 +198,7 @@ class Api:
             })
         print('正在创建账号...')
         
-        res = requests.post(server_url + url, headers=headers, data=data)
+        res = requests.post(server_url + url, headers=headers, data=data, verify=False)
         res_json = res.json()
         if res.status_code == 200:
             if res_json['code'] == 200:
@@ -229,7 +229,7 @@ class Api:
         }
         print('正在更新用户信息...')
         
-        res = requests.post(api_url + url, headers=headers, data=data)
+        res = requests.post(api_url + url, headers=headers, data=data, verify=False)
         res_json = res.json()
         if res.status_code == 200:
             if res_json['code'] == 200:
@@ -258,7 +258,7 @@ class Api:
         }
         print('正在创建分组 ' + groupName)
         
-        res = requests.post(api_url + url, headers=headers, data=data)
+        res = requests.post(api_url + url, headers=headers, data=data, verify=False)
         res_json = res.json()
         if res.status_code == 200:
             if res_json['code'] == 200:
