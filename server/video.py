@@ -23,8 +23,7 @@ class Video:
         '''
         fileName = video_path.split('.')
         out_path = fileName[0] + '_compress.mp4'
-        # 第一步：查找 test 文件是否存在，如果存在就删掉
-        # 第二步：打开文件，看下大小是否需要压缩
+       
         fpsize = os.path.getsize(video_path) / 1024 / 1024
         if fpsize >= 150.0:  # 大于150MB的视频需要压缩
             print('正在压缩视频 %s : (%s)' % (out_path, time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())))
@@ -40,6 +39,36 @@ class Video:
             print('视频文件大小达标，无需压缩...')
             return ''
 
+    def cutVideo(video_path: str, video_duration: int):
+        '''
+        -i 输入的视频文件
+        -r 每一秒的帧数,一秒 25 帧大概就是人眼的速度
+        -pix_fmt 设置视频颜色空间 yuv420p网络传输用的颜色空间 ffmpeg -pix_fmts可以查看有哪些颜色空间选择
+        -vcodec 软件编码器，libx264通用稳定
+        -preset 编码机预设 编码机预设越高占用CPU越大 有十个参数可选 ultrafast superfast veryfast(录制视频选用) faster fast medium(默认) slow slower veryslow(压制视频时一般选用) pacebo
+        -profile:v 压缩比的配置 越往左边压缩的越厉害，体积越小 baseline(实时通信领域一般选用，画面损失越大) Extended Main(流媒体选用) High(超清视频) High 10 High 4:2:2 High 4:4:4(Predictive)
+        -level:v 对编码机的规范和限制针对不通的使用场景来操作,也就是不同分辨率设置不同的值(这个我没有设置，因为这个要根据不同的分辨率进行设置的,具体要去官方文档查看)
+        -crf 码率控制模式 用于对画面有要求，对文件大小无关紧要的场景 0-51都可以选择 0为无损 一般设置18 - 28之间 大于28画面损失严重
+        -acodec 设置音频编码器
+        -loglevel quiet 禁止输出
+        '''
+        fileName = video_path.split('.')
+        out_path = fileName[0] + '_compress.mp4'
+
+        if video_duration < 60:
+            print('视频时长太小，不支持裁切')
+            return ''
+        else:
+            print('正在裁切视频 %s : (%s)' % (out_path, time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())))
+            compress = 'ffmpeg -y -ss {} -t {} -i {} -r 25 -pix_fmt yuv420p -vcodec libx264 -preset slow -vf scale=-2:720 -profile:v baseline  -crf 28 -acodec aac -b:v 720k -strict -5 {}'.format(
+                10, video_duration - 20, video_path, out_path)
+            isRun = os.system(compress)
+            thr = threading.Thread(target = isRun)
+            thr.start()
+            thr.join()
+            print('视频 %s 压缩完成: (%s)' % (out_path, time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())))
+            return out_path
+       
     
 
     # 拿到视频帧图片
@@ -75,6 +104,7 @@ class Video:
             thr = threading.Thread(target = isRun)
             thr.start()
             thr.join()
+            
             pics.append(fileName[0] + '_截屏00' + str(_index + 1) + '.png')
             print('视频帧 %s 抽取完成...' % fileName[0] + '000' + str(_index + 1) + '.png')
             _index += 1

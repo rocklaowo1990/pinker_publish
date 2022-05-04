@@ -21,6 +21,11 @@ from server.video import Video
 letter = '\\' if platform.system() == 'Windows' else '/'
 works_path = os.path.split(os.path.realpath(__file__))[0] + letter
 
+for i in works_path:
+    if not (i.isalnum() or '\u4e00' <= i <= '\u9fa5' or i == letter):
+        print('文件夹：' + works_path + ' 移动硬盘名字 或 主文件夹名字包含特殊字符，需要手动修改')
+        exit()
+
 # 找出根目录里所有的文件夹
 # 每一个文件夹代表一个用户
 user_files = os.listdir(works_path)
@@ -44,14 +49,12 @@ for user_file in user_files:
 
     # 用户文件的目录名
     user_path = works_path + user_file + letter
+    user_path = Util.rename(user_path)
     print('正在检索用户文件夹: %s' % user_path)
 
     # 得到用户文件夹里的所有文件
     contents_files = os.listdir(user_path)
     Util.fileDel(contents_files)
-    if len(contents_files) < 2:
-        print('文件数量不符合要求：跳过不处理')
-        continue
 
     # 读取josn文件
     # josn 统一用 user.txt
@@ -62,22 +65,23 @@ for user_file in user_files:
                 user_info = json.loads(user_info_open.read().strip())
             user_info_open.close()
 
+    if user_info == '':
+        print('没有找到 user.txt 文件，跳过该用户...')
+        continue
+
     # 储存用户信息
     data['info'] = user_info
     data['contents'] = []
     data['token'] = ''
     data['groups'] = []
 
-
     # 去除非文件夹
     Util.dirDel(contents_files, user_path)
-
-    
-
 
     # 遍历所有的推文文件夹
     for content_file in contents_files:
         content_path = user_path + content_file + letter
+        content_path = Util.rename(content_path)
         print('正在检索推文文件夹：%s' % content_path)
         medias = os.listdir(content_path)
         Util.fileDel(medias)
@@ -94,29 +98,31 @@ for user_file in user_files:
             if media == 'pass':
                 content_data['pass'] = True
 
-
         if content_data['pass']:
             print('检测到 pass 文件，跳过...')
             continue
 
-
         # 读取图片和视频的路径
         for media in medias:
             if '.png'.upper() in media.upper() or '.jpg'.upper() in media.upper() or '.jpeg'.upper() in media.upper():
-                content_data_pics.append(content_path + media)
+                image_path = content_path + media
+                image_path = Util.rename(image_path)
+                content_data_pics.append(image_path)
             elif '.mp4'.upper() in media.upper():
-                content_data_video = (content_path + media)
-                content_data_duration = math.ceil((VideoFileClip(
-                    content_path + media).duration))
+                content_data_video = content_path + media
+                content_data_video = Util.rename(content_data_video)
+                content_data_duration = math.ceil(
+                    (VideoFileClip(content_data_video).duration))
             elif 'content.txt'.upper() in media.upper() or 'content.json'.upper() in media.upper():
                 # 读取josn文件
-                content_info_open = open(content_path + media, encoding='UTF-8', errors='ignore')
-                content_data_info = json.loads(content_info_open.read().strip())
+                content_info_open = open(
+                    content_path + media, encoding='UTF-8', errors='ignore')
+                content_data_info = json.loads(
+                    content_info_open.read().strip())
                 content_info_open.close()
-        if content_data_video != '' and 3 - len(content_data_pics) > 0:
-            video_pics = Video.getImage(content_data_video, content_data_duration, len(content_data_pics))
-            content_data_pics.extend(video_pics)
-        if content_data_pics == [] or content_data_info == {}:
+
+        if content_data_pics == [] and content_data_video == '' or content_data_info == {}:
+            print('文件不合法,缺少媒体文件或者 content.txt 请检查文件夹...')
             continue
         content_data['pics'] = content_data_pics
         content_data['video'] = content_data_video
@@ -132,10 +138,7 @@ for user_file in user_files:
             index_max = len(data['contents'])
 
     if data['contents'] != [] and data['info'] != '':
-        print('检测到合法文件夹，正在载入...')
         users.append(data)
-    
-    
 
 
 print('本次要处理的用户：' + str(len(users)) + ' 推文总数量：' + str(contents_all))
@@ -163,7 +166,6 @@ while not environment:
 
 time_true = False
 publish_time = 3
-
 while not time_true:
     publish_time_input = input('请输入发推的时间例如(22:15),在这里输入发推时间吧：')
     if publish_time_input == '0' or publish_time_input == '':
@@ -211,21 +213,26 @@ while not time_true:
             print('发推时间输入有误')
 
 
-time_true = False
-wait_time = 1
-while not time_true:
-    wait_time_input = input('请输入发推间隔的秒数：')
+compress_pass = False
+commpress_type = 0
+while not compress_pass:
+    commpress_input = input('请输入视频处理方式（0 不处理 1 压缩 2 裁切片头片尾 ) ：')
 
-    if wait_time_input == '0' or wait_time_input == '':
-        print('发推间隔时间为：' + str(wait_time) + ' 秒')
-        time_true = True
+    if commpress_input == '0' or commpress_input == '':
+        print('视频不做处理，将直接上传')
+        compress_pass = True
 
-    elif wait_time_input.isdigit():
-        wait_time = int(wait_time_input)
-        print('发推间隔时间为：' + str(wait_time) + ' 秒')
-        time_true = True
+    elif commpress_input == '1':
+        print('将对视频进行压缩处理')
+        compress_pass = True
+        commpress_type = 1
+
+    elif commpress_input == '2':
+        print('将对视频进行裁切并压缩处理')
+        compress_pass = True
+        commpress_type = 2
     else:
-        print('时间间隔输入有误')
+        print('是否压缩选择输入有误')
 
 Timer.waitTime(publish_time)
 
@@ -274,12 +281,15 @@ while index < index_max:
             groups = work['groups']
             print('---------------------------------------------------------------------')
             print('即将处理用户：' + account + ' 的第 ' + str(index + 1) + ' 条推文')
+            if video_path != '':
+                print('文件夹目录：' + video_path)
+            else:
+                print('文件夹目录：' + pics_path[0])
 
             if work['contents'][index]['pass'] == True:
                 print('检测到跳过标记：跳过处理')
                 continue
 
-            Timer.waitTime(wait_time)
             # 这里是登录模块
             # token = ’‘ 表示没有登录过，执行登录方法
             # token = ’-1‘ 表示曾经登录失败过，跳过
@@ -316,9 +326,6 @@ while index < index_max:
                 publish_data['payPermissionType'] = 0
 
             elif content_info['payPermissionType'] == 1:
-                if len(pics_path) < 3:
-                    print('图片数量不够发布推文，跳过处理')
-                    continue
                 publish_data['payPermissionType'] = 1
                 if groups == []:
                     print('没有找到相关的订阅组设置：退出')
@@ -328,11 +335,11 @@ while index < index_max:
                         if group['groupName'] == content_info['payGroupIdName']:
                             publish_data['payGroupId'] = group['groupId']
                             break
+                if not 'payGroupId' in publish_data.keys():
+                    print('没有找到相关的订阅组设置：跳过处理...')
+                    continue
 
             elif content_info['payPermissionType'] == 2 or content_info['payPermissionType'] == 3:
-                if len(pics_path) < 3:
-                    print('图片数量不够发布推文，跳过处理')
-                    continue
                 publish_data['payPermissionType'] = content_info['payPermissionType']
                 if groups == []:
                     print('没有找到相关的订阅组设置：退出')
@@ -348,9 +355,6 @@ while index < index_max:
                 publish_data['payPrice'] = content_info['payPrice']
 
             elif content_info['payPermissionType'] == 4:
-                if len(pics_path) < 3:
-                    print('图片数量不够发布推文，跳过处理')
-                    continue
                 publish_data['payPermissionType'] = 4
                 publish_data['payPrice'] = content_info['payPrice']
 
@@ -368,11 +372,28 @@ while index < index_max:
                 # 是否可以删掉视频文件
                 # 默认Flase，不可以删除
                 is_can_delete = False
-                # 压缩视频，并形成新文件
-                compress_video = Video.compressVideo(video_path)
-                if compress_video != '':
-                    video_path = compress_video
-                    is_can_delete = True
+
+                # 抽取视图片
+                if 3 - len(pics_path) > 0:
+                    video_pics = Video.getImage(
+                        video_path, video_duration, len(pics_path))
+                    pics_path.extend(video_pics)
+
+                # 判断是否需要压缩
+                if commpress_type == 1:
+                    compress_video = Video.compressVideo(video_path)
+                    if compress_video != '':
+                        video_path = compress_video
+                        is_can_delete = True
+                    else:
+                        continue
+                elif commpress_type == 2:
+                    compress_video = Video.cutVideo(video_path, video_duration)
+                    if compress_video != '':
+                        video_path = compress_video
+                        is_can_delete = True
+                    else:
+                        continue
 
                 # 上传视频并拿到地址
                 # 这一步也会检查文件是否已经存在
@@ -380,44 +401,62 @@ while index < index_max:
                 video_upload = Aws.upload(api_url, video_path, Util.getType(
                     video_path), accessKey, secretKey, region, bucket)
                 if video_upload == '-1':
-                    print('跳过处理')
+                    video_upload = Aws.upload_s3(api_url, video_path, Util.getType(
+                        video_path), accessKey, secretKey, region, bucket)
+                if video_upload == '-1':
+                    print('上传视频文件失败，无法继续执行发推...跳过处理')
                     if is_can_delete:
                         print('删除压缩文件...')
                         os.remove(video_path)
                     continue
-                
-                video_md5 = Util.getFileMd5(video_path)
-                video_url = 'public/' + video_md5 + '.' + Util.getType(video_path)
 
-                for pic_path in pics_path:
+                video_md5 = Util.getFileMd5(video_path)
+                video_url = 'public/' + video_md5 + \
+                    '.' + Util.getType(video_path)
+
+                for pic_path in pics_path[:3]:
                     pic_md5 = Util.getFileMd5(pic_path)
                     pic_upload = Aws.upload(api_url, pic_path, Util.getType(
                         pic_path), accessKey, secretKey, region, bucket)
-                    if pic_upload != '-1':
-                        data_pics.append('public/' + pic_md5 + '.' + Util.getType(pic_path))
-                
+                    if pic_upload == '-1':
+                        pic_upload = Aws.upload_s3(api_url, pic_path, Util.getType(
+                            pic_path), accessKey, secretKey, region, bucket)
+                    if pic_upload == '-1':
+                        print('图片上传失败，无法继续执行发推...跳过处理')
+                        continue
+                    data_pics.append('public/' + pic_md5 +
+                                     '.' + Util.getType(pic_path))
+
                 publish_data['video'] = '{"url":"%s","format":"%s","duration":"%s","snapshot_url":"%s","previews_urls":"%s,%s,%s"}' % (video_url, Util.getType(
                     video_path), video_duration, data_pics[0], data_pics[0], data_pics[1], data_pics[2])
 
             # 如果是空的，说明没有视频，那就当成图片推文去发
             else:
-                # failed：重复或者失败的图片统计
-                failed = 0
+                if content_info['payPermissionType'] != 0 and pics_path < 4:
+                    print('收费的图片推文，图片必须要大于三张，跳过处理')
+                    continue
+                suss = 0
                 for pic_path in pics_path:
                     pic_md5 = Util.getFileMd5(pic_path)
                     pic_upload = Aws.upload(api_url, pic_path, Util.getType(
                         pic_path), accessKey, secretKey, region, bucket)
-                    if pic_upload == '1' or pic_upload == '-1':
-                        failed += 1
-                    data_pics.append('public/' + pic_md5 + '.' + Util.getType(pic_path))
+                    if pic_upload == '-1':
+                        pic_upload = Aws.upload_s3(api_url, pic_path, Util.getType(
+                            pic_path), accessKey, secretKey, region, bucket)
+                    if pic_upload != '-1':
+                        suss += 1
+                        data_pics.append('public/' + pic_md5 +
+                                         '.' + Util.getType(pic_path))
+
+                if content_info['payPermissionType'] != 0 and succ < 4:
+                    print('收费的图片推文，上传成功的图片必须要大于三张，无法继续发推')
+                    continue
                 publish_data['pics'] = ','.join(data_pics)
 
-            print(publish_data)
-            print(token)
             # 开始执行发推
             # 调用发推的接口
             publish = Api.publish(api_url, token, publish_data, account)
-            
+
             if publish == 1:
                 login = Api.login(api_url, account, password, enKey)
                 work['token'] = login
@@ -427,18 +466,15 @@ while index < index_max:
                     continue
             elif publish == 200:
                 succ += 1
-
-            # 创建标记，标记为已经处理过
-            passFlie = open(work['contents'][index]['path'] + 'pass','w')
-            passFlie.close()
-            
+                # 创建标记，标记为已经处理过
+                passFlie = open(work['contents'][index]['path'] + 'pass', 'w')
+                passFlie.close()
 
             if video_path != '' and is_can_delete:
                 print('删除压缩文件...')
                 os.remove(video_path)
 
             print(account + ' 的第 ' + str(index + 1) + ' 条推文处理完成')
-            
 
     index += 1
 

@@ -6,11 +6,9 @@
 # Created:     2013-05-07
 # update:      2013-05-07
 #-------------------------------------------------------------------------------
-import sys
 import xlwt #需要的模块
 
 def txt2xls(filename,xlsname):  #文本转换成xls的函数，filename 表示一个要被转换的txt文本，xlsname 表示转换后的文件名
-    print ('converting xls ... ')
     f = open(filename)   #打开txt文本进行读取
     x = 0                #在excel开始写的位置（y）
     y = 0                #在excel开始写的位置（x）
@@ -28,8 +26,3 @@ def txt2xls(filename,xlsname):  #文本转换成xls的函数，filename 表示�
         y = 0  #初始成第一列
     f.close()
     xls.save(xlsname+'.xls') #保存
-
-if __name__ == "__main__":
-    filename = sys.argv[1]
-    xlsname  = sys.argv[2]
-    txt2xls(filename,xlsname)

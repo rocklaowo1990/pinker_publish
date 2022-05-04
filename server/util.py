@@ -1,5 +1,7 @@
 import os
 import hashlib
+import stat
+
 
 class Util:
     # 拿到文件后缀
@@ -44,3 +46,34 @@ class Util:
             myhash.update(b)
         f.close()
         return myhash.hexdigest()
+
+    def rename(path: str):
+        print('正在处理文件名: %s' % path)
+        # 用 / 把地址分割成小块进行处理
+        path_list = path.split('/')
+        old_path = ''
+        new_path = ''
+        index = 1
+        isChanged = False
+        while index < len(path_list):
+            old_path += '/' + \
+                path_list[index] if path_list[index] != '' else ''
+
+            path_item = ''
+            for i in path_list[index]:
+                if i.isalnum() or '\u4e00' <= i <= '\u9fa5' or i == '_' or i == '.':
+                    path_item += i
+
+            new_path += '/' + path_item if path_list[index] != '' else ''
+
+            if new_path != old_path:
+                os.rename(old_path, new_path)
+                isChanged = True
+
+            old_path = new_path
+            index += 1
+
+        if isChanged:
+            print('文件更改为：%s' % new_path)
+
+        return new_path + '/' if path_list[-1] == '' else new_path
