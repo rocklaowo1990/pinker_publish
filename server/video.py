@@ -66,7 +66,7 @@ class Video:
             thr = threading.Thread(target = isRun)
             thr.start()
             thr.join()
-            print('---\033[0;32;40m视频 %s 裁切完成: (%s)\033[0m' % (out_path, time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())))
+            print('----\033[0;32;40m视频 %s 裁切完成: (%s)\033[0m' % (out_path, time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())))
             return out_path
        
     
@@ -106,6 +106,6 @@ class Video:
             thr.join()
             
             pics.append(fileName[0] + '_截屏00' + str(_index + 1) + '.png')
-            print('---\033[0;32;40m视频帧抽取完成: %s_截屏00%s.png\033[0m' % (fileName[0], str(_index + 1)))
+            print('----\033[0;32;40m视频帧抽取完成: %s_截屏00%s.png\033[0m' % (fileName[0], str(_index + 1)))
             _index += 1
         return pics
