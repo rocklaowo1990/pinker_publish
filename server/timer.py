@@ -7,9 +7,9 @@ class Timer:
     def getTimer13(time_str:str):
         # 生成13时间戳   eg:1557842280000
         datetime_obj = datetime.datetime.strptime(time_str, '%Y-%m-%d %H:%M:%S')
-        # 10位，时间点相当于从1.1开始的当年时间编号
+        # 10位,时间点相当于从1.1开始的当年时间编号
         date_stamp = str(int(time.mktime(datetime_obj.timetuple())))
-        # 3位，微秒
+        # 3位,微秒
         data_microsecond = str("%06d" % datetime_obj.microsecond)[0:3]
         date_stamp = date_stamp + data_microsecond
         return int(date_stamp)

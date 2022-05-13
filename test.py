@@ -7,7 +7,7 @@ import math
 import random
 import time
  
-# 免费代理IP不能保证永久有效，如果不能用可以更新
+# 免费代理IP不能保证永久有效,如果不能用可以更新
 # http://www.goubanjia.com/
 proxy_list = [
     '183.95.80.102:8080',
@@ -124,7 +124,7 @@ def getNum2(str):
     return split1, split2
  
  
-# 用户输入更新后的IP文件，如果没有则用代码中的默认IP
+# 用户输入更新后的IP文件,如果没有则用代码中的默认IP
 ip_path = input("Input the path of IP list file(input \'no\' means use default IPs):\n")
 # 判断是否输入IP文件
 if ip_path != 'no':
@@ -170,7 +170,7 @@ base = print("Input save path:\n")
  
 print( 'Now start...')
  
-# 循环遍历，下载瓦片
+# 循环遍历,下载瓦片
 for i in range(rows):
     for j in range(cols):
         # 拼接url

@@ -10,7 +10,7 @@ from botocore.exceptions import ClientError
 
 class Aws:
 
-    # 上传文件到S3，通过打开文件后上传
+    # 上传文件到S3,通过打开文件后上传
     def upload_s3(api_url: str, file_path: str, type: str, access_key: str, secret_key: str, region: str, bucket: str):
         session = Session(aws_access_key_id=access_key,
                           aws_secret_access_key=secret_key, region_name=region)
@@ -20,7 +20,8 @@ class Aws:
         file_md5 = Util.getFileMd5(file_path)
         upload_key = 'public/' + str(file_md5) + '.' + type
 
-        print('正在检查文件是否存在: ' + file_path)
+        print('正在检查文件是否存在于服务器: ' + file_path)
+
         files = session.client('s3').list_objects_v2(
             Bucket=bucket,
             Delimiter='/',
@@ -28,21 +29,22 @@ class Aws:
         )
 
         if files['KeyCount'] != 0:
-            print('文件已存在: ' + upload_key)
+            print('----文件已存在于服务器: ' + upload_key)
             return '1'
+        else:
+            print('----文件不存在于服务器: ' + upload_key)
 
-        print('正在上传文件：' + file_path +
-              '：(' + time.strftime("%Y-%m-%d %H:%M:%S", time.localtime()) + ')')
-
+        print('正在上传文件...' + '(' +
+              time.strftime("%Y-%m-%d %H:%M:%S", time.localtime()) + ')')
         try:
             s3.Bucket(bucket).put_object(
                 Key=upload_key, Body=upload_data, ACL='public-read')
-            print('文件上传成功: ' + upload_key +
-                  '：(' + time.strftime("%Y-%m-%d %H:%M:%S", time.localtime()) + ')')
+            print('----\033[0;32;40m文件上传成功: public/' + ': (' +
+                  time.strftime("%Y-%m-%d %H:%M:%S", time.localtime()) + ')' + '\033[0m')
             upload_data.close()
             return upload_key
         except Exception as e:
-            print('上传文件出错：' + str(e))
+            print('-----\033[0;37;41m上传文件出错: ' + str(e) + '\033[0m')
             return '-1'
 
     # 路径上传
@@ -52,8 +54,8 @@ class Aws:
         upload_key = 'public/' + str(file_md5) + '.' + type
 
         config = Config(s3={"use_accelerate_endpoint": True})
-        # 当文件大小超过multipart_threshold属性的值时，会发生多部分传输 。
-        # 如果文件大小大于TransferConfig对象中指定的阈值，以下示例将upload_file传输配置为分段传输。
+        # 当文件大小超过multipart_threshold属性的值时,会发生多部分传输 。
+        # 如果文件大小大于TransferConfig对象中指定的阈值,以下示例将upload_file传输配置为分段传输。
         # 1GB=1024的三次方=1073741824字节
         MB = 1024 ** 2
         transfer_config = TransferConfig(
@@ -64,22 +66,24 @@ class Aws:
                             aws_secret_access_key=secret_key, region_name=region)
 
         # 检查文件是否存在
-        print('正在检查文件是否存在: ' + file_path)
+        print('正在检查文件是否存在于服务器: ' + file_path)
         try:
             s3.Object(bucket, upload_key).load()
-            print('文件已存在: ' + upload_key)
+            print('----文件已存在于服务器: ' + upload_key)
             return '1'
         except ClientError as e:
-            print('正在上传文件：' + file_path + '：(' +
-                  time.strftime("%Y-%m-%d %H:%M:%S", time.localtime()) + ')')
+            print('----文件不存在于服务器: ' + upload_key)
+
+        print('正在上传文件...' + '(' +
+              time.strftime("%Y-%m-%d %H:%M:%S", time.localtime()) + ')')
 
         try:
-            # upload logo to s3，key_name指定S3上的路径，大于阀值分段传输
+            # upload logo to s3,key_name指定S3上的路径,大于阀值分段传输
             s3.Bucket(bucket).upload_file(Filename=file_path, Key=upload_key, ExtraArgs={
                 'ACL': 'public-read'}, Config=transfer_config)
-            print('文件上传成功: public/' + upload_key + '：(' +
-                  time.strftime("%Y-%m-%d %H:%M:%S", time.localtime()) + ')')
+            print('----\033[0;32;40m文件上传成功: public/' + ': (' +
+                  time.strftime("%Y-%m-%d %H:%M:%S", time.localtime()) + ')' + '\033[0m')
             return upload_key
         except Exception as e:
-            print('上传文件出错：' + str(e))
+            print('-----\033[0;37;41m上传文件出错: ' + str(e) + '\033[0m')
             return '-1'

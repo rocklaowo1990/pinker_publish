@@ -1,6 +1,10 @@
 import os
 import hashlib
+import re
 import stat
+
+import cv2
+import numpy as np
 
 
 class Util:
@@ -48,7 +52,7 @@ class Util:
         return myhash.hexdigest()
 
     def rename(path: str):
-        print('正在处理文件名: %s' % path)
+        # print('正在检查路径是否合法: %s' % path)
         # 用 / 把地址分割成小块进行处理
         path_list = path.split('/')
         old_path = ''
@@ -74,6 +78,31 @@ class Util:
             index += 1
 
         if isChanged:
-            print('文件更改为：%s' % new_path)
+            print('\033[0;33;40m检查到路径不合法,更改为: %s\033[0m' % new_path)
+        # else:
+        #     print('\033[0;32m路径合法\033[0m')
+
 
         return new_path + '/' if path_list[-1] == '' else new_path
+
+    def checkVideo(file: str):
+        print('--------正在检查视频文件的完整性: %s' % file)
+
+        try:
+            vid = cv2.VideoCapture(file)
+            if not vid.isOpened():
+                print('\033[0;37;41m视频文件存在问题\033[0m')
+                return -1
+                # print('Just a Dummy Exception, write your own')
+            print('--------\033[0;32;40m视频文件没有问题\033[0m')
+            return 200
+        except cv2.error as e:
+            print('--------\033[0;37;41m视频文件存在问题: \033[0m', e)
+            return -1
+        except Exception as e:
+            print('--------\033[0;37;41m视频文件存在问题: \033[0m', e)
+            return -1
+        
+
+
+

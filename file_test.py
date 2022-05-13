@@ -8,7 +8,7 @@ from server.exls import txt2xls
 # 从这里开始执行
 # 入口
 # path:py 文件所在的根目录
-# letter 是盘符的符号，windows 是 \，Mac 和 Linux 是 /
+# letter 是盘符的符号,windows 是 \,Mac 和 Linux 是 /
 letter = '\\' if platform.system() == 'Windows' else '/'
 works_path = os.path.split(os.path.realpath(__file__))[0] + letter
 
@@ -38,7 +38,7 @@ print(medias)
 # environment = False
 # api_url = ''
 # while not environment:
-#     environment_input = input('请输入文本：')
+#     environment_input = input('请输入文本: ')
 #     with open(works_path  + 'log', 'a') as f:
 #                 f.write(environment_input + '\n')
 

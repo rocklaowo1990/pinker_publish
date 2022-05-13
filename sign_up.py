@@ -12,7 +12,7 @@ from server.util import Util
 # 从这里开始执行
 # 入口
 # path:py 文件所在的根目录
-# letter 是盘符的符号，windows 是 \，Mac 和 Linux 是 /
+# letter 是盘符的符号,windows 是 \,Mac 和 Linux 是 /
 letter = '\\' if platform.system() == 'Windows' else '/'
 works_path = os.path.split(os.path.realpath(__file__))[0] + letter
 
@@ -24,8 +24,8 @@ user_files = os.listdir(works_path)
 Util.dirDel(user_files, works_path)
 
 '''
-变量区：
-users：用户集合，需要处理的所有用户数量
+变量区: 
+users: 用户集合,需要处理的所有用户数量
 token_server: 后台的token
 api_url: api 的接口地址
 server_url: 后台的接口地址
@@ -72,33 +72,35 @@ for user_file in user_files:
     data['pics'] = pics
     data['token'] = ''
     if not 'avatar' in data.keys():
-        print('缺少 000.jpg 文件，跳过处理')
+        print('缺少 000.jpg 文件,跳过处理')
     elif not 'info' in data.keys():
-        print('缺少 info.txt 文件，跳过处理')
+        print('缺少 info.txt 文件,跳过处理')
     else:
-        print('发现一个合法文件，正在载入...')
+        print('发现一个合法文件,正在载入...')
         users.append(data)
 
-print('本次需要处理的注册用户：%d 个' % len(users))
+print('本次需要处理的注册用户: %d 个' % len(users))
 if len(users) == 0:
-    print('本次没有需要执行的任务：程序即将退出...')
+    print('本次没有需要执行的任务: 程序即将退出...')
     exit()
 
 environment = False
 while not environment:
-    environment_input = input('请输入环境(0: 测试环境  1: 正式环境)：')
+    environment_input = input('请输入环境(0: 测试环境  1: 正式环境): ')
     if environment_input == '' or environment_input == '0':
         print('注册到测试环境服务器')
-        api_url = 'https://www.pkappdev.xyz'
-        server_url = 'https://www.pkwebdev.xyz'
+        api_url = 'https://www.pkappsim.xyz'
+        server_url = 'https://www.pkbackendsim.xyz'
+        server_account = 'admin'
         environment = True
     elif environment_input == '1':
         print('注册到正式线服务器')
         api_url = 'https://www.pkapp.buzz'
         server_url = 'https://www.pkweb.buzz'
+        server_account = 'test001'
         environment = True
     else:
-        print('环境输入错误，请重新输入')
+        print('环境输入错误,请重新输入')
 print('---------------------------------------------------------------------')
 # 读取加密设置
 # aws 桶信息
@@ -119,13 +121,13 @@ if config != '':
     iv = config['iv']
     region = config['region']
 else:
-    print('获取全局配置失败，无法继续操作，即将退出程序...')
+    print('获取全局配置失败,无法继续操作,即将退出程序...')
     exit()
 
 # 开始登陆后台
-logoin_server_res = Api.loginServer(server_url, 'admin', 'Abc123213.')
+logoin_server_res = Api.loginServer(server_url, server_account, '123456')
 if logoin_server_res == '' or logoin_server_res == '-1':
-    print('后台账号登陆失败，无法继续操作，程序即将推出...')
+    print('后台账号登陆失败,无法继续操作,程序即将推出...')
     exit()
 else:
     token_server = logoin_server_res
@@ -151,7 +153,7 @@ for user in users:
     pics = user['pics']
 
     print('---------------------------------------------------------------------')
-    print('即将处理第 %d 个用户：%s' % (user_index, account))
+    print('即将处理第 %d 个用户: %s' % (user_index, account))
     Timer.waitTime(1)
 
     # 检查账号是否已经存在
@@ -175,7 +177,7 @@ for user in users:
     else:
         token = login_res
 
-    # 上传用户头像，并拿到地址
+    # 上传用户头像,并拿到地址
     avatar_md5 = Util.getFileMd5(avatar_path)
     avatar_upload = Aws.upload(api_url, avatar_path, Util.getType(
         avatar_path), accessKey, secretKey, region, bucket)
@@ -193,7 +195,7 @@ for user in users:
     # 添加分组
     group_index = 0
     while group_index < group_max:
-        # 上传用户头像，并拿到地址
+        # 上传用户头像,并拿到地址
         pic_url = ''
         pic_md5 = Util.getFileMd5(pics[group_index])
         pic_upload = Aws.upload(api_url, pics[group_index], Util.getType(

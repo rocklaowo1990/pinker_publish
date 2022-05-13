@@ -39,7 +39,7 @@ def getImages():
         nav_name_list = list(home_obj.xpath(
             '//ul[@class="navbar-nav"]/li/a/text()'))
 
-        # 处理数据，拿到导航栏里有用的大分类
+        # 处理数据,拿到导航栏里有用的大分类
         del nav_url_list[0]
         del nav_url_list[0]
         nav_url_list.pop()
@@ -48,9 +48,9 @@ def getImages():
         del nav_name_list[0]
         nav_name_list.pop()
 
-        """从这里开始对每个分类进行检测，就是先循环处理每个导航，例如日本，美国等
+        """从这里开始对每个分类进行检测,就是先循环处理每个导航,例如日本,美国等
         1、先找出每个分类一共有多少页
-        2、然后每一页开始对每一个模特进行检索，并获取每一页模特的页面地址
+        2、然后每一页开始对每一个模特进行检索,并获取每一页模特的页面地址
         3、对每一个模特页面进行访问
         """
         # 大分类
@@ -68,7 +68,7 @@ def getImages():
 
             # 访问成功
             if nav_res.status_code == 200:
-                print('访问成功：' + home_url + nav_url_list[nav_inex])
+                print('访问成功: ' + home_url + nav_url_list[nav_inex])
 
                 # 查看分类文件夹是否存在
                 nav_folder = nav_name_list[nav_inex] + '/'
@@ -76,12 +76,12 @@ def getImages():
                 # 如果不存在就创建一个文件夹
                 if not os.path.exists(nav_folder):
                     os.makedirs(nav_folder)
-                    print('文件夹：' + nav_folder + '创建成功')
+                    print('文件夹: ' + nav_folder + '创建成功')
 
                 else:
-                    print('文件夹：' + nav_folder + '已经存在')
+                    print('文件夹: ' + nav_folder + '已经存在')
 
-                print('正在分析：' + nav_folder + '总页数')
+                print('正在分析: ' + nav_folder + '总页数')
 
                 # 分析分类页面的返回信息
                 nav_obj = etree.HTML(nav_res.text)
@@ -94,19 +94,19 @@ def getImages():
                 # 拼接这个分类下每个页面的访问地址
                 mode_pages_url = mode_pages_str_list[0] + '='
 
-                # 根据最后一页的href信息，找出这个分类所有模特的页面总数
+                # 根据最后一页的href信息,找出这个分类所有模特的页面总数
                 mode_pages = mode_pages_str_list[len(mode_pages_str_list)-1]
                 mode_pages = int(mode_pages)
                 print(nav_url_list[nav_inex] +
-                      '一共有：' + str(mode_pages) + '页数据')
+                      '一共有: ' + str(mode_pages) + '页数据')
 
-                """从这里开始对是访问该分类下的每一页，例如日本这个标签里有100页
+                """从这里开始对是访问该分类下的每一页,例如日本这个标签里有100页
                 1、可以找出这个页面里有多少个模特
                 2、可以找出每个模特的地址
                 3、可以进到每个模特地址进行图片操作
                 """
                 # 大分类页面下的页码
-                # 例如：
+                # 例如: 
                 # 中国大陆的 第一页
                 # 从 1 开始
                 # 日本 第二页
@@ -118,11 +118,11 @@ def getImages():
                         home_url + mode_pages_url + str(mode_page))
 
                     print('正在访问' + nav_folder + '第' + str(mode_page) + '页')
-                    print('网址：' + home_url + mode_pages_url + str(mode_page))
+                    print('网址: ' + home_url + mode_pages_url + str(mode_page))
 
                     if mode_res.status_code == 200:
                         print(nav_folder + '第' + str(mode_page) + '页' + ' 访问成功')
-                        print('正在分析：'+nav_folder + '第' +
+                        print('正在分析: '+nav_folder + '第' +
                               str(mode_page) + '页')
 
                         # 分析分类页面的返回信息
@@ -153,7 +153,7 @@ def getImages():
                                   str(mode_page) + '页的第' + str(mode_index+1) + '个模特:' + home_url + mode_url_list[mode_index])
 
                             if(images_page_res.status_code == 200):
-                                print('访问成功，正在分析：' + nav_folder + '第' +
+                                print('访问成功,正在分析: ' + nav_folder + '第' +
                                       str(mode_page) + '页的第' + str(mode_index+1) + '个模特的图片数量（页数）')
                                 # 分析模特页面里的数据
                                 images_page_obj = etree.HTML(
@@ -176,11 +176,11 @@ def getImages():
                                       str(mode_page) + '页的第' + str(mode_index+1) + '个模特一共有' + str(image_page) + '页图片')
 
                                 # 模特一共有几页照片
-                                # 例如：
+                                # 例如: 
                                 # 这个模特有10页照片
                                 # 从 1 开始
                                 # 每一页是十张
-                                print('开始保存图片：')
+                                print('开始保存图片: ')
                                 image_page_index = 1
                                 while image_page_index < image_page:
 
@@ -194,7 +194,7 @@ def getImages():
                                         # 分析模特页面里的数据
                                         image_obj = etree.HTML(
                                             image_res.text)
-                                        print('访问成功，正在分析: ' + nav_folder + '第' +
+                                        print('访问成功,正在分析: ' + nav_folder + '第' +
                                               str(mode_page) + '页的第' + str(mode_index+1) + '个模的第' + str(image_page_index))
                                         # 找到图片的集合
                                         # 这里是每一页的10张图片的地址集合
@@ -211,9 +211,9 @@ def getImages():
                                         # 如果不存在就创建一个文件夹
                                         if not os.path.exists(mode_folder):
                                             os.makedirs(mode_folder)
-                                            print('文件夹：' + mode_folder + '创建成功')
+                                            print('文件夹: ' + mode_folder + '创建成功')
                                         else:
-                                            print('文件夹：' + mode_folder + '已经存在')
+                                            print('文件夹: ' + mode_folder + '已经存在')
 
                                         # 保存每个模特的图片
                                         # 这个是记录图片的下标
