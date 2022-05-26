@@ -1,6 +1,6 @@
 
 import time
-from server.util import Util
+from server.util import MyUtil
 import boto3
 from boto3.session import Session
 from botocore.config import Config
@@ -8,7 +8,7 @@ from boto3.s3.transfer import TransferConfig
 from botocore.exceptions import ClientError
 
 
-class Aws:
+class MyAws:
 
     # 上传文件到S3,通过打开文件后上传
     def upload_s3(api_url: str, file_path: str, type: str, access_key: str, secret_key: str, region: str, bucket: str):
@@ -17,7 +17,7 @@ class Aws:
 
         s3 = session.resource("s3")
         upload_data = open(file_path, 'rb')
-        file_md5 = Util.getFileMd5(file_path)
+        file_md5 = MyUtil.getFileMd5(file_path)
         upload_key = 'public/' + str(file_md5) + '.' + type
 
         print('正在检查文件是否存在于服务器: ' + file_path)
@@ -29,28 +29,28 @@ class Aws:
         )
 
         if files['KeyCount'] != 0:
-            print('----文件已存在于服务器: ' + upload_key)
+            print('----\033[0;33;40m文件已存在于服务器: ' + upload_key + '\033[0m')
             return '1'
         else:
-            print('----文件不存在于服务器: ' + upload_key)
+            print('----\033[0;32;40m文件不存在于服务器: ' + upload_key + '\033[0m')
 
         print('正在上传文件...' + '(' +
               time.strftime("%Y-%m-%d %H:%M:%S", time.localtime()) + ')')
         try:
             s3.Bucket(bucket).put_object(
                 Key=upload_key, Body=upload_data, ACL='public-read')
-            print('----\033[0;32;40m文件上传成功: public/' + ': (' +
+            print('文件上传成功...(' +
                   time.strftime("%Y-%m-%d %H:%M:%S", time.localtime()) + ')' + '\033[0m')
             upload_data.close()
             return upload_key
         except Exception as e:
-            print('-----\033[0;37;41m上传文件出错: ' + str(e) + '\033[0m')
+            print('\033[0;37;41m上传文件出错: ' + str(e) + '\033[0m')
             return '-1'
 
     # 路径上传
     def upload(api_url: str, file_path: str, type: str, access_key: str, secret_key: str, region: str, bucket: str):
         # 处理文件
-        file_md5 = Util.getFileMd5(file_path)
+        file_md5 = MyUtil.getFileMd5(file_path)
         upload_key = 'public/' + str(file_md5) + '.' + type
 
         config = Config(s3={"use_accelerate_endpoint": True})
@@ -69,21 +69,21 @@ class Aws:
         print('正在检查文件是否存在于服务器: ' + file_path)
         try:
             s3.Object(bucket, upload_key).load()
-            print('----文件已存在于服务器: ' + upload_key)
+            print('----\033[0;33;40m文件已存在于服务器: ' + upload_key + '\033[0m')
             return '1'
         except ClientError as e:
-            print('----文件不存在于服务器: ' + upload_key)
+            print('----\033[0;32;40m文件不存在于服务器: ' + upload_key + '\033[0m')
 
-        print('正在上传文件...' + '(' +
-              time.strftime("%Y-%m-%d %H:%M:%S", time.localtime()) + ')')
+        print('----\033[0;33;40m正在上传文件...' + '(' +
+              time.strftime("%Y-%m-%d %H:%M:%S", time.localtime()) + ')\033[0m')
 
         try:
             # upload logo to s3,key_name指定S3上的路径,大于阀值分段传输
             s3.Bucket(bucket).upload_file(Filename=file_path, Key=upload_key, ExtraArgs={
                 'ACL': 'public-read'}, Config=transfer_config)
-            print('----\033[0;32;40m文件上传成功: public/' + ': (' +
+            print('----\033[0;33;40m文件上传成功...(' +
                   time.strftime("%Y-%m-%d %H:%M:%S", time.localtime()) + ')' + '\033[0m')
             return upload_key
         except Exception as e:
-            print('-----\033[0;37;41m上传文件出错: ' + str(e) + '\033[0m')
+            print('\033[0;37;41m上传文件出错: ' + str(e) + '\033[0m')
             return '-1'

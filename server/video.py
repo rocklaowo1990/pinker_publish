@@ -3,10 +3,10 @@ import random
 import threading
 import time
 
-from server.timer import Timer
+from server.timer import MyTimer
 
 
-class Video:
+class MyVideo:
     # 压缩视频文件
     def compressVideo(video_path: str):
         '''
@@ -33,7 +33,7 @@ class Video:
             thr = threading.Thread(target = isRun)
             thr.start()
             thr.join()
-            print('----\033[0;32;40m视频 %s 压缩完成: (%s)\033[0m' % (out_path, time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())))
+            print('\033[0;36;40m视频压缩完成: %s (%s)\033[0m' % (out_path, time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())))
             return out_path
         else:
             print('----\033[0;33;40m视频文件大小达标,无需压缩...\033[0m')
@@ -66,7 +66,7 @@ class Video:
             thr = threading.Thread(target = isRun)
             thr.start()
             thr.join()
-            print('----\033[0;32;40m视频 %s 裁切完成: (%s)\033[0m' % (out_path, time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())))
+            print('\033[0;36;40m视频裁切完成: %s (%s)\033[0m' % (out_path, time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())))
             return out_path
        
     
@@ -99,13 +99,13 @@ class Video:
             compress = 'ffmpeg -loglevel quiet -ss %d -t %d -y -i %s -pix_fmt yuvj420p -vf select="eq(pict_type\,I)" -frames:v 1 -f image2 %s' % (
               start_time, play_time, video_path, fileName[0] + '_截屏00' + str(_index + 1) + '.png')
             print('即将抽取视频帧...')
-            Timer.waitTime(1)
+            MyTimer.waitTime(1)
             isRun = os.system(compress)
             thr = threading.Thread(target = isRun)
             thr.start()
             thr.join()
             
             pics.append(fileName[0] + '_截屏00' + str(_index + 1) + '.png')
-            print('----\033[0;32;40m视频帧抽取完成: %s_截屏00%s.png\033[0m' % (fileName[0], str(_index + 1)))
+            print('----\033[0;36;40m视频帧抽取完成: %s_截屏00%s.png\033[0m' % (fileName[0], str(_index + 1)))
             _index += 1
         return pics

@@ -2,7 +2,7 @@ import datetime
 import time
 
 
-class Timer:
+class MyTimer:
     # 得到13位时间戳
     def getTimer13(time_str:str):
         # 生成13时间戳   eg:1557842280000

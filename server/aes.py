@@ -1,7 +1,7 @@
 import base64
 from Crypto.Cipher import AES
 
-class Aes:
+class MyAes:
     """
     处理使用PKCS7填充过的数据
     :param text: 解密后的字符串

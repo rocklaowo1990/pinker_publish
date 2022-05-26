@@ -1,12 +1,13 @@
 import json
+from xml.dom.expatbuilder import Rejecter
 import requests
 import hashlib
 import json
-from server.aes import Aes
-from server.timer import Timer
+from server.aes import MyAes
+from server.timer import MyTimer
 
 
-class Api:
+class MyApi:
     # 获取平台配置
     def config(api_url: str):
         data = {}
@@ -24,21 +25,21 @@ class Api:
                 res_suss = 3
             except requests.exceptions.RequestException:
                 res_suss += 1
-                print('\033[0;32;40m----连接失败,3秒后重连\033[0m')
-                Timer.waitTime(3)
+                print('----连接失败,3秒后重连')
+                MyTimer.waitTime(3)
 
         data['enKey'] = 'pinker.' + res_json['data']['encryptConfig']['enKey']
         data['iv'] = 'pinker.' + res_json['data']['encryptConfig']['iv']
-        accessKey = Aes.decrypt(
+        accessKey = MyAes.decrypt(
             data['enKey'], res_json['data']['awsConfig']['accessKey'], data['iv'])
         data['accessKey'] = accessKey
-        region = Aes.decrypt(
+        region = MyAes.decrypt(
             data['enKey'], res_json['data']['awsConfig']['region'], data['iv'])
         data['region'] = region
-        secretKey = Aes.decrypt(
+        secretKey = MyAes.decrypt(
             data['enKey'], res_json['data']['awsConfig']['secretKey'], data['iv'])
         data['secretKey'] = secretKey
-        bucket = Aes.decrypt(
+        bucket = MyAes.decrypt(
             data['enKey'], res_json['data']['awsConfig']['bucket'], data['iv'])
         data['bucket'] = bucket
         if res.status_code == 200:
@@ -79,23 +80,21 @@ class Api:
             except requests.exceptions.RequestException:
                 res_suss += 1
                 print('----连接失败,3秒后重连')
-                Timer.waitTime(3)
+                MyTimer.waitTime(3)
 
         if res.status_code == 200:
             if res_json['code'] == 200:
-                print('----\033[0;32;40m账号: ' + account + '登录成功\033[0m')
+                print('----\033[0;32;40m登录成功\033[0m')
                 return str(res_json['data']['token'])
             else:
-                print('----\033[0;37;41m账号 ' + account +
-                      ' 登录失败 ' + res_json['msg'] + '\033[0m')
+                print('----\033[0;37;41m登录失败: ' + res_json['msg'] + '\033[0m')
                 return '-1'
         else:
-            print('----\033[0;37;41m账号: ' + account + ' 登录失败 ---- code: ' +
-                  res.status_code + ' ---- 错误信息: ' + res.text + '\033[0m')
+            print('----\033[0;37;41m登录失败  code: ' +
+                  res.status_code + '  错误信息: ' + res.text + '\033[0m')
             return ''
 
     # 后台登录接口
-
     def loginServer(server_url: str, account: str, password: str):
         url = '/webapi/account/login'
         headers = {
@@ -118,19 +117,18 @@ class Api:
             except requests.exceptions.RequestException:
                 res_suss += 1
                 print('----连接失败,3秒后重连')
-                Timer.waitTime(3)
+                MyTimer.waitTime(3)
 
         if res.status_code == 200:
             if res_json['code'] == 200:
-                print('后台账号: ' + account + '登录成功')
-
+                print('----\033[0;32;40m后台账号: ' + account + '登录成功\033[0m')
                 return str(res_json['data']['token'])
             else:
-                print('后台账号 ' + account + ' 登录失败 ' + res_json['msg'])
+                print('----\033[0;37;41m后台账号 ' + account + ' 登录失败 ' + res_json['msg'] + '\033[0m')
                 return '-1'
         else:
-            print('后台账号: ' + account + ' 登录失败 ---- code: ' +
-                  res.status_code + ' ---- 错误信息: ' + res.text)
+            print('----\033[0;37;41m后台账号: ' + account + ' 登录失败 ---- code: ' +
+                  res.status_code + ' ---- 错误信息: ' + res.text + '\033[0m')
             return ''
 
     # 获取分组信息
@@ -152,23 +150,23 @@ class Api:
             except requests.exceptions.RequestException:
                 res_suss += 1
                 print('----连接失败,3秒后重连')
-                Timer.waitTime(3)
+                MyTimer.waitTime(3)
 
         if res.status_code == 200:
             if res_json['code'] == 200:
-                print('----\033[0;32;40m用户 %s 订阅组信息获取成功\033[0m' % account)
+                print('----\033[0;32;40m订阅组信息获取成功\033[0m')
                 return res_json['data']['list']
             elif res_json['code'] == 1:
                 print(
                     '----\033[0;33;40m用户 %s 的 token 过期,正在重新登录\033[0m' % account)
                 return 1
             else:
-                print('----\033[0;37;41m用户 %s 订阅组信息获取失败: %s\033[0m' %
-                      (account, res_json['msg']))
+                print('----\033[0;37;41m订阅组信息获取失败: %s\033[0m' %
+                      res_json['msg'])
                 return []
         else:
-            print('----\033[0;37;41m用户 %s 的订阅组信息获取失败 ---- code: %s ---- 错误信息: %s\033[0m' %
-                  (account, res.text, res.status_code))
+            print('----\033[0;37;41m订阅组信息获取失败  code: %s  错误信息: %s\033[0m' %
+                  (res.text, res.status_code))
             return []
 
     # 发推接口
@@ -190,21 +188,145 @@ class Api:
             except requests.exceptions.RequestException:
                 res_suss += 1
                 print('----连接失败,3秒后重连')
-                Timer.waitTime(3)
+                MyTimer.waitTime(3)
 
         if res.status_code == 200:
             if res_json['code'] == 200:
-                print('--------\033[0;32;40m用户 %s 推文发布成功\033[0m' % account)
+                print('----\033[0;32;40m推文发布成功\033[0m')
                 return 200
             elif res_json['code'] == 1:
-                print('----\033[0;33;40m用户 %s 的 token 过期,正在重新登录\033[0m' % account)
+                print(
+                    '----\033[0;33;40m用户 %s 的 token 过期,正在重新登录\033[0m' % account)
                 return 1
             else:
-                print('----\033[0;37;41m用户 %s 推文发布失败 %s\033[0m' % (account, res_json['msg']))
+                print('----\033[0;37;41m推文发布失败 %s\033[0m' % res_json['msg'])
                 return -1
         else:
-            print('----\033[0;37;41m用户 %s 推文发布失败 ---- code: %s ---- 错误信息: %s\033[0m' %
-                  (account, res.text, res.status_code))
+            print('----\033[0;37;41m推文发布失败  code: %s  错误信息: %s\033[0m' %
+                  (res.text, res.status_code))
+            return -1
+
+
+    # 作品列表
+    def getContentList(api_url: str, token: str, pageNo: int, pageSize: int):
+        url = '/api/content/userHomeContentList'
+        headers = {
+            'Content-Type': 'application/json',
+            'token': token
+        }
+
+        print('正在获取推文列表的第 %d 页...' % pageNo)
+
+        data = {}
+        data['pageNo'] = pageNo
+        data['pageSize'] = pageSize
+        data['type'] = 1
+
+
+        res_suss = 0
+        while res_suss < 3:
+            try:
+                res = requests.get(
+                    api_url + url, headers=headers, params=data, verify=False)
+                res_json = res.json()
+                res_suss = 3
+            except requests.exceptions.RequestException:
+                res_suss += 1
+                print('----连接失败,3秒后重连')
+                MyTimer.waitTime(3)
+
+        return_data= []
+
+        if res.status_code == 200:
+            if res_json['code'] == 200:
+                print('----\033[0;32;40m获取推文列表成功\033[0m')
+                return_data = res_json['data']['list']
+                return return_data
+            else:
+                print('----\033[0;37;41m获取推文列表失败 %s\033[0m' % res_json['msg'])
+                return return_data
+        else:
+            print('----\033[0;37;41m获取推文列表失败  code: %s  错误信息: %s\033[0m' %
+                  (res.text, res.status_code))
+            return return_data
+
+    # 作品列表
+    def getContentSize(api_url: str, token: str):
+        url = '/api/content/userHomeContentList'
+        headers = {
+            'Content-Type': 'application/json',
+            'token': token
+        }
+        print('正在获取推文的数量...')
+
+        data = {}
+        data['pageNo'] = 1
+        data['pageSize'] = 1
+        data['type'] = 1
+
+
+        res_suss = 0
+        while res_suss < 3:
+            try:
+                res = requests.get(
+                    api_url + url, headers=headers, params=data, verify=False)
+                res_json = res.json()
+                res_suss = 3
+            except requests.exceptions.RequestException:
+                res_suss += 1
+                print('----连接失败,3秒后重连')
+                MyTimer.waitTime(3)
+
+        return_data= 0
+
+        if res.status_code == 200:
+            if res_json['code'] == 200:
+                print('----\033[0;32;40m获取推文的数量成功\033[0m')
+                print('----\033[0;32;40m推文的数量: %s \033[0m' % res_json['data']['totalSize'])
+                return_data = res_json['data']['totalSize']
+                return return_data
+            else:
+                print('----\033[0;37;41m获取推文的数量失败 %s\033[0m' % res_json['msg'])
+                return return_data
+        else:
+            print('----\033[0;37;41m获取推文的数量失败  code: %s  错误信息: %s\033[0m' %
+                  (res.text, res.status_code))
+            return return_data
+
+    # 作品列表
+    def contentDel(api_url: str, token: str, wid:int):
+        url = '/api/content/contentDel'
+        headers = {
+            'Content-Type': 'application/x-www-form-urlencoded',
+            'token': token
+        }
+        print('正在删除推文...')
+
+        data = {}
+        data['wid'] = wid
+      
+        res_suss = 0
+        while res_suss < 3:
+            try:
+                res = requests.post(
+                    api_url + url, headers=headers, data=data, verify=False)
+                res_json = res.json()
+                res_suss = 3
+            except requests.exceptions.RequestException:
+                res_suss += 1
+                print('----连接失败,3秒后重连')
+                MyTimer.waitTime(3)
+
+        if res.status_code == 200:
+            if res_json['code'] == 200:
+                print('----\033[0;32;40m推文删除成功\033[0m')
+                return 200
+            else:
+                print('----\033[0;37;41m推文删除失败 %s\033[0m' % res_json['msg'])
+                return -1
+        else:
+            print('----\033[0;37;41m推文删除失败  code: %s  错误信息: %s\033[0m' %
+                  (res.text, res.status_code))
             return -1
 
     # 检查账号是否重复
@@ -227,20 +349,19 @@ class Api:
                 res_suss = 3
             except requests.exceptions.RequestException:
                 res_suss += 1
-                print('连接失败,3秒后重连')
-                Timer.waitTime(3)
+                print('----连接失败,3秒后重连')
+                MyTimer.waitTime(3)
 
         if res.status_code == 200:
             if res_json['code'] == -1:
-                print('账号 %s 可以注册 %s' % (account, res_json['msg']))
+                print('----\033[0;32;40m账号 %s 可以注册 %s\033[0m' % (account, res_json['msg']))
                 return 200
             else:
-                print('账号 %s 已经存在,或者出现了其他错误,错误代码: %d' %
+                print('----\033[0;37;41m账号 %s 已经存在,或者出现了其他错误,错误代码: %d\033[0m' %
                       (account, res_json['code']))
                 return -1
         else:
-            print('检测账号 %s 是否存在时与服务器连接失败 ---- code: ' +
-                  res.status_code + ' ---- 错误信息: ' + res.text % account)
+            print('----\033[0;37;41m检测账号 %s 时与服务器连接失败 ---- code: %d ---- 错误信息: %s\033[0m' % (account, res.status_code, res.text))
             return 404
 
     # 注册接口
@@ -278,25 +399,24 @@ class Api:
                 res_suss = 3
             except requests.exceptions.RequestException:
                 res_suss += 1
-                print('连接失败,3秒后重连')
-                Timer.waitTime(3)
+                print('----连接失败,3秒后重连')
+                MyTimer.waitTime(3)
 
         if res.status_code == 200:
             if res_json['code'] == 200:
-                print('账号 %s 创建成功' % account)
+                print('----\033[0;32;40m账号 %s 创建成功\033[0m' % account)
                 return 200
             else:
-                print('账号 %s 创建失败' % account)
+                print('----\033[0;37;41m账号 %s 创建失败\033[0m' % account)
                 return -1
         else:
-            print('创建账号 %s 时与服务器连接失败 ---- code: ' +
-                  res.status_code + ' ---- 错误信息: ' + res.text % account)
+            print('----\033[0;37;41m创建账号 %s 时与服务器连接失败 ---- code: %d ---- 错误信息: %s\033[0m' % (account, res.status_code, res.text))
             return -1
 
     # 修改用户信息
     def userInfo(api_url: str, token: str, avatar: str, nickName: str, birthday: str, intro: str):
         _birthday = birthday + ' 00:00:00'
-        time_stamp = Timer.getTimer13(_birthday)
+        time_stamp = MyTimer.getTimer13(_birthday)
         url = '/api/user/updateUserInfo'
         headers = {
             'Content-Type': 'application/x-www-form-urlencoded',
@@ -319,19 +439,19 @@ class Api:
                 res_suss = 3
             except requests.exceptions.RequestException:
                 res_suss += 1
-                print('连接失败,3秒后重连')
-                Timer.waitTime(3)
+                print('----连接失败,3秒后重连')
+                MyTimer.waitTime(3)
 
         if res.status_code == 200:
             if res_json['code'] == 200:
-                print('用户信息更新成功')
+                print('----\033[0;32;40m用户信息更新成功\033[0m')
                 return 200
             else:
-                print('用户信息更新失败 XXXXXX')
+                print('----\033[0;37;41m用户信息更新失败\033[0m')
                 return -1
         else:
-            print('用户信息更新失败 ---- code: ' +
-                  res.status_code + ' ---- 错误信息: ' + res.text)
+            print('----\033[0;37;41m用户信息更新失败 ---- code: ' +
+                  res.status_code + ' ---- 错误信息: ' + res.text + '\033[0m')
             return -1
 
     # 添加订阅组
@@ -358,17 +478,17 @@ class Api:
                 res_suss = 3
             except requests.exceptions.RequestException:
                 res_suss += 1
-                print('连接失败,3秒后重连')
-                Timer.waitTime(3)
+                print('----连接失败,3秒后重连')
+                MyTimer.waitTime(3)
 
         if res.status_code == 200:
             if res_json['code'] == 200:
-                print('分组 %s 创建成功' % groupName)
+                print('----\033[0;32;40m分组 %s 创建成功\033[0m' % groupName)
                 return 200
             else:
-                print('分组 %s 创建失败' % groupName)
+                print('----\033[0;37;41m分组 %s 创建失败\033[0m' % groupName)
                 return -1
         else:
-            print('分组创建失败 ---- code: ' + res.status_code +
-                  ' ---- 错误信息: ' + res.text)
+            print('----\033[0;37;41m分组创建失败 ---- code: ' + res.status_code +
+                  ' ---- 错误信息: ' + res.text + '\033[0m')
             return -1
