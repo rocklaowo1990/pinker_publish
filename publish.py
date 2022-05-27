@@ -67,7 +67,7 @@ for root_file in root_files:
         continue
     else:
         print('----\033[0;32;40m找到 user.txt 文件正在读取...\033[0m')
-        with open(user_txt_path, encoding='UTF-8', errors='ignore') as user_info_open:
+        with open(user_txt_path) as user_info_open:
             user_info = json.loads(user_info_open.read().strip())
         user_info_open.close()
 
@@ -115,7 +115,7 @@ for root_file in root_files:
             continue
         else:
             print('----\033[0;32;40m找到 content.txt 文件正在读取...\033[0m')
-            with open(content_txt_path, encoding='UTF-8', errors='ignore') as content_info_open:
+            with open(content_txt_path) as content_info_open:
                 content_info = json.loads(content_info_open.read().strip())
             content_info_open.close()
 
@@ -128,7 +128,7 @@ for root_file in root_files:
         
         medias = os.listdir(task_path)
 
-        MyUtil.getMedia(medias)
+        MyUtil.getFile(medias)
 
         MyUtil.rename(medias, task_path)
 
@@ -179,10 +179,10 @@ for root_file in root_files:
         contents_all += 1
 
         # 算出最大的推文数量
-        if(len(data['contents']) > index_max):
+        if len(data['contents']) > index_max:
             index_max = len(data['contents'])
-
-    users.append(data)
+    if data['contents'] != []:
+        users.append(data)
     
 
 
@@ -387,7 +387,7 @@ while index < index_max:
             elif content_info['payPermissionType'] == 1:
                 publish_data['payPermissionType'] = 1
                 if groups == []:
-                    print('\033[0;37;41m没有找到相关的订阅组设置,跳过处理...\033[0m')
+                    print('----\033[0;37;41m没有找到相关的订阅组设置,跳过处理...\033[0m')
                     continue
                 else:
                     for group in groups:
@@ -395,22 +395,25 @@ while index < index_max:
                             publish_data['payGroupId'] = group['groupId']
                             break
                 if not 'payGroupId' in publish_data.keys():
-                    print('\033[0;37;41m没有找到相关的订阅组设置,跳过处理...\033[0m')
-                    continue
+                    print('----\033[0;37;41m订阅组设置不正确, 改为订阅第一个分组...\033[0m')
+                    publish_data['payGroupId'] = groups[0]['groupId']
+
 
             elif content_info['payPermissionType'] == 2 or content_info['payPermissionType'] == 3:
                 publish_data['payPermissionType'] = content_info['payPermissionType']
                 if groups == []:
-                    print('\033[0;37;41m没有找到相关的订阅组设置,跳过处理...\033[0m')
-                    continue
+                    print('----\033[0;37;41m订阅组设置不正确, 改为订阅第一个分组...\033[0m')
+                    publish_data['payGroupId'] = groups[0]['groupId']
+
                 else:
                     for group in groups:
                         if group['groupName'] == content_info['payGroupIdName']:
                             publish_data['payGroupId'] = group['groupId']
                             break
                 if not 'payGroupId' in publish_data.keys():
-                    print('\033[0;37;41m没有找到相关的订阅组设置,跳过处理...\033[0m')
-                    continue
+                    print('----\033[0;37;41m订阅组设置不正确, 改为订阅第一个分组...\033[0m')
+                    publish_data['payGroupId'] = groups[0]['groupId']
+
                 publish_data['payPrice'] = content_info['payPrice']
 
             elif content_info['payPermissionType'] == 4:
@@ -467,14 +470,6 @@ while index < index_max:
                     else:
                         print('----\033[0;37;41m%s 图片被损坏, 无法继续发推, 跳过处理...\033[0m' % media_path)
                         continue
-                    
-                    
-
-                publish_data['video'] = '{"url":"%s","format":"%s","duration":"%s","snapshot_url":"%s","previews_urls":"%s,%s,%s"}' % (video_url, MyUtil.getType(
-                    video_path), video_duration, data_pics[0], data_pics[0], data_pics[1], data_pics[2])
-                    
-
-                
 
                 # 检查视频文件的完整性
                 check_video = MyUtil.checkVideo(video_path)
@@ -500,8 +495,9 @@ while index < index_max:
                 video_md5 = MyUtil.getFileMd5(video_path)
                 video_url = 'public/' + video_md5 + '.' + MyUtil.getType(video_path)
 
+                publish_data['video'] = '{"url":"%s","format":"%s","duration":"%s","snapshot_url":"%s","previews_urls":"%s,%s,%s"}' % (video_url, MyUtil.getType(
+                    video_path), video_duration, data_pics[0], data_pics[0], data_pics[1], data_pics[2])
                 
-
             # 如果是空的,说明没有视频,那就当成图片推文去发
             else:
                 if content_info['payPermissionType'] != 0 and pics_path < 4:
@@ -529,16 +525,16 @@ while index < index_max:
             publish = MyApi.publish(api_url, token, publish_data, account)
 
             if publish == 1:
-                login = MyApi.login(api_url, account, password, enKey)
-                work['token'] = login
-                token = login
+                token = MyApi.login(api_url, account, password, enKey)
+                work['token'] = token
                 publish = MyApi.publish(api_url, token, publish_data, account)
-                if login == '' or login == '-1':
+                if token == '' or token == '-1':
                     continue
             elif publish == 200:
                 succ += 1
                 # 创建标记,标记为已经处理过
-                passFlie = open(work['contents'][index]['path'] + 'pass', 'w')
+                pass_write_pass = os.path.join(work['contents'][index]['path'], 'pass')
+                passFlie = open(pass_write_pass, 'w')
                 passFlie.close()
 
             if video_path != '' and is_can_delete:

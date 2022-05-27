@@ -100,11 +100,7 @@ class MyVideo:
               start_time, play_time, video_path, fileName[0] + '_截屏00' + str(_index + 1) + '.png')
             print('即将抽取视频帧...')
             MyTimer.waitTime(1)
-            isRun = os.system(compress)
-            thr = threading.Thread(target = isRun)
-            thr.start()
-            thr.join()
-            
+            os.system(compress)
             pics.append(fileName[0] + '_截屏00' + str(_index + 1) + '.png')
             print('----\033[0;36;40m视频帧抽取完成: %s_截屏00%s.png\033[0m' % (fileName[0], str(_index + 1)))
             _index += 1

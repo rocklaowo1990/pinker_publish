@@ -33,7 +33,7 @@ else:
         task_data = {}
 
         if '.txt'.upper() in task_file.upper():
-            with open(task_path, encoding='UTF-8', errors='ignore') as info_open:
+            with open(task_path) as info_open:
                 info_json = json.loads(info_open.read().strip())
                 if not 'account' in info_json or not 'password' in info_json:
                     print('----\033[0;33;40m用户信息文件不太正常, 跳过处理...\033[0m')

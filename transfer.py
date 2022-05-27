@@ -46,7 +46,7 @@ for tasks_file in tasks_files:
         continue
     else:
         print('----\033[0;32;40m找到 user.txt 文件正在读取...\033[0m')
-        with open(user_txt_path, encoding='UTF-8', errors='ignore') as user_info_open:
+        with open(user_txt_path) as user_info_open:
             in_info = json.loads(user_info_open.read().strip())
         user_info_open.close()
 
@@ -75,7 +75,7 @@ for tasks_file in tasks_files:
         for task_file in task_files:
             task_path = os.path.join(outs_path, task_file)
             if '.txt'.upper() in task_file.upper():
-                with open(task_path, encoding='UTF-8', errors='ignore') as out_info_open:
+                with open(task_path) as out_info_open:
                     out_info = json.loads(out_info_open.read().strip())
                     out_info_infos.append(out_info)
                     out_info_paths.append(task_path)

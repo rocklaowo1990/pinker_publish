@@ -82,12 +82,12 @@ class MyUtil:
 
 
     def checkVideo(file: str):
-        print('----正在检查视频文件的完整性: %s' % file)
+        print('正在检查视频文件的完整性: %s' % file)
 
         try:
             vid = cv2.VideoCapture(file)
             if not vid.isOpened():
-                print('\033[0;37;41m视频文件存在问题\033[0m')
+                print('----\033[0;37;41m视频文件存在问题\033[0m')
                 return -1
                 # print('Just a Dummy Exception, write your own')
             print('----\033[0;32;40m视频文件正常\033[0m')

@@ -13,7 +13,7 @@ for file in files:
     medias_txt = ''
     # 读取下载历史数据
     if file == 'config.txt':
-        with open(file, encoding='UTF-8', errors='ignore') as medias_txt_open:
+        with open(file) as medias_txt_open:
             for media_txt_open in medias_txt_open.readlines():
                 media_txt_open = media_txt_open.strip('\n')
                 medias.append(media_txt_open)

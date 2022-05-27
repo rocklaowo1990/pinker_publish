@@ -72,6 +72,6 @@ class MyRequests:
                         fd.write(chunk)
                 print('----\033[0;32;40m文件下载完成...' + '(' +
                 time.strftime("%Y-%m-%d %H:%M:%S", time.localtime()) + ')\033[0m')
-                with open(works_path  + 'config.txt', 'a') as f:
+                with open(os.path.join(works_path, 'config.txt'), 'a') as f:
                     f.write(url + '\n')
         
