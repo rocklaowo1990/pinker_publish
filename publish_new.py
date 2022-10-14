@@ -10,58 +10,45 @@ from server.aws import MyAws
 from server.timer import MyTimer
 from server.util import MyUtil
 from server.video import MyVideo
-#-------------------------------------------------------------------------------
+
 # 正式代码
 # 从这里开始执行
 # 入口
 # root_path: 文件所在的根目录
-#-------------------------------------------------------------------------------
-
 root_path = dirname(abspath(__file__))
 
-#-------------------------------------------------------------------------------
 # 判断根目录是不是有特殊字符
-#-------------------------------------------------------------------------------
-
 for i in root_path:
     if not (i.isalnum() or '\u4e00' <= i <= '\u9fa5' or i == '/' or i == '\\'
             or i == ':'):
         print('\033[0;37;41m移动硬盘名字或主文件夹名字包含特殊字符,需要手动修改\033[0m')
         exit()
 
-#-------------------------------------------------------------------------------
-# 先：去遍历根目录里的所有文件，也包括文件夹
-# 然后：找出根目录里所有的文件夹
-# 文件夹：每一个文件夹代表一个用户
-#-------------------------------------------------------------------------------
-
+# 找出根目录里所有的文件夹
+# 每一个文件夹代表一个用户
 root_files = os.listdir()
 
-#-------------------------------------------------------------------------------
 # 找出根目录的所有文件夹
 # 并且文件夹的名称必须合法，例如sever 或者带 下划线的文件夹将被剔除
-#-------------------------------------------------------------------------------
-
 MyUtil.getFolder(root_files, '')
 
-#-------------------------------------------------------------------------------
 # 如果没找到任何合法的文件夹程序退出
-#-------------------------------------------------------------------------------
-
 if root_files == []:
     print('\033[0;37;41m本次没有需要执行的任务,已退出程序...\033[0m')
     exit()
 
-#-------------------------------------------------------------------------------
 # 判断文件夹的名字是否合法
 # 不合法的将进行修改
-#-------------------------------------------------------------------------------
-
 MyUtil.rename(root_files, '')
 
-users = []  # 用户列表
-contents_all = 0  # 需要处理的所有推文数量
-index_max = 0  # 找出推文最多的数量
+# 用户列表
+users = []
+
+# 需要处理的所有推文数量
+contents_all = 0
+
+# 找出推文最多的数量
+index_max = 0
 
 # 遍历根目录
 for root_file in root_files:
@@ -74,21 +61,17 @@ for root_file in root_files:
     )
     print('正在检索用户文件夹: %s' % root_file)
 
-    # 找到 user.txt 的路径
     user_txt_path = os.path.join(root_file, 'user.txt')
 
-    # 查找 user.txt 是否存在
     if not os.path.exists(user_txt_path):
         print('----\033[0;33;40m没有找到 user.txt 文件,跳过该用户...\033[0m')
         continue
     else:
         print('----\033[0;32;40m找到 user.txt 文件正在读取...\033[0m')
         with open(user_txt_path) as user_info_open:
-            # 读取 user.txt 里面的账号和密码信息
             user_info = json.loads(user_info_open.read().strip())
         user_info_open.close()
 
-    # 判断一下账号信息是不是完整的
     if not 'account' in user_info or not 'password' in user_info:
         print('----\033[0;33;40m用户的数据存在问题...\033[0m')
         print('----\033[0;33;40m有问题的文件路径: [ %s ]\033[0m' % user_txt_path)
@@ -126,7 +109,6 @@ for root_file in root_files:
         # 初始化数据
         content_info = {}
 
-        # 找到并读取 content.txt
         content_txt_path = os.path.join(task_path, 'content.txt')
         if not os.path.exists(content_txt_path):
             print('----\033[0;33;40m没有找到 content.txt 文件, 跳过处理...\033[0m')
@@ -145,9 +127,10 @@ for root_file in root_files:
         else:
             print('----\033[0;32;40m推文数据读取成功...\033[0m')
 
-        # 开始读取文件夹里的媒体文件
         medias = os.listdir(task_path)
+
         MyUtil.getFile(medias)
+
         MyUtil.rename(medias, task_path)
 
         # 推文数据初始化
@@ -195,18 +178,14 @@ for root_file in root_files:
         if content_info != {} and (content_data_video != ''
                                    or content_data_pics != []):
             data['contents'].append(content_data)
-            contents_all += 1
+
+        contents_all += 1
 
         # 算出最大的推文数量
         if len(data['contents']) > index_max:
             index_max = len(data['contents'])
-    # 统计用户数量
     if data['contents'] != []:
         users.append(data)
-
-#-------------------------------------------------------------------------------
-# 检测完成
-#-------------------------------------------------------------------------------
 
 print('本次要处理的用户: \033[0;32m' + str(len(users)) + ' \033[0m推文总数量: \033[0;32m' +
       str(contents_all) + ' \033[0m')
@@ -221,7 +200,7 @@ while not environment:
     environment_input = input('请输入环境(0: 测试环境  1: 正式环境): ')
     if environment_input == '' or environment_input == '0':
         print('----\033[0;36;40m资源将上传到测试环境服务器\033[0m')
-        api_url = 'https://www.pkappdev.xyz'
+        api_url = 'https://www.pkappsim.xyz'
         environment = True
     elif environment_input == '1':
         print('----\033[0;36;40m资源将上传到正式环境服务器\033[0m')
@@ -318,9 +297,6 @@ print('~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~')
 print('即将开始执行发推程序...')
 MyTimer.waitTime(publish_time)
 
-# ==============================#
-# 开始发推
-# ==============================#
 # 读取加密设置
 # aws 桶信息
 # salt 信息
@@ -359,7 +335,7 @@ while index < index_max:
             password = work['info']['password']
             token = work['token']
             video_path = work['contents'][index]['video']
-            pics_path = work['contents'][index]['pics']
+            pics_path = list(work['contents'][index]['pics'])
             video_duration = work['contents'][index]['duration']
             groups = work['groups']
             print(
@@ -462,11 +438,8 @@ while index < index_max:
                 # 默认Flase,不可以删除
                 is_can_delete = False
 
-                # 抽取视图片
-                if 3 - len(pics_path) > 0:
-                    video_pics = MyVideo.getImage(video_path, video_duration,
-                                                  len(pics_path))
-                    pics_path.extend(video_pics)
+                first_image = MyVideo.getFirstImage(video_path)
+                pics_path.append(first_image)
 
                 # 判断是否需要压缩
                 if commpress_type == 1:
@@ -482,27 +455,46 @@ while index < index_max:
                         video_path = compress_video
                         is_can_delete = True
 
-                for pic_path in pics_path[:3]:
-                    is_image = MyUtil.is_image(pic_path)
-                    if is_image:
-                        pic_md5 = MyUtil.getFileMd5(pic_path)
-                        pic_upload = MyAws.upload(pic_path,
-                                                  MyUtil.getType(pic_path),
-                                                  accessKey, secretKey, region,
-                                                  bucket)
-                        if pic_upload == '-1':
-                            pic_upload = MyAws.upload_s3(
-                                pic_path, MyUtil.getType(pic_path), accessKey,
-                                secretKey, region, bucket)
-                        if pic_upload == '-1':
-                            print(
-                                '\033[0;37;41m图片上传失败,无法继续执行发推,跳过处理...\033[0m')
-                            continue
-
-                        data_pics.append('media/image/org/' + pic_md5 + '.' +
-                                         MyUtil.getType(pic_path))
-                    else:
+                print('正在检查封面图片的完整性: %s' % pics_path[0])
+                is_image = MyUtil.is_image(pics_path[0])
+                if is_image:
+                    pic_md5 = MyUtil.getFileMd5(pics_path[0])
+                    pic_upload = MyAws.upload(pics_path[0],
+                                              MyUtil.getType(pics_path[0]),
+                                              accessKey, secretKey, region,
+                                              bucket)
+                    if pic_upload == '-1':
+                        pic_upload = MyAws.upload_s3(
+                            pics_path[0], MyUtil.getType(pics_path[0]),
+                            accessKey, secretKey, region, bucket)
+                    if pic_upload == '-1':
+                        print('\033[0;37;41m图片上传失败,无法继续执行发推,跳过处理...\033[0m')
                         continue
+
+                    data_pics.append('media/image/org/' + pic_md5 + '.' +
+                                     MyUtil.getType(pic_path))
+                else:
+                    continue
+
+                print('正在检查首帧图片文件的完整性: %s' % pics_path[-1])
+                is_image = MyUtil.is_image(pics_path[-1])
+                if is_image:
+                    pic_md5 = MyUtil.getFileMd5(pics_path[-1])
+                    pic_upload = MyAws.upload(pics_path[-1],
+                                              MyUtil.getType(pics_path[-1]),
+                                              accessKey, secretKey, region,
+                                              bucket)
+                    if pic_upload == '-1':
+                        pic_upload = MyAws.upload_s3(
+                            pics_path[-1], MyUtil.getType(pics_path[-1]),
+                            accessKey, secretKey, region, bucket)
+                    if pic_upload == '-1':
+                        print('\033[0;37;41m图片上传失败,无法继续执行发推,跳过处理...\033[0m')
+                        continue
+                    data_pics.append('media/image/org/' + pic_md5 + '.' +
+                                     MyUtil.getType(pic_path))
+                else:
+                    continue
 
                 # 检查视频文件的完整性
                 check_video = MyUtil.checkVideo(video_path)
@@ -536,9 +528,9 @@ while index < index_max:
                     video_path)
 
                 publish_data[
-                    'video'] = '{"url":"%s","format":"%s","duration":"%s","snapshot_url":"%s","previews_urls":"%s,%s,%s"}' % (
+                    'video'] = '{"url":"%s","format":"%s","duration":"%s","snapshot_url":"%s","first_frame_url":"%s"}' % (
                         video_url, MyUtil.getType(video_path), video_duration,
-                        data_pics[0], data_pics[0], data_pics[1], data_pics[2])
+                        data_pics[0], data_pics[-1])
 
             # 如果是空的,说明没有视频,那就当成图片推文去发
             else:

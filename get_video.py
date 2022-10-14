@@ -12,7 +12,7 @@ files = os.listdir()
 for file in files:
     medias_txt = ''
     # 读取下载历史数据
-    if file == 'config.txt':
+    if file == 'video_history.txt':
         with open(file) as medias_txt_open:
             for media_txt_open in medias_txt_open.readlines():
                 media_txt_open = media_txt_open.strip('\n')
@@ -33,10 +33,8 @@ if requests_home.status_code == 200:
     home_obj = etree.HTML(requests_home.text)
 
     # 拿到二级页面的所有地址
-    secondary_tiles = list(home_obj.xpath(
-        '//td[@class="fb-n"]/a/text()'))
-    secondary_urls = list(home_obj.xpath(
-        '//td[@class="fb-n"]/a/@href'))
+    secondary_tiles = list(home_obj.xpath('//td[@class="fb-n"]/a/text()'))
+    secondary_urls = list(home_obj.xpath('//td[@class="fb-n"]/a/@href'))
 
     print('请选择要下载的目录:')
     index = 0
@@ -51,28 +49,23 @@ if requests_home.status_code == 200:
         if index_input == '' or index_input == '0':
             index = 0
             input_true = True
-            print('----\033[0;36;40m即将开始下载目录 %s 的资源\033[0m' % secondary_tiles[index])
+            print('----\033[0;36;40m即将开始下载目录 %s 的资源\033[0m' %
+                  secondary_tiles[index])
 
         elif index_input.isdigit():
             if int(index_input) < len(secondary_tiles) - 1:
                 index = int(index_input)
                 input_true = True
-                print('----\033[0;36;40m即将开始下载目录 %s 的资源\033[0m\033[0m' % secondary_tiles[index])
+                print('----\033[0;36;40m即将开始下载目录 %s 的资源\033[0m\033[0m' %
+                      secondary_tiles[index])
             else:
-                print('----\033[0;37;41m请输入 0 - %d 之间的数字...\033[0m' % (len(secondary_tiles) - 1))
-                
+                print('----\033[0;37;41m请输入 0 - %d 之间的数字...\033[0m' %
+                      (len(secondary_tiles) - 1))
 
         else:
             print('----\033[0;37;41m请输入数字...\033[0m')
-
 
     # 根据选择的目录进行下载
     down_path = os.path.join('videos', secondary_tiles[index])
     down_url = home_url + secondary_urls[index]
     MyRequests.parse(down_url, down_path, '/', medias, '')
-    
-
-
-
-
-    

@@ -1,4 +1,3 @@
-
 import imghdr
 import json
 import os
@@ -8,7 +7,6 @@ from server.aws import MyAws
 from server.timer import MyTimer
 from server.util import MyUtil
 
-
 # 找出根目录里所有的文件夹
 # 每一个文件夹代表一个用户
 # users: 用户
@@ -17,13 +15,14 @@ user_files = os.listdir()
 MyUtil.getFolder(user_files, '')
 MyUtil.rename(user_files, '')
 
-'''
-变量区: 
-users: 用户集合,需要处理的所有用户数量
-token_server: 后台的token
-api_url: api 的接口地址
-server_url: 后台的接口地址
-'''
+#-------------------------------------------------------------------------------
+# 变量区:
+# users: 用户集合,需要处理的所有用户数量
+# token_server: 后台的token
+# api_url: api 的接口地址
+# server_url: 后台的接口地址
+#-------------------------------------------------------------------------------
+
 users = []
 token_server = ''
 api_url = ''
@@ -78,7 +77,9 @@ for user_file in user_files:
         # 检查txt文件
         elif 'info.txt'.upper() in file.upper():
             # 读取josn文件
-            content_info_open = open(file_path, encoding='UTF-8', errors='ignore')
+            content_info_open = open(file_path,
+                                     encoding='UTF-8',
+                                     errors='ignore')
             data['info'] = json.loads(content_info_open.read().strip())
             content_info_open.close()
 
@@ -135,14 +136,14 @@ enKey = ''
 iv = ''
 region = ''
 
-config = MyApi.config(api_url)
-if config != '':
-    accessKey = config['accessKey']
-    secretKey = config['secretKey']
-    bucket = config['bucket']
-    enKey = config['enKey']
-    iv = config['iv']
-    region = config['region']
+get_config = MyApi.get_config(api_url)
+if get_config != '':
+    accessKey = get_config['accessKey']
+    secretKey = get_config['secretKey']
+    bucket = get_config['bucket']
+    enKey = get_config['enKey']
+    iv = get_config['iv']
+    region = get_config['region']
 else:
     print('\033[0;37;41m获取系统配置失败\033[0m')
     exit()
@@ -154,7 +155,6 @@ if logoin_server_res == '' or logoin_server_res == '-1':
     exit()
 else:
     token_server = logoin_server_res
-
 
 # 开始针对每一个用户进行处理
 # 这里开始是正式的注册业务 和 设置分组信息
@@ -175,7 +175,9 @@ for user in users:
     groups = user['info']['groups']
     pics = user['pics']
 
-    print('---------------------------------------------------------------------')
+    print(
+        '---------------------------------------------------------------------'
+    )
     print('即将处理第 %d 个用户: %s' % (user_index, account))
     MyTimer.waitTime(1)
 
@@ -185,7 +187,8 @@ for user in users:
         continue
 
     # 注册账号
-    sign_up_res = MyApi.signUp(server_url, token_server, account, password, area_code, enKey)
+    sign_up_res = MyApi.signUp(server_url, token_server, account, password,
+                               area_code, enKey)
     if sign_up_res == -1:
         print('跳过处理...')
         continue
@@ -200,14 +203,16 @@ for user in users:
 
     # 上传用户头像,并拿到地址
     avatar_md5 = MyUtil.getFileMd5(avatar_path)
-    avatar_upload = MyAws.upload(api_url, avatar_path, MyUtil.getType(
-        avatar_path), accessKey, secretKey, region, bucket)
+    avatar_upload = MyAws.upload(api_url, avatar_path,
+                                 MyUtil.getType(avatar_path), accessKey,
+                                 secretKey, region, bucket)
     if avatar_upload != '-1':
-        avatar = 'public/' + avatar_md5 + '.' + MyUtil.getType(avatar_path)
+        avatar = 'media/image/org/' + avatar_md5 + '.' + MyUtil.getType(
+            avatar_path)
 
     # 修改用户信息
-    user_info_res = MyApi.userInfo(
-        api_url, token, avatar, nikeName, birthday, intro)
+    user_info_res = MyApi.userInfo(api_url, token, avatar, nikeName, birthday,
+                                   intro)
 
     group_max = len(pics)
     if len(groups) < len(pics):
@@ -220,15 +225,16 @@ for user in users:
         pic_url = ''
         pic_md5 = MyUtil.getFileMd5(pics[group_index])
 
-
-
-        pic_upload = MyAws.upload(api_url, pics[group_index], MyUtil.getType(
-            pics[group_index]), accessKey, secretKey, region, bucket)
+        pic_upload = MyAws.upload(api_url, pics[group_index],
+                                  MyUtil.getType(pics[group_index]), accessKey,
+                                  secretKey, region, bucket)
         if pic_upload != '-1':
-            pic_url = 'public/' + pic_md5 + '.' + MyUtil.getType(avatar_path)
+            pic_url = 'media/image/org/' + pic_md5 + '.' + MyUtil.getType(
+                avatar_path)
         print(pic_url)
-        add_group_res = MyApi.addGroup(
-            api_url, token, groups[group_index]['groupName'], pic_url, groups[group_index]['amount'])
+        add_group_res = MyApi.addGroup(api_url, token,
+                                       groups[group_index]['groupName'],
+                                       pic_url, groups[group_index]['amount'])
 
         group_index += 1
 
