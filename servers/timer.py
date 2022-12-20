@@ -5,8 +5,12 @@ from servers.consol import consol
 
 
 class timer:
+    '''
+    时间的处理
+    '''
+
     # 得到13位时间戳
-    def get_stamp(time_str: str):
+    def timetuple(time_str: str):
         '''### 生成13位的时间戳'''
 
         # 将时间转成特定格式

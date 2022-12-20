@@ -1,10 +1,9 @@
 import os
-
 import cv2
 
 from servers.consol import consol
+from servers.ffmpeg import ffmpeg
 from servers.file import file
-from servers.video import video
 
 # 找出根目录里所有的文件夹
 media_files = os.listdir()
@@ -104,13 +103,12 @@ index = 1
 for target in targets:
     consol.info('正在处理第 %d 个视频' % (index))
 
-    water_mark_out_path = video.water_mark(target, water_mark_path)
+    water_mark_out_path = ffmpeg.water_mark(target, water_mark_path)
     concats = []
 
     capture = cv2.VideoCapture(water_mark_out_path)
     capture_width = capture.get(cv2.CAP_PROP_FRAME_WIDTH)
     capture_height = capture.get(cv2.CAP_PROP_FRAME_HEIGHT)
-    is_horizontal = True
 
     if capture_width > capture_height:
         concats.append(
@@ -119,19 +117,17 @@ for target in targets:
         concats.append(
             horizontal_end if horizontal_end != '' else vertical_end)
     else:
-        is_horizontal = False
-
         concats.append(
             vertical_start if vertical_start != '' else horizontal_start)
         concats.append(water_mark_out_path)
         concats.append(vertical_end if vertical_end != '' else horizontal_end)
     index += 1
 
-    concat_temp = video.concat(concats, 2, is_horizontal)
+    concat_temp = ffmpeg.concat(concats, 2)
     consol.info('删除文件：%s' % (water_mark_out_path))
     os.remove(water_mark_out_path)
 
-    video.compres_video(concat_temp)
+    ffmpeg.compres_video(concat_temp)
 
     consol.info('删除文件：%s' % (concat_temp))
     os.remove(concat_temp)

@@ -4,6 +4,10 @@ from servers.consol import consol
 
 
 class file:
+    '''
+    文件和文件夹处理
+    '''
+
     # 拿到文件后缀
     def suffix(path: str):
         '''

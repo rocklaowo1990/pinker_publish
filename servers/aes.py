@@ -2,7 +2,7 @@ import base64
 from Crypto.Cipher import AES
 
 
-class MyAes:
+class aes:
     '''
     -----------------------------------------------------------------------------------
     - 处理使用PKCS7填充过的数据

@@ -1,10 +1,12 @@
 import os
 import hashlib
 from PIL import Image
-import cv2
 
 
 class consol:
+    '''
+    控制台的输出信息
+    '''
 
     def erro(message: str):
         '''

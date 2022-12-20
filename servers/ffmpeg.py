@@ -8,7 +8,11 @@ from servers.consol import consol
 from servers.timer import timer
 
 
-class video:
+class ffmpeg:
+    '''
+    视频处理：ffmpeg
+    '''
+
     # 压缩视频文件
     def compres_video(video_path: str):
         '''
@@ -74,11 +78,20 @@ class video:
     def concat(
         video_path_list: list[str],
         main_video: int = 2,
-        is_horizontal: bool = True,
     ):
         '''
-        将多个视频拼接
+        将多个视频拼接\n
+        video_path_list: 视频地址的集合\n
+        main_video: 主视频的位置, 第1个就传1
         '''
+        is_horizontal = True
+
+        _capture = cv2.VideoCapture(video_path_list[main_video - 1])
+        _capture_width = _capture.get(cv2.CAP_PROP_FRAME_WIDTH)
+        _capture_height = _capture.get(cv2.CAP_PROP_FRAME_HEIGHT)
+
+        is_horizontal = True if _capture_width > _capture_height else False
+
         consol.info('即将合并视频组：%s, 是否横版：%s' % (video_path_list, is_horizontal))
 
         mpg_paths: list[str] = []
