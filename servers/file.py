@@ -24,7 +24,7 @@ class file:
         '''
         index = 0
         while index < len(files):
-            print('正在检查路径是否为可用文件夹: [ %s ]' % files[index])
+            consol.info('正在检查路径是否为可用文件夹: [ %s ]' % files[index])
             if not os.path.isdir(os.path.join(path, files[index])):
                 consol.erro('这不是一个文件夹, 从数据中移除...')
                 files.remove(files[index])

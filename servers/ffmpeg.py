@@ -1,5 +1,6 @@
 import math
 import os
+import platform
 import threading
 import time
 import cv2
@@ -71,6 +72,7 @@ class ffmpeg:
         thr = threading.Thread(target=lambda: isRun)
         thr.start()
         thr.join()
+
         consol.success('水印添加完成,储存位置：%s' % _out_path)
         return _out_path
 
@@ -96,7 +98,8 @@ class ffmpeg:
 
         mpg_paths: list[str] = []
 
-        concat_list = 'cat'
+        is_windows = platform.system().lower() == 'windows'
+        concat_list = 'type' if is_windows else 'cat'
 
         _out_path = ''
 
@@ -149,9 +152,7 @@ class ffmpeg:
                     if capture_height % 2 != 0:
                         capture_height -= 1
                 else:
-                    print(capture_width, capture_height)
                     size = capture_height / 1270
-                    print(size)
                     capture_height = 1270
                     capture_width = math.ceil(capture_width / size)
                     if capture_width % 2 != 0:

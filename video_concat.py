@@ -75,7 +75,7 @@ _index = 0
 while _index < len(targets):
     if targets[
             _index] in historys or 'water_mark_mpg_concat_compres' in targets[
-                _index]:
+                _index] or 'water_mark' in targets[_index]:
         consol.erro('发现已经处理过的文件：%s' % (targets[_index]))
         targets.remove(targets[_index])
     else:
@@ -121,19 +121,21 @@ for target in targets:
             vertical_start if vertical_start != '' else horizontal_start)
         concats.append(water_mark_out_path)
         concats.append(vertical_end if vertical_end != '' else horizontal_end)
-    index += 1
 
     concat_temp = ffmpeg.concat(concats, 2)
-    consol.info('删除文件：%s' % (water_mark_out_path))
-    os.remove(water_mark_out_path)
 
     ffmpeg.compres_video(concat_temp)
 
     consol.info('删除文件：%s' % (concat_temp))
     os.remove(concat_temp)
 
+    consol.info('删除文件：%s' % (water_mark_out_path))
+    os.remove(water_mark_out_path)
+
     consol.info('写入历史记录...%s' % (target))
     with open(os.path.join('', 'history.txt'), 'a') as f:
         f.write(str(target) + '\n')
+    consol.success('第 %d 个视频处理完成' % (index))
+    index += 1
 
-    consol.success('任务完成，退出程序...')
+consol.success('任务全部处理完成, 程序退出...')
