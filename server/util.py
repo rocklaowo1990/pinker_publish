@@ -57,18 +57,20 @@ class MyUtil:
     # 检查文件路径的合法性
     # 这里真是更改字符串
     def checkName(value: str):
-        print('正在检查路径名称的合法性: [ %s ]' % value)
+        MyUtil.consol('正在检查路径名称的合法性: [ %s ]' % value, 2)
         # 判断根目录是不是有特殊字符
         new = ''
         for i in value:
             if i.isalnum(
             ) or '\u4e00' <= i <= '\u9fa5' or i == '_' or i == '.':
                 new += i
+            elif i == ' ':
+                new += '_'
         if value == new:
-            print('----\033[0;32;40m路径名称正常...\033[0m')
+            MyUtil.consol('路径名称正常...', 1)
             return ''
         else:
-            print('----\033[0;33;40m检查到路径名称不合法, 名称更改为: [ %s ]\033[0m' % new)
+            MyUtil.consol('检查到路径名称不合法, 名称更改为: [ %s ]\033[0m' % new, 2)
             return new
 
     # 更改文件路径
@@ -148,3 +150,16 @@ class MyUtil:
             im = Image.open(path + '.jpg')
             out = im.resize((x_s, y_s), Image.ANTIALIAS)
             out.save(path + '.jpg')
+
+    def consol(message: str, type: int = 0):
+        color = 31
+
+        if type == 1:
+            color = 32
+        elif type == 2:
+            color = 33
+        else:
+            color = 31
+
+        print('\033[0;35;40m==\033[0;35;40m>\033[0;%d;40m %s \033[0m' %
+              (color, message))

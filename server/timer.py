@@ -1,6 +1,8 @@
 import datetime
 import time
 
+from server.util import MyUtil
+
 
 class MyTimer:
     # 得到13位时间戳
@@ -20,14 +22,16 @@ class MyTimer:
         _duration = 0
         while _duration < duration:
             if duration < 60:
-                print('%d 秒后开始...' % (duration - _duration))
+                MyUtil.consol('%d 秒后开始...' % (duration - _duration), 1)
             elif duration < 3600:
-                print('%d 分 %d 秒后开始...' % ((duration - _duration) // 60,
-                                           (duration - _duration) % 60))
+                MyUtil.consol(
+                    '%d 分 %d 秒后开始...' % ((duration - _duration) // 60,
+                                         (duration - _duration) % 60), 1)
             else:
-                print('%d 时 %d 分 %d 秒后开始...' %
-                      ((duration - _duration) // 3600,
-                       ((duration - _duration) % 3600) // 60,
-                       ((duration - _duration) % 3600) % 60))
+                MyUtil.consol(
+                    '%d 时 %d 分 %d 秒后开始...' %
+                    ((duration - _duration) // 3600,
+                     ((duration - _duration) % 3600) // 60,
+                     ((duration - _duration) % 3600) % 60), 1)
             time.sleep(1)
             _duration += 1
