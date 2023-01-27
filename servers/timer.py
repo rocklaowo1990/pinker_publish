@@ -39,15 +39,15 @@ class timer:
         _duration = 0
         while _duration < duration:
             if duration < 60:
-                consol.info('%d 秒后开始...' % (duration - _duration))
+                consol.log('%d 秒后开始...' % (duration - _duration))
             elif duration < 3600:
                 _m = (duration - _duration) // 60
                 _s = (duration - _duration) % 60
-                consol.info('%d 分 %d 秒后开始...' % (_m, _s))
+                consol.log('%d 分 %d 秒后开始...' % (_m, _s))
             else:
                 _h = (duration - _duration) // 3600
                 _m = ((duration - _duration) % 3600) // 60
                 _s = ((duration - _duration) % 3600) % 60
-                consol.info('%d 时 %d 分 %d 秒后开始...' % (_h, _m, _s))
+                consol.log('%d 时 %d 分 %d 秒后开始...' % (_h, _m, _s))
             time.sleep(1)
             _duration += 1

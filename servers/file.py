@@ -24,21 +24,21 @@ class file:
         '''
         index = 0
         while index < len(files):
-            consol.info('正在检查路径是否为可用文件夹: [ %s ]' % files[index])
+            consol.log('正在检查路径是否为可用文件夹: [ %s ]' % files[index])
             if not os.path.isdir(os.path.join(path, files[index])):
-                consol.erro('这不是一个文件夹, 从数据中移除...')
+                consol.err('这不是一个文件夹, 从数据中移除...')
                 files.remove(files[index])
 
             elif files[index][0] == '.' or files[index][0] == '_':
-                consol.erro('这个文件夹用不了, 从数据中移除...')
+                consol.err('这个文件夹用不了, 从数据中移除...')
                 files.remove(files[index])
 
             elif files[index] == 'server':
-                consol.erro('server 是服务文件夹, 用不了, 从数据中移除...')
+                consol.err('server 是服务文件夹, 用不了, 从数据中移除...')
                 files.remove(files[index])
             else:
                 index += 1
-                consol.success('用文件夹....')
+                consol.suc('用文件夹....')
 
     # 去除垃圾文件
     def del_illegal(files: list[str]):
@@ -82,9 +82,9 @@ class file:
                 elif i == ' ':
                     new += '_'
             if file == new:
-                consol.success('路径名称正常...')
+                consol.suc('路径名称正常...')
             else:
-                consol.erro('检查到路径名称不合法, 名称更改为: [ %s ]\033[0m' % new)
+                consol.err('检查到路径名称不合法, 名称更改为: [ %s ]\033[0m' % new)
                 os.rename(os.path.join(path, file), os.path.join(path, new))
                 files[index] = new
             index += 1

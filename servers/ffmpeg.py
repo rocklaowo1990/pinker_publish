@@ -35,14 +35,14 @@ class ffmpeg:
         # file_size = os.path.getsize(video_path) / 1024 / 1024
 
         time_now = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())
-        consol.info('正在压缩视频 %s : (%s)' % (video_path, time_now))
+        consol.log('正在压缩视频 %s : (%s)' % (video_path, time_now))
         compres = 'ffmpeg -y -i {} -r 25 -pix_fmt yuv420p -vcodec libx264 -preset slow -vf scale=-2:720 -profile:v baseline  -crf 28 -acodec aac -b:v 720k -strict -5 {}'.format(
             video_path, _out_path)
         is_run = os.system(compres)
         thr = threading.Thread(target=lambda: is_run)
         thr.start()
         thr.join()
-        consol.success('视频压缩完成: %s (%s)' % (_out_path, time_now))
+        consol.suc('视频压缩完成: %s (%s)' % (_out_path, time_now))
         return _out_path
 
     # 添加水印
@@ -57,23 +57,50 @@ class ffmpeg:
         overlay:水印的定位
         main_w-overlay_w-10 : 水印在x轴的位置，也可以写成x=main_w-overlay_w-10\n
         main_h-overlay_h-10：水印在y轴的位置\n
+        scale=176:144：水印的大小
         '''
-        consol.info('正在为视频添加水印：%s' % video_path)
+        consol.log('正在为视频添加水印：%s' % video_path)
+
+        capture = cv2.VideoCapture(video_path)
+        capture_width = capture.get(cv2.CAP_PROP_FRAME_WIDTH)
+        capture_height = capture.get(cv2.CAP_PROP_FRAME_HEIGHT)
+
+        consol.err('%d,%d' % (capture_width, capture_height))
+
+        water_width = 83
+        water_height = 94
+
+        x = 0
+        y = 0
+
+        if capture_width >= capture_height:
+            water_width = 83 * capture_width / 1270
+            x = 20 * capture_width / 1270
+
+        else:
+            water_width = 83 * capture_width / 720
+            x = 20 * capture_width / 720
+
+        water_height = 94 * water_width / 83
+        y = x
+
+        consol.err('%d,%d' % (water_width, water_height))
 
         video_names = video_path.split('.')
         _out_path = '%s_water_mark.mp4' % video_names[0]
 
         # compres = 'ffmpeg -y -i %s -i %s -filter_complex "overlay=main_w-overlay_w-10:main_h-overlay_h-10" %s' % (
         #     video_path, image_path, out_name)
-        compres = 'ffmpeg -y -i %s -i %s -filter_complex "overlay=19:64" %s' % (
-            video_path, water_mark_path, _out_path)
+        compres = 'ffmpeg -y -i %s -i %s -filter_complex "[1:v] scale=%d:%d [logo];[0:v][logo]overlay=x=%d:y=%d"  %s' % (
+            video_path, water_mark_path, water_width, water_height, x, y,
+            _out_path)
 
         isRun = os.system(compres)
         thr = threading.Thread(target=lambda: isRun)
         thr.start()
         thr.join()
 
-        consol.success('水印添加完成,储存位置：%s' % _out_path)
+        consol.suc('水印添加完成,储存位置：%s' % _out_path)
         return _out_path
 
     # 拼接视频
@@ -94,7 +121,7 @@ class ffmpeg:
 
         is_horizontal = True if _capture_width > _capture_height else False
 
-        consol.info('即将合并视频组：%s, 是否横版：%s' % (video_path_list, is_horizontal))
+        consol.log('即将合并视频组：%s, 是否横版：%s' % (video_path_list, is_horizontal))
 
         mpg_paths: list[str] = []
 
@@ -107,7 +134,7 @@ class ffmpeg:
 
         for video_path in video_path_list:
             index += 1
-            consol.info('正在拆解第 %d 个视频：%s' % (index, video_path))
+            consol.log('正在拆解第 %d 个视频：%s' % (index, video_path))
 
             video_names = video_path.split('.')
 
@@ -127,7 +154,7 @@ class ffmpeg:
             y = 0
 
             if is_horizontal:
-                if capture_width > capture_height:
+                if capture_width / capture_height > 1270 / 720:
                     size = capture_width / 1270
                     capture_width = 1270
                     capture_height = math.ceil(capture_height / size)
@@ -145,7 +172,7 @@ class ffmpeg:
                 x = (1270 - capture_width) / 2
                 y = (720 - capture_height) / 2
             else:
-                if capture_width > capture_height:
+                if capture_width / capture_height > 720 / 1270:
                     size = capture_width / 720
                     capture_width = 720
                     capture_height = math.ceil(capture_height / size)
@@ -162,6 +189,7 @@ class ffmpeg:
                 x = (720 - capture_width) / 2
                 y = (1270 - capture_height) / 2
 
+            print(capture_width, capture_height, x, y)
             compres = 'ffmpeg -y -i %s -q:v 4 -vf "scale=%d:%d,pad=%d:%d:%d:%d:black" %s' % (
                 video_path,
                 capture_width,
@@ -178,10 +206,10 @@ class ffmpeg:
             thr.join()
 
             concat_list += ' %s' % _mpg_path
-            consol.success('视频拆解完成：%s' % (video_path))
+            consol.suc('视频拆解完成：%s' % (video_path))
             timer.wait(1)
 
-        consol.info('正在合并视频段')
+        consol.log('正在合并视频段')
         _out_path = '%s_concat.mp4' % _out_path.split('.')[0]
 
         compres = '%s| ffmpeg -y -f mpeg -i - -q:v 6 -vcodec mpeg4 %s' % (
@@ -197,5 +225,5 @@ class ffmpeg:
         for ts_path in mpg_paths:
             os.remove(ts_path)
 
-        consol.success('视频拼接完成...')
+        consol.suc('视频拼接完成...')
         return _out_path

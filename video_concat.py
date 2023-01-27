@@ -29,7 +29,7 @@ targets: list[str] = []
 # if not have_out:
 #     os.makedirs(out_path)
 
-consol.info('正在查找相关文件...')
+consol.log('正在查找相关文件...')
 
 # 遍历根目录,找到下载历史
 for media_file in media_files:
@@ -67,8 +67,11 @@ for media_file in media_files:
         file.check(target_media_files, target_path)
         for target_media_file in target_media_files:
             if '.mp4'.upper() in target_media_file.upper() or '.mkv'.upper(
+            ) in target_media_file.upper() or '.mov'.upper(
             ) in target_media_file.upper():
                 targets.append(os.path.join(target_path, target_media_file))
+
+consol.err(targets)
 
 # 从历史记录里剔除已经处理过的视频
 _index = 0
@@ -76,32 +79,32 @@ while _index < len(targets):
     if targets[
             _index] in historys or 'water_mark_mpg_concat_compres' in targets[
                 _index] or 'water_mark' in targets[_index]:
-        consol.erro('发现已经处理过的文件：%s' % (targets[_index]))
+        consol.err('发现已经处理过的文件：%s' % (targets[_index]))
         targets.remove(targets[_index])
     else:
         _index += 1
 
 if horizontal_start == '' and vertical_start == '':
-    consol.erro('没有找到片头文件，程序退出...')
+    consol.err('没有找到片头文件，程序退出...')
     exit()
 
 if horizontal_end == '' and vertical_end == '':
-    consol.erro('没有找到片尾文件，程序退出...')
+    consol.err('没有找到片尾文件，程序退出...')
     exit()
 
 if water_mark_path == '':
-    consol.erro('没有找到水印文件，程序退出...')
+    consol.err('没有找到水印文件，程序退出...')
     exit()
 
 if targets == []:
-    consol.erro('没有找到可以处理的视频，程序退出...')
+    consol.err('没有找到可以处理的视频，程序退出...')
     exit()
 
-consol.info('本次任务一共需要处理 %d 个视频' % (len(targets)))
+consol.log('本次任务一共需要处理 %d 个视频' % (len(targets)))
 
 index = 1
 for target in targets:
-    consol.info('正在处理第 %d 个视频' % (index))
+    consol.log('正在处理第 %d 个视频' % (index))
 
     water_mark_out_path = ffmpeg.water_mark(target, water_mark_path)
     concats = []
@@ -122,20 +125,21 @@ for target in targets:
         concats.append(water_mark_out_path)
         concats.append(vertical_end if vertical_end != '' else horizontal_end)
 
+    consol.err(concats)
     concat_temp = ffmpeg.concat(concats, 2)
 
     ffmpeg.compres_video(concat_temp)
 
-    consol.info('删除文件：%s' % (concat_temp))
-    os.remove(concat_temp)
-
-    consol.info('删除文件：%s' % (water_mark_out_path))
-    os.remove(water_mark_out_path)
-
-    consol.info('写入历史记录...%s' % (target))
+    consol.log('写入历史记录...%s' % (target))
     with open(os.path.join('', 'history.txt'), 'a') as f:
         f.write(str(target) + '\n')
-    consol.success('第 %d 个视频处理完成' % (index))
+    consol.suc('第 %d 个视频处理完成' % (index))
     index += 1
 
-consol.success('任务全部处理完成, 程序退出...')
+    consol.log('删除文件：%s' % (concat_temp))
+    os.remove(concat_temp)
+
+    consol.log('删除文件：%s' % (water_mark_out_path))
+    os.remove(water_mark_out_path)
+
+consol.suc('任务全部处理完成, 程序退出...')

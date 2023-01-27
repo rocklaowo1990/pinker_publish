@@ -12,32 +12,32 @@ class media:
         True: 说明完整
         False: 不完整
         '''
-        consol.info('正在检查视频文件的完整性: %s' % path)
+        consol.log('正在检查视频文件的完整性: %s' % path)
         try:
             vid = cv2.VideoCapture(path)
             if not vid.isOpened():
-                consol.erro('视频文件存在问题')
+                consol.err('视频文件存在问题')
                 return False
-            consol.success('视频文件正常')
+            consol.suc('视频文件正常')
             return True
         except cv2.error as e:
-            consol.erro('视频文件存在问题: %s', e)
+            consol.err('视频文件存在问题: %s', e)
             return False
         except Exception as e:
-            consol.erro('视频文件存在问题: %s', e)
+            consol.err('视频文件存在问题: %s', e)
             return False
 
     # 检查图片是否损坏
     def check_image(path: str):
-        consol.info('正在检查图片文件的完整性: %s' % path)
+        consol.log('正在检查图片文件的完整性: %s' % path)
 
         try:
             Image.open(path).load()
-            consol.success('图片文件正常')
+            consol.suc('图片文件正常')
             return True
 
         except OSError:
-            consol.erro('图片文件存在问题')
+            consol.err('图片文件存在问题')
             return False
 
     def resize_image(path: str):
