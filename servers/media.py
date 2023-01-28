@@ -8,7 +8,7 @@ class media:
 
     def check_video(path: str):
         '''
-        检查视频文件是否完整\n
+        检查视频文件是否完整
         True: 说明完整
         False: 不完整
         '''

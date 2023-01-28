@@ -17,16 +17,16 @@ class ffmpeg:
     # 压缩视频文件
     def compres_video(video_path: str):
         '''
-        -i 输入的视频文件 \n
-        -r 每一秒的帧数,一秒 25 帧大概就是人眼的速度 \n
-        -pix_fmt 设置视频颜色空间 yuv420p网络传输用的颜色空间 ffmpeg -pix_fmts可以查看有哪些颜色空间选择 \n
-        -vcodec 软件编码器,libx264通用稳定 \n
-        -preset 编码机预设 编码机预设越高占用CPU越大 有十个参数可选 ultrafast superfast veryfast(录制视频选用) faster fast medium(默认) slow slower veryslow(压制视频时一般选用) pacebo \n
-        -profile:v 压缩比的配置 越往左边压缩的越厉害,体积越小 baseline(实时通信领域一般选用,画面损失越大) Extended Main(流媒体选用) High(超清视频) High 10 High 4:2:2 High 4:4:4(Predictive) \n
-        -level:v 对编码机的规范和限制针对不通的使用场景来操作,也就是不同分辨率设置不同的值(这个我没有设置,因为这个要根据不同的分辨率进行设置的,具体要去官方文档查看) \n
-        -crf 码率控制模式 用于对画面有要求,对文件大小无关紧要的场景 0-51都可以选择 0为无损 一般设置18 - 28之间 大于28画面损失严重 \n
-        -acodec 设置音频编码器 \n
-        -loglevel quiet 禁止输出 \n
+        - -i 输入的视频文件 
+        - -r 每一秒的帧数,一秒 25 帧大概就是人眼的速度 
+        - -pix_fmt 设置视频颜色空间 yuv420p网络传输用的颜色空间 ffmpeg -pix_fmts可以查看有哪些颜色空间选择 
+        - -vcodec 软件编码器,libx264通用稳定 
+        - -preset 编码机预设 编码机预设越高占用CPU越大 有十个参数可选 ultrafast superfast veryfast(录制视频选用) faster fast medium(默认) slow slower veryslow(压制视频时一般选用) pacebo 
+        - -profile:v 压缩比的配置 越往左边压缩的越厉害,体积越小 baseline(实时通信领域一般选用,画面损失越大) Extended Main(流媒体选用) High(超清视频) High 10 High 4:2:2 High 4:4:4(Predictive) 
+        - -level:v 对编码机的规范和限制针对不通的使用场景来操作,也就是不同分辨率设置不同的值(这个我没有设置,因为这个要根据不同的分辨率进行设置的,具体要去官方文档查看) 
+        - -crf 码率控制模式 用于对画面有要求,对文件大小无关紧要的场景 0-51都可以选择 0为无损 一般设置18 - 28之间 大于28画面损失严重 
+        - -acodec 设置音频编码器 
+        - -loglevel quiet 禁止输出 
         '''
 
         # 给文件重新命名
@@ -48,15 +48,15 @@ class ffmpeg:
     # 添加水印
     def water_mark(video_path: str, water_mark_path: str):
         '''
-        -i ：一般表示输入 \n
-        -filter_complex: 相比-vf, filter_complex适合开发复杂的滤镜功能，如同时对视频进行裁剪并旋转。参数之间使用逗号（，）隔开即可\n
-        main_w:视频宽度\n
-        main_h : 视频高度\n
-        overlay_w: 要添加的图片水印宽度\n
-        overlay_h:要添加的图片水印宽度\n
+        -i ：一般表示输入 
+        -filter_complex: 相比-vf, filter_complex适合开发复杂的滤镜功能，如同时对视频进行裁剪并旋转。参数之间使用逗号（，）隔开即可
+        main_w:视频宽度
+        main_h : 视频高度
+        overlay_w: 要添加的图片水印宽度
+        overlay_h:要添加的图片水印宽度
         overlay:水印的定位
-        main_w-overlay_w-10 : 水印在x轴的位置，也可以写成x=main_w-overlay_w-10\n
-        main_h-overlay_h-10：水印在y轴的位置\n
+        main_w-overlay_w-10 : 水印在x轴的位置，也可以写成x=main_w-overlay_w-10
+        main_h-overlay_h-10：水印在y轴的位置
         scale=176:144：水印的大小
         '''
         consol.log('正在为视频添加水印：%s' % video_path)
@@ -64,8 +64,6 @@ class ffmpeg:
         capture = cv2.VideoCapture(video_path)
         capture_width = capture.get(cv2.CAP_PROP_FRAME_WIDTH)
         capture_height = capture.get(cv2.CAP_PROP_FRAME_HEIGHT)
-
-        consol.err('%d,%d' % (capture_width, capture_height))
 
         water_width = 83
         water_height = 94
@@ -83,8 +81,6 @@ class ffmpeg:
 
         water_height = 94 * water_width / 83
         y = x
-
-        consol.err('%d,%d' % (water_width, water_height))
 
         video_names = video_path.split('.')
         _out_path = '%s_water_mark.mp4' % video_names[0]
@@ -109,9 +105,9 @@ class ffmpeg:
         main_video: int = 2,
     ):
         '''
-        将多个视频拼接\n
-        video_path_list: 视频地址的集合\n
-        main_video: 主视频的位置, 第1个就传1
+        - 将多个视频拼接
+        - video_path_list: 视频地址的集合
+        - main_video: 主视频的位置, 第1个就传1
         '''
         is_horizontal = True
 

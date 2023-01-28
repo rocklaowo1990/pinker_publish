@@ -71,8 +71,6 @@ for media_file in media_files:
             ) in target_media_file.upper():
                 targets.append(os.path.join(target_path, target_media_file))
 
-consol.err(targets)
-
 # 从历史记录里剔除已经处理过的视频
 _index = 0
 while _index < len(targets):
@@ -125,7 +123,6 @@ for target in targets:
         concats.append(water_mark_out_path)
         concats.append(vertical_end if vertical_end != '' else horizontal_end)
 
-    consol.err(concats)
     concat_temp = ffmpeg.concat(concats, 2)
 
     ffmpeg.compres_video(concat_temp)

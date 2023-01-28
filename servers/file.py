@@ -19,8 +19,8 @@ class file:
     # 去除非文件夹的方法
     def get_folder(files: list[str], path: str):
         '''
-        ### 得到文件夹的方法\n
-        去除非文件夹
+        ### 得到文件夹的方法
+        - 去除非文件夹
         '''
         index = 0
         while index < len(files):
