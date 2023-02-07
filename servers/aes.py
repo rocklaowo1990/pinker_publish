@@ -12,7 +12,7 @@ class aes:
     -----------------------------------------------------------------------------------
     '''
 
-    def decrypt(key, content, iv):
+    def decrypt(key: str, content: str, iv: str):
         '''
         ### AES 解密 
         - 处理使用PKCS7填充过的数据 

@@ -74,6 +74,8 @@ class file:
         index = 0
         for file in files:
             # 判断根目录是不是有特殊字符
+            consol.log('正在检查文件路径是否合法: %s' % (os.path.join(path, file)))
+
             new = ''
             for i in file:
                 if i.isalnum(
