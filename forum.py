@@ -1,261 +1,567 @@
+import json
 import os
-
 import numpy as np
+
 from servers.consol import consol
 from servers.exls import exls
 from servers.file import file
 from servers.response import response
 
+# 第一步: 读取文件
+# 1、读取历史文件
+# 2、读取表格文件, 并且把数据储存到临时数据
+# 3、处理数据
+# 保存历史
 
-def get_forum_name(url: str):
-    domain = url.replace('www.', '')
-    domain = domain.replace('forum.', '')
-    domain = domain.split('//')[-1]
+
+def getForumName(url: str):
+    '''
+    ### 解析论坛
+    得到论坛的主域名
+    '''
+    domain = url
+    domain = domain.replace('www.', '')
+    domain = domain.replace('//forum.', '')
+    domain = domain.replace('//forums.', '')
+    domain = domain.replace('//', '')
+    domain = domain.split(':')[-1]
     domain = domain.split('.')[0]
     return domain
 
 
-# 找出根目录里所有的文件夹
-listdir = os.listdir()
+def getString(keywords):
+    '''
+    ### 解析表格里的数据
+    转成字符串
+    '''
+    keywordsTemp = str(keywords)
+    if keywordsTemp == '' or keywordsTemp is np.nan or keywordsTemp.upper(
+    ) == 'nan'.upper():
+        return ''
+    else:
+        return keywordsTemp
 
-# 输入目录名称
-is_path_name_pass = False
-input_path_name = ''
-while not is_path_name_pass:
-    input_path_name = input('请输入目录名称 : ')
 
-    if input_path_name != '':
-        if input_path_name in listdir:
-            consol.suc('目录查找成功')
-            is_path_name_pass = True
+# 找出根目录里所有的文件/文件夹
+filesRoot = os.listdir()
+
+# 这个是判断有没有正确输入目标目录
+isInput = False
+
+# 输入目标目录名称
+pathTaget = ''
+
+# 一直要求输入目标文件夹的名称, 直到正确输入
+while not isInput:
+    pathTaget = input('请输入目录名称 : ')
+    if pathTaget != '':
+        if pathTaget in filesRoot:
+            consol.suc('目录查找成功: %s' % (pathTaget))
+            isInput = True
+        elif pathTaget == 'exit':
+            exit()
         else:
-            consol.err('没有找到相关的目录，请重新输入')
-
+            consol.err('没有找到相关的目录, 请重新输入')
     else:
         consol.err('不能输入空的')
 
-log_file = ''
+print()
 
-for dir in listdir:
-    if dir == input_path_name:
-        forum_path = os.path.join('', dir)
-        list_exls = os.listdir(forum_path)
-        file.check(list_exls, forum_path)
+# 表格数据对象
+# ---------------------------------------------------------
+# data: 表格数据的格式化
+# data = {
+#     '表格的名字': {
+#         'sheet名字': [{
+#             'page_1': str,                #第一页地址
+#             'page_2': str,                #第二页地址
+#             'page_3': str,                #第三页地址
+#             'titile': str,                #论坛标题
+#             'nickName': str               #昵称
+#         }],
+#         'sheet名字': [{
+#             'page_1': str,                #第一页地址
+#             'page_2': str,                #第二页地址
+#             'page_3': str,                #第三页地址
+#             'titile': str,                #论坛标题
+#             'nickName': str               #昵称
+#         }]
+#     },
+#     '表格的名字': {
+#         'sheet名字': [{
+#             'page_1': str,                #第一页地址
+#             'page_2': str,                #第二页地址
+#             'page_3': str,                #第三页地址
+#             'titile': str,                #论坛标题
+#             'nickName': str               #昵称
+#         }],
+#         'sheet名字': [{
+#             'page_1': str,                #第一页地址
+#             'page_2': str,                #第二页地址
+#             'page_3': str,                #第三页地址
+#             'titile': str,                #论坛标题
+#             'nickName': str               #昵称
+#         }]
+#     }
+# }
+# ---------------------------------------------------------
+data = {}
 
-        # 开始遍历每一个表格文件
-        # exls_file 就是文件单个人的表格
-        for exls_file in list_exls:
-            if '.exls'.upper() in exls_file.upper() or '.xlsx'.upper(
-            ) in exls_file.upper():
-                # 表格的路径
-                exls_path = os.path.join(forum_path, exls_file)
+# 每个人的历史记录对象
+# ---------------------------------------------------------
+# history: 历史记录的格式化
+# history = {
+#      '表格名称': {
+#           'failure': list[str],       #审核失败的论坛
+#           'repeated': list[str],      #和别人重复的论坛
+#           'successful': list[str],    #审核通过的论坛
+#           'process‘: int              #处理总数量
+#       },
+#      '表格名称': {
+#           'failure': list[str],       #审核失败的论坛
+#           'repeated': list[str],      #和别人重复的论坛
+#           'successful': list[str],    #审核通过的论坛
+#           'process': int              #处理总数量
+#       },
+# }
+# ---------------------------------------------------------
+history = {}
 
-                print()
-                print()
+# 还会用一个文件记录所有发送成功的并且不重复的论坛
+# 这个文件会在 py 文件的目录下, 也就是根目录
+consol.log('正在读取统计表...', pathTaget)
+successful = []
+failure = []
+repeated = []
 
-                consol.log('正在检查文件: %s ' % (exls_file))
+pathSuccessful = os.path.join('', '成功统计表.xlsx')
+pathFailure = os.path.join('', '失败统计表.xlsx')
+pathRepeated = os.path.join('', '重复统计表.xlsx')
 
-                # 历史记录
-                history = []
+if file.isHaveDir(pathSuccessful):
+    # 开始读取表格信息
+    # 读取的是单个表格文件的所有 sheet
+    successfulRead = exls.read(pathSuccessful)
+    # 开始分析表格数据
+    # 主要是看这个表格有多少页
+    # 每一页都需要解析出来
+    for sheetName, sheetData in successfulRead.items():
+        sheetDataTemp = sheetData.to_dict(orient='records')
+        # 读取每一行的信息
+        for rowData in sheetDataTemp:
+            # 把每一行的信息转成数组
+            rowDataTemp = list(rowData.values())
+            successful.append(rowDataTemp[0])
 
-                # 开始读取表格信息
-                # 读取的是单个表格文件的所有 sheet
-                exls_data = exls.read(exls_path)
+consol.suc('成功统计表读取成功: %s\n' % successful, pathTaget)
 
-                for sheet_name, sheet_data in exls_data.items():
-                    # 格式化表格文件
-                    sheet_data = sheet_data.to_dict(orient='records')
+if file.isHaveDir(pathFailure):
+    # 开始读取表格信息
+    # 读取的是单个表格文件的所有 sheet
+    failureRead = exls.read(pathFailure)
+    # 开始分析表格数据
+    # 主要是看这个表格有多少页
+    # 每一页都需要解析出来
+    for sheetName, sheetData in failureRead.items():
+        sheetDataTemp = sheetData.to_dict(orient='records')
+        # 读取每一行的信息
+        for rowData in sheetDataTemp:
+            # 把每一行的信息转成数组
+            rowDataTemp = list(rowData.values())
+            failure.append(rowDataTemp[0])
 
-                    consol.log('正在审核: %s ==> %s' % (exls_file, sheet_name))
+consol.suc('失败统计表读取成功: %s\n' % failure, pathTaget)
 
-                    # 单个表格的成功数量
-                    successful = 0
+if file.isHaveDir(pathRepeated):
+    # 开始读取表格信息
+    # 读取的是单个表格文件的所有 sheet
+    repeatedRead = exls.read(pathRepeated)
+    # 开始分析表格数据
+    # 主要是看这个表格有多少页
+    # 每一页都需要解析出来
+    for sheetName, sheetData in repeatedRead.items():
+        sheetDataTemp = sheetData.to_dict(orient='records')
+        # 读取每一行的信息
+        for rowData in sheetDataTemp:
+            # 把每一行的信息转成数组
+            rowDataTemp = list(rowData.values())
+            repeated.append(rowDataTemp[0])
 
-                    # 单个表格的失败数量
-                    failure = 0
-                    failure_forum = ''
+consol.suc('重复统计表读取成功: %s\n' % repeated, pathTaget)
 
-                    # 单个表格相同的帖子总数量
-                    same = 0
-                    same_forum = ''
+filesTaget = os.listdir(pathTaget)
 
-                    # 单个表格处理的论坛总数量
-                    process_all = 0
+# 开始读取每一个文件 每个文件代表的是一个表格(一个人)
+# 表格的文件数据放到 data
+# 历史记录的数据放到 history
+for fileName in filesTaget:
+    pathFile = os.path.join(pathTaget, fileName)
 
-                    print()
-                    print()
+    isXls = '.xls'.upper() in fileName.upper()
+    isXlsx = '.xlsx'.upper() in fileName.upper()
+    isCsv = '.csv'.upper() in fileName.upper()
+    isHistory = 'history.json'.upper() in fileName.upper()
 
-                    # 读取每一行的信息
-                    for row_data in sheet_data:
-                        # 处理一行的时候
-                        # 处理的总数需要 +1
-                        process_all += 1
+    if isHistory:
+        consol.log('开始读取历史记录...', pathTaget)
+        history = file.read(pathFile)
+        consol.suc('读取成功: %s\n' % history, pathTaget)
 
-                        # 单个链接失败的理由
-                        failure_why = ''
+    if isXls or isXlsx or isCsv:
+        consol.log('正在检查文件: %s ' % (pathFile), pathTaget)
 
-                        # 把每一行的信息转成数组
-                        row_data = list(row_data.values())
+        # 开始读取表格信息
+        # 读取的是单个表格文件的所有 sheet
+        dataRead = exls.read(pathFile)
 
-                        # 单行的三个链接，需要有至少 1 个包含标题
-                        # 否则的话，审核不通过
-                        single_sus = 0
+        # 每个表格都是一个人, 这个人有一个数据
+        # 表格的数据是由多个 sheet 组成
+        dataExcel = {}
 
-                        # 解析论坛地址的方法
-                        domain = get_forum_name(str(row_data[0]))
+        # 开始分析表格数据
+        # 主要是看这个表格有多少页
+        # 每一页都需要解析出来
+        for sheetName, sheetData in dataRead.items():
+            # 格式化表格文件
+            sheetDataTemp = sheetData.to_dict(orient='records')
+            consol.log('正在读取表格: %s ==> %s 的数据...\n' % (fileName, sheetName),
+                       pathTaget)
 
-                        keywords = str(row_data[3]).strip()
-                        keywords = keywords.replace('\r', '')
-                        keywords = keywords.replace('\r', '')
-                        keywords = keywords.replace('\t', '')
+            # 每一个 sheet 也有一个数据
+            # 每个 sheet 是有多行数据组成
+            dataSheet = []
 
-                        consol.log('正在审核论坛：%s' % (domain))
-                        consol.log('帖子标题：%s' % (keywords))
-                        consol.log('发帖人昵称：%s' % (str(row_data[4])))
+            # 读取每一行的信息
+            for rowData in sheetDataTemp:
+                consol.log('%s' % (rowData), pathTaget)
 
-                        # 如果帖子的标题为空，跳过不检查
-                        if keywords == '' and keywords is np.nan and keywords == 'nan':
-                            consol.err('帖子的标题看起来不太对，跳过处理')
-                            continue
+                # 每一行也有数据的, 我们需要解析出来
+                dataRow = {}
 
-                        # 如果帖子的发帖人为空，跳过不检查
-                        if str(row_data[4]
-                               ) == '' and row_data[4] is np.nan and str(
-                                   row_data[4]) == 'nan':
-                            consol.err('发帖人的昵称看起来不太对，跳过处理')
-                            continue
+                # 把每一行的信息转成数组
+                rowDataTemp = list(rowData.values())
 
-                        # 三页里面是否有重复的帖子
-                        is_same = False
+                dataRow['page_1'] = getString(rowDataTemp[0]).strip()
+                dataRow['page_2'] = getString(rowDataTemp[1]).strip()
+                dataRow['page_3'] = getString(rowDataTemp[2]).strip()
+                dataRow['title'] = getString(rowDataTemp[3]).strip()
+                dataRow['nickName'] = getString(rowDataTemp[4]).strip()
 
-                        # 和其他人相同的人数
-                        same_person = 0
-                        same_person_name = ''
+                # 把每一个 行 的数据添加到 Sheet 里
+                # 这里我们要加一个条件:
+                # 1、没有标题的不添加, 标题不能为空
+                # 2、三个地址都是空的不添加
+                # 3、没有发帖人昵称的不添加
+                # 4、三个地址所属论坛不一样的不添加 : 默认是 True
+                isHaveTile = dataRow['title'] != ''
 
-                        # 论坛页码的下标
-                        # 一共检查3页
+                isEmpty = dataRow['page_1'] == '' and dataRow[
+                    'page_2'] == '' and dataRow['page_3'] == ''
+
+                isHaveNickName = dataRow['nickName'] != ''
+
+                # 为了判断三个地址是不是属于一个论坛, 这里需要临时创建一个数组
+                # 把不是空的链接放进去
+                urls = []
+                if dataRow['page_1'] != '':
+                    urls.append(getForumName(dataRow['page_1']))
+
+                if dataRow['page_2'] != '':
+                    urls.append(getForumName(dataRow['page_2']))
+
+                if dataRow['page_3'] != '':
+                    urls.append(getForumName(dataRow['page_3']))
+
+                consol.suc(
+                    '解析完成: 论坛地址%s  标题: %s  发帖人昵称: %s' %
+                    (urls, dataRow['title'], dataRow['nickName']), pathTaget)
+
+                # 把每一行的数据添加到 sheet 里
+                if isHaveTile and not isEmpty and isHaveNickName:
+                    consol.suc('数据格式正常,已经添加到数据库...\n', pathTaget)
+                    dataSheet.append(dataRow)
+                else:
+                    consol.err('数据格式错误,请检查论坛地址, 标题, 昵称是否输入正确\n', pathTaget)
+
+            dataExcel[sheetName] = dataSheet
+            consol.suc(
+                '%s ==> %s 的数据读取完成: %s\n' %
+                (fileName, sheetName, dataExcel[sheetName]), pathTaget)
+
+        data[fileName] = dataExcel
+        consol.suc('%s 的数据读取完成: %s\n\n\n' % (pathFile, data[fileName]),
+                   pathTaget)
+
+consol.suc('数据读取成功: %s\n\n\n' % (data), pathTaget)
+consol.suc('开始处理审核任务...\n\n\n', pathTaget)
+
+# 这里开始就是处理任务
+# 会一个表格一个表格的来
+# 每个人先和自己的历史记录对比一下, 看有没有处理过的
+for dk, dv in data.items():  #文件 也是这个人
+    # 先看看是不是有这个人的历史记录
+    # 如果有的话就调出来
+    if not dk in history.keys():
+        history[dk] = {
+            'failure': [],  #审核失败的论坛
+            'repeated': [],  #和别人重复的论坛
+            'successful': [],  #审核通过的论坛
+            'process': 0  #处理总数量
+        }
+    for sk, sv in dict(dv).items():  #sheet 表格的页码
+        sallIndex = 0
+        for mi in list(sv):  #处理表格每一行的数据
+            url_1 = mi['page_1']
+            url_2 = mi['page_2']
+            url_3 = mi['page_3']
+            title = mi['title']
+            nick = mi['nickName']
+
+            keywords = str(title).strip()
+            keywords = keywords.replace('\r', '')
+            keywords = keywords.replace('\r', '')
+            keywords = keywords.replace('\t', '')
+            keywords = keywords.replace('\n', '')
+
+            sallIndex += 1
+            sall = len(list(sv))
+
+            # 默认都是审核通过
+            isPass = False
+
+            logStr = '%s > %s > 当前的进度: %s / %s' % (dk, sk, sallIndex, sall)
+            consol.log(logStr, pathTaget)
+            consol.log('%s > %s > 帖子的标题: %s' % (dk, sk, title), pathTaget)
+            consol.log('%s > %s > 发帖人昵称: %s' % (dk, sk, nick), pathTaget)
+
+            urls = []
+
+            if url_1 != '':
+                urls.append(url_1)
+
+            if url_2 != '':
+                urls.append(url_2)
+
+            if url_3 != '':
+                urls.append(url_3)
+
+            isAddRe = False
+
+            i = 0
+            for url in urls:
+                logStr = '%s > %s > 论坛的地址: %s' % (dk, sk, url)
+                consol.log(logStr, pathTaget)
+
+                logStr = '%s > %s > 论坛的名字: %s' % (
+                    dk,
+                    sk,
+                    getForumName(url),
+                )
+                consol.log(logStr, pathTaget)
+
+                # 先看这个论坛需不需要处理
+                # 1、和历史记录有重复的不处理
+                if getForumName(url).upper() in ' '.join(
+                        history[dk]['successful']).upper():
+                    logMes = '这个地址处理过'
+                    logStr = '%s > %s > 论坛的处理: %s' % (dk, sk, logMes)
+                    consol.err(logStr, pathTaget)
+                    break
+
+                # 再看和别人是不是重复的
+                # 先把 data 数据复制一份出来
+                # 然后删掉自己名字的值
+                # 然后循环判断有没有重复
+                dataTemp = data.copy()
+                dataTemp.pop(dk)
+                reWords = ''
+                rePer = 0
+                for dk_1, dv_1 in dataTemp.items():
+                    isRe = False
+                    for sk_1, sv_1 in dict(dv_1).items():
+                        for mi_1 in list(sv_1):
+                            or_1 = getForumName(url).upper() in str(
+                                mi_1['page_1']).upper()
+                            or_2 = getForumName(url).upper() in str(
+                                mi_1['page_2']).upper()
+                            or_3 = getForumName(url).upper() in str(
+                                mi_1['page_3']).upper()
+                            if or_1 or or_2 or or_3:
+                                isRe = True
+                                rePer += 1
+                                reWords += '%s | ' % (dk_1)
+                                break
+                        if isRe:
+                            break
+
+                # 如果重复的论坛数量大于0
+                # 说明三个地址里面肯定有一个是重复的
+                # 那么重复的条件成立
+                if rePer > 0:
+                    reWords = reWords[0:-3]
+                    logStr = '%s > %s > 重复的对象: %d (%s)' % (dk, sk, rePer,
+                                                           reWords)
+                    consol.err(logStr, pathTaget)
+                    if not isAddRe:
+                        isAddRe = True
+                        logRe = '%s => 和 %d 人重复 (%s)' % (url, rePer, reWords)
+                        if not getForumName(url).upper() in ' '.join(
+                                history[dk]['repeated']).upper():
+                            history[dk]['repeated'].append(url)
+                        if not getForumName(url).upper() in ' '.join(
+                                repeated).upper():
+                            repeated.append(url)
+
+                # 开始审核
+                # 审核需要打开网页进行检查
+                requests = response.get(url)
+                if not requests is None:
+
+                    isImportTitle = keywords.upper() in requests.upper()
+                    isImportNick = str(nick).upper() in requests.upper()
+
+                    if isImportTitle or isImportNick:
+                        isPass = True
+                        logMes = '审核通过'
+                        logStr = '%s > %s > 论坛的处理: %s' % (dk, sk, logMes)
+                        consol.suc(logStr, pathTaget)
+
                         index = 0
-                        while index < 3:
-
-                            # 首先看地址的合法性
-                            if str(row_data[index]) != '' and not str(
-                                    row_data[index]) is np.nan and str(
-                                        row_data[index]
-                                    ) != 'nan' and 'http' in str(
-                                        row_data[index]):
-
-                                # 解析论坛地址的方法
-                                domain = get_forum_name(str(row_data[index]))
-
-                                # 检查和其他人的论坛
-                                # 和其他人论坛重复率很高的给予提示
-                                # 提示语：和另外 5 个人的论坛相同
-                                # 和其他人相同的论坛数量给一个总数统计就，再算一下相同率
-                                if not is_same:
-                                    for same_file in list_exls:
-
-                                        if ('.exls'.upper()
-                                                in same_file.upper()
-                                                or '.xlsx'.upper()
-                                                in same_file.upper()
-                                            ) and same_file != exls_file:
-                                            # 表格的路径
-                                            same_path = os.path.join(
-                                                forum_path, same_file)
-                                            # 开始读取表格信息
-                                            # 读取的是单个表格文件的所有 sheet
-                                            same_data = exls.read(same_path)
-                                            same_data = str(same_data)
-
-                                            if domain in same_data:
-                                                same_person += 1
-                                                same_person_name += '%s | ' % (
-                                                    same_file)
-                                                is_same = True
-
-                                # 检查是否和之前的论坛相同，一个人不能有重复的论坛出现
-                                if domain in history:
-                                    failure_why += '地址重复 | '
-                                    consol.log('正在访问论坛 %s 的第 %d 页: 地址重复' %
-                                               (domain, index + 1))
-                                    index += 1
-                                    continue
-
-                                consol.log(
-                                    '正在访问论坛 %s 的第 %d 页: %s' %
-                                    (domain, index + 1, row_data[index]))
-
-                                requests = response.get(row_data[index])
-
-                                if requests != '':
-                                    requests = requests.text
-                                    if keywords.upper() in requests.upper():
-                                        single_sus += 1
-                                        consol.suc('访问成功: 已检查到关键字')
-                                    else:
-                                        failure_why += '未检测到关键字 | '
-                                        consol.suc('访问成功: 未检测到关键字')
-
-                                else:
-                                    failure_why += '访问失败 | '
-                                    consol.err('访问失败')
-
+                        while index < len(failure):
+                            if getForumName(url).upper() in ''.join(
+                                    failure).upper():
+                                failure.remove(failure[index])
                             else:
-                                failure_why += '地址不合法 | '
-                                consol.log('正在访问论坛 %s 的第 %d 页: %s' %
-                                           (domain, index + 1, '地址不合法'))
+                                index += 1
 
-                            index += 1
+                        if not getForumName(url).upper() in ' '.join(
+                                successful).upper():
+                            successful.append(url)
 
-                        if same_person > 0:
-                            same += 1
-                            same_forum += '%s (%d: %s)\n' % (
-                                str(row_data[0]), same_person,
-                                same_person_name[0:-3])
-                            consol.err(
-                                '论坛 %s 和其他 %d 个人重复，重复总数 %d , 处理论坛总数 %d , 重复率 %f'
-                                % (domain, same_person, same, process_all,
-                                   same / process_all))
+                        if not getForumName(url).upper() in ' '.join(
+                                history[dk]['successful']).upper():
+                            history[dk]['successful'].append(url)
+                        break
 
-                        if single_sus > 0:
-                            consol.suc('审核结果: 通过')
-                            successful += 1
-                            history.append(domain)
-                        else:
-                            consol.err('审核结果: 不通过(原因：%s)' %
-                                       (failure_why[0:-3]))
-                            failure_forum += '%s (原因：%s)\n' % (str(
-                                row_data[0]), failure_why[0:-3])
-                            failure += 1
+                    else:
+                        logMes = '审核失败'
+                        logStr = '%s > %s > 论坛的处理: %s' % (dk, sk, logMes)
+                        consol.err(logStr, pathTaget)
 
-                        consol.suc('论坛处理总数: %d (审核通过总：%d , 审核不通过: %d)' %
-                                   (process_all, successful, failure))
+                        logRe = '%s => 审核失败' % (url)
 
-                        print()
-                        print()
+                        if not getForumName(url).upper() in ' '.join(
+                                failure).upper():
+                            failure.append(url)
 
-                    # 处理完了一个表格需要输出日志
-                    consol.suc('%s ==> 成功发帖 %d 个 , 处理的论坛总数量: %d' %
-                               (exls_file, successful, process_all))
+                        if not getForumName(url).upper() in ' '.join(
+                                history[dk]['failure']).upper():
+                            history[dk]['failure'].append(url)
 
-                    consol.log('正在写入日志...')
+                else:
+                    logMes = '访问失败'
+                    logStr = '%s > %s > 论坛的处理: %s' % (dk, sk, logMes)
+                    consol.err(logStr, pathTaget)
+                    logRe = '%s => 访问失败' % (url)
 
-                    # 没有处理的就不写入日志里
-                    # 处理总数量大于0为判定条件
-                    log_path = os.path.join(forum_path, 'log.txt')
-                    if process_all > 0:
-                        with open(log_path, 'a') as f:
-                            f.write(
-                                str('%s ==> %s 论坛处理总数: %d (通过: %d , 不通过: %d , 重复: %d , 重复率 %f)\n===== 审核不通过的论坛 =====\n%s\n===== 和别人重复的论坛 =====\n%s\n'
-                                    % (exls_file, sheet_name, process_all,
-                                       successful, failure, same, same /
-                                       process_all if process_all != 0 else 0,
-                                       failure_forum, same_forum)))
+                    if not getForumName(url).upper() in ' '.join(
+                            failure).upper():
+                        failure.append(url)
 
-                    f.close()
+                    if not getForumName(url).upper() in ' '.join(
+                            history[dk]['failure']).upper():
+                        history[dk]['failure'].append(url)
 
-                    consol.suc('日志写入完成...')
-                    print()
-                    print()
+                i += 1
 
-consol.suc('任务处理完成，程序退出...')
+            if isPass:
+                logMes = '审核通过'
+                logStr = '%s > %s > 处理的结果: %s (总数: %d  通过: %d  不通过: %d  重复: %d  重复率:%.2f%%)\n\n' % (
+                    dk,
+                    sk,
+                    logMes,
+                    len(history[dk]['successful']) +
+                    len(history[dk]['failure']),
+                    len(history[dk]['successful']),
+                    len(history[dk]['failure']),
+                    len(history[dk]['repeated']),
+                    len(history[dk]['repeated']) /
+                    (len(history[dk]['successful']) +
+                     len(history[dk]['failure'])) * 100,
+                )
+                consol.suc(logStr, pathTaget)
+            else:
+                logMes = '审核不通过'
+                logStr = '%s > %s > 处理的结果: %s (总数: %d  通过: %d  不通过: %d  重复: %d  重复率:%.2f%%)\n\n' % (
+                    dk,
+                    sk,
+                    logMes,
+                    len(history[dk]['successful']) +
+                    len(history[dk]['failure']),
+                    len(history[dk]['successful']),
+                    len(history[dk]['failure']),
+                    len(history[dk]['repeated']),
+                    len(history[dk]['repeated']) /
+                    (len(history[dk]['successful']) +
+                     len(history[dk]['failure'])) * 100,
+                )
+                consol.err(logStr, pathTaget)
+
+    # 写入结果
+    history[dk]['process'] = len(history[dk]['successful']) + len(
+        history[dk]['failure'])
+
+    resaultTile = '========== %s ==========\n\n' % (dk)
+    resaultNumber = '处理总数: %d (通过 %d  不通过 %d  和别人重复 %d  重复率 %.2f%%)\n\n' % (
+        history[dk]['process'],
+        len(history[dk]['successful']),
+        len(history[dk]['failure']),
+        len(history[dk]['repeated']),
+        len(history[dk]['repeated']) /
+        (len(history[dk]['successful']) + len(history[dk]['failure'])) * 100,
+    )
+
+    resaultSus = '通过的论坛: %d\n%s\n\n' % (
+        len(history[dk]['successful']),
+        '\n'.join(history[dk]['successful']),
+    )
+
+    resaultFair = '不通过的论坛: %d\n%s\n\n' % (
+        len(history[dk]['failure']),
+        '\n'.join(history[dk]['failure']),
+    )
+
+    resaultRe = '重复的论坛: %d\n%s\n\n\n' % (
+        len(history[dk]['repeated']),
+        '\n'.join(history[dk]['repeated']),
+    )
+
+    resauletStr = '%s%s%s%s%s' % (
+        resaultTile,
+        resaultNumber,
+        resaultSus,
+        resaultFair,
+        resaultRe,
+    )
+    consol.suc(resauletStr, pathTaget)
+    pathResault = os.path.join(
+        pathTaget,
+        '%s的结果.txt' % (str(dk).replace('.xlsx', '')),
+    )
+    file.write(pathResault, resauletStr, 'w+')
+
+consol.log('正在写入数据和表格...')
+
+pathHistory = os.path.join(pathTaget, 'history.json')
+file.write(pathHistory, json.dumps(history), 'w+')
+
+xlsxData = {'成功统计': successful}
+exls.toExcel(pathSuccessful, xlsxData, '成功统计表')
+
+xlsxData = {'失败统计': failure}
+exls.toExcel(pathFailure, xlsxData, '失败统计表')
+
+xlsxData = {'重复统计': repeated}
+exls.toExcel(pathRepeated, xlsxData, '重复统计表')
+
+consol.suc('写入完成...')

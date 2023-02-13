@@ -76,7 +76,7 @@ for user_file in user_files:
                 print('----\033[0;37;41m%s 不是有效的图片文件...\033[0m' % file_path)
         # 检查txt文件
         elif 'info.txt'.upper() in file.upper():
-            # 读取josn文件
+            # 读取json文件
             content_info_open = open(file_path,
                                      encoding='UTF-8',
                                      errors='ignore')

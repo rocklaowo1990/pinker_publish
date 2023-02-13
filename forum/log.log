@@ -1,0 +1,1802 @@
+开始读取发送成功的论坛记录...
+读取成功: []
+
+读取成功: []
+
+读取成功: []
+
+正在检查文件: forum/李迪0208.xlsx 
+正在读取表格: 李迪0208.xlsx ==> Sheet1 的数据...
+
+{'第一页地址': 'https://www.jeuxvideo.com/forums/0-52-0-1-0-1-0-blabla-25-35-ans.htm', '第二页地址': nan, '第三页地址': nan, '帖子标题': ' How can I experience the Fairy Cat metaverse?', '发帖名称': 'jieke'}
+解析完成: 论坛地址['jeuxvideo']  标题: How can I experience the Fairy Cat metaverse?  发帖人昵称: jieke
+数据格式正常,已经添加到数据库...
+
+{'第一页地址': 'https://www.mobox.io/community/article/63e1bdee03c7ca6ec9e899e6', '第二页地址': nan, '第三页地址': nan, '帖子标题': 'The future of blockchain games', '发帖名称': 'jieke'}
+解析完成: 论坛地址['mobox']  标题: The future of blockchain games  发帖人昵称: jieke
+数据格式正常,已经添加到数据库...
+
+{'第一页地址': 'https://pcgameforum.com/threads/the-future-of-blockchain-games.3422/', '第二页地址': nan, '第三页地址': nan, '帖子标题': 'The future of blockchain games', '发帖名称': 'jieke'}
+解析完成: 论坛地址['pcgameforum']  标题: The future of blockchain games  发帖人昵称: jieke
+数据格式正常,已经添加到数据库...
+
+{'第一页地址': 'https://www.wallstreetoasis.com/forum/crypto/the-future-of-blockchain-games-1', '第二页地址': nan, '第三页地址': nan, '帖子标题': 'The future of blockchain games', '发帖名称': 'lixiao'}
+解析完成: 论坛地址['wallstreetoasis']  标题: The future of blockchain games  发帖人昵称: lixiao
+数据格式正常,已经添加到数据库...
+
+{'第一页地址': 'https://bitco.in/forum/threads/the-future-of-blockchain-games.32559/', '第二页地址': nan, '第三页地址': nan, '帖子标题': 'The future of blockchain games', '发帖名称': 'Miranahh'}
+解析完成: 论坛地址['bitco']  标题: The future of blockchain games  发帖人昵称: Miranahh
+数据格式正常,已经添加到数据库...
+
+{'第一页地址': 'https://gold.forum/forum/136-%F0%9F%8E%B1-crypto-games/?do=add', '第二页地址': nan, '第三页地址': nan, '帖子标题': 'The future of blockchain games', '发帖名称': 'xialin'}
+解析完成: 论坛地址['gold']  标题: The future of blockchain games  发帖人昵称: xialin
+数据格式正常,已经添加到数据库...
+
+{'第一页地址': 'https://elderscrollsrp.net/threads/the-future-of-blockchain-games.389/', '第二页地址': nan, '第三页地址': nan, '帖子标题': 'The future of blockchain games', '发帖名称': 'xxiaolin'}
+解析完成: 论坛地址['elderscrollsrp']  标题: The future of blockchain games  发帖人昵称: xxiaolin
+数据格式正常,已经添加到数据库...
+
+{'第一页地址': 'https://emmates.proboards.com/thread/2925/future-blockchain-games', '第二页地址': nan, '第三页地址': nan, '帖子标题': 'The future of blockchain games', '发帖名称': 'xxiaolin'}
+解析完成: 论坛地址['emmates']  标题: The future of blockchain games  发帖人昵称: xxiaolin
+数据格式正常,已经添加到数据库...
+
+{'第一页地址': 'https://medium.com/@xiao97303/the-future-of-blockchain-games-446a042efa47', '第二页地址': nan, '第三页地址': nan, '帖子标题': 'The future of blockchain games', '发帖名称': 'li xiao'}
+解析完成: 论坛地址['medium']  标题: The future of blockchain games  发帖人昵称: li xiao
+数据格式正常,已经添加到数据库...
+
+{'第一页地址': 'https://www.pinoyexchange.com/discussion/960872/how-can-i-experience-the-fairy-cat-metaverse', '第二页地址': nan, '第三页地址': nan, '帖子标题': 'How can I experience the Fairy Cat metaverse?', '发帖名称': 'xiaoxialinlin'}
+解析完成: 论坛地址['pinoyexchange']  标题: How can I experience the Fairy Cat metaverse?  发帖人昵称: xiaoxialinlin
+数据格式正常,已经添加到数据库...
+
+{'第一页地址': 'https://www.quora.com/profile/%E5%85%8B-%E6%9D%B0-7/How-can-I-experience-the-Fairy-Cat-metaverse-A-Debuting-in-January-2023-Fairy-Cat-is-one-of-the-most-popular-crypto-1', '第二页地址': nan, '第三页地址': nan, '帖子标题': 'How can I experience the Fairy Cat metaverse?', '发帖名称': 'jieke'}
+解析完成: 论坛地址['quora']  标题: How can I experience the Fairy Cat metaverse?  发帖人昵称: jieke
+数据格式正常,已经添加到数据库...
+
+{'第一页地址': 'https://forum.telecharger-jeuxpc.fr/index.php?threads/what-is-fairy-cat.231/', '第二页地址': nan, '第三页地址': nan, '帖子标题': 'what is Fairy cat', '发帖名称': 'jieke'}
+解析完成: 论坛地址['telecharger-jeuxpc']  标题: what is Fairy cat  发帖人昵称: jieke
+数据格式正常,已经添加到数据库...
+
+{'第一页地址': 'https://www.nvidia.com/en-us/geforce/forums/off-topic/25/510415/how-can-i-experience-the-fairy-cat-metaverse/', '第二页地址': nan, '第三页地址': nan, '帖子标题': 'How can I experience the Fairy Cat metaverse?', '发帖名称': 'xiao97303'}
+解析完成: 论坛地址['nvidia']  标题: How can I experience the Fairy Cat metaverse?  发帖人昵称: xiao97303
+数据格式正常,已经添加到数据库...
+
+{'第一页地址': 'https://yuneec-forum.com/threads/how-can-i-experience-the-fairy-cat-metaverse.10729/', '第二页地址': nan, '第三页地址': nan, '帖子标题': 'How can I experience the Fairy Cat metaverse?', '发帖名称': 'jieke'}
+解析完成: 论坛地址['yuneec-forum']  标题: How can I experience the Fairy Cat metaverse?  发帖人昵称: jieke
+数据格式正常,已经添加到数据库...
+
+{'第一页地址': 'https://btcforum.fr/viewtopic.php?f=126&t=46260', '第二页地址': nan, '第三页地址': nan, '帖子标题': 'Qu’est - ce que Fairy Cat?', '发帖名称': 'jieke'}
+解析完成: 论坛地址['btcforum']  标题: Qu’est - ce que Fairy Cat?  发帖人昵称: jieke
+数据格式正常,已经添加到数据库...
+
+{'第一页地址': 'https://forumcrypto.fr/topic/1522-quest-ce-que-fairy-cat/', '第二页地址': nan, '第三页地址': nan, '帖子标题': 'Qu’est - ce que Fairy Cat?', '发帖名称': 'jieke'}
+解析完成: 论坛地址['forumcrypto']  标题: Qu’est - ce que Fairy Cat?  发帖人昵称: jieke
+数据格式正常,已经添加到数据库...
+
+{'第一页地址': 'https://forums.gamerevolution.com/threads/fairy-cat.35554', '第二页地址': nan, '第三页地址': nan, '帖子标题': 'Comment découvrir le métaverse Fairy Cat ?', '发帖名称': 'lidi123'}
+解析完成: 论坛地址['gamerevolution']  标题: Comment découvrir le métaverse Fairy Cat ?  发帖人昵称: lidi123
+数据格式正常,已经添加到数据库...
+
+{'第一页地址': 'https://www.graffes.com/forums/showthread.php?81878-Fairy-cat&p=1921835#post1921835', '第二页地址': 'https://www.graffes.com/forums/forumdisplay.php?6-General-Discussion', '第三页地址': nan, '帖子标题': 'Fairy cat', '发帖名称': 'lidi123'}
+解析完成: 论坛地址['graffes', 'graffes']  标题: Fairy cat  发帖人昵称: lidi123
+数据格式正常,已经添加到数据库...
+
+{'第一页地址': 'https://cryptach.com/threads/how-can-i-experience-the-fairy-cat-metaverse.71234/', '第二页地址': nan, '第三页地址': nan, '帖子标题': 'How can I experience the Fairy Cat metaverse?', '发帖名称': 'xiaolin'}
+解析完成: 论坛地址['cryptach']  标题: How can I experience the Fairy Cat metaverse?  发帖人昵称: xiaolin
+数据格式正常,已经添加到数据库...
+
+{'第一页地址': 'https://forum.gamemaker.io/index.php?threads/how-can-i-experience-the-fairy-cat-metaverse.101377/', '第二页地址': nan, '第三页地址': nan, '帖子标题': 'How can I experience the Fairy Cat metaverse?', '发帖名称': 'xiaolin'}
+解析完成: 论坛地址['gamemaker']  标题: How can I experience the Fairy Cat metaverse?  发帖人昵称: xiaolin
+数据格式正常,已经添加到数据库...
+
+{'第一页地址': 'https://www.tapatalk.com/groups/serebiiforums/viewtopic.php?f=26&t=1077&from_new_topic=1', '第二页地址': nan, '第三页地址': nan, '帖子标题': 'Fairy Cat Forest: The Strongest Black Horse in Blockchain Games, emerging to match on the CryptoKitties.', '发帖名称': 'jieke '}
+解析完成: 论坛地址['tapatalk']  标题: Fairy Cat Forest: The Strongest Black Horse in Blockchain Games, emerging to match on the CryptoKitties.  发帖人昵称: jieke
+数据格式正常,已经添加到数据库...
+
+李迪0208.xlsx ==> Sheet1 的数据读取完成: [{'page_1': 'https://www.jeuxvideo.com/forums/0-52-0-1-0-1-0-blabla-25-35-ans.htm', 'page_2': '', 'page_3': '', 'title': 'How can I experience the Fairy Cat metaverse?', 'nickName': 'jieke'}, {'page_1': 'https://www.mobox.io/community/article/63e1bdee03c7ca6ec9e899e6', 'page_2': '', 'page_3': '', 'title': 'The future of blockchain games', 'nickName': 'jieke'}, {'page_1': 'https://pcgameforum.com/threads/the-future-of-blockchain-games.3422/', 'page_2': '', 'page_3': '', 'title': 'The future of blockchain games', 'nickName': 'jieke'}, {'page_1': 'https://www.wallstreetoasis.com/forum/crypto/the-future-of-blockchain-games-1', 'page_2': '', 'page_3': '', 'title': 'The future of blockchain games', 'nickName': 'lixiao'}, {'page_1': 'https://bitco.in/forum/threads/the-future-of-blockchain-games.32559/', 'page_2': '', 'page_3': '', 'title': 'The future of blockchain games', 'nickName': 'Miranahh'}, {'page_1': 'https://gold.forum/forum/136-%F0%9F%8E%B1-crypto-games/?do=add', 'page_2': '', 'page_3': '', 'title': 'The future of blockchain games', 'nickName': 'xialin'}, {'page_1': 'https://elderscrollsrp.net/threads/the-future-of-blockchain-games.389/', 'page_2': '', 'page_3': '', 'title': 'The future of blockchain games', 'nickName': 'xxiaolin'}, {'page_1': 'https://emmates.proboards.com/thread/2925/future-blockchain-games', 'page_2': '', 'page_3': '', 'title': 'The future of blockchain games', 'nickName': 'xxiaolin'}, {'page_1': 'https://medium.com/@xiao97303/the-future-of-blockchain-games-446a042efa47', 'page_2': '', 'page_3': '', 'title': 'The future of blockchain games', 'nickName': 'li xiao'}, {'page_1': 'https://www.pinoyexchange.com/discussion/960872/how-can-i-experience-the-fairy-cat-metaverse', 'page_2': '', 'page_3': '', 'title': 'How can I experience the Fairy Cat metaverse?', 'nickName': 'xiaoxialinlin'}, {'page_1': 'https://www.quora.com/profile/%E5%85%8B-%E6%9D%B0-7/How-can-I-experience-the-Fairy-Cat-metaverse-A-Debuting-in-January-2023-Fairy-Cat-is-one-of-the-most-popular-crypto-1', 'page_2': '', 'page_3': '', 'title': 'How can I experience the Fairy Cat metaverse?', 'nickName': 'jieke'}, {'page_1': 'https://forum.telecharger-jeuxpc.fr/index.php?threads/what-is-fairy-cat.231/', 'page_2': '', 'page_3': '', 'title': 'what is Fairy cat', 'nickName': 'jieke'}, {'page_1': 'https://www.nvidia.com/en-us/geforce/forums/off-topic/25/510415/how-can-i-experience-the-fairy-cat-metaverse/', 'page_2': '', 'page_3': '', 'title': 'How can I experience the Fairy Cat metaverse?', 'nickName': 'xiao97303'}, {'page_1': 'https://yuneec-forum.com/threads/how-can-i-experience-the-fairy-cat-metaverse.10729/', 'page_2': '', 'page_3': '', 'title': 'How can I experience the Fairy Cat metaverse?', 'nickName': 'jieke'}, {'page_1': 'https://btcforum.fr/viewtopic.php?f=126&t=46260', 'page_2': '', 'page_3': '', 'title': 'Qu’est - ce que Fairy Cat?', 'nickName': 'jieke'}, {'page_1': 'https://forumcrypto.fr/topic/1522-quest-ce-que-fairy-cat/', 'page_2': '', 'page_3': '', 'title': 'Qu’est - ce que Fairy Cat?', 'nickName': 'jieke'}, {'page_1': 'https://forums.gamerevolution.com/threads/fairy-cat.35554', 'page_2': '', 'page_3': '', 'title': 'Comment découvrir le métaverse Fairy Cat ?', 'nickName': 'lidi123'}, {'page_1': 'https://www.graffes.com/forums/showthread.php?81878-Fairy-cat&p=1921835#post1921835', 'page_2': 'https://www.graffes.com/forums/forumdisplay.php?6-General-Discussion', 'page_3': '', 'title': 'Fairy cat', 'nickName': 'lidi123'}, {'page_1': 'https://cryptach.com/threads/how-can-i-experience-the-fairy-cat-metaverse.71234/', 'page_2': '', 'page_3': '', 'title': 'How can I experience the Fairy Cat metaverse?', 'nickName': 'xiaolin'}, {'page_1': 'https://forum.gamemaker.io/index.php?threads/how-can-i-experience-the-fairy-cat-metaverse.101377/', 'page_2': '', 'page_3': '', 'title': 'How can I experience the Fairy Cat metaverse?', 'nickName': 'xiaolin'}, {'page_1': 'https://www.tapatalk.com/groups/serebiiforums/viewtopic.php?f=26&t=1077&from_new_topic=1', 'page_2': '', 'page_3': '', 'title': 'Fairy Cat Forest: The Strongest Black Horse in Blockchain Games, emerging to match on the CryptoKitties.', 'nickName': 'jieke'}]
+
+正在读取表格: 李迪0208.xlsx ==> Sheet2 的数据...
+
+李迪0208.xlsx ==> Sheet2 的数据读取完成: []
+
+正在读取表格: 李迪0208.xlsx ==> Sheet3 的数据...
+
+李迪0208.xlsx ==> Sheet3 的数据读取完成: []
+
+forum/李迪0208.xlsx 的数据读取完成: {'Sheet1': [{'page_1': 'https://www.jeuxvideo.com/forums/0-52-0-1-0-1-0-blabla-25-35-ans.htm', 'page_2': '', 'page_3': '', 'title': 'How can I experience the Fairy Cat metaverse?', 'nickName': 'jieke'}, {'page_1': 'https://www.mobox.io/community/article/63e1bdee03c7ca6ec9e899e6', 'page_2': '', 'page_3': '', 'title': 'The future of blockchain games', 'nickName': 'jieke'}, {'page_1': 'https://pcgameforum.com/threads/the-future-of-blockchain-games.3422/', 'page_2': '', 'page_3': '', 'title': 'The future of blockchain games', 'nickName': 'jieke'}, {'page_1': 'https://www.wallstreetoasis.com/forum/crypto/the-future-of-blockchain-games-1', 'page_2': '', 'page_3': '', 'title': 'The future of blockchain games', 'nickName': 'lixiao'}, {'page_1': 'https://bitco.in/forum/threads/the-future-of-blockchain-games.32559/', 'page_2': '', 'page_3': '', 'title': 'The future of blockchain games', 'nickName': 'Miranahh'}, {'page_1': 'https://gold.forum/forum/136-%F0%9F%8E%B1-crypto-games/?do=add', 'page_2': '', 'page_3': '', 'title': 'The future of blockchain games', 'nickName': 'xialin'}, {'page_1': 'https://elderscrollsrp.net/threads/the-future-of-blockchain-games.389/', 'page_2': '', 'page_3': '', 'title': 'The future of blockchain games', 'nickName': 'xxiaolin'}, {'page_1': 'https://emmates.proboards.com/thread/2925/future-blockchain-games', 'page_2': '', 'page_3': '', 'title': 'The future of blockchain games', 'nickName': 'xxiaolin'}, {'page_1': 'https://medium.com/@xiao97303/the-future-of-blockchain-games-446a042efa47', 'page_2': '', 'page_3': '', 'title': 'The future of blockchain games', 'nickName': 'li xiao'}, {'page_1': 'https://www.pinoyexchange.com/discussion/960872/how-can-i-experience-the-fairy-cat-metaverse', 'page_2': '', 'page_3': '', 'title': 'How can I experience the Fairy Cat metaverse?', 'nickName': 'xiaoxialinlin'}, {'page_1': 'https://www.quora.com/profile/%E5%85%8B-%E6%9D%B0-7/How-can-I-experience-the-Fairy-Cat-metaverse-A-Debuting-in-January-2023-Fairy-Cat-is-one-of-the-most-popular-crypto-1', 'page_2': '', 'page_3': '', 'title': 'How can I experience the Fairy Cat metaverse?', 'nickName': 'jieke'}, {'page_1': 'https://forum.telecharger-jeuxpc.fr/index.php?threads/what-is-fairy-cat.231/', 'page_2': '', 'page_3': '', 'title': 'what is Fairy cat', 'nickName': 'jieke'}, {'page_1': 'https://www.nvidia.com/en-us/geforce/forums/off-topic/25/510415/how-can-i-experience-the-fairy-cat-metaverse/', 'page_2': '', 'page_3': '', 'title': 'How can I experience the Fairy Cat metaverse?', 'nickName': 'xiao97303'}, {'page_1': 'https://yuneec-forum.com/threads/how-can-i-experience-the-fairy-cat-metaverse.10729/', 'page_2': '', 'page_3': '', 'title': 'How can I experience the Fairy Cat metaverse?', 'nickName': 'jieke'}, {'page_1': 'https://btcforum.fr/viewtopic.php?f=126&t=46260', 'page_2': '', 'page_3': '', 'title': 'Qu’est - ce que Fairy Cat?', 'nickName': 'jieke'}, {'page_1': 'https://forumcrypto.fr/topic/1522-quest-ce-que-fairy-cat/', 'page_2': '', 'page_3': '', 'title': 'Qu’est - ce que Fairy Cat?', 'nickName': 'jieke'}, {'page_1': 'https://forums.gamerevolution.com/threads/fairy-cat.35554', 'page_2': '', 'page_3': '', 'title': 'Comment découvrir le métaverse Fairy Cat ?', 'nickName': 'lidi123'}, {'page_1': 'https://www.graffes.com/forums/showthread.php?81878-Fairy-cat&p=1921835#post1921835', 'page_2': 'https://www.graffes.com/forums/forumdisplay.php?6-General-Discussion', 'page_3': '', 'title': 'Fairy cat', 'nickName': 'lidi123'}, {'page_1': 'https://cryptach.com/threads/how-can-i-experience-the-fairy-cat-metaverse.71234/', 'page_2': '', 'page_3': '', 'title': 'How can I experience the Fairy Cat metaverse?', 'nickName': 'xiaolin'}, {'page_1': 'https://forum.gamemaker.io/index.php?threads/how-can-i-experience-the-fairy-cat-metaverse.101377/', 'page_2': '', 'page_3': '', 'title': 'How can I experience the Fairy Cat metaverse?', 'nickName': 'xiaolin'}, {'page_1': 'https://www.tapatalk.com/groups/serebiiforums/viewtopic.php?f=26&t=1077&from_new_topic=1', 'page_2': '', 'page_3': '', 'title': 'Fairy Cat Forest: The Strongest Black Horse in Blockchain Games, emerging to match on the CryptoKitties.', 'nickName': 'jieke'}], 'Sheet2': [], 'Sheet3': []}
+
+
+
+正在检查文件: forum/穆清02.08_1.xlsx 
+正在读取表格: 穆清02.08_1.xlsx ==> Sheet1 的数据...
+
+{'第一页地址': 'https://aseannow.com/forum/228-cryptocurrency-news/', '第二页地址': nan, '第三页地址': nan, '帖子题目': 'Please help me analyze whether I have been deceived by this game', '发帖名字': 'Davy200'}
+解析完成: 论坛地址['aseannow']  标题: Please help me analyze whether I have been deceived by this game  发帖人昵称: Davy200
+数据格式正常,已经添加到数据库...
+
+{'第一页地址': 'https://vnreview.vn/forums/chia-se-mon-hoi.422281184763053', '第二页地址': nan, '第三页地址': nan, '帖子题目': 'FAIRY CAT TRÒ CHƠI CHUỖI KHỐI', '发帖名字': 'Azirah Mohamed'}
+解析完成: 论坛地址['vnreview']  标题: FAIRY CAT TRÒ CHƠI CHUỖI KHỐI  发帖人昵称: Azirah Mohamed
+数据格式正常,已经添加到数据库...
+
+{'第一页地址': 'https://www.expat.com/forum/viewforum.php?id=220', '第二页地址': nan, '第三页地址': nan, '帖子题目': 'FAIRY CAT BLOCKCHAIN GAME', '发帖名字': 'marrypoppin949'}
+解析完成: 论坛地址['expat']  标题: FAIRY CAT BLOCKCHAIN GAME  发帖人昵称: marrypoppin949
+数据格式正常,已经添加到数据库...
+
+{'第一页地址': 'https://coinmarketcap.com/community/', '第二页地址': nan, '第三页地址': nan, '帖子题目': 'What is a Fairy cat', '发帖名字': 'Marrypoppin'}
+解析完成: 论坛地址['coinmarketcap']  标题: What is a Fairy cat  发帖人昵称: Marrypoppin
+数据格式正常,已经添加到数据库...
+
+{'第一页地址': 'https://thecryptocurrencyforums.com/community/forums/crypto-news.107/', '第二页地址': nan, '第三页地址': nan, '帖子题目': 'What is a Fairy cat', '发帖名字': 'mumu500'}
+解析完成: 论坛地址['thecryptocurrencyforums']  标题: What is a Fairy cat  发帖人昵称: mumu500
+数据格式正常,已经添加到数据库...
+
+{'第一页地址': 'https://www.jeuxvideo.com/forums/0-3000472-0-1-0-1-0-jeux-independants.htm', '第二页地址': nan, '第三页地址': nan, '帖子题目': 'FAIRY CAT', '发帖名字': 'Davy200'}
+解析完成: 论坛地址['jeuxvideo']  标题: FAIRY CAT  发帖人昵称: Davy200
+数据格式正常,已经添加到数据库...
+
+{'第一页地址': 'https://forum.telecharger-jeuxpc.fr/index.php?forums/news-informations.4/', '第二页地址': nan, '第三页地址': nan, '帖子题目': 'Fairy cat', '发帖名字': 'mumu500'}
+解析完成: 论坛地址['telecharger-jeuxpc']  标题: Fairy cat  发帖人昵称: mumu500
+数据格式正常,已经添加到数据库...
+
+{'第一页地址': 'https://forums.gamerevolution.com/forums/gamerev-news.35/', '第二页地址': nan, '第三页地址': nan, '帖子题目': 'What is a Fairy cat', '发帖名字': 'Azirah '}
+解析完成: 论坛地址['gamerevolution']  标题: What is a Fairy cat  发帖人昵称: Azirah
+数据格式正常,已经添加到数据库...
+
+{'第一页地址': 'https://www.xboxforums.com/forums/off-topic-lounge.1123/', '第二页地址': nan, '第三页地址': nan, '帖子题目': 'What is a Fairy cat', '发帖名字': 'Azirah'}
+解析完成: 论坛地址['xboxforums']  标题: What is a Fairy cat  发帖人昵称: Azirah
+数据格式正常,已经添加到数据库...
+
+{'第一页地址': 'https://www.tapatalk.com/groups/serebiiforums/general-pokemon-discussion-f26/', '第二页地址': nan, '第三页地址': nan, '帖子题目': 'What is a Fairy cat', '发帖名字': 'mumu500'}
+解析完成: 论坛地址['tapatalk']  标题: What is a Fairy cat  发帖人昵称: mumu500
+数据格式正常,已经添加到数据库...
+
+{'第一页地址': 'https://cryptorum.com/cryptocurrency/mining/', '第二页地址': nan, '第三页地址': nan, '帖子题目': 'What is cryptocurrency and how does it work', '发帖名字': 'Marry200'}
+解析完成: 论坛地址['cryptorum']  标题: What is cryptocurrency and how does it work  发帖人昵称: Marry200
+数据格式正常,已经添加到数据库...
+
+{'第一页地址': 'https://bitcoinforum.com/off-topic/', '第二页地址': nan, '第三页地址': nan, '帖子题目': 'What is cryptocurrency and how does it work', '发帖名字': 'Davy200'}
+解析完成: 论坛地址['bitcoinforum']  标题: What is cryptocurrency and how does it work  发帖人昵称: Davy200
+数据格式正常,已经添加到数据库...
+
+{'第一页地址': 'https://satoshigames.io/c/blockchain-games/5', '第二页地址': nan, '第三页地址': nan, '帖子题目': 'what is fairy cat blockchain game', '发帖名字': 'Marrypoppin'}
+解析完成: 论坛地址['satoshigames']  标题: what is fairy cat blockchain game  发帖人昵称: Marrypoppin
+数据格式正常,已经添加到数据库...
+
+{'第一页地址': 'https://www.inventoridigiochi.it/forums/forum/idee-di-giochi/', '第二页地址': nan, '第三页地址': nan, '帖子题目': "Cos'è un gatto delle fate?", '发帖名字': 'Marry Poppin'}
+解析完成: 论坛地址['inventoridigiochi']  标题: Cos'è un gatto delle fate?  发帖人昵称: Marry Poppin
+数据格式正常,已经添加到数据库...
+
+{'第一页地址': 'https://pc-gaming.it/board/forum/50-tema-libero/', '第二页地址': nan, '第三页地址': nan, '帖子题目': "Cos'è un gatto delle fate?", '发帖名字': 'Davy200'}
+解析完成: 论坛地址['pc-gaming']  标题: Cos'è un gatto delle fate?  发帖人昵称: Davy200
+数据格式正常,已经添加到数据库...
+
+{'第一页地址': 'https://phcorner.net/forums/forum-games.534/', '第二页地址': nan, '第三页地址': nan, '帖子题目': 'Ano ang Fairy Cat?', '发帖名字': 'Sheylaka'}
+解析完成: 论坛地址['phcorner']  标题: Ano ang Fairy Cat?  发帖人昵称: Sheylaka
+数据格式正常,已经添加到数据库...
+
+穆清02.08_1.xlsx ==> Sheet1 的数据读取完成: [{'page_1': 'https://aseannow.com/forum/228-cryptocurrency-news/', 'page_2': '', 'page_3': '', 'title': 'Please help me analyze whether I have been deceived by this game', 'nickName': 'Davy200'}, {'page_1': 'https://vnreview.vn/forums/chia-se-mon-hoi.422281184763053', 'page_2': '', 'page_3': '', 'title': 'FAIRY CAT TRÒ CHƠI CHUỖI KHỐI', 'nickName': 'Azirah Mohamed'}, {'page_1': 'https://www.expat.com/forum/viewforum.php?id=220', 'page_2': '', 'page_3': '', 'title': 'FAIRY CAT BLOCKCHAIN GAME', 'nickName': 'marrypoppin949'}, {'page_1': 'https://coinmarketcap.com/community/', 'page_2': '', 'page_3': '', 'title': 'What is a Fairy cat', 'nickName': 'Marrypoppin'}, {'page_1': 'https://thecryptocurrencyforums.com/community/forums/crypto-news.107/', 'page_2': '', 'page_3': '', 'title': 'What is a Fairy cat', 'nickName': 'mumu500'}, {'page_1': 'https://www.jeuxvideo.com/forums/0-3000472-0-1-0-1-0-jeux-independants.htm', 'page_2': '', 'page_3': '', 'title': 'FAIRY CAT', 'nickName': 'Davy200'}, {'page_1': 'https://forum.telecharger-jeuxpc.fr/index.php?forums/news-informations.4/', 'page_2': '', 'page_3': '', 'title': 'Fairy cat', 'nickName': 'mumu500'}, {'page_1': 'https://forums.gamerevolution.com/forums/gamerev-news.35/', 'page_2': '', 'page_3': '', 'title': 'What is a Fairy cat', 'nickName': 'Azirah'}, {'page_1': 'https://www.xboxforums.com/forums/off-topic-lounge.1123/', 'page_2': '', 'page_3': '', 'title': 'What is a Fairy cat', 'nickName': 'Azirah'}, {'page_1': 'https://www.tapatalk.com/groups/serebiiforums/general-pokemon-discussion-f26/', 'page_2': '', 'page_3': '', 'title': 'What is a Fairy cat', 'nickName': 'mumu500'}, {'page_1': 'https://cryptorum.com/cryptocurrency/mining/', 'page_2': '', 'page_3': '', 'title': 'What is cryptocurrency and how does it work', 'nickName': 'Marry200'}, {'page_1': 'https://bitcoinforum.com/off-topic/', 'page_2': '', 'page_3': '', 'title': 'What is cryptocurrency and how does it work', 'nickName': 'Davy200'}, {'page_1': 'https://satoshigames.io/c/blockchain-games/5', 'page_2': '', 'page_3': '', 'title': 'what is fairy cat blockchain game', 'nickName': 'Marrypoppin'}, {'page_1': 'https://www.inventoridigiochi.it/forums/forum/idee-di-giochi/', 'page_2': '', 'page_3': '', 'title': "Cos'è un gatto delle fate?", 'nickName': 'Marry Poppin'}, {'page_1': 'https://pc-gaming.it/board/forum/50-tema-libero/', 'page_2': '', 'page_3': '', 'title': "Cos'è un gatto delle fate?", 'nickName': 'Davy200'}, {'page_1': 'https://phcorner.net/forums/forum-games.534/', 'page_2': '', 'page_3': '', 'title': 'Ano ang Fairy Cat?', 'nickName': 'Sheylaka'}]
+
+forum/穆清02.08_1.xlsx 的数据读取完成: {'Sheet1': [{'page_1': 'https://aseannow.com/forum/228-cryptocurrency-news/', 'page_2': '', 'page_3': '', 'title': 'Please help me analyze whether I have been deceived by this game', 'nickName': 'Davy200'}, {'page_1': 'https://vnreview.vn/forums/chia-se-mon-hoi.422281184763053', 'page_2': '', 'page_3': '', 'title': 'FAIRY CAT TRÒ CHƠI CHUỖI KHỐI', 'nickName': 'Azirah Mohamed'}, {'page_1': 'https://www.expat.com/forum/viewforum.php?id=220', 'page_2': '', 'page_3': '', 'title': 'FAIRY CAT BLOCKCHAIN GAME', 'nickName': 'marrypoppin949'}, {'page_1': 'https://coinmarketcap.com/community/', 'page_2': '', 'page_3': '', 'title': 'What is a Fairy cat', 'nickName': 'Marrypoppin'}, {'page_1': 'https://thecryptocurrencyforums.com/community/forums/crypto-news.107/', 'page_2': '', 'page_3': '', 'title': 'What is a Fairy cat', 'nickName': 'mumu500'}, {'page_1': 'https://www.jeuxvideo.com/forums/0-3000472-0-1-0-1-0-jeux-independants.htm', 'page_2': '', 'page_3': '', 'title': 'FAIRY CAT', 'nickName': 'Davy200'}, {'page_1': 'https://forum.telecharger-jeuxpc.fr/index.php?forums/news-informations.4/', 'page_2': '', 'page_3': '', 'title': 'Fairy cat', 'nickName': 'mumu500'}, {'page_1': 'https://forums.gamerevolution.com/forums/gamerev-news.35/', 'page_2': '', 'page_3': '', 'title': 'What is a Fairy cat', 'nickName': 'Azirah'}, {'page_1': 'https://www.xboxforums.com/forums/off-topic-lounge.1123/', 'page_2': '', 'page_3': '', 'title': 'What is a Fairy cat', 'nickName': 'Azirah'}, {'page_1': 'https://www.tapatalk.com/groups/serebiiforums/general-pokemon-discussion-f26/', 'page_2': '', 'page_3': '', 'title': 'What is a Fairy cat', 'nickName': 'mumu500'}, {'page_1': 'https://cryptorum.com/cryptocurrency/mining/', 'page_2': '', 'page_3': '', 'title': 'What is cryptocurrency and how does it work', 'nickName': 'Marry200'}, {'page_1': 'https://bitcoinforum.com/off-topic/', 'page_2': '', 'page_3': '', 'title': 'What is cryptocurrency and how does it work', 'nickName': 'Davy200'}, {'page_1': 'https://satoshigames.io/c/blockchain-games/5', 'page_2': '', 'page_3': '', 'title': 'what is fairy cat blockchain game', 'nickName': 'Marrypoppin'}, {'page_1': 'https://www.inventoridigiochi.it/forums/forum/idee-di-giochi/', 'page_2': '', 'page_3': '', 'title': "Cos'è un gatto delle fate?", 'nickName': 'Marry Poppin'}, {'page_1': 'https://pc-gaming.it/board/forum/50-tema-libero/', 'page_2': '', 'page_3': '', 'title': "Cos'è un gatto delle fate?", 'nickName': 'Davy200'}, {'page_1': 'https://phcorner.net/forums/forum-games.534/', 'page_2': '', 'page_3': '', 'title': 'Ano ang Fairy Cat?', 'nickName': 'Sheylaka'}]}
+
+
+
+数据读取成功: {'李迪0208.xlsx': {'Sheet1': [{'page_1': 'https://www.jeuxvideo.com/forums/0-52-0-1-0-1-0-blabla-25-35-ans.htm', 'page_2': '', 'page_3': '', 'title': 'How can I experience the Fairy Cat metaverse?', 'nickName': 'jieke'}, {'page_1': 'https://www.mobox.io/community/article/63e1bdee03c7ca6ec9e899e6', 'page_2': '', 'page_3': '', 'title': 'The future of blockchain games', 'nickName': 'jieke'}, {'page_1': 'https://pcgameforum.com/threads/the-future-of-blockchain-games.3422/', 'page_2': '', 'page_3': '', 'title': 'The future of blockchain games', 'nickName': 'jieke'}, {'page_1': 'https://www.wallstreetoasis.com/forum/crypto/the-future-of-blockchain-games-1', 'page_2': '', 'page_3': '', 'title': 'The future of blockchain games', 'nickName': 'lixiao'}, {'page_1': 'https://bitco.in/forum/threads/the-future-of-blockchain-games.32559/', 'page_2': '', 'page_3': '', 'title': 'The future of blockchain games', 'nickName': 'Miranahh'}, {'page_1': 'https://gold.forum/forum/136-%F0%9F%8E%B1-crypto-games/?do=add', 'page_2': '', 'page_3': '', 'title': 'The future of blockchain games', 'nickName': 'xialin'}, {'page_1': 'https://elderscrollsrp.net/threads/the-future-of-blockchain-games.389/', 'page_2': '', 'page_3': '', 'title': 'The future of blockchain games', 'nickName': 'xxiaolin'}, {'page_1': 'https://emmates.proboards.com/thread/2925/future-blockchain-games', 'page_2': '', 'page_3': '', 'title': 'The future of blockchain games', 'nickName': 'xxiaolin'}, {'page_1': 'https://medium.com/@xiao97303/the-future-of-blockchain-games-446a042efa47', 'page_2': '', 'page_3': '', 'title': 'The future of blockchain games', 'nickName': 'li xiao'}, {'page_1': 'https://www.pinoyexchange.com/discussion/960872/how-can-i-experience-the-fairy-cat-metaverse', 'page_2': '', 'page_3': '', 'title': 'How can I experience the Fairy Cat metaverse?', 'nickName': 'xiaoxialinlin'}, {'page_1': 'https://www.quora.com/profile/%E5%85%8B-%E6%9D%B0-7/How-can-I-experience-the-Fairy-Cat-metaverse-A-Debuting-in-January-2023-Fairy-Cat-is-one-of-the-most-popular-crypto-1', 'page_2': '', 'page_3': '', 'title': 'How can I experience the Fairy Cat metaverse?', 'nickName': 'jieke'}, {'page_1': 'https://forum.telecharger-jeuxpc.fr/index.php?threads/what-is-fairy-cat.231/', 'page_2': '', 'page_3': '', 'title': 'what is Fairy cat', 'nickName': 'jieke'}, {'page_1': 'https://www.nvidia.com/en-us/geforce/forums/off-topic/25/510415/how-can-i-experience-the-fairy-cat-metaverse/', 'page_2': '', 'page_3': '', 'title': 'How can I experience the Fairy Cat metaverse?', 'nickName': 'xiao97303'}, {'page_1': 'https://yuneec-forum.com/threads/how-can-i-experience-the-fairy-cat-metaverse.10729/', 'page_2': '', 'page_3': '', 'title': 'How can I experience the Fairy Cat metaverse?', 'nickName': 'jieke'}, {'page_1': 'https://btcforum.fr/viewtopic.php?f=126&t=46260', 'page_2': '', 'page_3': '', 'title': 'Qu’est - ce que Fairy Cat?', 'nickName': 'jieke'}, {'page_1': 'https://forumcrypto.fr/topic/1522-quest-ce-que-fairy-cat/', 'page_2': '', 'page_3': '', 'title': 'Qu’est - ce que Fairy Cat?', 'nickName': 'jieke'}, {'page_1': 'https://forums.gamerevolution.com/threads/fairy-cat.35554', 'page_2': '', 'page_3': '', 'title': 'Comment découvrir le métaverse Fairy Cat ?', 'nickName': 'lidi123'}, {'page_1': 'https://www.graffes.com/forums/showthread.php?81878-Fairy-cat&p=1921835#post1921835', 'page_2': 'https://www.graffes.com/forums/forumdisplay.php?6-General-Discussion', 'page_3': '', 'title': 'Fairy cat', 'nickName': 'lidi123'}, {'page_1': 'https://cryptach.com/threads/how-can-i-experience-the-fairy-cat-metaverse.71234/', 'page_2': '', 'page_3': '', 'title': 'How can I experience the Fairy Cat metaverse?', 'nickName': 'xiaolin'}, {'page_1': 'https://forum.gamemaker.io/index.php?threads/how-can-i-experience-the-fairy-cat-metaverse.101377/', 'page_2': '', 'page_3': '', 'title': 'How can I experience the Fairy Cat metaverse?', 'nickName': 'xiaolin'}, {'page_1': 'https://www.tapatalk.com/groups/serebiiforums/viewtopic.php?f=26&t=1077&from_new_topic=1', 'page_2': '', 'page_3': '', 'title': 'Fairy Cat Forest: The Strongest Black Horse in Blockchain Games, emerging to match on the CryptoKitties.', 'nickName': 'jieke'}], 'Sheet2': [], 'Sheet3': []}, '穆清02.08_1.xlsx': {'Sheet1': [{'page_1': 'https://aseannow.com/forum/228-cryptocurrency-news/', 'page_2': '', 'page_3': '', 'title': 'Please help me analyze whether I have been deceived by this game', 'nickName': 'Davy200'}, {'page_1': 'https://vnreview.vn/forums/chia-se-mon-hoi.422281184763053', 'page_2': '', 'page_3': '', 'title': 'FAIRY CAT TRÒ CHƠI CHUỖI KHỐI', 'nickName': 'Azirah Mohamed'}, {'page_1': 'https://www.expat.com/forum/viewforum.php?id=220', 'page_2': '', 'page_3': '', 'title': 'FAIRY CAT BLOCKCHAIN GAME', 'nickName': 'marrypoppin949'}, {'page_1': 'https://coinmarketcap.com/community/', 'page_2': '', 'page_3': '', 'title': 'What is a Fairy cat', 'nickName': 'Marrypoppin'}, {'page_1': 'https://thecryptocurrencyforums.com/community/forums/crypto-news.107/', 'page_2': '', 'page_3': '', 'title': 'What is a Fairy cat', 'nickName': 'mumu500'}, {'page_1': 'https://www.jeuxvideo.com/forums/0-3000472-0-1-0-1-0-jeux-independants.htm', 'page_2': '', 'page_3': '', 'title': 'FAIRY CAT', 'nickName': 'Davy200'}, {'page_1': 'https://forum.telecharger-jeuxpc.fr/index.php?forums/news-informations.4/', 'page_2': '', 'page_3': '', 'title': 'Fairy cat', 'nickName': 'mumu500'}, {'page_1': 'https://forums.gamerevolution.com/forums/gamerev-news.35/', 'page_2': '', 'page_3': '', 'title': 'What is a Fairy cat', 'nickName': 'Azirah'}, {'page_1': 'https://www.xboxforums.com/forums/off-topic-lounge.1123/', 'page_2': '', 'page_3': '', 'title': 'What is a Fairy cat', 'nickName': 'Azirah'}, {'page_1': 'https://www.tapatalk.com/groups/serebiiforums/general-pokemon-discussion-f26/', 'page_2': '', 'page_3': '', 'title': 'What is a Fairy cat', 'nickName': 'mumu500'}, {'page_1': 'https://cryptorum.com/cryptocurrency/mining/', 'page_2': '', 'page_3': '', 'title': 'What is cryptocurrency and how does it work', 'nickName': 'Marry200'}, {'page_1': 'https://bitcoinforum.com/off-topic/', 'page_2': '', 'page_3': '', 'title': 'What is cryptocurrency and how does it work', 'nickName': 'Davy200'}, {'page_1': 'https://satoshigames.io/c/blockchain-games/5', 'page_2': '', 'page_3': '', 'title': 'what is fairy cat blockchain game', 'nickName': 'Marrypoppin'}, {'page_1': 'https://www.inventoridigiochi.it/forums/forum/idee-di-giochi/', 'page_2': '', 'page_3': '', 'title': "Cos'è un gatto delle fate?", 'nickName': 'Marry Poppin'}, {'page_1': 'https://pc-gaming.it/board/forum/50-tema-libero/', 'page_2': '', 'page_3': '', 'title': "Cos'è un gatto delle fate?", 'nickName': 'Davy200'}, {'page_1': 'https://phcorner.net/forums/forum-games.534/', 'page_2': '', 'page_3': '', 'title': 'Ano ang Fairy Cat?', 'nickName': 'Sheylaka'}]}}
+
+
+
+开始处理审核任务...
+
+
+
+李迪0208.xlsx > Sheet1 > 当前的进度: 1 / 21
+李迪0208.xlsx > Sheet1 > 帖子的标题: How can I experience the Fairy Cat metaverse?
+李迪0208.xlsx > Sheet1 > 发帖人昵称: jieke
+李迪0208.xlsx > Sheet1 > 论坛的地址: https://www.jeuxvideo.com/forums/0-52-0-1-0-1-0-blabla-25-35-ans.htm
+李迪0208.xlsx > Sheet1 > 论坛的名字: jeuxvideo
+李迪0208.xlsx > Sheet1 > 重复的对象: 1 (穆清02.08_1.xlsx)
+李迪0208.xlsx > Sheet1 > 论坛的处理: 审核失败
+李迪0208.xlsx > Sheet1 > 处理的结果: 审核不通过 (总数: 1  通过: 0  不通过: 1  重复: 1  重复率:100.00%)
+
+
+李迪0208.xlsx > Sheet1 > 当前的进度: 2 / 21
+李迪0208.xlsx > Sheet1 > 帖子的标题: The future of blockchain games
+李迪0208.xlsx > Sheet1 > 发帖人昵称: jieke
+李迪0208.xlsx > Sheet1 > 论坛的地址: https://www.mobox.io/community/article/63e1bdee03c7ca6ec9e899e6
+李迪0208.xlsx > Sheet1 > 论坛的名字: mobox
+李迪0208.xlsx > Sheet1 > 论坛的处理: 审核失败
+李迪0208.xlsx > Sheet1 > 处理的结果: 审核不通过 (总数: 2  通过: 0  不通过: 2  重复: 1  重复率:50.00%)
+
+
+李迪0208.xlsx > Sheet1 > 当前的进度: 3 / 21
+李迪0208.xlsx > Sheet1 > 帖子的标题: The future of blockchain games
+李迪0208.xlsx > Sheet1 > 发帖人昵称: jieke
+李迪0208.xlsx > Sheet1 > 论坛的地址: https://pcgameforum.com/threads/the-future-of-blockchain-games.3422/
+李迪0208.xlsx > Sheet1 > 论坛的名字: pcgameforum
+李迪0208.xlsx > Sheet1 > 论坛的处理: 审核通过
+李迪0208.xlsx > Sheet1 > 处理的结果: 审核通过 (总数: 3  通过: 1  不通过: 2  重复: 1  重复率:33.33%)
+
+
+李迪0208.xlsx > Sheet1 > 当前的进度: 4 / 21
+李迪0208.xlsx > Sheet1 > 帖子的标题: The future of blockchain games
+李迪0208.xlsx > Sheet1 > 发帖人昵称: lixiao
+李迪0208.xlsx > Sheet1 > 论坛的地址: https://www.wallstreetoasis.com/forum/crypto/the-future-of-blockchain-games-1
+李迪0208.xlsx > Sheet1 > 论坛的名字: wallstreetoasis
+李迪0208.xlsx > Sheet1 > 论坛的处理: 审核失败
+李迪0208.xlsx > Sheet1 > 处理的结果: 审核不通过 (总数: 4  通过: 1  不通过: 3  重复: 1  重复率:25.00%)
+
+
+李迪0208.xlsx > Sheet1 > 当前的进度: 5 / 21
+李迪0208.xlsx > Sheet1 > 帖子的标题: The future of blockchain games
+李迪0208.xlsx > Sheet1 > 发帖人昵称: Miranahh
+李迪0208.xlsx > Sheet1 > 论坛的地址: https://bitco.in/forum/threads/the-future-of-blockchain-games.32559/
+李迪0208.xlsx > Sheet1 > 论坛的名字: bitco
+李迪0208.xlsx > Sheet1 > 重复的对象: 1 (穆清02.08_1.xlsx)
+李迪0208.xlsx > Sheet1 > 论坛的处理: 审核通过
+李迪0208.xlsx > Sheet1 > 处理的结果: 审核通过 (总数: 5  通过: 2  不通过: 3  重复: 2  重复率:40.00%)
+
+
+李迪0208.xlsx > Sheet1 > 当前的进度: 6 / 21
+李迪0208.xlsx > Sheet1 > 帖子的标题: The future of blockchain games
+李迪0208.xlsx > Sheet1 > 发帖人昵称: xialin
+李迪0208.xlsx > Sheet1 > 论坛的地址: https://gold.forum/forum/136-%F0%9F%8E%B1-crypto-games/?do=add
+李迪0208.xlsx > Sheet1 > 论坛的名字: gold
+李迪0208.xlsx > Sheet1 > 论坛的处理: 审核失败
+李迪0208.xlsx > Sheet1 > 处理的结果: 审核不通过 (总数: 6  通过: 2  不通过: 4  重复: 2  重复率:33.33%)
+
+
+李迪0208.xlsx > Sheet1 > 当前的进度: 7 / 21
+李迪0208.xlsx > Sheet1 > 帖子的标题: The future of blockchain games
+李迪0208.xlsx > Sheet1 > 发帖人昵称: xxiaolin
+李迪0208.xlsx > Sheet1 > 论坛的地址: https://elderscrollsrp.net/threads/the-future-of-blockchain-games.389/
+李迪0208.xlsx > Sheet1 > 论坛的名字: elderscrollsrp
+李迪0208.xlsx > Sheet1 > 论坛的处理: 审核通过
+李迪0208.xlsx > Sheet1 > 处理的结果: 审核通过 (总数: 7  通过: 3  不通过: 4  重复: 2  重复率:28.57%)
+
+
+李迪0208.xlsx > Sheet1 > 当前的进度: 8 / 21
+李迪0208.xlsx > Sheet1 > 帖子的标题: The future of blockchain games
+李迪0208.xlsx > Sheet1 > 发帖人昵称: xxiaolin
+李迪0208.xlsx > Sheet1 > 论坛的地址: https://emmates.proboards.com/thread/2925/future-blockchain-games
+李迪0208.xlsx > Sheet1 > 论坛的名字: emmates
+李迪0208.xlsx > Sheet1 > 论坛的处理: 审核通过
+李迪0208.xlsx > Sheet1 > 处理的结果: 审核通过 (总数: 8  通过: 4  不通过: 4  重复: 2  重复率:25.00%)
+
+
+李迪0208.xlsx > Sheet1 > 当前的进度: 9 / 21
+李迪0208.xlsx > Sheet1 > 帖子的标题: The future of blockchain games
+李迪0208.xlsx > Sheet1 > 发帖人昵称: li xiao
+李迪0208.xlsx > Sheet1 > 论坛的地址: https://medium.com/@xiao97303/the-future-of-blockchain-games-446a042efa47
+李迪0208.xlsx > Sheet1 > 论坛的名字: medium
+李迪0208.xlsx > Sheet1 > 论坛的处理: 审核通过
+李迪0208.xlsx > Sheet1 > 处理的结果: 审核通过 (总数: 9  通过: 5  不通过: 4  重复: 2  重复率:22.22%)
+
+
+李迪0208.xlsx > Sheet1 > 当前的进度: 10 / 21
+李迪0208.xlsx > Sheet1 > 帖子的标题: How can I experience the Fairy Cat metaverse?
+李迪0208.xlsx > Sheet1 > 发帖人昵称: xiaoxialinlin
+李迪0208.xlsx > Sheet1 > 论坛的地址: https://www.pinoyexchange.com/discussion/960872/how-can-i-experience-the-fairy-cat-metaverse
+李迪0208.xlsx > Sheet1 > 论坛的名字: pinoyexchange
+李迪0208.xlsx > Sheet1 > 论坛的处理: 审核通过
+李迪0208.xlsx > Sheet1 > 处理的结果: 审核通过 (总数: 10  通过: 6  不通过: 4  重复: 2  重复率:20.00%)
+
+
+李迪0208.xlsx > Sheet1 > 当前的进度: 11 / 21
+李迪0208.xlsx > Sheet1 > 帖子的标题: How can I experience the Fairy Cat metaverse?
+李迪0208.xlsx > Sheet1 > 发帖人昵称: jieke
+李迪0208.xlsx > Sheet1 > 论坛的地址: https://www.quora.com/profile/%E5%85%8B-%E6%9D%B0-7/How-can-I-experience-the-Fairy-Cat-metaverse-A-Debuting-in-January-2023-Fairy-Cat-is-one-of-the-most-popular-crypto-1
+李迪0208.xlsx > Sheet1 > 论坛的名字: quora
+李迪0208.xlsx > Sheet1 > 论坛的处理: 审核通过
+李迪0208.xlsx > Sheet1 > 处理的结果: 审核通过 (总数: 11  通过: 7  不通过: 4  重复: 2  重复率:18.18%)
+
+
+李迪0208.xlsx > Sheet1 > 当前的进度: 12 / 21
+李迪0208.xlsx > Sheet1 > 帖子的标题: what is Fairy cat
+李迪0208.xlsx > Sheet1 > 发帖人昵称: jieke
+李迪0208.xlsx > Sheet1 > 论坛的地址: https://forum.telecharger-jeuxpc.fr/index.php?threads/what-is-fairy-cat.231/
+李迪0208.xlsx > Sheet1 > 论坛的名字: telecharger-jeuxpc
+李迪0208.xlsx > Sheet1 > 重复的对象: 1 (穆清02.08_1.xlsx)
+李迪0208.xlsx > Sheet1 > 论坛的处理: 审核通过
+李迪0208.xlsx > Sheet1 > 处理的结果: 审核通过 (总数: 12  通过: 8  不通过: 4  重复: 3  重复率:25.00%)
+
+
+李迪0208.xlsx > Sheet1 > 当前的进度: 13 / 21
+李迪0208.xlsx > Sheet1 > 帖子的标题: How can I experience the Fairy Cat metaverse?
+李迪0208.xlsx > Sheet1 > 发帖人昵称: xiao97303
+李迪0208.xlsx > Sheet1 > 论坛的地址: https://www.nvidia.com/en-us/geforce/forums/off-topic/25/510415/how-can-i-experience-the-fairy-cat-metaverse/
+李迪0208.xlsx > Sheet1 > 论坛的名字: nvidia
+李迪0208.xlsx > Sheet1 > 论坛的处理: 审核失败
+李迪0208.xlsx > Sheet1 > 处理的结果: 审核不通过 (总数: 13  通过: 8  不通过: 5  重复: 3  重复率:23.08%)
+
+
+李迪0208.xlsx > Sheet1 > 当前的进度: 14 / 21
+李迪0208.xlsx > Sheet1 > 帖子的标题: How can I experience the Fairy Cat metaverse?
+李迪0208.xlsx > Sheet1 > 发帖人昵称: jieke
+李迪0208.xlsx > Sheet1 > 论坛的地址: https://yuneec-forum.com/threads/how-can-i-experience-the-fairy-cat-metaverse.10729/
+李迪0208.xlsx > Sheet1 > 论坛的名字: yuneec-forum
+李迪0208.xlsx > Sheet1 > 论坛的处理: 审核失败
+李迪0208.xlsx > Sheet1 > 处理的结果: 审核不通过 (总数: 14  通过: 8  不通过: 6  重复: 3  重复率:21.43%)
+
+
+李迪0208.xlsx > Sheet1 > 当前的进度: 15 / 21
+李迪0208.xlsx > Sheet1 > 帖子的标题: Qu’est - ce que Fairy Cat?
+李迪0208.xlsx > Sheet1 > 发帖人昵称: jieke
+李迪0208.xlsx > Sheet1 > 论坛的地址: https://btcforum.fr/viewtopic.php?f=126&t=46260
+李迪0208.xlsx > Sheet1 > 论坛的名字: btcforum
+李迪0208.xlsx > Sheet1 > 论坛的处理: 审核通过
+李迪0208.xlsx > Sheet1 > 处理的结果: 审核通过 (总数: 15  通过: 9  不通过: 6  重复: 3  重复率:20.00%)
+
+
+李迪0208.xlsx > Sheet1 > 当前的进度: 16 / 21
+李迪0208.xlsx > Sheet1 > 帖子的标题: Qu’est - ce que Fairy Cat?
+李迪0208.xlsx > Sheet1 > 发帖人昵称: jieke
+李迪0208.xlsx > Sheet1 > 论坛的地址: https://forumcrypto.fr/topic/1522-quest-ce-que-fairy-cat/
+李迪0208.xlsx > Sheet1 > 论坛的名字: forumcrypto
+李迪0208.xlsx > Sheet1 > 论坛的处理: 审核通过
+李迪0208.xlsx > Sheet1 > 处理的结果: 审核通过 (总数: 16  通过: 10  不通过: 6  重复: 3  重复率:18.75%)
+
+
+李迪0208.xlsx > Sheet1 > 当前的进度: 17 / 21
+李迪0208.xlsx > Sheet1 > 帖子的标题: Comment découvrir le métaverse Fairy Cat ?
+李迪0208.xlsx > Sheet1 > 发帖人昵称: lidi123
+李迪0208.xlsx > Sheet1 > 论坛的地址: https://forums.gamerevolution.com/threads/fairy-cat.35554
+李迪0208.xlsx > Sheet1 > 论坛的名字: gamerevolution
+李迪0208.xlsx > Sheet1 > 重复的对象: 1 (穆清02.08_1.xlsx)
+李迪0208.xlsx > Sheet1 > 论坛的处理: 审核通过
+李迪0208.xlsx > Sheet1 > 处理的结果: 审核通过 (总数: 17  通过: 11  不通过: 6  重复: 4  重复率:23.53%)
+
+
+李迪0208.xlsx > Sheet1 > 当前的进度: 18 / 21
+李迪0208.xlsx > Sheet1 > 帖子的标题: Fairy cat
+李迪0208.xlsx > Sheet1 > 发帖人昵称: lidi123
+李迪0208.xlsx > Sheet1 > 论坛的地址: https://www.graffes.com/forums/showthread.php?81878-Fairy-cat&p=1921835#post1921835
+李迪0208.xlsx > Sheet1 > 论坛的名字: graffes
+李迪0208.xlsx > Sheet1 > 论坛的处理: 审核失败
+李迪0208.xlsx > Sheet1 > 论坛的地址: https://www.graffes.com/forums/forumdisplay.php?6-General-Discussion
+李迪0208.xlsx > Sheet1 > 论坛的名字: graffes
+李迪0208.xlsx > Sheet1 > 论坛的处理: 审核失败
+李迪0208.xlsx > Sheet1 > 处理的结果: 审核不通过 (总数: 18  通过: 11  不通过: 7  重复: 4  重复率:22.22%)
+
+
+李迪0208.xlsx > Sheet1 > 当前的进度: 19 / 21
+李迪0208.xlsx > Sheet1 > 帖子的标题: How can I experience the Fairy Cat metaverse?
+李迪0208.xlsx > Sheet1 > 发帖人昵称: xiaolin
+李迪0208.xlsx > Sheet1 > 论坛的地址: https://cryptach.com/threads/how-can-i-experience-the-fairy-cat-metaverse.71234/
+李迪0208.xlsx > Sheet1 > 论坛的名字: cryptach
+李迪0208.xlsx > Sheet1 > 论坛的处理: 审核通过
+李迪0208.xlsx > Sheet1 > 处理的结果: 审核通过 (总数: 19  通过: 12  不通过: 7  重复: 4  重复率:21.05%)
+
+
+李迪0208.xlsx > Sheet1 > 当前的进度: 20 / 21
+李迪0208.xlsx > Sheet1 > 帖子的标题: How can I experience the Fairy Cat metaverse?
+李迪0208.xlsx > Sheet1 > 发帖人昵称: xiaolin
+李迪0208.xlsx > Sheet1 > 论坛的地址: https://forum.gamemaker.io/index.php?threads/how-can-i-experience-the-fairy-cat-metaverse.101377/
+李迪0208.xlsx > Sheet1 > 论坛的名字: gamemaker
+李迪0208.xlsx > Sheet1 > 论坛的处理: 审核失败
+李迪0208.xlsx > Sheet1 > 处理的结果: 审核不通过 (总数: 20  通过: 12  不通过: 8  重复: 4  重复率:20.00%)
+
+
+李迪0208.xlsx > Sheet1 > 当前的进度: 21 / 21
+李迪0208.xlsx > Sheet1 > 帖子的标题: Fairy Cat Forest: The Strongest Black Horse in Blockchain Games, emerging to match on the CryptoKitties.
+李迪0208.xlsx > Sheet1 > 发帖人昵称: jieke
+李迪0208.xlsx > Sheet1 > 论坛的地址: https://www.tapatalk.com/groups/serebiiforums/viewtopic.php?f=26&t=1077&from_new_topic=1
+李迪0208.xlsx > Sheet1 > 论坛的名字: tapatalk
+李迪0208.xlsx > Sheet1 > 重复的对象: 1 (穆清02.08_1.xlsx)
+李迪0208.xlsx > Sheet1 > 论坛的处理: 审核通过
+李迪0208.xlsx > Sheet1 > 处理的结果: 审核通过 (总数: 21  通过: 13  不通过: 8  重复: 5  重复率:23.81%)
+
+
+========== 李迪0208.xlsx ==========
+
+处理总数: 21 (通过 13  不通过 8  和别人重复 5  重复率 23.81%)
+
+通过的论坛: 13
+https://pcgameforum.com/threads/the-future-of-blockchain-games.3422/
+https://bitco.in/forum/threads/the-future-of-blockchain-games.32559/
+https://elderscrollsrp.net/threads/the-future-of-blockchain-games.389/
+https://emmates.proboards.com/thread/2925/future-blockchain-games
+https://medium.com/@xiao97303/the-future-of-blockchain-games-446a042efa47
+https://www.pinoyexchange.com/discussion/960872/how-can-i-experience-the-fairy-cat-metaverse
+https://www.quora.com/profile/%E5%85%8B-%E6%9D%B0-7/How-can-I-experience-the-Fairy-Cat-metaverse-A-Debuting-in-January-2023-Fairy-Cat-is-one-of-the-most-popular-crypto-1
+https://forum.telecharger-jeuxpc.fr/index.php?threads/what-is-fairy-cat.231/
+https://btcforum.fr/viewtopic.php?f=126&t=46260
+https://forumcrypto.fr/topic/1522-quest-ce-que-fairy-cat/
+https://forums.gamerevolution.com/threads/fairy-cat.35554
+https://cryptach.com/threads/how-can-i-experience-the-fairy-cat-metaverse.71234/
+https://www.tapatalk.com/groups/serebiiforums/viewtopic.php?f=26&t=1077&from_new_topic=1
+
+不通过的论坛: 8
+https://www.jeuxvideo.com/forums/0-52-0-1-0-1-0-blabla-25-35-ans.htm
+https://www.mobox.io/community/article/63e1bdee03c7ca6ec9e899e6
+https://www.wallstreetoasis.com/forum/crypto/the-future-of-blockchain-games-1
+https://gold.forum/forum/136-%F0%9F%8E%B1-crypto-games/?do=add
+https://www.nvidia.com/en-us/geforce/forums/off-topic/25/510415/how-can-i-experience-the-fairy-cat-metaverse/
+https://yuneec-forum.com/threads/how-can-i-experience-the-fairy-cat-metaverse.10729/
+https://www.graffes.com/forums/showthread.php?81878-Fairy-cat&p=1921835#post1921835
+https://forum.gamemaker.io/index.php?threads/how-can-i-experience-the-fairy-cat-metaverse.101377/
+
+重复的论坛: 5
+https://www.jeuxvideo.com/forums/0-52-0-1-0-1-0-blabla-25-35-ans.htm
+https://bitco.in/forum/threads/the-future-of-blockchain-games.32559/
+https://forum.telecharger-jeuxpc.fr/index.php?threads/what-is-fairy-cat.231/
+https://forums.gamerevolution.com/threads/fairy-cat.35554
+https://www.tapatalk.com/groups/serebiiforums/viewtopic.php?f=26&t=1077&from_new_topic=1
+
+
+
+穆清02.08_1.xlsx > Sheet1 > 当前的进度: 1 / 16
+穆清02.08_1.xlsx > Sheet1 > 帖子的标题: Please help me analyze whether I have been deceived by this game
+穆清02.08_1.xlsx > Sheet1 > 发帖人昵称: Davy200
+穆清02.08_1.xlsx > Sheet1 > 论坛的地址: https://aseannow.com/forum/228-cryptocurrency-news/
+穆清02.08_1.xlsx > Sheet1 > 论坛的名字: aseannow
+穆清02.08_1.xlsx > Sheet1 > 论坛的处理: 审核失败
+穆清02.08_1.xlsx > Sheet1 > 处理的结果: 审核不通过 (总数: 1  通过: 0  不通过: 1  重复: 0  重复率:0.00%)
+
+
+穆清02.08_1.xlsx > Sheet1 > 当前的进度: 2 / 16
+穆清02.08_1.xlsx > Sheet1 > 帖子的标题: FAIRY CAT TRÒ CHƠI CHUỖI KHỐI
+穆清02.08_1.xlsx > Sheet1 > 发帖人昵称: Azirah Mohamed
+穆清02.08_1.xlsx > Sheet1 > 论坛的地址: https://vnreview.vn/forums/chia-se-mon-hoi.422281184763053
+穆清02.08_1.xlsx > Sheet1 > 论坛的名字: vnreview
+穆清02.08_1.xlsx > Sheet1 > 论坛的处理: 审核失败
+穆清02.08_1.xlsx > Sheet1 > 处理的结果: 审核不通过 (总数: 2  通过: 0  不通过: 2  重复: 0  重复率:0.00%)
+
+
+穆清02.08_1.xlsx > Sheet1 > 当前的进度: 3 / 16
+穆清02.08_1.xlsx > Sheet1 > 帖子的标题: FAIRY CAT BLOCKCHAIN GAME
+穆清02.08_1.xlsx > Sheet1 > 发帖人昵称: marrypoppin949
+穆清02.08_1.xlsx > Sheet1 > 论坛的地址: https://www.expat.com/forum/viewforum.php?id=220
+穆清02.08_1.xlsx > Sheet1 > 论坛的名字: expat
+穆清02.08_1.xlsx > Sheet1 > 论坛的处理: 审核失败
+穆清02.08_1.xlsx > Sheet1 > 处理的结果: 审核不通过 (总数: 3  通过: 0  不通过: 3  重复: 0  重复率:0.00%)
+
+
+穆清02.08_1.xlsx > Sheet1 > 当前的进度: 4 / 16
+穆清02.08_1.xlsx > Sheet1 > 帖子的标题: What is a Fairy cat
+穆清02.08_1.xlsx > Sheet1 > 发帖人昵称: Marrypoppin
+穆清02.08_1.xlsx > Sheet1 > 论坛的地址: https://coinmarketcap.com/community/
+穆清02.08_1.xlsx > Sheet1 > 论坛的名字: coinmarketcap
+穆清02.08_1.xlsx > Sheet1 > 论坛的处理: 审核失败
+穆清02.08_1.xlsx > Sheet1 > 处理的结果: 审核不通过 (总数: 4  通过: 0  不通过: 4  重复: 0  重复率:0.00%)
+
+
+穆清02.08_1.xlsx > Sheet1 > 当前的进度: 5 / 16
+穆清02.08_1.xlsx > Sheet1 > 帖子的标题: What is a Fairy cat
+穆清02.08_1.xlsx > Sheet1 > 发帖人昵称: mumu500
+穆清02.08_1.xlsx > Sheet1 > 论坛的地址: https://thecryptocurrencyforums.com/community/forums/crypto-news.107/
+穆清02.08_1.xlsx > Sheet1 > 论坛的名字: thecryptocurrencyforums
+穆清02.08_1.xlsx > Sheet1 > 论坛的处理: 审核通过
+穆清02.08_1.xlsx > Sheet1 > 处理的结果: 审核通过 (总数: 5  通过: 1  不通过: 4  重复: 0  重复率:0.00%)
+
+
+穆清02.08_1.xlsx > Sheet1 > 当前的进度: 6 / 16
+穆清02.08_1.xlsx > Sheet1 > 帖子的标题: FAIRY CAT
+穆清02.08_1.xlsx > Sheet1 > 发帖人昵称: Davy200
+穆清02.08_1.xlsx > Sheet1 > 论坛的地址: https://www.jeuxvideo.com/forums/0-3000472-0-1-0-1-0-jeux-independants.htm
+穆清02.08_1.xlsx > Sheet1 > 论坛的名字: jeuxvideo
+穆清02.08_1.xlsx > Sheet1 > 重复的对象: 1 (李迪0208.xlsx)
+穆清02.08_1.xlsx > Sheet1 > 论坛的处理: 审核通过
+穆清02.08_1.xlsx > Sheet1 > 处理的结果: 审核通过 (总数: 6  通过: 2  不通过: 4  重复: 1  重复率:16.67%)
+
+
+穆清02.08_1.xlsx > Sheet1 > 当前的进度: 7 / 16
+穆清02.08_1.xlsx > Sheet1 > 帖子的标题: Fairy cat
+穆清02.08_1.xlsx > Sheet1 > 发帖人昵称: mumu500
+穆清02.08_1.xlsx > Sheet1 > 论坛的地址: https://forum.telecharger-jeuxpc.fr/index.php?forums/news-informations.4/
+穆清02.08_1.xlsx > Sheet1 > 论坛的名字: telecharger-jeuxpc
+穆清02.08_1.xlsx > Sheet1 > 重复的对象: 1 (李迪0208.xlsx)
+穆清02.08_1.xlsx > Sheet1 > 论坛的处理: 审核通过
+穆清02.08_1.xlsx > Sheet1 > 处理的结果: 审核通过 (总数: 7  通过: 3  不通过: 4  重复: 2  重复率:28.57%)
+
+
+穆清02.08_1.xlsx > Sheet1 > 当前的进度: 8 / 16
+穆清02.08_1.xlsx > Sheet1 > 帖子的标题: What is a Fairy cat
+穆清02.08_1.xlsx > Sheet1 > 发帖人昵称: Azirah
+穆清02.08_1.xlsx > Sheet1 > 论坛的地址: https://forums.gamerevolution.com/forums/gamerev-news.35/
+穆清02.08_1.xlsx > Sheet1 > 论坛的名字: gamerevolution
+穆清02.08_1.xlsx > Sheet1 > 重复的对象: 1 (李迪0208.xlsx)
+穆清02.08_1.xlsx > Sheet1 > 论坛的处理: 审核通过
+穆清02.08_1.xlsx > Sheet1 > 处理的结果: 审核通过 (总数: 8  通过: 4  不通过: 4  重复: 3  重复率:37.50%)
+
+
+穆清02.08_1.xlsx > Sheet1 > 当前的进度: 9 / 16
+穆清02.08_1.xlsx > Sheet1 > 帖子的标题: What is a Fairy cat
+穆清02.08_1.xlsx > Sheet1 > 发帖人昵称: Azirah
+穆清02.08_1.xlsx > Sheet1 > 论坛的地址: https://www.xboxforums.com/forums/off-topic-lounge.1123/
+穆清02.08_1.xlsx > Sheet1 > 论坛的名字: xboxforums
+穆清02.08_1.xlsx > Sheet1 > 论坛的处理: 审核通过
+穆清02.08_1.xlsx > Sheet1 > 处理的结果: 审核通过 (总数: 9  通过: 5  不通过: 4  重复: 3  重复率:33.33%)
+
+
+穆清02.08_1.xlsx > Sheet1 > 当前的进度: 10 / 16
+穆清02.08_1.xlsx > Sheet1 > 帖子的标题: What is a Fairy cat
+穆清02.08_1.xlsx > Sheet1 > 发帖人昵称: mumu500
+穆清02.08_1.xlsx > Sheet1 > 论坛的地址: https://www.tapatalk.com/groups/serebiiforums/general-pokemon-discussion-f26/
+穆清02.08_1.xlsx > Sheet1 > 论坛的名字: tapatalk
+穆清02.08_1.xlsx > Sheet1 > 重复的对象: 1 (李迪0208.xlsx)
+穆清02.08_1.xlsx > Sheet1 > 论坛的处理: 审核通过
+穆清02.08_1.xlsx > Sheet1 > 处理的结果: 审核通过 (总数: 10  通过: 6  不通过: 4  重复: 4  重复率:40.00%)
+
+
+穆清02.08_1.xlsx > Sheet1 > 当前的进度: 11 / 16
+穆清02.08_1.xlsx > Sheet1 > 帖子的标题: What is cryptocurrency and how does it work
+穆清02.08_1.xlsx > Sheet1 > 发帖人昵称: Marry200
+穆清02.08_1.xlsx > Sheet1 > 论坛的地址: https://cryptorum.com/cryptocurrency/mining/
+穆清02.08_1.xlsx > Sheet1 > 论坛的名字: cryptorum
+穆清02.08_1.xlsx > Sheet1 > 论坛的处理: 审核失败
+穆清02.08_1.xlsx > Sheet1 > 处理的结果: 审核不通过 (总数: 11  通过: 6  不通过: 5  重复: 4  重复率:36.36%)
+
+
+穆清02.08_1.xlsx > Sheet1 > 当前的进度: 12 / 16
+穆清02.08_1.xlsx > Sheet1 > 帖子的标题: What is cryptocurrency and how does it work
+穆清02.08_1.xlsx > Sheet1 > 发帖人昵称: Davy200
+穆清02.08_1.xlsx > Sheet1 > 论坛的地址: https://bitcoinforum.com/off-topic/
+穆清02.08_1.xlsx > Sheet1 > 论坛的名字: bitcoinforum
+穆清02.08_1.xlsx > Sheet1 > 论坛的处理: 审核通过
+穆清02.08_1.xlsx > Sheet1 > 处理的结果: 审核通过 (总数: 12  通过: 7  不通过: 5  重复: 4  重复率:33.33%)
+
+
+穆清02.08_1.xlsx > Sheet1 > 当前的进度: 13 / 16
+穆清02.08_1.xlsx > Sheet1 > 帖子的标题: what is fairy cat blockchain game
+穆清02.08_1.xlsx > Sheet1 > 发帖人昵称: Marrypoppin
+穆清02.08_1.xlsx > Sheet1 > 论坛的地址: https://satoshigames.io/c/blockchain-games/5
+穆清02.08_1.xlsx > Sheet1 > 论坛的名字: satoshigames
+穆清02.08_1.xlsx > Sheet1 > 论坛的处理: 审核通过
+穆清02.08_1.xlsx > Sheet1 > 处理的结果: 审核通过 (总数: 13  通过: 8  不通过: 5  重复: 4  重复率:30.77%)
+
+
+穆清02.08_1.xlsx > Sheet1 > 当前的进度: 14 / 16
+穆清02.08_1.xlsx > Sheet1 > 帖子的标题: Cos'è un gatto delle fate?
+穆清02.08_1.xlsx > Sheet1 > 发帖人昵称: Marry Poppin
+穆清02.08_1.xlsx > Sheet1 > 论坛的地址: https://www.inventoridigiochi.it/forums/forum/idee-di-giochi/
+穆清02.08_1.xlsx > Sheet1 > 论坛的名字: inventoridigiochi
+穆清02.08_1.xlsx > Sheet1 > 论坛的处理: 审核通过
+穆清02.08_1.xlsx > Sheet1 > 处理的结果: 审核通过 (总数: 14  通过: 9  不通过: 5  重复: 4  重复率:28.57%)
+
+
+穆清02.08_1.xlsx > Sheet1 > 当前的进度: 15 / 16
+穆清02.08_1.xlsx > Sheet1 > 帖子的标题: Cos'è un gatto delle fate?
+穆清02.08_1.xlsx > Sheet1 > 发帖人昵称: Davy200
+穆清02.08_1.xlsx > Sheet1 > 论坛的地址: https://pc-gaming.it/board/forum/50-tema-libero/
+穆清02.08_1.xlsx > Sheet1 > 论坛的名字: pc-gaming
+穆清02.08_1.xlsx > Sheet1 > 论坛的处理: 审核失败
+穆清02.08_1.xlsx > Sheet1 > 处理的结果: 审核不通过 (总数: 15  通过: 9  不通过: 6  重复: 4  重复率:26.67%)
+
+
+穆清02.08_1.xlsx > Sheet1 > 当前的进度: 16 / 16
+穆清02.08_1.xlsx > Sheet1 > 帖子的标题: Ano ang Fairy Cat?
+穆清02.08_1.xlsx > Sheet1 > 发帖人昵称: Sheylaka
+穆清02.08_1.xlsx > Sheet1 > 论坛的地址: https://phcorner.net/forums/forum-games.534/
+穆清02.08_1.xlsx > Sheet1 > 论坛的名字: phcorner
+穆清02.08_1.xlsx > Sheet1 > 论坛的处理: 审核失败
+穆清02.08_1.xlsx > Sheet1 > 处理的结果: 审核不通过 (总数: 16  通过: 9  不通过: 7  重复: 4  重复率:25.00%)
+
+
+========== 穆清02.08_1.xlsx ==========
+
+处理总数: 16 (通过 9  不通过 7  和别人重复 4  重复率 25.00%)
+
+通过的论坛: 9
+https://thecryptocurrencyforums.com/community/forums/crypto-news.107/
+https://www.jeuxvideo.com/forums/0-3000472-0-1-0-1-0-jeux-independants.htm
+https://forum.telecharger-jeuxpc.fr/index.php?forums/news-informations.4/
+https://forums.gamerevolution.com/forums/gamerev-news.35/
+https://www.xboxforums.com/forums/off-topic-lounge.1123/
+https://www.tapatalk.com/groups/serebiiforums/general-pokemon-discussion-f26/
+https://bitcoinforum.com/off-topic/
+https://satoshigames.io/c/blockchain-games/5
+https://www.inventoridigiochi.it/forums/forum/idee-di-giochi/
+
+不通过的论坛: 7
+https://aseannow.com/forum/228-cryptocurrency-news/
+https://vnreview.vn/forums/chia-se-mon-hoi.422281184763053
+https://www.expat.com/forum/viewforum.php?id=220
+https://coinmarketcap.com/community/
+https://cryptorum.com/cryptocurrency/mining/
+https://pc-gaming.it/board/forum/50-tema-libero/
+https://phcorner.net/forums/forum-games.534/
+
+重复的论坛: 4
+https://www.jeuxvideo.com/forums/0-3000472-0-1-0-1-0-jeux-independants.htm
+https://forum.telecharger-jeuxpc.fr/index.php?forums/news-informations.4/
+https://forums.gamerevolution.com/forums/gamerev-news.35/
+https://www.tapatalk.com/groups/serebiiforums/general-pokemon-discussion-f26/
+
+
+
+开始读取发送成功的论坛记录...
+读取成功: ['https://pcgameforum.com/threads/the-future-of-blockchain-games.3422/', 'https://bitco.in/forum/threads/the-future-of-blockchain-games.32559/', 'https://elderscrollsrp.net/threads/the-future-of-blockchain-games.389/', 'https://emmates.proboards.com/thread/2925/future-blockchain-games', 'https://medium.com/@xiao97303/the-future-of-blockchain-games-446a042efa47', 'https://www.pinoyexchange.com/discussion/960872/how-can-i-experience-the-fairy-cat-metaverse', 'https://www.quora.com/profile/%E5%85%8B-%E6%9D%B0-7/How-can-I-experience-the-Fairy-Cat-metaverse-A-Debuting-in-January-2023-Fairy-Cat-is-one-of-the-most-popular-crypto-1', 'https://forum.telecharger-jeuxpc.fr/index.php?threads/what-is-fairy-cat.231/', 'https://btcforum.fr/viewtopic.php?f=126&t=46260', 'https://forumcrypto.fr/topic/1522-quest-ce-que-fairy-cat/', 'https://forums.gamerevolution.com/threads/fairy-cat.35554', 'https://cryptach.com/threads/how-can-i-experience-the-fairy-cat-metaverse.71234/', 'https://www.tapatalk.com/groups/serebiiforums/viewtopic.php?f=26&t=1077&from_new_topic=1', 'https://thecryptocurrencyforums.com/community/forums/crypto-news.107/', 'https://www.jeuxvideo.com/forums/0-3000472-0-1-0-1-0-jeux-independants.htm', 'https://www.xboxforums.com/forums/off-topic-lounge.1123/', 'https://bitcoinforum.com/off-topic/', 'https://satoshigames.io/c/blockchain-games/5', 'https://www.inventoridigiochi.it/forums/forum/idee-di-giochi/']
+
+读取成功: ['https://www.mobox.io/community/article/63e1bdee03c7ca6ec9e899e6', 'https://www.wallstreetoasis.com/forum/crypto/the-future-of-blockchain-games-1', 'https://gold.forum/forum/136-%F0%9F%8E%B1-crypto-games/?do=add', 'https://www.nvidia.com/en-us/geforce/forums/off-topic/25/510415/how-can-i-experience-the-fairy-cat-metaverse/', 'https://yuneec-forum.com/threads/how-can-i-experience-the-fairy-cat-metaverse.10729/', 'https://www.graffes.com/forums/showthread.php?81878-Fairy-cat&p=1921835#post1921835', 'https://forum.gamemaker.io/index.php?threads/how-can-i-experience-the-fairy-cat-metaverse.101377/', 'https://aseannow.com/forum/228-cryptocurrency-news/', 'https://vnreview.vn/forums/chia-se-mon-hoi.422281184763053', 'https://www.expat.com/forum/viewforum.php?id=220', 'https://coinmarketcap.com/community/', 'https://cryptorum.com/cryptocurrency/mining/', 'https://pc-gaming.it/board/forum/50-tema-libero/', 'https://phcorner.net/forums/forum-games.534/']
+
+读取成功: ['https://www.jeuxvideo.com/forums/0-52-0-1-0-1-0-blabla-25-35-ans.htm', 'https://bitco.in/forum/threads/the-future-of-blockchain-games.32559/', 'https://forum.telecharger-jeuxpc.fr/index.php?threads/what-is-fairy-cat.231/', 'https://forums.gamerevolution.com/threads/fairy-cat.35554', 'https://www.tapatalk.com/groups/serebiiforums/viewtopic.php?f=26&t=1077&from_new_topic=1']
+
+正在检查文件: forum/李迪0208.xlsx 
+正在读取表格: 李迪0208.xlsx ==> Sheet1 的数据...
+
+{'第一页地址': 'https://www.jeuxvideo.com/forums/0-52-0-1-0-1-0-blabla-25-35-ans.htm', '第二页地址': nan, '第三页地址': nan, '帖子标题': ' How can I experience the Fairy Cat metaverse?', '发帖名称': 'jieke'}
+解析完成: 论坛地址['jeuxvideo']  标题: How can I experience the Fairy Cat metaverse?  发帖人昵称: jieke
+数据格式正常,已经添加到数据库...
+
+{'第一页地址': 'https://www.mobox.io/community/article/63e1bdee03c7ca6ec9e899e6', '第二页地址': nan, '第三页地址': nan, '帖子标题': 'The future of blockchain games', '发帖名称': 'jieke'}
+解析完成: 论坛地址['mobox']  标题: The future of blockchain games  发帖人昵称: jieke
+数据格式正常,已经添加到数据库...
+
+{'第一页地址': 'https://pcgameforum.com/threads/the-future-of-blockchain-games.3422/', '第二页地址': nan, '第三页地址': nan, '帖子标题': 'The future of blockchain games', '发帖名称': 'jieke'}
+解析完成: 论坛地址['pcgameforum']  标题: The future of blockchain games  发帖人昵称: jieke
+数据格式正常,已经添加到数据库...
+
+{'第一页地址': 'https://www.wallstreetoasis.com/forum/crypto/the-future-of-blockchain-games-1', '第二页地址': nan, '第三页地址': nan, '帖子标题': 'The future of blockchain games', '发帖名称': 'lixiao'}
+解析完成: 论坛地址['wallstreetoasis']  标题: The future of blockchain games  发帖人昵称: lixiao
+数据格式正常,已经添加到数据库...
+
+{'第一页地址': 'https://bitco.in/forum/threads/the-future-of-blockchain-games.32559/', '第二页地址': nan, '第三页地址': nan, '帖子标题': 'The future of blockchain games', '发帖名称': 'Miranahh'}
+解析完成: 论坛地址['bitco']  标题: The future of blockchain games  发帖人昵称: Miranahh
+数据格式正常,已经添加到数据库...
+
+{'第一页地址': 'https://gold.forum/forum/136-%F0%9F%8E%B1-crypto-games/?do=add', '第二页地址': nan, '第三页地址': nan, '帖子标题': 'The future of blockchain games', '发帖名称': 'xialin'}
+解析完成: 论坛地址['gold']  标题: The future of blockchain games  发帖人昵称: xialin
+数据格式正常,已经添加到数据库...
+
+{'第一页地址': 'https://elderscrollsrp.net/threads/the-future-of-blockchain-games.389/', '第二页地址': nan, '第三页地址': nan, '帖子标题': 'The future of blockchain games', '发帖名称': 'xxiaolin'}
+解析完成: 论坛地址['elderscrollsrp']  标题: The future of blockchain games  发帖人昵称: xxiaolin
+数据格式正常,已经添加到数据库...
+
+{'第一页地址': 'https://emmates.proboards.com/thread/2925/future-blockchain-games', '第二页地址': nan, '第三页地址': nan, '帖子标题': 'The future of blockchain games', '发帖名称': 'xxiaolin'}
+解析完成: 论坛地址['emmates']  标题: The future of blockchain games  发帖人昵称: xxiaolin
+数据格式正常,已经添加到数据库...
+
+{'第一页地址': 'https://medium.com/@xiao97303/the-future-of-blockchain-games-446a042efa47', '第二页地址': nan, '第三页地址': nan, '帖子标题': 'The future of blockchain games', '发帖名称': 'li xiao'}
+解析完成: 论坛地址['medium']  标题: The future of blockchain games  发帖人昵称: li xiao
+数据格式正常,已经添加到数据库...
+
+{'第一页地址': 'https://www.pinoyexchange.com/discussion/960872/how-can-i-experience-the-fairy-cat-metaverse', '第二页地址': nan, '第三页地址': nan, '帖子标题': 'How can I experience the Fairy Cat metaverse?', '发帖名称': 'xiaoxialinlin'}
+解析完成: 论坛地址['pinoyexchange']  标题: How can I experience the Fairy Cat metaverse?  发帖人昵称: xiaoxialinlin
+数据格式正常,已经添加到数据库...
+
+{'第一页地址': 'https://www.quora.com/profile/%E5%85%8B-%E6%9D%B0-7/How-can-I-experience-the-Fairy-Cat-metaverse-A-Debuting-in-January-2023-Fairy-Cat-is-one-of-the-most-popular-crypto-1', '第二页地址': nan, '第三页地址': nan, '帖子标题': 'How can I experience the Fairy Cat metaverse?', '发帖名称': 'jieke'}
+解析完成: 论坛地址['quora']  标题: How can I experience the Fairy Cat metaverse?  发帖人昵称: jieke
+数据格式正常,已经添加到数据库...
+
+{'第一页地址': 'https://forum.telecharger-jeuxpc.fr/index.php?threads/what-is-fairy-cat.231/', '第二页地址': nan, '第三页地址': nan, '帖子标题': 'what is Fairy cat', '发帖名称': 'jieke'}
+解析完成: 论坛地址['telecharger-jeuxpc']  标题: what is Fairy cat  发帖人昵称: jieke
+数据格式正常,已经添加到数据库...
+
+{'第一页地址': 'https://www.nvidia.com/en-us/geforce/forums/off-topic/25/510415/how-can-i-experience-the-fairy-cat-metaverse/', '第二页地址': nan, '第三页地址': nan, '帖子标题': 'How can I experience the Fairy Cat metaverse?', '发帖名称': 'xiao97303'}
+解析完成: 论坛地址['nvidia']  标题: How can I experience the Fairy Cat metaverse?  发帖人昵称: xiao97303
+数据格式正常,已经添加到数据库...
+
+{'第一页地址': 'https://yuneec-forum.com/threads/how-can-i-experience-the-fairy-cat-metaverse.10729/', '第二页地址': nan, '第三页地址': nan, '帖子标题': 'How can I experience the Fairy Cat metaverse?', '发帖名称': 'jieke'}
+解析完成: 论坛地址['yuneec-forum']  标题: How can I experience the Fairy Cat metaverse?  发帖人昵称: jieke
+数据格式正常,已经添加到数据库...
+
+{'第一页地址': 'https://btcforum.fr/viewtopic.php?f=126&t=46260', '第二页地址': nan, '第三页地址': nan, '帖子标题': 'Qu’est - ce que Fairy Cat?', '发帖名称': 'jieke'}
+解析完成: 论坛地址['btcforum']  标题: Qu’est - ce que Fairy Cat?  发帖人昵称: jieke
+数据格式正常,已经添加到数据库...
+
+{'第一页地址': 'https://forumcrypto.fr/topic/1522-quest-ce-que-fairy-cat/', '第二页地址': nan, '第三页地址': nan, '帖子标题': 'Qu’est - ce que Fairy Cat?', '发帖名称': 'jieke'}
+解析完成: 论坛地址['forumcrypto']  标题: Qu’est - ce que Fairy Cat?  发帖人昵称: jieke
+数据格式正常,已经添加到数据库...
+
+{'第一页地址': 'https://forums.gamerevolution.com/threads/fairy-cat.35554', '第二页地址': nan, '第三页地址': nan, '帖子标题': 'Comment découvrir le métaverse Fairy Cat ?', '发帖名称': 'lidi123'}
+解析完成: 论坛地址['gamerevolution']  标题: Comment découvrir le métaverse Fairy Cat ?  发帖人昵称: lidi123
+数据格式正常,已经添加到数据库...
+
+{'第一页地址': 'https://www.graffes.com/forums/showthread.php?81878-Fairy-cat&p=1921835#post1921835', '第二页地址': 'https://www.graffes.com/forums/forumdisplay.php?6-General-Discussion', '第三页地址': nan, '帖子标题': 'Fairy cat', '发帖名称': 'lidi123'}
+解析完成: 论坛地址['graffes', 'graffes']  标题: Fairy cat  发帖人昵称: lidi123
+数据格式正常,已经添加到数据库...
+
+{'第一页地址': 'https://cryptach.com/threads/how-can-i-experience-the-fairy-cat-metaverse.71234/', '第二页地址': nan, '第三页地址': nan, '帖子标题': 'How can I experience the Fairy Cat metaverse?', '发帖名称': 'xiaolin'}
+解析完成: 论坛地址['cryptach']  标题: How can I experience the Fairy Cat metaverse?  发帖人昵称: xiaolin
+数据格式正常,已经添加到数据库...
+
+{'第一页地址': 'https://forum.gamemaker.io/index.php?threads/how-can-i-experience-the-fairy-cat-metaverse.101377/', '第二页地址': nan, '第三页地址': nan, '帖子标题': 'How can I experience the Fairy Cat metaverse?', '发帖名称': 'xiaolin'}
+解析完成: 论坛地址['gamemaker']  标题: How can I experience the Fairy Cat metaverse?  发帖人昵称: xiaolin
+数据格式正常,已经添加到数据库...
+
+{'第一页地址': 'https://www.tapatalk.com/groups/serebiiforums/viewtopic.php?f=26&t=1077&from_new_topic=1', '第二页地址': nan, '第三页地址': nan, '帖子标题': 'Fairy Cat Forest: The Strongest Black Horse in Blockchain Games, emerging to match on the CryptoKitties.', '发帖名称': 'jieke '}
+解析完成: 论坛地址['tapatalk']  标题: Fairy Cat Forest: The Strongest Black Horse in Blockchain Games, emerging to match on the CryptoKitties.  发帖人昵称: jieke
+数据格式正常,已经添加到数据库...
+
+李迪0208.xlsx ==> Sheet1 的数据读取完成: [{'page_1': 'https://www.jeuxvideo.com/forums/0-52-0-1-0-1-0-blabla-25-35-ans.htm', 'page_2': '', 'page_3': '', 'title': 'How can I experience the Fairy Cat metaverse?', 'nickName': 'jieke'}, {'page_1': 'https://www.mobox.io/community/article/63e1bdee03c7ca6ec9e899e6', 'page_2': '', 'page_3': '', 'title': 'The future of blockchain games', 'nickName': 'jieke'}, {'page_1': 'https://pcgameforum.com/threads/the-future-of-blockchain-games.3422/', 'page_2': '', 'page_3': '', 'title': 'The future of blockchain games', 'nickName': 'jieke'}, {'page_1': 'https://www.wallstreetoasis.com/forum/crypto/the-future-of-blockchain-games-1', 'page_2': '', 'page_3': '', 'title': 'The future of blockchain games', 'nickName': 'lixiao'}, {'page_1': 'https://bitco.in/forum/threads/the-future-of-blockchain-games.32559/', 'page_2': '', 'page_3': '', 'title': 'The future of blockchain games', 'nickName': 'Miranahh'}, {'page_1': 'https://gold.forum/forum/136-%F0%9F%8E%B1-crypto-games/?do=add', 'page_2': '', 'page_3': '', 'title': 'The future of blockchain games', 'nickName': 'xialin'}, {'page_1': 'https://elderscrollsrp.net/threads/the-future-of-blockchain-games.389/', 'page_2': '', 'page_3': '', 'title': 'The future of blockchain games', 'nickName': 'xxiaolin'}, {'page_1': 'https://emmates.proboards.com/thread/2925/future-blockchain-games', 'page_2': '', 'page_3': '', 'title': 'The future of blockchain games', 'nickName': 'xxiaolin'}, {'page_1': 'https://medium.com/@xiao97303/the-future-of-blockchain-games-446a042efa47', 'page_2': '', 'page_3': '', 'title': 'The future of blockchain games', 'nickName': 'li xiao'}, {'page_1': 'https://www.pinoyexchange.com/discussion/960872/how-can-i-experience-the-fairy-cat-metaverse', 'page_2': '', 'page_3': '', 'title': 'How can I experience the Fairy Cat metaverse?', 'nickName': 'xiaoxialinlin'}, {'page_1': 'https://www.quora.com/profile/%E5%85%8B-%E6%9D%B0-7/How-can-I-experience-the-Fairy-Cat-metaverse-A-Debuting-in-January-2023-Fairy-Cat-is-one-of-the-most-popular-crypto-1', 'page_2': '', 'page_3': '', 'title': 'How can I experience the Fairy Cat metaverse?', 'nickName': 'jieke'}, {'page_1': 'https://forum.telecharger-jeuxpc.fr/index.php?threads/what-is-fairy-cat.231/', 'page_2': '', 'page_3': '', 'title': 'what is Fairy cat', 'nickName': 'jieke'}, {'page_1': 'https://www.nvidia.com/en-us/geforce/forums/off-topic/25/510415/how-can-i-experience-the-fairy-cat-metaverse/', 'page_2': '', 'page_3': '', 'title': 'How can I experience the Fairy Cat metaverse?', 'nickName': 'xiao97303'}, {'page_1': 'https://yuneec-forum.com/threads/how-can-i-experience-the-fairy-cat-metaverse.10729/', 'page_2': '', 'page_3': '', 'title': 'How can I experience the Fairy Cat metaverse?', 'nickName': 'jieke'}, {'page_1': 'https://btcforum.fr/viewtopic.php?f=126&t=46260', 'page_2': '', 'page_3': '', 'title': 'Qu’est - ce que Fairy Cat?', 'nickName': 'jieke'}, {'page_1': 'https://forumcrypto.fr/topic/1522-quest-ce-que-fairy-cat/', 'page_2': '', 'page_3': '', 'title': 'Qu’est - ce que Fairy Cat?', 'nickName': 'jieke'}, {'page_1': 'https://forums.gamerevolution.com/threads/fairy-cat.35554', 'page_2': '', 'page_3': '', 'title': 'Comment découvrir le métaverse Fairy Cat ?', 'nickName': 'lidi123'}, {'page_1': 'https://www.graffes.com/forums/showthread.php?81878-Fairy-cat&p=1921835#post1921835', 'page_2': 'https://www.graffes.com/forums/forumdisplay.php?6-General-Discussion', 'page_3': '', 'title': 'Fairy cat', 'nickName': 'lidi123'}, {'page_1': 'https://cryptach.com/threads/how-can-i-experience-the-fairy-cat-metaverse.71234/', 'page_2': '', 'page_3': '', 'title': 'How can I experience the Fairy Cat metaverse?', 'nickName': 'xiaolin'}, {'page_1': 'https://forum.gamemaker.io/index.php?threads/how-can-i-experience-the-fairy-cat-metaverse.101377/', 'page_2': '', 'page_3': '', 'title': 'How can I experience the Fairy Cat metaverse?', 'nickName': 'xiaolin'}, {'page_1': 'https://www.tapatalk.com/groups/serebiiforums/viewtopic.php?f=26&t=1077&from_new_topic=1', 'page_2': '', 'page_3': '', 'title': 'Fairy Cat Forest: The Strongest Black Horse in Blockchain Games, emerging to match on the CryptoKitties.', 'nickName': 'jieke'}]
+
+正在读取表格: 李迪0208.xlsx ==> Sheet2 的数据...
+
+李迪0208.xlsx ==> Sheet2 的数据读取完成: []
+
+正在读取表格: 李迪0208.xlsx ==> Sheet3 的数据...
+
+李迪0208.xlsx ==> Sheet3 的数据读取完成: []
+
+forum/李迪0208.xlsx 的数据读取完成: {'Sheet1': [{'page_1': 'https://www.jeuxvideo.com/forums/0-52-0-1-0-1-0-blabla-25-35-ans.htm', 'page_2': '', 'page_3': '', 'title': 'How can I experience the Fairy Cat metaverse?', 'nickName': 'jieke'}, {'page_1': 'https://www.mobox.io/community/article/63e1bdee03c7ca6ec9e899e6', 'page_2': '', 'page_3': '', 'title': 'The future of blockchain games', 'nickName': 'jieke'}, {'page_1': 'https://pcgameforum.com/threads/the-future-of-blockchain-games.3422/', 'page_2': '', 'page_3': '', 'title': 'The future of blockchain games', 'nickName': 'jieke'}, {'page_1': 'https://www.wallstreetoasis.com/forum/crypto/the-future-of-blockchain-games-1', 'page_2': '', 'page_3': '', 'title': 'The future of blockchain games', 'nickName': 'lixiao'}, {'page_1': 'https://bitco.in/forum/threads/the-future-of-blockchain-games.32559/', 'page_2': '', 'page_3': '', 'title': 'The future of blockchain games', 'nickName': 'Miranahh'}, {'page_1': 'https://gold.forum/forum/136-%F0%9F%8E%B1-crypto-games/?do=add', 'page_2': '', 'page_3': '', 'title': 'The future of blockchain games', 'nickName': 'xialin'}, {'page_1': 'https://elderscrollsrp.net/threads/the-future-of-blockchain-games.389/', 'page_2': '', 'page_3': '', 'title': 'The future of blockchain games', 'nickName': 'xxiaolin'}, {'page_1': 'https://emmates.proboards.com/thread/2925/future-blockchain-games', 'page_2': '', 'page_3': '', 'title': 'The future of blockchain games', 'nickName': 'xxiaolin'}, {'page_1': 'https://medium.com/@xiao97303/the-future-of-blockchain-games-446a042efa47', 'page_2': '', 'page_3': '', 'title': 'The future of blockchain games', 'nickName': 'li xiao'}, {'page_1': 'https://www.pinoyexchange.com/discussion/960872/how-can-i-experience-the-fairy-cat-metaverse', 'page_2': '', 'page_3': '', 'title': 'How can I experience the Fairy Cat metaverse?', 'nickName': 'xiaoxialinlin'}, {'page_1': 'https://www.quora.com/profile/%E5%85%8B-%E6%9D%B0-7/How-can-I-experience-the-Fairy-Cat-metaverse-A-Debuting-in-January-2023-Fairy-Cat-is-one-of-the-most-popular-crypto-1', 'page_2': '', 'page_3': '', 'title': 'How can I experience the Fairy Cat metaverse?', 'nickName': 'jieke'}, {'page_1': 'https://forum.telecharger-jeuxpc.fr/index.php?threads/what-is-fairy-cat.231/', 'page_2': '', 'page_3': '', 'title': 'what is Fairy cat', 'nickName': 'jieke'}, {'page_1': 'https://www.nvidia.com/en-us/geforce/forums/off-topic/25/510415/how-can-i-experience-the-fairy-cat-metaverse/', 'page_2': '', 'page_3': '', 'title': 'How can I experience the Fairy Cat metaverse?', 'nickName': 'xiao97303'}, {'page_1': 'https://yuneec-forum.com/threads/how-can-i-experience-the-fairy-cat-metaverse.10729/', 'page_2': '', 'page_3': '', 'title': 'How can I experience the Fairy Cat metaverse?', 'nickName': 'jieke'}, {'page_1': 'https://btcforum.fr/viewtopic.php?f=126&t=46260', 'page_2': '', 'page_3': '', 'title': 'Qu’est - ce que Fairy Cat?', 'nickName': 'jieke'}, {'page_1': 'https://forumcrypto.fr/topic/1522-quest-ce-que-fairy-cat/', 'page_2': '', 'page_3': '', 'title': 'Qu’est - ce que Fairy Cat?', 'nickName': 'jieke'}, {'page_1': 'https://forums.gamerevolution.com/threads/fairy-cat.35554', 'page_2': '', 'page_3': '', 'title': 'Comment découvrir le métaverse Fairy Cat ?', 'nickName': 'lidi123'}, {'page_1': 'https://www.graffes.com/forums/showthread.php?81878-Fairy-cat&p=1921835#post1921835', 'page_2': 'https://www.graffes.com/forums/forumdisplay.php?6-General-Discussion', 'page_3': '', 'title': 'Fairy cat', 'nickName': 'lidi123'}, {'page_1': 'https://cryptach.com/threads/how-can-i-experience-the-fairy-cat-metaverse.71234/', 'page_2': '', 'page_3': '', 'title': 'How can I experience the Fairy Cat metaverse?', 'nickName': 'xiaolin'}, {'page_1': 'https://forum.gamemaker.io/index.php?threads/how-can-i-experience-the-fairy-cat-metaverse.101377/', 'page_2': '', 'page_3': '', 'title': 'How can I experience the Fairy Cat metaverse?', 'nickName': 'xiaolin'}, {'page_1': 'https://www.tapatalk.com/groups/serebiiforums/viewtopic.php?f=26&t=1077&from_new_topic=1', 'page_2': '', 'page_3': '', 'title': 'Fairy Cat Forest: The Strongest Black Horse in Blockchain Games, emerging to match on the CryptoKitties.', 'nickName': 'jieke'}], 'Sheet2': [], 'Sheet3': []}
+
+
+
+开始读取历史记录...
+读取成功: {'李迪0208.xlsx': {'failure': ['https://www.jeuxvideo.com/forums/0-52-0-1-0-1-0-blabla-25-35-ans.htm', 'https://www.mobox.io/community/article/63e1bdee03c7ca6ec9e899e6', 'https://www.wallstreetoasis.com/forum/crypto/the-future-of-blockchain-games-1', 'https://gold.forum/forum/136-%F0%9F%8E%B1-crypto-games/?do=add', 'https://www.nvidia.com/en-us/geforce/forums/off-topic/25/510415/how-can-i-experience-the-fairy-cat-metaverse/', 'https://yuneec-forum.com/threads/how-can-i-experience-the-fairy-cat-metaverse.10729/', 'https://www.graffes.com/forums/showthread.php?81878-Fairy-cat&p=1921835#post1921835', 'https://forum.gamemaker.io/index.php?threads/how-can-i-experience-the-fairy-cat-metaverse.101377/'], 'repeated': ['https://www.jeuxvideo.com/forums/0-52-0-1-0-1-0-blabla-25-35-ans.htm', 'https://bitco.in/forum/threads/the-future-of-blockchain-games.32559/', 'https://forum.telecharger-jeuxpc.fr/index.php?threads/what-is-fairy-cat.231/', 'https://forums.gamerevolution.com/threads/fairy-cat.35554', 'https://www.tapatalk.com/groups/serebiiforums/viewtopic.php?f=26&t=1077&from_new_topic=1'], 'successful': ['https://pcgameforum.com/threads/the-future-of-blockchain-games.3422/', 'https://bitco.in/forum/threads/the-future-of-blockchain-games.32559/', 'https://elderscrollsrp.net/threads/the-future-of-blockchain-games.389/', 'https://emmates.proboards.com/thread/2925/future-blockchain-games', 'https://medium.com/@xiao97303/the-future-of-blockchain-games-446a042efa47', 'https://www.pinoyexchange.com/discussion/960872/how-can-i-experience-the-fairy-cat-metaverse', 'https://www.quora.com/profile/%E5%85%8B-%E6%9D%B0-7/How-can-I-experience-the-Fairy-Cat-metaverse-A-Debuting-in-January-2023-Fairy-Cat-is-one-of-the-most-popular-crypto-1', 'https://forum.telecharger-jeuxpc.fr/index.php?threads/what-is-fairy-cat.231/', 'https://btcforum.fr/viewtopic.php?f=126&t=46260', 'https://forumcrypto.fr/topic/1522-quest-ce-que-fairy-cat/', 'https://forums.gamerevolution.com/threads/fairy-cat.35554', 'https://cryptach.com/threads/how-can-i-experience-the-fairy-cat-metaverse.71234/', 'https://www.tapatalk.com/groups/serebiiforums/viewtopic.php?f=26&t=1077&from_new_topic=1'], 'process': 21}, '穆清02.08_1.xlsx': {'failure': ['https://aseannow.com/forum/228-cryptocurrency-news/', 'https://vnreview.vn/forums/chia-se-mon-hoi.422281184763053', 'https://www.expat.com/forum/viewforum.php?id=220', 'https://coinmarketcap.com/community/', 'https://cryptorum.com/cryptocurrency/mining/', 'https://pc-gaming.it/board/forum/50-tema-libero/', 'https://phcorner.net/forums/forum-games.534/'], 'repeated': ['https://www.jeuxvideo.com/forums/0-3000472-0-1-0-1-0-jeux-independants.htm', 'https://forum.telecharger-jeuxpc.fr/index.php?forums/news-informations.4/', 'https://forums.gamerevolution.com/forums/gamerev-news.35/', 'https://www.tapatalk.com/groups/serebiiforums/general-pokemon-discussion-f26/'], 'successful': ['https://thecryptocurrencyforums.com/community/forums/crypto-news.107/', 'https://www.jeuxvideo.com/forums/0-3000472-0-1-0-1-0-jeux-independants.htm', 'https://forum.telecharger-jeuxpc.fr/index.php?forums/news-informations.4/', 'https://forums.gamerevolution.com/forums/gamerev-news.35/', 'https://www.xboxforums.com/forums/off-topic-lounge.1123/', 'https://www.tapatalk.com/groups/serebiiforums/general-pokemon-discussion-f26/', 'https://bitcoinforum.com/off-topic/', 'https://satoshigames.io/c/blockchain-games/5', 'https://www.inventoridigiochi.it/forums/forum/idee-di-giochi/'], 'process': 16}}
+
+正在检查文件: forum/穆清02.08_1.xlsx 
+正在读取表格: 穆清02.08_1.xlsx ==> Sheet1 的数据...
+
+{'第一页地址': 'https://aseannow.com/forum/228-cryptocurrency-news/', '第二页地址': nan, '第三页地址': nan, '帖子题目': 'Please help me analyze whether I have been deceived by this game', '发帖名字': 'Davy200'}
+解析完成: 论坛地址['aseannow']  标题: Please help me analyze whether I have been deceived by this game  发帖人昵称: Davy200
+数据格式正常,已经添加到数据库...
+
+{'第一页地址': 'https://vnreview.vn/forums/chia-se-mon-hoi.422281184763053', '第二页地址': nan, '第三页地址': nan, '帖子题目': 'FAIRY CAT TRÒ CHƠI CHUỖI KHỐI', '发帖名字': 'Azirah Mohamed'}
+解析完成: 论坛地址['vnreview']  标题: FAIRY CAT TRÒ CHƠI CHUỖI KHỐI  发帖人昵称: Azirah Mohamed
+数据格式正常,已经添加到数据库...
+
+{'第一页地址': 'https://www.expat.com/forum/viewforum.php?id=220', '第二页地址': nan, '第三页地址': nan, '帖子题目': 'FAIRY CAT BLOCKCHAIN GAME', '发帖名字': 'marrypoppin949'}
+解析完成: 论坛地址['expat']  标题: FAIRY CAT BLOCKCHAIN GAME  发帖人昵称: marrypoppin949
+数据格式正常,已经添加到数据库...
+
+{'第一页地址': 'https://coinmarketcap.com/community/', '第二页地址': nan, '第三页地址': nan, '帖子题目': 'What is a Fairy cat', '发帖名字': 'Marrypoppin'}
+解析完成: 论坛地址['coinmarketcap']  标题: What is a Fairy cat  发帖人昵称: Marrypoppin
+数据格式正常,已经添加到数据库...
+
+{'第一页地址': 'https://thecryptocurrencyforums.com/community/forums/crypto-news.107/', '第二页地址': nan, '第三页地址': nan, '帖子题目': 'What is a Fairy cat', '发帖名字': 'mumu500'}
+解析完成: 论坛地址['thecryptocurrencyforums']  标题: What is a Fairy cat  发帖人昵称: mumu500
+数据格式正常,已经添加到数据库...
+
+{'第一页地址': 'https://www.jeuxvideo.com/forums/0-3000472-0-1-0-1-0-jeux-independants.htm', '第二页地址': nan, '第三页地址': nan, '帖子题目': 'FAIRY CAT', '发帖名字': 'Davy200'}
+解析完成: 论坛地址['jeuxvideo']  标题: FAIRY CAT  发帖人昵称: Davy200
+数据格式正常,已经添加到数据库...
+
+{'第一页地址': 'https://forum.telecharger-jeuxpc.fr/index.php?forums/news-informations.4/', '第二页地址': nan, '第三页地址': nan, '帖子题目': 'Fairy cat', '发帖名字': 'mumu500'}
+解析完成: 论坛地址['telecharger-jeuxpc']  标题: Fairy cat  发帖人昵称: mumu500
+数据格式正常,已经添加到数据库...
+
+{'第一页地址': 'https://forums.gamerevolution.com/forums/gamerev-news.35/', '第二页地址': nan, '第三页地址': nan, '帖子题目': 'What is a Fairy cat', '发帖名字': 'Azirah '}
+解析完成: 论坛地址['gamerevolution']  标题: What is a Fairy cat  发帖人昵称: Azirah
+数据格式正常,已经添加到数据库...
+
+{'第一页地址': 'https://www.xboxforums.com/forums/off-topic-lounge.1123/', '第二页地址': nan, '第三页地址': nan, '帖子题目': 'What is a Fairy cat', '发帖名字': 'Azirah'}
+解析完成: 论坛地址['xboxforums']  标题: What is a Fairy cat  发帖人昵称: Azirah
+数据格式正常,已经添加到数据库...
+
+{'第一页地址': 'https://www.tapatalk.com/groups/serebiiforums/general-pokemon-discussion-f26/', '第二页地址': nan, '第三页地址': nan, '帖子题目': 'What is a Fairy cat', '发帖名字': 'mumu500'}
+解析完成: 论坛地址['tapatalk']  标题: What is a Fairy cat  发帖人昵称: mumu500
+数据格式正常,已经添加到数据库...
+
+{'第一页地址': 'https://cryptorum.com/cryptocurrency/mining/', '第二页地址': nan, '第三页地址': nan, '帖子题目': 'What is cryptocurrency and how does it work', '发帖名字': 'Marry200'}
+解析完成: 论坛地址['cryptorum']  标题: What is cryptocurrency and how does it work  发帖人昵称: Marry200
+数据格式正常,已经添加到数据库...
+
+{'第一页地址': 'https://bitcoinforum.com/off-topic/', '第二页地址': nan, '第三页地址': nan, '帖子题目': 'What is cryptocurrency and how does it work', '发帖名字': 'Davy200'}
+解析完成: 论坛地址['bitcoinforum']  标题: What is cryptocurrency and how does it work  发帖人昵称: Davy200
+数据格式正常,已经添加到数据库...
+
+{'第一页地址': 'https://satoshigames.io/c/blockchain-games/5', '第二页地址': nan, '第三页地址': nan, '帖子题目': 'what is fairy cat blockchain game', '发帖名字': 'Marrypoppin'}
+解析完成: 论坛地址['satoshigames']  标题: what is fairy cat blockchain game  发帖人昵称: Marrypoppin
+数据格式正常,已经添加到数据库...
+
+{'第一页地址': 'https://www.inventoridigiochi.it/forums/forum/idee-di-giochi/', '第二页地址': nan, '第三页地址': nan, '帖子题目': "Cos'è un gatto delle fate?", '发帖名字': 'Marry Poppin'}
+解析完成: 论坛地址['inventoridigiochi']  标题: Cos'è un gatto delle fate?  发帖人昵称: Marry Poppin
+数据格式正常,已经添加到数据库...
+
+{'第一页地址': 'https://pc-gaming.it/board/forum/50-tema-libero/', '第二页地址': nan, '第三页地址': nan, '帖子题目': "Cos'è un gatto delle fate?", '发帖名字': 'Davy200'}
+解析完成: 论坛地址['pc-gaming']  标题: Cos'è un gatto delle fate?  发帖人昵称: Davy200
+数据格式正常,已经添加到数据库...
+
+{'第一页地址': 'https://phcorner.net/forums/forum-games.534/', '第二页地址': nan, '第三页地址': nan, '帖子题目': 'Ano ang Fairy Cat?', '发帖名字': 'Sheylaka'}
+解析完成: 论坛地址['phcorner']  标题: Ano ang Fairy Cat?  发帖人昵称: Sheylaka
+数据格式正常,已经添加到数据库...
+
+穆清02.08_1.xlsx ==> Sheet1 的数据读取完成: [{'page_1': 'https://aseannow.com/forum/228-cryptocurrency-news/', 'page_2': '', 'page_3': '', 'title': 'Please help me analyze whether I have been deceived by this game', 'nickName': 'Davy200'}, {'page_1': 'https://vnreview.vn/forums/chia-se-mon-hoi.422281184763053', 'page_2': '', 'page_3': '', 'title': 'FAIRY CAT TRÒ CHƠI CHUỖI KHỐI', 'nickName': 'Azirah Mohamed'}, {'page_1': 'https://www.expat.com/forum/viewforum.php?id=220', 'page_2': '', 'page_3': '', 'title': 'FAIRY CAT BLOCKCHAIN GAME', 'nickName': 'marrypoppin949'}, {'page_1': 'https://coinmarketcap.com/community/', 'page_2': '', 'page_3': '', 'title': 'What is a Fairy cat', 'nickName': 'Marrypoppin'}, {'page_1': 'https://thecryptocurrencyforums.com/community/forums/crypto-news.107/', 'page_2': '', 'page_3': '', 'title': 'What is a Fairy cat', 'nickName': 'mumu500'}, {'page_1': 'https://www.jeuxvideo.com/forums/0-3000472-0-1-0-1-0-jeux-independants.htm', 'page_2': '', 'page_3': '', 'title': 'FAIRY CAT', 'nickName': 'Davy200'}, {'page_1': 'https://forum.telecharger-jeuxpc.fr/index.php?forums/news-informations.4/', 'page_2': '', 'page_3': '', 'title': 'Fairy cat', 'nickName': 'mumu500'}, {'page_1': 'https://forums.gamerevolution.com/forums/gamerev-news.35/', 'page_2': '', 'page_3': '', 'title': 'What is a Fairy cat', 'nickName': 'Azirah'}, {'page_1': 'https://www.xboxforums.com/forums/off-topic-lounge.1123/', 'page_2': '', 'page_3': '', 'title': 'What is a Fairy cat', 'nickName': 'Azirah'}, {'page_1': 'https://www.tapatalk.com/groups/serebiiforums/general-pokemon-discussion-f26/', 'page_2': '', 'page_3': '', 'title': 'What is a Fairy cat', 'nickName': 'mumu500'}, {'page_1': 'https://cryptorum.com/cryptocurrency/mining/', 'page_2': '', 'page_3': '', 'title': 'What is cryptocurrency and how does it work', 'nickName': 'Marry200'}, {'page_1': 'https://bitcoinforum.com/off-topic/', 'page_2': '', 'page_3': '', 'title': 'What is cryptocurrency and how does it work', 'nickName': 'Davy200'}, {'page_1': 'https://satoshigames.io/c/blockchain-games/5', 'page_2': '', 'page_3': '', 'title': 'what is fairy cat blockchain game', 'nickName': 'Marrypoppin'}, {'page_1': 'https://www.inventoridigiochi.it/forums/forum/idee-di-giochi/', 'page_2': '', 'page_3': '', 'title': "Cos'è un gatto delle fate?", 'nickName': 'Marry Poppin'}, {'page_1': 'https://pc-gaming.it/board/forum/50-tema-libero/', 'page_2': '', 'page_3': '', 'title': "Cos'è un gatto delle fate?", 'nickName': 'Davy200'}, {'page_1': 'https://phcorner.net/forums/forum-games.534/', 'page_2': '', 'page_3': '', 'title': 'Ano ang Fairy Cat?', 'nickName': 'Sheylaka'}]
+
+forum/穆清02.08_1.xlsx 的数据读取完成: {'Sheet1': [{'page_1': 'https://aseannow.com/forum/228-cryptocurrency-news/', 'page_2': '', 'page_3': '', 'title': 'Please help me analyze whether I have been deceived by this game', 'nickName': 'Davy200'}, {'page_1': 'https://vnreview.vn/forums/chia-se-mon-hoi.422281184763053', 'page_2': '', 'page_3': '', 'title': 'FAIRY CAT TRÒ CHƠI CHUỖI KHỐI', 'nickName': 'Azirah Mohamed'}, {'page_1': 'https://www.expat.com/forum/viewforum.php?id=220', 'page_2': '', 'page_3': '', 'title': 'FAIRY CAT BLOCKCHAIN GAME', 'nickName': 'marrypoppin949'}, {'page_1': 'https://coinmarketcap.com/community/', 'page_2': '', 'page_3': '', 'title': 'What is a Fairy cat', 'nickName': 'Marrypoppin'}, {'page_1': 'https://thecryptocurrencyforums.com/community/forums/crypto-news.107/', 'page_2': '', 'page_3': '', 'title': 'What is a Fairy cat', 'nickName': 'mumu500'}, {'page_1': 'https://www.jeuxvideo.com/forums/0-3000472-0-1-0-1-0-jeux-independants.htm', 'page_2': '', 'page_3': '', 'title': 'FAIRY CAT', 'nickName': 'Davy200'}, {'page_1': 'https://forum.telecharger-jeuxpc.fr/index.php?forums/news-informations.4/', 'page_2': '', 'page_3': '', 'title': 'Fairy cat', 'nickName': 'mumu500'}, {'page_1': 'https://forums.gamerevolution.com/forums/gamerev-news.35/', 'page_2': '', 'page_3': '', 'title': 'What is a Fairy cat', 'nickName': 'Azirah'}, {'page_1': 'https://www.xboxforums.com/forums/off-topic-lounge.1123/', 'page_2': '', 'page_3': '', 'title': 'What is a Fairy cat', 'nickName': 'Azirah'}, {'page_1': 'https://www.tapatalk.com/groups/serebiiforums/general-pokemon-discussion-f26/', 'page_2': '', 'page_3': '', 'title': 'What is a Fairy cat', 'nickName': 'mumu500'}, {'page_1': 'https://cryptorum.com/cryptocurrency/mining/', 'page_2': '', 'page_3': '', 'title': 'What is cryptocurrency and how does it work', 'nickName': 'Marry200'}, {'page_1': 'https://bitcoinforum.com/off-topic/', 'page_2': '', 'page_3': '', 'title': 'What is cryptocurrency and how does it work', 'nickName': 'Davy200'}, {'page_1': 'https://satoshigames.io/c/blockchain-games/5', 'page_2': '', 'page_3': '', 'title': 'what is fairy cat blockchain game', 'nickName': 'Marrypoppin'}, {'page_1': 'https://www.inventoridigiochi.it/forums/forum/idee-di-giochi/', 'page_2': '', 'page_3': '', 'title': "Cos'è un gatto delle fate?", 'nickName': 'Marry Poppin'}, {'page_1': 'https://pc-gaming.it/board/forum/50-tema-libero/', 'page_2': '', 'page_3': '', 'title': "Cos'è un gatto delle fate?", 'nickName': 'Davy200'}, {'page_1': 'https://phcorner.net/forums/forum-games.534/', 'page_2': '', 'page_3': '', 'title': 'Ano ang Fairy Cat?', 'nickName': 'Sheylaka'}]}
+
+
+
+数据读取成功: {'李迪0208.xlsx': {'Sheet1': [{'page_1': 'https://www.jeuxvideo.com/forums/0-52-0-1-0-1-0-blabla-25-35-ans.htm', 'page_2': '', 'page_3': '', 'title': 'How can I experience the Fairy Cat metaverse?', 'nickName': 'jieke'}, {'page_1': 'https://www.mobox.io/community/article/63e1bdee03c7ca6ec9e899e6', 'page_2': '', 'page_3': '', 'title': 'The future of blockchain games', 'nickName': 'jieke'}, {'page_1': 'https://pcgameforum.com/threads/the-future-of-blockchain-games.3422/', 'page_2': '', 'page_3': '', 'title': 'The future of blockchain games', 'nickName': 'jieke'}, {'page_1': 'https://www.wallstreetoasis.com/forum/crypto/the-future-of-blockchain-games-1', 'page_2': '', 'page_3': '', 'title': 'The future of blockchain games', 'nickName': 'lixiao'}, {'page_1': 'https://bitco.in/forum/threads/the-future-of-blockchain-games.32559/', 'page_2': '', 'page_3': '', 'title': 'The future of blockchain games', 'nickName': 'Miranahh'}, {'page_1': 'https://gold.forum/forum/136-%F0%9F%8E%B1-crypto-games/?do=add', 'page_2': '', 'page_3': '', 'title': 'The future of blockchain games', 'nickName': 'xialin'}, {'page_1': 'https://elderscrollsrp.net/threads/the-future-of-blockchain-games.389/', 'page_2': '', 'page_3': '', 'title': 'The future of blockchain games', 'nickName': 'xxiaolin'}, {'page_1': 'https://emmates.proboards.com/thread/2925/future-blockchain-games', 'page_2': '', 'page_3': '', 'title': 'The future of blockchain games', 'nickName': 'xxiaolin'}, {'page_1': 'https://medium.com/@xiao97303/the-future-of-blockchain-games-446a042efa47', 'page_2': '', 'page_3': '', 'title': 'The future of blockchain games', 'nickName': 'li xiao'}, {'page_1': 'https://www.pinoyexchange.com/discussion/960872/how-can-i-experience-the-fairy-cat-metaverse', 'page_2': '', 'page_3': '', 'title': 'How can I experience the Fairy Cat metaverse?', 'nickName': 'xiaoxialinlin'}, {'page_1': 'https://www.quora.com/profile/%E5%85%8B-%E6%9D%B0-7/How-can-I-experience-the-Fairy-Cat-metaverse-A-Debuting-in-January-2023-Fairy-Cat-is-one-of-the-most-popular-crypto-1', 'page_2': '', 'page_3': '', 'title': 'How can I experience the Fairy Cat metaverse?', 'nickName': 'jieke'}, {'page_1': 'https://forum.telecharger-jeuxpc.fr/index.php?threads/what-is-fairy-cat.231/', 'page_2': '', 'page_3': '', 'title': 'what is Fairy cat', 'nickName': 'jieke'}, {'page_1': 'https://www.nvidia.com/en-us/geforce/forums/off-topic/25/510415/how-can-i-experience-the-fairy-cat-metaverse/', 'page_2': '', 'page_3': '', 'title': 'How can I experience the Fairy Cat metaverse?', 'nickName': 'xiao97303'}, {'page_1': 'https://yuneec-forum.com/threads/how-can-i-experience-the-fairy-cat-metaverse.10729/', 'page_2': '', 'page_3': '', 'title': 'How can I experience the Fairy Cat metaverse?', 'nickName': 'jieke'}, {'page_1': 'https://btcforum.fr/viewtopic.php?f=126&t=46260', 'page_2': '', 'page_3': '', 'title': 'Qu’est - ce que Fairy Cat?', 'nickName': 'jieke'}, {'page_1': 'https://forumcrypto.fr/topic/1522-quest-ce-que-fairy-cat/', 'page_2': '', 'page_3': '', 'title': 'Qu’est - ce que Fairy Cat?', 'nickName': 'jieke'}, {'page_1': 'https://forums.gamerevolution.com/threads/fairy-cat.35554', 'page_2': '', 'page_3': '', 'title': 'Comment découvrir le métaverse Fairy Cat ?', 'nickName': 'lidi123'}, {'page_1': 'https://www.graffes.com/forums/showthread.php?81878-Fairy-cat&p=1921835#post1921835', 'page_2': 'https://www.graffes.com/forums/forumdisplay.php?6-General-Discussion', 'page_3': '', 'title': 'Fairy cat', 'nickName': 'lidi123'}, {'page_1': 'https://cryptach.com/threads/how-can-i-experience-the-fairy-cat-metaverse.71234/', 'page_2': '', 'page_3': '', 'title': 'How can I experience the Fairy Cat metaverse?', 'nickName': 'xiaolin'}, {'page_1': 'https://forum.gamemaker.io/index.php?threads/how-can-i-experience-the-fairy-cat-metaverse.101377/', 'page_2': '', 'page_3': '', 'title': 'How can I experience the Fairy Cat metaverse?', 'nickName': 'xiaolin'}, {'page_1': 'https://www.tapatalk.com/groups/serebiiforums/viewtopic.php?f=26&t=1077&from_new_topic=1', 'page_2': '', 'page_3': '', 'title': 'Fairy Cat Forest: The Strongest Black Horse in Blockchain Games, emerging to match on the CryptoKitties.', 'nickName': 'jieke'}], 'Sheet2': [], 'Sheet3': []}, '穆清02.08_1.xlsx': {'Sheet1': [{'page_1': 'https://aseannow.com/forum/228-cryptocurrency-news/', 'page_2': '', 'page_3': '', 'title': 'Please help me analyze whether I have been deceived by this game', 'nickName': 'Davy200'}, {'page_1': 'https://vnreview.vn/forums/chia-se-mon-hoi.422281184763053', 'page_2': '', 'page_3': '', 'title': 'FAIRY CAT TRÒ CHƠI CHUỖI KHỐI', 'nickName': 'Azirah Mohamed'}, {'page_1': 'https://www.expat.com/forum/viewforum.php?id=220', 'page_2': '', 'page_3': '', 'title': 'FAIRY CAT BLOCKCHAIN GAME', 'nickName': 'marrypoppin949'}, {'page_1': 'https://coinmarketcap.com/community/', 'page_2': '', 'page_3': '', 'title': 'What is a Fairy cat', 'nickName': 'Marrypoppin'}, {'page_1': 'https://thecryptocurrencyforums.com/community/forums/crypto-news.107/', 'page_2': '', 'page_3': '', 'title': 'What is a Fairy cat', 'nickName': 'mumu500'}, {'page_1': 'https://www.jeuxvideo.com/forums/0-3000472-0-1-0-1-0-jeux-independants.htm', 'page_2': '', 'page_3': '', 'title': 'FAIRY CAT', 'nickName': 'Davy200'}, {'page_1': 'https://forum.telecharger-jeuxpc.fr/index.php?forums/news-informations.4/', 'page_2': '', 'page_3': '', 'title': 'Fairy cat', 'nickName': 'mumu500'}, {'page_1': 'https://forums.gamerevolution.com/forums/gamerev-news.35/', 'page_2': '', 'page_3': '', 'title': 'What is a Fairy cat', 'nickName': 'Azirah'}, {'page_1': 'https://www.xboxforums.com/forums/off-topic-lounge.1123/', 'page_2': '', 'page_3': '', 'title': 'What is a Fairy cat', 'nickName': 'Azirah'}, {'page_1': 'https://www.tapatalk.com/groups/serebiiforums/general-pokemon-discussion-f26/', 'page_2': '', 'page_3': '', 'title': 'What is a Fairy cat', 'nickName': 'mumu500'}, {'page_1': 'https://cryptorum.com/cryptocurrency/mining/', 'page_2': '', 'page_3': '', 'title': 'What is cryptocurrency and how does it work', 'nickName': 'Marry200'}, {'page_1': 'https://bitcoinforum.com/off-topic/', 'page_2': '', 'page_3': '', 'title': 'What is cryptocurrency and how does it work', 'nickName': 'Davy200'}, {'page_1': 'https://satoshigames.io/c/blockchain-games/5', 'page_2': '', 'page_3': '', 'title': 'what is fairy cat blockchain game', 'nickName': 'Marrypoppin'}, {'page_1': 'https://www.inventoridigiochi.it/forums/forum/idee-di-giochi/', 'page_2': '', 'page_3': '', 'title': "Cos'è un gatto delle fate?", 'nickName': 'Marry Poppin'}, {'page_1': 'https://pc-gaming.it/board/forum/50-tema-libero/', 'page_2': '', 'page_3': '', 'title': "Cos'è un gatto delle fate?", 'nickName': 'Davy200'}, {'page_1': 'https://phcorner.net/forums/forum-games.534/', 'page_2': '', 'page_3': '', 'title': 'Ano ang Fairy Cat?', 'nickName': 'Sheylaka'}]}}
+
+
+
+开始处理审核任务...
+
+
+
+李迪0208.xlsx > Sheet1 > 当前的进度: 1 / 21
+李迪0208.xlsx > Sheet1 > 帖子的标题: How can I experience the Fairy Cat metaverse?
+李迪0208.xlsx > Sheet1 > 发帖人昵称: jieke
+李迪0208.xlsx > Sheet1 > 论坛的地址: https://www.jeuxvideo.com/forums/0-52-0-1-0-1-0-blabla-25-35-ans.htm
+李迪0208.xlsx > Sheet1 > 论坛的名字: jeuxvideo
+李迪0208.xlsx > Sheet1 > 重复的对象: 1 (穆清02.08_1.xlsx)
+李迪0208.xlsx > Sheet1 > 论坛的处理: 审核失败
+李迪0208.xlsx > Sheet1 > 处理的结果: 审核不通过 (总数: 21  通过: 13  不通过: 8  重复: 5  重复率:23.81%)
+
+
+李迪0208.xlsx > Sheet1 > 当前的进度: 2 / 21
+李迪0208.xlsx > Sheet1 > 帖子的标题: The future of blockchain games
+李迪0208.xlsx > Sheet1 > 发帖人昵称: jieke
+李迪0208.xlsx > Sheet1 > 论坛的地址: https://www.mobox.io/community/article/63e1bdee03c7ca6ec9e899e6
+李迪0208.xlsx > Sheet1 > 论坛的名字: mobox
+李迪0208.xlsx > Sheet1 > 论坛的处理: 审核失败
+李迪0208.xlsx > Sheet1 > 处理的结果: 审核不通过 (总数: 21  通过: 13  不通过: 8  重复: 5  重复率:23.81%)
+
+
+李迪0208.xlsx > Sheet1 > 当前的进度: 3 / 21
+李迪0208.xlsx > Sheet1 > 帖子的标题: The future of blockchain games
+李迪0208.xlsx > Sheet1 > 发帖人昵称: jieke
+李迪0208.xlsx > Sheet1 > 论坛的地址: https://pcgameforum.com/threads/the-future-of-blockchain-games.3422/
+李迪0208.xlsx > Sheet1 > 论坛的名字: pcgameforum
+李迪0208.xlsx > Sheet1 > 论坛的处理: 这个地址处理过
+李迪0208.xlsx > Sheet1 > 处理的结果: 审核不通过 (总数: 21  通过: 13  不通过: 8  重复: 5  重复率:23.81%)
+
+
+李迪0208.xlsx > Sheet1 > 当前的进度: 4 / 21
+李迪0208.xlsx > Sheet1 > 帖子的标题: The future of blockchain games
+李迪0208.xlsx > Sheet1 > 发帖人昵称: lixiao
+李迪0208.xlsx > Sheet1 > 论坛的地址: https://www.wallstreetoasis.com/forum/crypto/the-future-of-blockchain-games-1
+李迪0208.xlsx > Sheet1 > 论坛的名字: wallstreetoasis
+李迪0208.xlsx > Sheet1 > 论坛的处理: 审核失败
+李迪0208.xlsx > Sheet1 > 处理的结果: 审核不通过 (总数: 21  通过: 13  不通过: 8  重复: 5  重复率:23.81%)
+
+
+李迪0208.xlsx > Sheet1 > 当前的进度: 5 / 21
+李迪0208.xlsx > Sheet1 > 帖子的标题: The future of blockchain games
+李迪0208.xlsx > Sheet1 > 发帖人昵称: Miranahh
+李迪0208.xlsx > Sheet1 > 论坛的地址: https://bitco.in/forum/threads/the-future-of-blockchain-games.32559/
+李迪0208.xlsx > Sheet1 > 论坛的名字: bitco
+李迪0208.xlsx > Sheet1 > 论坛的处理: 这个地址处理过
+李迪0208.xlsx > Sheet1 > 处理的结果: 审核不通过 (总数: 21  通过: 13  不通过: 8  重复: 5  重复率:23.81%)
+
+
+李迪0208.xlsx > Sheet1 > 当前的进度: 6 / 21
+李迪0208.xlsx > Sheet1 > 帖子的标题: The future of blockchain games
+李迪0208.xlsx > Sheet1 > 发帖人昵称: xialin
+李迪0208.xlsx > Sheet1 > 论坛的地址: https://gold.forum/forum/136-%F0%9F%8E%B1-crypto-games/?do=add
+李迪0208.xlsx > Sheet1 > 论坛的名字: gold
+李迪0208.xlsx > Sheet1 > 论坛的处理: 审核失败
+李迪0208.xlsx > Sheet1 > 处理的结果: 审核不通过 (总数: 21  通过: 13  不通过: 8  重复: 5  重复率:23.81%)
+
+
+李迪0208.xlsx > Sheet1 > 当前的进度: 7 / 21
+李迪0208.xlsx > Sheet1 > 帖子的标题: The future of blockchain games
+李迪0208.xlsx > Sheet1 > 发帖人昵称: xxiaolin
+李迪0208.xlsx > Sheet1 > 论坛的地址: https://elderscrollsrp.net/threads/the-future-of-blockchain-games.389/
+李迪0208.xlsx > Sheet1 > 论坛的名字: elderscrollsrp
+李迪0208.xlsx > Sheet1 > 论坛的处理: 这个地址处理过
+李迪0208.xlsx > Sheet1 > 处理的结果: 审核不通过 (总数: 21  通过: 13  不通过: 8  重复: 5  重复率:23.81%)
+
+
+李迪0208.xlsx > Sheet1 > 当前的进度: 8 / 21
+李迪0208.xlsx > Sheet1 > 帖子的标题: The future of blockchain games
+李迪0208.xlsx > Sheet1 > 发帖人昵称: xxiaolin
+李迪0208.xlsx > Sheet1 > 论坛的地址: https://emmates.proboards.com/thread/2925/future-blockchain-games
+李迪0208.xlsx > Sheet1 > 论坛的名字: emmates
+李迪0208.xlsx > Sheet1 > 论坛的处理: 这个地址处理过
+李迪0208.xlsx > Sheet1 > 处理的结果: 审核不通过 (总数: 21  通过: 13  不通过: 8  重复: 5  重复率:23.81%)
+
+
+李迪0208.xlsx > Sheet1 > 当前的进度: 9 / 21
+李迪0208.xlsx > Sheet1 > 帖子的标题: The future of blockchain games
+李迪0208.xlsx > Sheet1 > 发帖人昵称: li xiao
+李迪0208.xlsx > Sheet1 > 论坛的地址: https://medium.com/@xiao97303/the-future-of-blockchain-games-446a042efa47
+李迪0208.xlsx > Sheet1 > 论坛的名字: medium
+李迪0208.xlsx > Sheet1 > 论坛的处理: 这个地址处理过
+李迪0208.xlsx > Sheet1 > 处理的结果: 审核不通过 (总数: 21  通过: 13  不通过: 8  重复: 5  重复率:23.81%)
+
+
+李迪0208.xlsx > Sheet1 > 当前的进度: 10 / 21
+李迪0208.xlsx > Sheet1 > 帖子的标题: How can I experience the Fairy Cat metaverse?
+李迪0208.xlsx > Sheet1 > 发帖人昵称: xiaoxialinlin
+李迪0208.xlsx > Sheet1 > 论坛的地址: https://www.pinoyexchange.com/discussion/960872/how-can-i-experience-the-fairy-cat-metaverse
+李迪0208.xlsx > Sheet1 > 论坛的名字: pinoyexchange
+李迪0208.xlsx > Sheet1 > 论坛的处理: 这个地址处理过
+李迪0208.xlsx > Sheet1 > 处理的结果: 审核不通过 (总数: 21  通过: 13  不通过: 8  重复: 5  重复率:23.81%)
+
+
+李迪0208.xlsx > Sheet1 > 当前的进度: 11 / 21
+李迪0208.xlsx > Sheet1 > 帖子的标题: How can I experience the Fairy Cat metaverse?
+李迪0208.xlsx > Sheet1 > 发帖人昵称: jieke
+李迪0208.xlsx > Sheet1 > 论坛的地址: https://www.quora.com/profile/%E5%85%8B-%E6%9D%B0-7/How-can-I-experience-the-Fairy-Cat-metaverse-A-Debuting-in-January-2023-Fairy-Cat-is-one-of-the-most-popular-crypto-1
+李迪0208.xlsx > Sheet1 > 论坛的名字: quora
+李迪0208.xlsx > Sheet1 > 论坛的处理: 这个地址处理过
+李迪0208.xlsx > Sheet1 > 处理的结果: 审核不通过 (总数: 21  通过: 13  不通过: 8  重复: 5  重复率:23.81%)
+
+
+李迪0208.xlsx > Sheet1 > 当前的进度: 12 / 21
+李迪0208.xlsx > Sheet1 > 帖子的标题: what is Fairy cat
+李迪0208.xlsx > Sheet1 > 发帖人昵称: jieke
+李迪0208.xlsx > Sheet1 > 论坛的地址: https://forum.telecharger-jeuxpc.fr/index.php?threads/what-is-fairy-cat.231/
+李迪0208.xlsx > Sheet1 > 论坛的名字: telecharger-jeuxpc
+李迪0208.xlsx > Sheet1 > 论坛的处理: 这个地址处理过
+李迪0208.xlsx > Sheet1 > 处理的结果: 审核不通过 (总数: 21  通过: 13  不通过: 8  重复: 5  重复率:23.81%)
+
+
+李迪0208.xlsx > Sheet1 > 当前的进度: 13 / 21
+李迪0208.xlsx > Sheet1 > 帖子的标题: How can I experience the Fairy Cat metaverse?
+李迪0208.xlsx > Sheet1 > 发帖人昵称: xiao97303
+李迪0208.xlsx > Sheet1 > 论坛的地址: https://www.nvidia.com/en-us/geforce/forums/off-topic/25/510415/how-can-i-experience-the-fairy-cat-metaverse/
+李迪0208.xlsx > Sheet1 > 论坛的名字: nvidia
+李迪0208.xlsx > Sheet1 > 论坛的处理: 审核失败
+李迪0208.xlsx > Sheet1 > 处理的结果: 审核不通过 (总数: 21  通过: 13  不通过: 8  重复: 5  重复率:23.81%)
+
+
+李迪0208.xlsx > Sheet1 > 当前的进度: 14 / 21
+李迪0208.xlsx > Sheet1 > 帖子的标题: How can I experience the Fairy Cat metaverse?
+李迪0208.xlsx > Sheet1 > 发帖人昵称: jieke
+李迪0208.xlsx > Sheet1 > 论坛的地址: https://yuneec-forum.com/threads/how-can-i-experience-the-fairy-cat-metaverse.10729/
+李迪0208.xlsx > Sheet1 > 论坛的名字: yuneec-forum
+李迪0208.xlsx > Sheet1 > 论坛的处理: 审核失败
+李迪0208.xlsx > Sheet1 > 处理的结果: 审核不通过 (总数: 21  通过: 13  不通过: 8  重复: 5  重复率:23.81%)
+
+
+李迪0208.xlsx > Sheet1 > 当前的进度: 15 / 21
+李迪0208.xlsx > Sheet1 > 帖子的标题: Qu’est - ce que Fairy Cat?
+李迪0208.xlsx > Sheet1 > 发帖人昵称: jieke
+李迪0208.xlsx > Sheet1 > 论坛的地址: https://btcforum.fr/viewtopic.php?f=126&t=46260
+李迪0208.xlsx > Sheet1 > 论坛的名字: btcforum
+李迪0208.xlsx > Sheet1 > 论坛的处理: 这个地址处理过
+李迪0208.xlsx > Sheet1 > 处理的结果: 审核不通过 (总数: 21  通过: 13  不通过: 8  重复: 5  重复率:23.81%)
+
+
+李迪0208.xlsx > Sheet1 > 当前的进度: 16 / 21
+李迪0208.xlsx > Sheet1 > 帖子的标题: Qu’est - ce que Fairy Cat?
+李迪0208.xlsx > Sheet1 > 发帖人昵称: jieke
+李迪0208.xlsx > Sheet1 > 论坛的地址: https://forumcrypto.fr/topic/1522-quest-ce-que-fairy-cat/
+李迪0208.xlsx > Sheet1 > 论坛的名字: forumcrypto
+李迪0208.xlsx > Sheet1 > 论坛的处理: 这个地址处理过
+李迪0208.xlsx > Sheet1 > 处理的结果: 审核不通过 (总数: 21  通过: 13  不通过: 8  重复: 5  重复率:23.81%)
+
+
+李迪0208.xlsx > Sheet1 > 当前的进度: 17 / 21
+李迪0208.xlsx > Sheet1 > 帖子的标题: Comment découvrir le métaverse Fairy Cat ?
+李迪0208.xlsx > Sheet1 > 发帖人昵称: lidi123
+李迪0208.xlsx > Sheet1 > 论坛的地址: https://forums.gamerevolution.com/threads/fairy-cat.35554
+李迪0208.xlsx > Sheet1 > 论坛的名字: gamerevolution
+李迪0208.xlsx > Sheet1 > 论坛的处理: 这个地址处理过
+李迪0208.xlsx > Sheet1 > 处理的结果: 审核不通过 (总数: 21  通过: 13  不通过: 8  重复: 5  重复率:23.81%)
+
+
+李迪0208.xlsx > Sheet1 > 当前的进度: 18 / 21
+李迪0208.xlsx > Sheet1 > 帖子的标题: Fairy cat
+李迪0208.xlsx > Sheet1 > 发帖人昵称: lidi123
+李迪0208.xlsx > Sheet1 > 论坛的地址: https://www.graffes.com/forums/showthread.php?81878-Fairy-cat&p=1921835#post1921835
+李迪0208.xlsx > Sheet1 > 论坛的名字: graffes
+李迪0208.xlsx > Sheet1 > 论坛的处理: 审核失败
+李迪0208.xlsx > Sheet1 > 论坛的地址: https://www.graffes.com/forums/forumdisplay.php?6-General-Discussion
+李迪0208.xlsx > Sheet1 > 论坛的名字: graffes
+李迪0208.xlsx > Sheet1 > 论坛的处理: 审核失败
+李迪0208.xlsx > Sheet1 > 处理的结果: 审核不通过 (总数: 21  通过: 13  不通过: 8  重复: 5  重复率:23.81%)
+
+
+李迪0208.xlsx > Sheet1 > 当前的进度: 19 / 21
+李迪0208.xlsx > Sheet1 > 帖子的标题: How can I experience the Fairy Cat metaverse?
+李迪0208.xlsx > Sheet1 > 发帖人昵称: xiaolin
+李迪0208.xlsx > Sheet1 > 论坛的地址: https://cryptach.com/threads/how-can-i-experience-the-fairy-cat-metaverse.71234/
+李迪0208.xlsx > Sheet1 > 论坛的名字: cryptach
+李迪0208.xlsx > Sheet1 > 论坛的处理: 这个地址处理过
+李迪0208.xlsx > Sheet1 > 处理的结果: 审核不通过 (总数: 21  通过: 13  不通过: 8  重复: 5  重复率:23.81%)
+
+
+李迪0208.xlsx > Sheet1 > 当前的进度: 20 / 21
+李迪0208.xlsx > Sheet1 > 帖子的标题: How can I experience the Fairy Cat metaverse?
+李迪0208.xlsx > Sheet1 > 发帖人昵称: xiaolin
+李迪0208.xlsx > Sheet1 > 论坛的地址: https://forum.gamemaker.io/index.php?threads/how-can-i-experience-the-fairy-cat-metaverse.101377/
+李迪0208.xlsx > Sheet1 > 论坛的名字: gamemaker
+李迪0208.xlsx > Sheet1 > 论坛的处理: 审核失败
+李迪0208.xlsx > Sheet1 > 处理的结果: 审核不通过 (总数: 21  通过: 13  不通过: 8  重复: 5  重复率:23.81%)
+
+
+李迪0208.xlsx > Sheet1 > 当前的进度: 21 / 21
+李迪0208.xlsx > Sheet1 > 帖子的标题: Fairy Cat Forest: The Strongest Black Horse in Blockchain Games, emerging to match on the CryptoKitties.
+李迪0208.xlsx > Sheet1 > 发帖人昵称: jieke
+李迪0208.xlsx > Sheet1 > 论坛的地址: https://www.tapatalk.com/groups/serebiiforums/viewtopic.php?f=26&t=1077&from_new_topic=1
+李迪0208.xlsx > Sheet1 > 论坛的名字: tapatalk
+李迪0208.xlsx > Sheet1 > 论坛的处理: 这个地址处理过
+李迪0208.xlsx > Sheet1 > 处理的结果: 审核不通过 (总数: 21  通过: 13  不通过: 8  重复: 5  重复率:23.81%)
+
+
+========== 李迪0208.xlsx ==========
+
+处理总数: 21 (通过 13  不通过 8  和别人重复 5  重复率 23.81%)
+
+通过的论坛: 13
+https://pcgameforum.com/threads/the-future-of-blockchain-games.3422/
+https://bitco.in/forum/threads/the-future-of-blockchain-games.32559/
+https://elderscrollsrp.net/threads/the-future-of-blockchain-games.389/
+https://emmates.proboards.com/thread/2925/future-blockchain-games
+https://medium.com/@xiao97303/the-future-of-blockchain-games-446a042efa47
+https://www.pinoyexchange.com/discussion/960872/how-can-i-experience-the-fairy-cat-metaverse
+https://www.quora.com/profile/%E5%85%8B-%E6%9D%B0-7/How-can-I-experience-the-Fairy-Cat-metaverse-A-Debuting-in-January-2023-Fairy-Cat-is-one-of-the-most-popular-crypto-1
+https://forum.telecharger-jeuxpc.fr/index.php?threads/what-is-fairy-cat.231/
+https://btcforum.fr/viewtopic.php?f=126&t=46260
+https://forumcrypto.fr/topic/1522-quest-ce-que-fairy-cat/
+https://forums.gamerevolution.com/threads/fairy-cat.35554
+https://cryptach.com/threads/how-can-i-experience-the-fairy-cat-metaverse.71234/
+https://www.tapatalk.com/groups/serebiiforums/viewtopic.php?f=26&t=1077&from_new_topic=1
+
+不通过的论坛: 8
+https://www.jeuxvideo.com/forums/0-52-0-1-0-1-0-blabla-25-35-ans.htm
+https://www.mobox.io/community/article/63e1bdee03c7ca6ec9e899e6
+https://www.wallstreetoasis.com/forum/crypto/the-future-of-blockchain-games-1
+https://gold.forum/forum/136-%F0%9F%8E%B1-crypto-games/?do=add
+https://www.nvidia.com/en-us/geforce/forums/off-topic/25/510415/how-can-i-experience-the-fairy-cat-metaverse/
+https://yuneec-forum.com/threads/how-can-i-experience-the-fairy-cat-metaverse.10729/
+https://www.graffes.com/forums/showthread.php?81878-Fairy-cat&p=1921835#post1921835
+https://forum.gamemaker.io/index.php?threads/how-can-i-experience-the-fairy-cat-metaverse.101377/
+
+重复的论坛: 5
+https://www.jeuxvideo.com/forums/0-52-0-1-0-1-0-blabla-25-35-ans.htm
+https://bitco.in/forum/threads/the-future-of-blockchain-games.32559/
+https://forum.telecharger-jeuxpc.fr/index.php?threads/what-is-fairy-cat.231/
+https://forums.gamerevolution.com/threads/fairy-cat.35554
+https://www.tapatalk.com/groups/serebiiforums/viewtopic.php?f=26&t=1077&from_new_topic=1
+
+
+
+穆清02.08_1.xlsx > Sheet1 > 当前的进度: 1 / 16
+穆清02.08_1.xlsx > Sheet1 > 帖子的标题: Please help me analyze whether I have been deceived by this game
+穆清02.08_1.xlsx > Sheet1 > 发帖人昵称: Davy200
+穆清02.08_1.xlsx > Sheet1 > 论坛的地址: https://aseannow.com/forum/228-cryptocurrency-news/
+穆清02.08_1.xlsx > Sheet1 > 论坛的名字: aseannow
+穆清02.08_1.xlsx > Sheet1 > 论坛的处理: 审核失败
+穆清02.08_1.xlsx > Sheet1 > 处理的结果: 审核不通过 (总数: 16  通过: 9  不通过: 7  重复: 4  重复率:25.00%)
+
+
+穆清02.08_1.xlsx > Sheet1 > 当前的进度: 2 / 16
+穆清02.08_1.xlsx > Sheet1 > 帖子的标题: FAIRY CAT TRÒ CHƠI CHUỖI KHỐI
+穆清02.08_1.xlsx > Sheet1 > 发帖人昵称: Azirah Mohamed
+穆清02.08_1.xlsx > Sheet1 > 论坛的地址: https://vnreview.vn/forums/chia-se-mon-hoi.422281184763053
+穆清02.08_1.xlsx > Sheet1 > 论坛的名字: vnreview
+穆清02.08_1.xlsx > Sheet1 > 论坛的处理: 审核失败
+穆清02.08_1.xlsx > Sheet1 > 处理的结果: 审核不通过 (总数: 16  通过: 9  不通过: 7  重复: 4  重复率:25.00%)
+
+
+穆清02.08_1.xlsx > Sheet1 > 当前的进度: 3 / 16
+穆清02.08_1.xlsx > Sheet1 > 帖子的标题: FAIRY CAT BLOCKCHAIN GAME
+穆清02.08_1.xlsx > Sheet1 > 发帖人昵称: marrypoppin949
+穆清02.08_1.xlsx > Sheet1 > 论坛的地址: https://www.expat.com/forum/viewforum.php?id=220
+穆清02.08_1.xlsx > Sheet1 > 论坛的名字: expat
+穆清02.08_1.xlsx > Sheet1 > 论坛的处理: 审核失败
+穆清02.08_1.xlsx > Sheet1 > 处理的结果: 审核不通过 (总数: 16  通过: 9  不通过: 7  重复: 4  重复率:25.00%)
+
+
+穆清02.08_1.xlsx > Sheet1 > 当前的进度: 4 / 16
+穆清02.08_1.xlsx > Sheet1 > 帖子的标题: What is a Fairy cat
+穆清02.08_1.xlsx > Sheet1 > 发帖人昵称: Marrypoppin
+穆清02.08_1.xlsx > Sheet1 > 论坛的地址: https://coinmarketcap.com/community/
+穆清02.08_1.xlsx > Sheet1 > 论坛的名字: coinmarketcap
+穆清02.08_1.xlsx > Sheet1 > 论坛的处理: 审核失败
+穆清02.08_1.xlsx > Sheet1 > 处理的结果: 审核不通过 (总数: 16  通过: 9  不通过: 7  重复: 4  重复率:25.00%)
+
+
+穆清02.08_1.xlsx > Sheet1 > 当前的进度: 5 / 16
+穆清02.08_1.xlsx > Sheet1 > 帖子的标题: What is a Fairy cat
+穆清02.08_1.xlsx > Sheet1 > 发帖人昵称: mumu500
+穆清02.08_1.xlsx > Sheet1 > 论坛的地址: https://thecryptocurrencyforums.com/community/forums/crypto-news.107/
+穆清02.08_1.xlsx > Sheet1 > 论坛的名字: thecryptocurrencyforums
+穆清02.08_1.xlsx > Sheet1 > 论坛的处理: 这个地址处理过
+穆清02.08_1.xlsx > Sheet1 > 处理的结果: 审核不通过 (总数: 16  通过: 9  不通过: 7  重复: 4  重复率:25.00%)
+
+
+穆清02.08_1.xlsx > Sheet1 > 当前的进度: 6 / 16
+穆清02.08_1.xlsx > Sheet1 > 帖子的标题: FAIRY CAT
+穆清02.08_1.xlsx > Sheet1 > 发帖人昵称: Davy200
+穆清02.08_1.xlsx > Sheet1 > 论坛的地址: https://www.jeuxvideo.com/forums/0-3000472-0-1-0-1-0-jeux-independants.htm
+穆清02.08_1.xlsx > Sheet1 > 论坛的名字: jeuxvideo
+穆清02.08_1.xlsx > Sheet1 > 论坛的处理: 这个地址处理过
+穆清02.08_1.xlsx > Sheet1 > 处理的结果: 审核不通过 (总数: 16  通过: 9  不通过: 7  重复: 4  重复率:25.00%)
+
+
+穆清02.08_1.xlsx > Sheet1 > 当前的进度: 7 / 16
+穆清02.08_1.xlsx > Sheet1 > 帖子的标题: Fairy cat
+穆清02.08_1.xlsx > Sheet1 > 发帖人昵称: mumu500
+穆清02.08_1.xlsx > Sheet1 > 论坛的地址: https://forum.telecharger-jeuxpc.fr/index.php?forums/news-informations.4/
+穆清02.08_1.xlsx > Sheet1 > 论坛的名字: telecharger-jeuxpc
+穆清02.08_1.xlsx > Sheet1 > 论坛的处理: 这个地址处理过
+穆清02.08_1.xlsx > Sheet1 > 处理的结果: 审核不通过 (总数: 16  通过: 9  不通过: 7  重复: 4  重复率:25.00%)
+
+
+穆清02.08_1.xlsx > Sheet1 > 当前的进度: 8 / 16
+穆清02.08_1.xlsx > Sheet1 > 帖子的标题: What is a Fairy cat
+穆清02.08_1.xlsx > Sheet1 > 发帖人昵称: Azirah
+穆清02.08_1.xlsx > Sheet1 > 论坛的地址: https://forums.gamerevolution.com/forums/gamerev-news.35/
+穆清02.08_1.xlsx > Sheet1 > 论坛的名字: gamerevolution
+穆清02.08_1.xlsx > Sheet1 > 论坛的处理: 这个地址处理过
+穆清02.08_1.xlsx > Sheet1 > 处理的结果: 审核不通过 (总数: 16  通过: 9  不通过: 7  重复: 4  重复率:25.00%)
+
+
+穆清02.08_1.xlsx > Sheet1 > 当前的进度: 9 / 16
+穆清02.08_1.xlsx > Sheet1 > 帖子的标题: What is a Fairy cat
+穆清02.08_1.xlsx > Sheet1 > 发帖人昵称: Azirah
+穆清02.08_1.xlsx > Sheet1 > 论坛的地址: https://www.xboxforums.com/forums/off-topic-lounge.1123/
+穆清02.08_1.xlsx > Sheet1 > 论坛的名字: xboxforums
+穆清02.08_1.xlsx > Sheet1 > 论坛的处理: 这个地址处理过
+穆清02.08_1.xlsx > Sheet1 > 处理的结果: 审核不通过 (总数: 16  通过: 9  不通过: 7  重复: 4  重复率:25.00%)
+
+
+穆清02.08_1.xlsx > Sheet1 > 当前的进度: 10 / 16
+穆清02.08_1.xlsx > Sheet1 > 帖子的标题: What is a Fairy cat
+穆清02.08_1.xlsx > Sheet1 > 发帖人昵称: mumu500
+穆清02.08_1.xlsx > Sheet1 > 论坛的地址: https://www.tapatalk.com/groups/serebiiforums/general-pokemon-discussion-f26/
+穆清02.08_1.xlsx > Sheet1 > 论坛的名字: tapatalk
+穆清02.08_1.xlsx > Sheet1 > 论坛的处理: 这个地址处理过
+穆清02.08_1.xlsx > Sheet1 > 处理的结果: 审核不通过 (总数: 16  通过: 9  不通过: 7  重复: 4  重复率:25.00%)
+
+
+穆清02.08_1.xlsx > Sheet1 > 当前的进度: 11 / 16
+穆清02.08_1.xlsx > Sheet1 > 帖子的标题: What is cryptocurrency and how does it work
+穆清02.08_1.xlsx > Sheet1 > 发帖人昵称: Marry200
+穆清02.08_1.xlsx > Sheet1 > 论坛的地址: https://cryptorum.com/cryptocurrency/mining/
+穆清02.08_1.xlsx > Sheet1 > 论坛的名字: cryptorum
+穆清02.08_1.xlsx > Sheet1 > 论坛的处理: 审核失败
+穆清02.08_1.xlsx > Sheet1 > 处理的结果: 审核不通过 (总数: 16  通过: 9  不通过: 7  重复: 4  重复率:25.00%)
+
+
+穆清02.08_1.xlsx > Sheet1 > 当前的进度: 12 / 16
+穆清02.08_1.xlsx > Sheet1 > 帖子的标题: What is cryptocurrency and how does it work
+穆清02.08_1.xlsx > Sheet1 > 发帖人昵称: Davy200
+穆清02.08_1.xlsx > Sheet1 > 论坛的地址: https://bitcoinforum.com/off-topic/
+穆清02.08_1.xlsx > Sheet1 > 论坛的名字: bitcoinforum
+穆清02.08_1.xlsx > Sheet1 > 论坛的处理: 这个地址处理过
+穆清02.08_1.xlsx > Sheet1 > 处理的结果: 审核不通过 (总数: 16  通过: 9  不通过: 7  重复: 4  重复率:25.00%)
+
+
+穆清02.08_1.xlsx > Sheet1 > 当前的进度: 13 / 16
+穆清02.08_1.xlsx > Sheet1 > 帖子的标题: what is fairy cat blockchain game
+穆清02.08_1.xlsx > Sheet1 > 发帖人昵称: Marrypoppin
+穆清02.08_1.xlsx > Sheet1 > 论坛的地址: https://satoshigames.io/c/blockchain-games/5
+穆清02.08_1.xlsx > Sheet1 > 论坛的名字: satoshigames
+穆清02.08_1.xlsx > Sheet1 > 论坛的处理: 这个地址处理过
+穆清02.08_1.xlsx > Sheet1 > 处理的结果: 审核不通过 (总数: 16  通过: 9  不通过: 7  重复: 4  重复率:25.00%)
+
+
+穆清02.08_1.xlsx > Sheet1 > 当前的进度: 14 / 16
+穆清02.08_1.xlsx > Sheet1 > 帖子的标题: Cos'è un gatto delle fate?
+穆清02.08_1.xlsx > Sheet1 > 发帖人昵称: Marry Poppin
+穆清02.08_1.xlsx > Sheet1 > 论坛的地址: https://www.inventoridigiochi.it/forums/forum/idee-di-giochi/
+穆清02.08_1.xlsx > Sheet1 > 论坛的名字: inventoridigiochi
+穆清02.08_1.xlsx > Sheet1 > 论坛的处理: 这个地址处理过
+穆清02.08_1.xlsx > Sheet1 > 处理的结果: 审核不通过 (总数: 16  通过: 9  不通过: 7  重复: 4  重复率:25.00%)
+
+
+穆清02.08_1.xlsx > Sheet1 > 当前的进度: 15 / 16
+穆清02.08_1.xlsx > Sheet1 > 帖子的标题: Cos'è un gatto delle fate?
+穆清02.08_1.xlsx > Sheet1 > 发帖人昵称: Davy200
+穆清02.08_1.xlsx > Sheet1 > 论坛的地址: https://pc-gaming.it/board/forum/50-tema-libero/
+穆清02.08_1.xlsx > Sheet1 > 论坛的名字: pc-gaming
+穆清02.08_1.xlsx > Sheet1 > 论坛的处理: 审核失败
+穆清02.08_1.xlsx > Sheet1 > 处理的结果: 审核不通过 (总数: 16  通过: 9  不通过: 7  重复: 4  重复率:25.00%)
+
+
+穆清02.08_1.xlsx > Sheet1 > 当前的进度: 16 / 16
+穆清02.08_1.xlsx > Sheet1 > 帖子的标题: Ano ang Fairy Cat?
+穆清02.08_1.xlsx > Sheet1 > 发帖人昵称: Sheylaka
+穆清02.08_1.xlsx > Sheet1 > 论坛的地址: https://phcorner.net/forums/forum-games.534/
+穆清02.08_1.xlsx > Sheet1 > 论坛的名字: phcorner
+穆清02.08_1.xlsx > Sheet1 > 论坛的处理: 审核失败
+穆清02.08_1.xlsx > Sheet1 > 处理的结果: 审核不通过 (总数: 16  通过: 9  不通过: 7  重复: 4  重复率:25.00%)
+
+
+========== 穆清02.08_1.xlsx ==========
+
+处理总数: 16 (通过 9  不通过 7  和别人重复 4  重复率 25.00%)
+
+通过的论坛: 9
+https://thecryptocurrencyforums.com/community/forums/crypto-news.107/
+https://www.jeuxvideo.com/forums/0-3000472-0-1-0-1-0-jeux-independants.htm
+https://forum.telecharger-jeuxpc.fr/index.php?forums/news-informations.4/
+https://forums.gamerevolution.com/forums/gamerev-news.35/
+https://www.xboxforums.com/forums/off-topic-lounge.1123/
+https://www.tapatalk.com/groups/serebiiforums/general-pokemon-discussion-f26/
+https://bitcoinforum.com/off-topic/
+https://satoshigames.io/c/blockchain-games/5
+https://www.inventoridigiochi.it/forums/forum/idee-di-giochi/
+
+不通过的论坛: 7
+https://aseannow.com/forum/228-cryptocurrency-news/
+https://vnreview.vn/forums/chia-se-mon-hoi.422281184763053
+https://www.expat.com/forum/viewforum.php?id=220
+https://coinmarketcap.com/community/
+https://cryptorum.com/cryptocurrency/mining/
+https://pc-gaming.it/board/forum/50-tema-libero/
+https://phcorner.net/forums/forum-games.534/
+
+重复的论坛: 4
+https://www.jeuxvideo.com/forums/0-3000472-0-1-0-1-0-jeux-independants.htm
+https://forum.telecharger-jeuxpc.fr/index.php?forums/news-informations.4/
+https://forums.gamerevolution.com/forums/gamerev-news.35/
+https://www.tapatalk.com/groups/serebiiforums/general-pokemon-discussion-f26/
+
+
+
+开始读取发送成功的论坛记录...
+读取成功: ['https://pcgameforum.com/threads/the-future-of-blockchain-games.3422/', 'https://bitco.in/forum/threads/the-future-of-blockchain-games.32559/', 'https://elderscrollsrp.net/threads/the-future-of-blockchain-games.389/', 'https://emmates.proboards.com/thread/2925/future-blockchain-games', 'https://medium.com/@xiao97303/the-future-of-blockchain-games-446a042efa47', 'https://www.pinoyexchange.com/discussion/960872/how-can-i-experience-the-fairy-cat-metaverse', 'https://www.quora.com/profile/%E5%85%8B-%E6%9D%B0-7/How-can-I-experience-the-Fairy-Cat-metaverse-A-Debuting-in-January-2023-Fairy-Cat-is-one-of-the-most-popular-crypto-1', 'https://forum.telecharger-jeuxpc.fr/index.php?threads/what-is-fairy-cat.231/', 'https://btcforum.fr/viewtopic.php?f=126&t=46260', 'https://forumcrypto.fr/topic/1522-quest-ce-que-fairy-cat/', 'https://forums.gamerevolution.com/threads/fairy-cat.35554', 'https://cryptach.com/threads/how-can-i-experience-the-fairy-cat-metaverse.71234/', 'https://www.tapatalk.com/groups/serebiiforums/viewtopic.php?f=26&t=1077&from_new_topic=1', 'https://thecryptocurrencyforums.com/community/forums/crypto-news.107/', 'https://www.jeuxvideo.com/forums/0-3000472-0-1-0-1-0-jeux-independants.htm', 'https://www.xboxforums.com/forums/off-topic-lounge.1123/', 'https://bitcoinforum.com/off-topic/', 'https://satoshigames.io/c/blockchain-games/5', 'https://www.inventoridigiochi.it/forums/forum/idee-di-giochi/']
+
+读取成功: ['https://www.mobox.io/community/article/63e1bdee03c7ca6ec9e899e6', 'https://www.wallstreetoasis.com/forum/crypto/the-future-of-blockchain-games-1', 'https://gold.forum/forum/136-%F0%9F%8E%B1-crypto-games/?do=add', 'https://www.nvidia.com/en-us/geforce/forums/off-topic/25/510415/how-can-i-experience-the-fairy-cat-metaverse/', 'https://yuneec-forum.com/threads/how-can-i-experience-the-fairy-cat-metaverse.10729/', 'https://www.graffes.com/forums/showthread.php?81878-Fairy-cat&p=1921835#post1921835', 'https://forum.gamemaker.io/index.php?threads/how-can-i-experience-the-fairy-cat-metaverse.101377/', 'https://aseannow.com/forum/228-cryptocurrency-news/', 'https://vnreview.vn/forums/chia-se-mon-hoi.422281184763053', 'https://www.expat.com/forum/viewforum.php?id=220', 'https://coinmarketcap.com/community/', 'https://cryptorum.com/cryptocurrency/mining/', 'https://pc-gaming.it/board/forum/50-tema-libero/', 'https://phcorner.net/forums/forum-games.534/', 'https://www.jeuxvideo.com/forums/0-52-0-1-0-1-0-blabla-25-35-ans.htm']
+
+读取成功: ['https://www.jeuxvideo.com/forums/0-52-0-1-0-1-0-blabla-25-35-ans.htm', 'https://bitco.in/forum/threads/the-future-of-blockchain-games.32559/', 'https://forum.telecharger-jeuxpc.fr/index.php?threads/what-is-fairy-cat.231/', 'https://forums.gamerevolution.com/threads/fairy-cat.35554', 'https://www.tapatalk.com/groups/serebiiforums/viewtopic.php?f=26&t=1077&from_new_topic=1']
+
+正在检查文件: forum/李迪0208.xlsx 
+正在读取表格: 李迪0208.xlsx ==> Sheet1 的数据...
+
+{'第一页地址': 'https://www.jeuxvideo.com/forums/0-52-0-1-0-1-0-blabla-25-35-ans.htm', '第二页地址': nan, '第三页地址': nan, '帖子标题': ' How can I experience the Fairy Cat metaverse?', '发帖名称': 'jieke'}
+解析完成: 论坛地址['jeuxvideo']  标题: How can I experience the Fairy Cat metaverse?  发帖人昵称: jieke
+数据格式正常,已经添加到数据库...
+
+{'第一页地址': 'https://www.mobox.io/community/article/63e1bdee03c7ca6ec9e899e6', '第二页地址': nan, '第三页地址': nan, '帖子标题': 'The future of blockchain games', '发帖名称': 'jieke'}
+解析完成: 论坛地址['mobox']  标题: The future of blockchain games  发帖人昵称: jieke
+数据格式正常,已经添加到数据库...
+
+{'第一页地址': 'https://pcgameforum.com/threads/the-future-of-blockchain-games.3422/', '第二页地址': nan, '第三页地址': nan, '帖子标题': 'The future of blockchain games', '发帖名称': 'jieke'}
+解析完成: 论坛地址['pcgameforum']  标题: The future of blockchain games  发帖人昵称: jieke
+数据格式正常,已经添加到数据库...
+
+{'第一页地址': 'https://www.wallstreetoasis.com/forum/crypto/the-future-of-blockchain-games-1', '第二页地址': nan, '第三页地址': nan, '帖子标题': 'The future of blockchain games', '发帖名称': 'lixiao'}
+解析完成: 论坛地址['wallstreetoasis']  标题: The future of blockchain games  发帖人昵称: lixiao
+数据格式正常,已经添加到数据库...
+
+{'第一页地址': 'https://bitco.in/forum/threads/the-future-of-blockchain-games.32559/', '第二页地址': nan, '第三页地址': nan, '帖子标题': 'The future of blockchain games', '发帖名称': 'Miranahh'}
+解析完成: 论坛地址['bitco']  标题: The future of blockchain games  发帖人昵称: Miranahh
+数据格式正常,已经添加到数据库...
+
+{'第一页地址': 'https://gold.forum/forum/136-%F0%9F%8E%B1-crypto-games/?do=add', '第二页地址': nan, '第三页地址': nan, '帖子标题': 'The future of blockchain games', '发帖名称': 'xialin'}
+解析完成: 论坛地址['gold']  标题: The future of blockchain games  发帖人昵称: xialin
+数据格式正常,已经添加到数据库...
+
+{'第一页地址': 'https://elderscrollsrp.net/threads/the-future-of-blockchain-games.389/', '第二页地址': nan, '第三页地址': nan, '帖子标题': 'The future of blockchain games', '发帖名称': 'xxiaolin'}
+解析完成: 论坛地址['elderscrollsrp']  标题: The future of blockchain games  发帖人昵称: xxiaolin
+数据格式正常,已经添加到数据库...
+
+{'第一页地址': 'https://emmates.proboards.com/thread/2925/future-blockchain-games', '第二页地址': nan, '第三页地址': nan, '帖子标题': 'The future of blockchain games', '发帖名称': 'xxiaolin'}
+解析完成: 论坛地址['emmates']  标题: The future of blockchain games  发帖人昵称: xxiaolin
+数据格式正常,已经添加到数据库...
+
+{'第一页地址': 'https://medium.com/@xiao97303/the-future-of-blockchain-games-446a042efa47', '第二页地址': nan, '第三页地址': nan, '帖子标题': 'The future of blockchain games', '发帖名称': 'li xiao'}
+解析完成: 论坛地址['medium']  标题: The future of blockchain games  发帖人昵称: li xiao
+数据格式正常,已经添加到数据库...
+
+{'第一页地址': 'https://www.pinoyexchange.com/discussion/960872/how-can-i-experience-the-fairy-cat-metaverse', '第二页地址': nan, '第三页地址': nan, '帖子标题': 'How can I experience the Fairy Cat metaverse?', '发帖名称': 'xiaoxialinlin'}
+解析完成: 论坛地址['pinoyexchange']  标题: How can I experience the Fairy Cat metaverse?  发帖人昵称: xiaoxialinlin
+数据格式正常,已经添加到数据库...
+
+{'第一页地址': 'https://www.quora.com/profile/%E5%85%8B-%E6%9D%B0-7/How-can-I-experience-the-Fairy-Cat-metaverse-A-Debuting-in-January-2023-Fairy-Cat-is-one-of-the-most-popular-crypto-1', '第二页地址': nan, '第三页地址': nan, '帖子标题': 'How can I experience the Fairy Cat metaverse?', '发帖名称': 'jieke'}
+解析完成: 论坛地址['quora']  标题: How can I experience the Fairy Cat metaverse?  发帖人昵称: jieke
+数据格式正常,已经添加到数据库...
+
+{'第一页地址': 'https://forum.telecharger-jeuxpc.fr/index.php?threads/what-is-fairy-cat.231/', '第二页地址': nan, '第三页地址': nan, '帖子标题': 'what is Fairy cat', '发帖名称': 'jieke'}
+解析完成: 论坛地址['telecharger-jeuxpc']  标题: what is Fairy cat  发帖人昵称: jieke
+数据格式正常,已经添加到数据库...
+
+{'第一页地址': 'https://www.nvidia.com/en-us/geforce/forums/off-topic/25/510415/how-can-i-experience-the-fairy-cat-metaverse/', '第二页地址': nan, '第三页地址': nan, '帖子标题': 'How can I experience the Fairy Cat metaverse?', '发帖名称': 'xiao97303'}
+解析完成: 论坛地址['nvidia']  标题: How can I experience the Fairy Cat metaverse?  发帖人昵称: xiao97303
+数据格式正常,已经添加到数据库...
+
+{'第一页地址': 'https://yuneec-forum.com/threads/how-can-i-experience-the-fairy-cat-metaverse.10729/', '第二页地址': nan, '第三页地址': nan, '帖子标题': 'How can I experience the Fairy Cat metaverse?', '发帖名称': 'jieke'}
+解析完成: 论坛地址['yuneec-forum']  标题: How can I experience the Fairy Cat metaverse?  发帖人昵称: jieke
+数据格式正常,已经添加到数据库...
+
+{'第一页地址': 'https://btcforum.fr/viewtopic.php?f=126&t=46260', '第二页地址': nan, '第三页地址': nan, '帖子标题': 'Qu’est - ce que Fairy Cat?', '发帖名称': 'jieke'}
+解析完成: 论坛地址['btcforum']  标题: Qu’est - ce que Fairy Cat?  发帖人昵称: jieke
+数据格式正常,已经添加到数据库...
+
+{'第一页地址': 'https://forumcrypto.fr/topic/1522-quest-ce-que-fairy-cat/', '第二页地址': nan, '第三页地址': nan, '帖子标题': 'Qu’est - ce que Fairy Cat?', '发帖名称': 'jieke'}
+解析完成: 论坛地址['forumcrypto']  标题: Qu’est - ce que Fairy Cat?  发帖人昵称: jieke
+数据格式正常,已经添加到数据库...
+
+{'第一页地址': 'https://forums.gamerevolution.com/threads/fairy-cat.35554', '第二页地址': nan, '第三页地址': nan, '帖子标题': 'Comment découvrir le métaverse Fairy Cat ?', '发帖名称': 'lidi123'}
+解析完成: 论坛地址['gamerevolution']  标题: Comment découvrir le métaverse Fairy Cat ?  发帖人昵称: lidi123
+数据格式正常,已经添加到数据库...
+
+{'第一页地址': 'https://www.graffes.com/forums/showthread.php?81878-Fairy-cat&p=1921835#post1921835', '第二页地址': 'https://www.graffes.com/forums/forumdisplay.php?6-General-Discussion', '第三页地址': nan, '帖子标题': 'Fairy cat', '发帖名称': 'lidi123'}
+解析完成: 论坛地址['graffes', 'graffes']  标题: Fairy cat  发帖人昵称: lidi123
+数据格式正常,已经添加到数据库...
+
+{'第一页地址': 'https://cryptach.com/threads/how-can-i-experience-the-fairy-cat-metaverse.71234/', '第二页地址': nan, '第三页地址': nan, '帖子标题': 'How can I experience the Fairy Cat metaverse?', '发帖名称': 'xiaolin'}
+解析完成: 论坛地址['cryptach']  标题: How can I experience the Fairy Cat metaverse?  发帖人昵称: xiaolin
+数据格式正常,已经添加到数据库...
+
+{'第一页地址': 'https://forum.gamemaker.io/index.php?threads/how-can-i-experience-the-fairy-cat-metaverse.101377/', '第二页地址': nan, '第三页地址': nan, '帖子标题': 'How can I experience the Fairy Cat metaverse?', '发帖名称': 'xiaolin'}
+解析完成: 论坛地址['gamemaker']  标题: How can I experience the Fairy Cat metaverse?  发帖人昵称: xiaolin
+数据格式正常,已经添加到数据库...
+
+{'第一页地址': 'https://www.tapatalk.com/groups/serebiiforums/viewtopic.php?f=26&t=1077&from_new_topic=1', '第二页地址': nan, '第三页地址': nan, '帖子标题': 'Fairy Cat Forest: The Strongest Black Horse in Blockchain Games, emerging to match on the CryptoKitties.', '发帖名称': 'jieke '}
+解析完成: 论坛地址['tapatalk']  标题: Fairy Cat Forest: The Strongest Black Horse in Blockchain Games, emerging to match on the CryptoKitties.  发帖人昵称: jieke
+数据格式正常,已经添加到数据库...
+
+李迪0208.xlsx ==> Sheet1 的数据读取完成: [{'page_1': 'https://www.jeuxvideo.com/forums/0-52-0-1-0-1-0-blabla-25-35-ans.htm', 'page_2': '', 'page_3': '', 'title': 'How can I experience the Fairy Cat metaverse?', 'nickName': 'jieke'}, {'page_1': 'https://www.mobox.io/community/article/63e1bdee03c7ca6ec9e899e6', 'page_2': '', 'page_3': '', 'title': 'The future of blockchain games', 'nickName': 'jieke'}, {'page_1': 'https://pcgameforum.com/threads/the-future-of-blockchain-games.3422/', 'page_2': '', 'page_3': '', 'title': 'The future of blockchain games', 'nickName': 'jieke'}, {'page_1': 'https://www.wallstreetoasis.com/forum/crypto/the-future-of-blockchain-games-1', 'page_2': '', 'page_3': '', 'title': 'The future of blockchain games', 'nickName': 'lixiao'}, {'page_1': 'https://bitco.in/forum/threads/the-future-of-blockchain-games.32559/', 'page_2': '', 'page_3': '', 'title': 'The future of blockchain games', 'nickName': 'Miranahh'}, {'page_1': 'https://gold.forum/forum/136-%F0%9F%8E%B1-crypto-games/?do=add', 'page_2': '', 'page_3': '', 'title': 'The future of blockchain games', 'nickName': 'xialin'}, {'page_1': 'https://elderscrollsrp.net/threads/the-future-of-blockchain-games.389/', 'page_2': '', 'page_3': '', 'title': 'The future of blockchain games', 'nickName': 'xxiaolin'}, {'page_1': 'https://emmates.proboards.com/thread/2925/future-blockchain-games', 'page_2': '', 'page_3': '', 'title': 'The future of blockchain games', 'nickName': 'xxiaolin'}, {'page_1': 'https://medium.com/@xiao97303/the-future-of-blockchain-games-446a042efa47', 'page_2': '', 'page_3': '', 'title': 'The future of blockchain games', 'nickName': 'li xiao'}, {'page_1': 'https://www.pinoyexchange.com/discussion/960872/how-can-i-experience-the-fairy-cat-metaverse', 'page_2': '', 'page_3': '', 'title': 'How can I experience the Fairy Cat metaverse?', 'nickName': 'xiaoxialinlin'}, {'page_1': 'https://www.quora.com/profile/%E5%85%8B-%E6%9D%B0-7/How-can-I-experience-the-Fairy-Cat-metaverse-A-Debuting-in-January-2023-Fairy-Cat-is-one-of-the-most-popular-crypto-1', 'page_2': '', 'page_3': '', 'title': 'How can I experience the Fairy Cat metaverse?', 'nickName': 'jieke'}, {'page_1': 'https://forum.telecharger-jeuxpc.fr/index.php?threads/what-is-fairy-cat.231/', 'page_2': '', 'page_3': '', 'title': 'what is Fairy cat', 'nickName': 'jieke'}, {'page_1': 'https://www.nvidia.com/en-us/geforce/forums/off-topic/25/510415/how-can-i-experience-the-fairy-cat-metaverse/', 'page_2': '', 'page_3': '', 'title': 'How can I experience the Fairy Cat metaverse?', 'nickName': 'xiao97303'}, {'page_1': 'https://yuneec-forum.com/threads/how-can-i-experience-the-fairy-cat-metaverse.10729/', 'page_2': '', 'page_3': '', 'title': 'How can I experience the Fairy Cat metaverse?', 'nickName': 'jieke'}, {'page_1': 'https://btcforum.fr/viewtopic.php?f=126&t=46260', 'page_2': '', 'page_3': '', 'title': 'Qu’est - ce que Fairy Cat?', 'nickName': 'jieke'}, {'page_1': 'https://forumcrypto.fr/topic/1522-quest-ce-que-fairy-cat/', 'page_2': '', 'page_3': '', 'title': 'Qu’est - ce que Fairy Cat?', 'nickName': 'jieke'}, {'page_1': 'https://forums.gamerevolution.com/threads/fairy-cat.35554', 'page_2': '', 'page_3': '', 'title': 'Comment découvrir le métaverse Fairy Cat ?', 'nickName': 'lidi123'}, {'page_1': 'https://www.graffes.com/forums/showthread.php?81878-Fairy-cat&p=1921835#post1921835', 'page_2': 'https://www.graffes.com/forums/forumdisplay.php?6-General-Discussion', 'page_3': '', 'title': 'Fairy cat', 'nickName': 'lidi123'}, {'page_1': 'https://cryptach.com/threads/how-can-i-experience-the-fairy-cat-metaverse.71234/', 'page_2': '', 'page_3': '', 'title': 'How can I experience the Fairy Cat metaverse?', 'nickName': 'xiaolin'}, {'page_1': 'https://forum.gamemaker.io/index.php?threads/how-can-i-experience-the-fairy-cat-metaverse.101377/', 'page_2': '', 'page_3': '', 'title': 'How can I experience the Fairy Cat metaverse?', 'nickName': 'xiaolin'}, {'page_1': 'https://www.tapatalk.com/groups/serebiiforums/viewtopic.php?f=26&t=1077&from_new_topic=1', 'page_2': '', 'page_3': '', 'title': 'Fairy Cat Forest: The Strongest Black Horse in Blockchain Games, emerging to match on the CryptoKitties.', 'nickName': 'jieke'}]
+
+正在读取表格: 李迪0208.xlsx ==> Sheet2 的数据...
+
+李迪0208.xlsx ==> Sheet2 的数据读取完成: []
+
+正在读取表格: 李迪0208.xlsx ==> Sheet3 的数据...
+
+李迪0208.xlsx ==> Sheet3 的数据读取完成: []
+
+forum/李迪0208.xlsx 的数据读取完成: {'Sheet1': [{'page_1': 'https://www.jeuxvideo.com/forums/0-52-0-1-0-1-0-blabla-25-35-ans.htm', 'page_2': '', 'page_3': '', 'title': 'How can I experience the Fairy Cat metaverse?', 'nickName': 'jieke'}, {'page_1': 'https://www.mobox.io/community/article/63e1bdee03c7ca6ec9e899e6', 'page_2': '', 'page_3': '', 'title': 'The future of blockchain games', 'nickName': 'jieke'}, {'page_1': 'https://pcgameforum.com/threads/the-future-of-blockchain-games.3422/', 'page_2': '', 'page_3': '', 'title': 'The future of blockchain games', 'nickName': 'jieke'}, {'page_1': 'https://www.wallstreetoasis.com/forum/crypto/the-future-of-blockchain-games-1', 'page_2': '', 'page_3': '', 'title': 'The future of blockchain games', 'nickName': 'lixiao'}, {'page_1': 'https://bitco.in/forum/threads/the-future-of-blockchain-games.32559/', 'page_2': '', 'page_3': '', 'title': 'The future of blockchain games', 'nickName': 'Miranahh'}, {'page_1': 'https://gold.forum/forum/136-%F0%9F%8E%B1-crypto-games/?do=add', 'page_2': '', 'page_3': '', 'title': 'The future of blockchain games', 'nickName': 'xialin'}, {'page_1': 'https://elderscrollsrp.net/threads/the-future-of-blockchain-games.389/', 'page_2': '', 'page_3': '', 'title': 'The future of blockchain games', 'nickName': 'xxiaolin'}, {'page_1': 'https://emmates.proboards.com/thread/2925/future-blockchain-games', 'page_2': '', 'page_3': '', 'title': 'The future of blockchain games', 'nickName': 'xxiaolin'}, {'page_1': 'https://medium.com/@xiao97303/the-future-of-blockchain-games-446a042efa47', 'page_2': '', 'page_3': '', 'title': 'The future of blockchain games', 'nickName': 'li xiao'}, {'page_1': 'https://www.pinoyexchange.com/discussion/960872/how-can-i-experience-the-fairy-cat-metaverse', 'page_2': '', 'page_3': '', 'title': 'How can I experience the Fairy Cat metaverse?', 'nickName': 'xiaoxialinlin'}, {'page_1': 'https://www.quora.com/profile/%E5%85%8B-%E6%9D%B0-7/How-can-I-experience-the-Fairy-Cat-metaverse-A-Debuting-in-January-2023-Fairy-Cat-is-one-of-the-most-popular-crypto-1', 'page_2': '', 'page_3': '', 'title': 'How can I experience the Fairy Cat metaverse?', 'nickName': 'jieke'}, {'page_1': 'https://forum.telecharger-jeuxpc.fr/index.php?threads/what-is-fairy-cat.231/', 'page_2': '', 'page_3': '', 'title': 'what is Fairy cat', 'nickName': 'jieke'}, {'page_1': 'https://www.nvidia.com/en-us/geforce/forums/off-topic/25/510415/how-can-i-experience-the-fairy-cat-metaverse/', 'page_2': '', 'page_3': '', 'title': 'How can I experience the Fairy Cat metaverse?', 'nickName': 'xiao97303'}, {'page_1': 'https://yuneec-forum.com/threads/how-can-i-experience-the-fairy-cat-metaverse.10729/', 'page_2': '', 'page_3': '', 'title': 'How can I experience the Fairy Cat metaverse?', 'nickName': 'jieke'}, {'page_1': 'https://btcforum.fr/viewtopic.php?f=126&t=46260', 'page_2': '', 'page_3': '', 'title': 'Qu’est - ce que Fairy Cat?', 'nickName': 'jieke'}, {'page_1': 'https://forumcrypto.fr/topic/1522-quest-ce-que-fairy-cat/', 'page_2': '', 'page_3': '', 'title': 'Qu’est - ce que Fairy Cat?', 'nickName': 'jieke'}, {'page_1': 'https://forums.gamerevolution.com/threads/fairy-cat.35554', 'page_2': '', 'page_3': '', 'title': 'Comment découvrir le métaverse Fairy Cat ?', 'nickName': 'lidi123'}, {'page_1': 'https://www.graffes.com/forums/showthread.php?81878-Fairy-cat&p=1921835#post1921835', 'page_2': 'https://www.graffes.com/forums/forumdisplay.php?6-General-Discussion', 'page_3': '', 'title': 'Fairy cat', 'nickName': 'lidi123'}, {'page_1': 'https://cryptach.com/threads/how-can-i-experience-the-fairy-cat-metaverse.71234/', 'page_2': '', 'page_3': '', 'title': 'How can I experience the Fairy Cat metaverse?', 'nickName': 'xiaolin'}, {'page_1': 'https://forum.gamemaker.io/index.php?threads/how-can-i-experience-the-fairy-cat-metaverse.101377/', 'page_2': '', 'page_3': '', 'title': 'How can I experience the Fairy Cat metaverse?', 'nickName': 'xiaolin'}, {'page_1': 'https://www.tapatalk.com/groups/serebiiforums/viewtopic.php?f=26&t=1077&from_new_topic=1', 'page_2': '', 'page_3': '', 'title': 'Fairy Cat Forest: The Strongest Black Horse in Blockchain Games, emerging to match on the CryptoKitties.', 'nickName': 'jieke'}], 'Sheet2': [], 'Sheet3': []}
+
+
+
+开始读取历史记录...
+读取成功: {'李迪0208.xlsx': {'failure': ['https://www.jeuxvideo.com/forums/0-52-0-1-0-1-0-blabla-25-35-ans.htm', 'https://www.mobox.io/community/article/63e1bdee03c7ca6ec9e899e6', 'https://www.wallstreetoasis.com/forum/crypto/the-future-of-blockchain-games-1', 'https://gold.forum/forum/136-%F0%9F%8E%B1-crypto-games/?do=add', 'https://www.nvidia.com/en-us/geforce/forums/off-topic/25/510415/how-can-i-experience-the-fairy-cat-metaverse/', 'https://yuneec-forum.com/threads/how-can-i-experience-the-fairy-cat-metaverse.10729/', 'https://www.graffes.com/forums/showthread.php?81878-Fairy-cat&p=1921835#post1921835', 'https://forum.gamemaker.io/index.php?threads/how-can-i-experience-the-fairy-cat-metaverse.101377/'], 'repeated': ['https://www.jeuxvideo.com/forums/0-52-0-1-0-1-0-blabla-25-35-ans.htm', 'https://bitco.in/forum/threads/the-future-of-blockchain-games.32559/', 'https://forum.telecharger-jeuxpc.fr/index.php?threads/what-is-fairy-cat.231/', 'https://forums.gamerevolution.com/threads/fairy-cat.35554', 'https://www.tapatalk.com/groups/serebiiforums/viewtopic.php?f=26&t=1077&from_new_topic=1'], 'successful': ['https://pcgameforum.com/threads/the-future-of-blockchain-games.3422/', 'https://bitco.in/forum/threads/the-future-of-blockchain-games.32559/', 'https://elderscrollsrp.net/threads/the-future-of-blockchain-games.389/', 'https://emmates.proboards.com/thread/2925/future-blockchain-games', 'https://medium.com/@xiao97303/the-future-of-blockchain-games-446a042efa47', 'https://www.pinoyexchange.com/discussion/960872/how-can-i-experience-the-fairy-cat-metaverse', 'https://www.quora.com/profile/%E5%85%8B-%E6%9D%B0-7/How-can-I-experience-the-Fairy-Cat-metaverse-A-Debuting-in-January-2023-Fairy-Cat-is-one-of-the-most-popular-crypto-1', 'https://forum.telecharger-jeuxpc.fr/index.php?threads/what-is-fairy-cat.231/', 'https://btcforum.fr/viewtopic.php?f=126&t=46260', 'https://forumcrypto.fr/topic/1522-quest-ce-que-fairy-cat/', 'https://forums.gamerevolution.com/threads/fairy-cat.35554', 'https://cryptach.com/threads/how-can-i-experience-the-fairy-cat-metaverse.71234/', 'https://www.tapatalk.com/groups/serebiiforums/viewtopic.php?f=26&t=1077&from_new_topic=1'], 'process': 21}, '穆清02.08_1.xlsx': {'failure': ['https://aseannow.com/forum/228-cryptocurrency-news/', 'https://vnreview.vn/forums/chia-se-mon-hoi.422281184763053', 'https://www.expat.com/forum/viewforum.php?id=220', 'https://coinmarketcap.com/community/', 'https://cryptorum.com/cryptocurrency/mining/', 'https://pc-gaming.it/board/forum/50-tema-libero/', 'https://phcorner.net/forums/forum-games.534/'], 'repeated': ['https://www.jeuxvideo.com/forums/0-3000472-0-1-0-1-0-jeux-independants.htm', 'https://forum.telecharger-jeuxpc.fr/index.php?forums/news-informations.4/', 'https://forums.gamerevolution.com/forums/gamerev-news.35/', 'https://www.tapatalk.com/groups/serebiiforums/general-pokemon-discussion-f26/'], 'successful': ['https://thecryptocurrencyforums.com/community/forums/crypto-news.107/', 'https://www.jeuxvideo.com/forums/0-3000472-0-1-0-1-0-jeux-independants.htm', 'https://forum.telecharger-jeuxpc.fr/index.php?forums/news-informations.4/', 'https://forums.gamerevolution.com/forums/gamerev-news.35/', 'https://www.xboxforums.com/forums/off-topic-lounge.1123/', 'https://www.tapatalk.com/groups/serebiiforums/general-pokemon-discussion-f26/', 'https://bitcoinforum.com/off-topic/', 'https://satoshigames.io/c/blockchain-games/5', 'https://www.inventoridigiochi.it/forums/forum/idee-di-giochi/'], 'process': 16}}
+
+正在检查文件: forum/穆清02.08_1.xlsx 
+正在读取表格: 穆清02.08_1.xlsx ==> Sheet1 的数据...
+
+{'第一页地址': 'https://aseannow.com/forum/228-cryptocurrency-news/', '第二页地址': nan, '第三页地址': nan, '帖子题目': 'Please help me analyze whether I have been deceived by this game', '发帖名字': 'Davy200'}
+解析完成: 论坛地址['aseannow']  标题: Please help me analyze whether I have been deceived by this game  发帖人昵称: Davy200
+数据格式正常,已经添加到数据库...
+
+{'第一页地址': 'https://vnreview.vn/forums/chia-se-mon-hoi.422281184763053', '第二页地址': nan, '第三页地址': nan, '帖子题目': 'FAIRY CAT TRÒ CHƠI CHUỖI KHỐI', '发帖名字': 'Azirah Mohamed'}
+解析完成: 论坛地址['vnreview']  标题: FAIRY CAT TRÒ CHƠI CHUỖI KHỐI  发帖人昵称: Azirah Mohamed
+数据格式正常,已经添加到数据库...
+
+{'第一页地址': 'https://www.expat.com/forum/viewforum.php?id=220', '第二页地址': nan, '第三页地址': nan, '帖子题目': 'FAIRY CAT BLOCKCHAIN GAME', '发帖名字': 'marrypoppin949'}
+解析完成: 论坛地址['expat']  标题: FAIRY CAT BLOCKCHAIN GAME  发帖人昵称: marrypoppin949
+数据格式正常,已经添加到数据库...
+
+{'第一页地址': 'https://coinmarketcap.com/community/', '第二页地址': nan, '第三页地址': nan, '帖子题目': 'What is a Fairy cat', '发帖名字': 'Marrypoppin'}
+解析完成: 论坛地址['coinmarketcap']  标题: What is a Fairy cat  发帖人昵称: Marrypoppin
+数据格式正常,已经添加到数据库...
+
+{'第一页地址': 'https://thecryptocurrencyforums.com/community/forums/crypto-news.107/', '第二页地址': nan, '第三页地址': nan, '帖子题目': 'What is a Fairy cat', '发帖名字': 'mumu500'}
+解析完成: 论坛地址['thecryptocurrencyforums']  标题: What is a Fairy cat  发帖人昵称: mumu500
+数据格式正常,已经添加到数据库...
+
+{'第一页地址': 'https://www.jeuxvideo.com/forums/0-3000472-0-1-0-1-0-jeux-independants.htm', '第二页地址': nan, '第三页地址': nan, '帖子题目': 'FAIRY CAT', '发帖名字': 'Davy200'}
+解析完成: 论坛地址['jeuxvideo']  标题: FAIRY CAT  发帖人昵称: Davy200
+数据格式正常,已经添加到数据库...
+
+{'第一页地址': 'https://forum.telecharger-jeuxpc.fr/index.php?forums/news-informations.4/', '第二页地址': nan, '第三页地址': nan, '帖子题目': 'Fairy cat', '发帖名字': 'mumu500'}
+解析完成: 论坛地址['telecharger-jeuxpc']  标题: Fairy cat  发帖人昵称: mumu500
+数据格式正常,已经添加到数据库...
+
+{'第一页地址': 'https://forums.gamerevolution.com/forums/gamerev-news.35/', '第二页地址': nan, '第三页地址': nan, '帖子题目': 'What is a Fairy cat', '发帖名字': 'Azirah '}
+解析完成: 论坛地址['gamerevolution']  标题: What is a Fairy cat  发帖人昵称: Azirah
+数据格式正常,已经添加到数据库...
+
+{'第一页地址': 'https://www.xboxforums.com/forums/off-topic-lounge.1123/', '第二页地址': nan, '第三页地址': nan, '帖子题目': 'What is a Fairy cat', '发帖名字': 'Azirah'}
+解析完成: 论坛地址['xboxforums']  标题: What is a Fairy cat  发帖人昵称: Azirah
+数据格式正常,已经添加到数据库...
+
+{'第一页地址': 'https://www.tapatalk.com/groups/serebiiforums/general-pokemon-discussion-f26/', '第二页地址': nan, '第三页地址': nan, '帖子题目': 'What is a Fairy cat', '发帖名字': 'mumu500'}
+解析完成: 论坛地址['tapatalk']  标题: What is a Fairy cat  发帖人昵称: mumu500
+数据格式正常,已经添加到数据库...
+
+{'第一页地址': 'https://cryptorum.com/cryptocurrency/mining/', '第二页地址': nan, '第三页地址': nan, '帖子题目': 'What is cryptocurrency and how does it work', '发帖名字': 'Marry200'}
+解析完成: 论坛地址['cryptorum']  标题: What is cryptocurrency and how does it work  发帖人昵称: Marry200
+数据格式正常,已经添加到数据库...
+
+{'第一页地址': 'https://bitcoinforum.com/off-topic/', '第二页地址': nan, '第三页地址': nan, '帖子题目': 'What is cryptocurrency and how does it work', '发帖名字': 'Davy200'}
+解析完成: 论坛地址['bitcoinforum']  标题: What is cryptocurrency and how does it work  发帖人昵称: Davy200
+数据格式正常,已经添加到数据库...
+
+{'第一页地址': 'https://satoshigames.io/c/blockchain-games/5', '第二页地址': nan, '第三页地址': nan, '帖子题目': 'what is fairy cat blockchain game', '发帖名字': 'Marrypoppin'}
+解析完成: 论坛地址['satoshigames']  标题: what is fairy cat blockchain game  发帖人昵称: Marrypoppin
+数据格式正常,已经添加到数据库...
+
+{'第一页地址': 'https://www.inventoridigiochi.it/forums/forum/idee-di-giochi/', '第二页地址': nan, '第三页地址': nan, '帖子题目': "Cos'è un gatto delle fate?", '发帖名字': 'Marry Poppin'}
+解析完成: 论坛地址['inventoridigiochi']  标题: Cos'è un gatto delle fate?  发帖人昵称: Marry Poppin
+数据格式正常,已经添加到数据库...
+
+{'第一页地址': 'https://pc-gaming.it/board/forum/50-tema-libero/', '第二页地址': nan, '第三页地址': nan, '帖子题目': "Cos'è un gatto delle fate?", '发帖名字': 'Davy200'}
+解析完成: 论坛地址['pc-gaming']  标题: Cos'è un gatto delle fate?  发帖人昵称: Davy200
+数据格式正常,已经添加到数据库...
+
+{'第一页地址': 'https://phcorner.net/forums/forum-games.534/', '第二页地址': nan, '第三页地址': nan, '帖子题目': 'Ano ang Fairy Cat?', '发帖名字': 'Sheylaka'}
+解析完成: 论坛地址['phcorner']  标题: Ano ang Fairy Cat?  发帖人昵称: Sheylaka
+数据格式正常,已经添加到数据库...
+
+穆清02.08_1.xlsx ==> Sheet1 的数据读取完成: [{'page_1': 'https://aseannow.com/forum/228-cryptocurrency-news/', 'page_2': '', 'page_3': '', 'title': 'Please help me analyze whether I have been deceived by this game', 'nickName': 'Davy200'}, {'page_1': 'https://vnreview.vn/forums/chia-se-mon-hoi.422281184763053', 'page_2': '', 'page_3': '', 'title': 'FAIRY CAT TRÒ CHƠI CHUỖI KHỐI', 'nickName': 'Azirah Mohamed'}, {'page_1': 'https://www.expat.com/forum/viewforum.php?id=220', 'page_2': '', 'page_3': '', 'title': 'FAIRY CAT BLOCKCHAIN GAME', 'nickName': 'marrypoppin949'}, {'page_1': 'https://coinmarketcap.com/community/', 'page_2': '', 'page_3': '', 'title': 'What is a Fairy cat', 'nickName': 'Marrypoppin'}, {'page_1': 'https://thecryptocurrencyforums.com/community/forums/crypto-news.107/', 'page_2': '', 'page_3': '', 'title': 'What is a Fairy cat', 'nickName': 'mumu500'}, {'page_1': 'https://www.jeuxvideo.com/forums/0-3000472-0-1-0-1-0-jeux-independants.htm', 'page_2': '', 'page_3': '', 'title': 'FAIRY CAT', 'nickName': 'Davy200'}, {'page_1': 'https://forum.telecharger-jeuxpc.fr/index.php?forums/news-informations.4/', 'page_2': '', 'page_3': '', 'title': 'Fairy cat', 'nickName': 'mumu500'}, {'page_1': 'https://forums.gamerevolution.com/forums/gamerev-news.35/', 'page_2': '', 'page_3': '', 'title': 'What is a Fairy cat', 'nickName': 'Azirah'}, {'page_1': 'https://www.xboxforums.com/forums/off-topic-lounge.1123/', 'page_2': '', 'page_3': '', 'title': 'What is a Fairy cat', 'nickName': 'Azirah'}, {'page_1': 'https://www.tapatalk.com/groups/serebiiforums/general-pokemon-discussion-f26/', 'page_2': '', 'page_3': '', 'title': 'What is a Fairy cat', 'nickName': 'mumu500'}, {'page_1': 'https://cryptorum.com/cryptocurrency/mining/', 'page_2': '', 'page_3': '', 'title': 'What is cryptocurrency and how does it work', 'nickName': 'Marry200'}, {'page_1': 'https://bitcoinforum.com/off-topic/', 'page_2': '', 'page_3': '', 'title': 'What is cryptocurrency and how does it work', 'nickName': 'Davy200'}, {'page_1': 'https://satoshigames.io/c/blockchain-games/5', 'page_2': '', 'page_3': '', 'title': 'what is fairy cat blockchain game', 'nickName': 'Marrypoppin'}, {'page_1': 'https://www.inventoridigiochi.it/forums/forum/idee-di-giochi/', 'page_2': '', 'page_3': '', 'title': "Cos'è un gatto delle fate?", 'nickName': 'Marry Poppin'}, {'page_1': 'https://pc-gaming.it/board/forum/50-tema-libero/', 'page_2': '', 'page_3': '', 'title': "Cos'è un gatto delle fate?", 'nickName': 'Davy200'}, {'page_1': 'https://phcorner.net/forums/forum-games.534/', 'page_2': '', 'page_3': '', 'title': 'Ano ang Fairy Cat?', 'nickName': 'Sheylaka'}]
+
+forum/穆清02.08_1.xlsx 的数据读取完成: {'Sheet1': [{'page_1': 'https://aseannow.com/forum/228-cryptocurrency-news/', 'page_2': '', 'page_3': '', 'title': 'Please help me analyze whether I have been deceived by this game', 'nickName': 'Davy200'}, {'page_1': 'https://vnreview.vn/forums/chia-se-mon-hoi.422281184763053', 'page_2': '', 'page_3': '', 'title': 'FAIRY CAT TRÒ CHƠI CHUỖI KHỐI', 'nickName': 'Azirah Mohamed'}, {'page_1': 'https://www.expat.com/forum/viewforum.php?id=220', 'page_2': '', 'page_3': '', 'title': 'FAIRY CAT BLOCKCHAIN GAME', 'nickName': 'marrypoppin949'}, {'page_1': 'https://coinmarketcap.com/community/', 'page_2': '', 'page_3': '', 'title': 'What is a Fairy cat', 'nickName': 'Marrypoppin'}, {'page_1': 'https://thecryptocurrencyforums.com/community/forums/crypto-news.107/', 'page_2': '', 'page_3': '', 'title': 'What is a Fairy cat', 'nickName': 'mumu500'}, {'page_1': 'https://www.jeuxvideo.com/forums/0-3000472-0-1-0-1-0-jeux-independants.htm', 'page_2': '', 'page_3': '', 'title': 'FAIRY CAT', 'nickName': 'Davy200'}, {'page_1': 'https://forum.telecharger-jeuxpc.fr/index.php?forums/news-informations.4/', 'page_2': '', 'page_3': '', 'title': 'Fairy cat', 'nickName': 'mumu500'}, {'page_1': 'https://forums.gamerevolution.com/forums/gamerev-news.35/', 'page_2': '', 'page_3': '', 'title': 'What is a Fairy cat', 'nickName': 'Azirah'}, {'page_1': 'https://www.xboxforums.com/forums/off-topic-lounge.1123/', 'page_2': '', 'page_3': '', 'title': 'What is a Fairy cat', 'nickName': 'Azirah'}, {'page_1': 'https://www.tapatalk.com/groups/serebiiforums/general-pokemon-discussion-f26/', 'page_2': '', 'page_3': '', 'title': 'What is a Fairy cat', 'nickName': 'mumu500'}, {'page_1': 'https://cryptorum.com/cryptocurrency/mining/', 'page_2': '', 'page_3': '', 'title': 'What is cryptocurrency and how does it work', 'nickName': 'Marry200'}, {'page_1': 'https://bitcoinforum.com/off-topic/', 'page_2': '', 'page_3': '', 'title': 'What is cryptocurrency and how does it work', 'nickName': 'Davy200'}, {'page_1': 'https://satoshigames.io/c/blockchain-games/5', 'page_2': '', 'page_3': '', 'title': 'what is fairy cat blockchain game', 'nickName': 'Marrypoppin'}, {'page_1': 'https://www.inventoridigiochi.it/forums/forum/idee-di-giochi/', 'page_2': '', 'page_3': '', 'title': "Cos'è un gatto delle fate?", 'nickName': 'Marry Poppin'}, {'page_1': 'https://pc-gaming.it/board/forum/50-tema-libero/', 'page_2': '', 'page_3': '', 'title': "Cos'è un gatto delle fate?", 'nickName': 'Davy200'}, {'page_1': 'https://phcorner.net/forums/forum-games.534/', 'page_2': '', 'page_3': '', 'title': 'Ano ang Fairy Cat?', 'nickName': 'Sheylaka'}]}
+
+
+
+数据读取成功: {'李迪0208.xlsx': {'Sheet1': [{'page_1': 'https://www.jeuxvideo.com/forums/0-52-0-1-0-1-0-blabla-25-35-ans.htm', 'page_2': '', 'page_3': '', 'title': 'How can I experience the Fairy Cat metaverse?', 'nickName': 'jieke'}, {'page_1': 'https://www.mobox.io/community/article/63e1bdee03c7ca6ec9e899e6', 'page_2': '', 'page_3': '', 'title': 'The future of blockchain games', 'nickName': 'jieke'}, {'page_1': 'https://pcgameforum.com/threads/the-future-of-blockchain-games.3422/', 'page_2': '', 'page_3': '', 'title': 'The future of blockchain games', 'nickName': 'jieke'}, {'page_1': 'https://www.wallstreetoasis.com/forum/crypto/the-future-of-blockchain-games-1', 'page_2': '', 'page_3': '', 'title': 'The future of blockchain games', 'nickName': 'lixiao'}, {'page_1': 'https://bitco.in/forum/threads/the-future-of-blockchain-games.32559/', 'page_2': '', 'page_3': '', 'title': 'The future of blockchain games', 'nickName': 'Miranahh'}, {'page_1': 'https://gold.forum/forum/136-%F0%9F%8E%B1-crypto-games/?do=add', 'page_2': '', 'page_3': '', 'title': 'The future of blockchain games', 'nickName': 'xialin'}, {'page_1': 'https://elderscrollsrp.net/threads/the-future-of-blockchain-games.389/', 'page_2': '', 'page_3': '', 'title': 'The future of blockchain games', 'nickName': 'xxiaolin'}, {'page_1': 'https://emmates.proboards.com/thread/2925/future-blockchain-games', 'page_2': '', 'page_3': '', 'title': 'The future of blockchain games', 'nickName': 'xxiaolin'}, {'page_1': 'https://medium.com/@xiao97303/the-future-of-blockchain-games-446a042efa47', 'page_2': '', 'page_3': '', 'title': 'The future of blockchain games', 'nickName': 'li xiao'}, {'page_1': 'https://www.pinoyexchange.com/discussion/960872/how-can-i-experience-the-fairy-cat-metaverse', 'page_2': '', 'page_3': '', 'title': 'How can I experience the Fairy Cat metaverse?', 'nickName': 'xiaoxialinlin'}, {'page_1': 'https://www.quora.com/profile/%E5%85%8B-%E6%9D%B0-7/How-can-I-experience-the-Fairy-Cat-metaverse-A-Debuting-in-January-2023-Fairy-Cat-is-one-of-the-most-popular-crypto-1', 'page_2': '', 'page_3': '', 'title': 'How can I experience the Fairy Cat metaverse?', 'nickName': 'jieke'}, {'page_1': 'https://forum.telecharger-jeuxpc.fr/index.php?threads/what-is-fairy-cat.231/', 'page_2': '', 'page_3': '', 'title': 'what is Fairy cat', 'nickName': 'jieke'}, {'page_1': 'https://www.nvidia.com/en-us/geforce/forums/off-topic/25/510415/how-can-i-experience-the-fairy-cat-metaverse/', 'page_2': '', 'page_3': '', 'title': 'How can I experience the Fairy Cat metaverse?', 'nickName': 'xiao97303'}, {'page_1': 'https://yuneec-forum.com/threads/how-can-i-experience-the-fairy-cat-metaverse.10729/', 'page_2': '', 'page_3': '', 'title': 'How can I experience the Fairy Cat metaverse?', 'nickName': 'jieke'}, {'page_1': 'https://btcforum.fr/viewtopic.php?f=126&t=46260', 'page_2': '', 'page_3': '', 'title': 'Qu’est - ce que Fairy Cat?', 'nickName': 'jieke'}, {'page_1': 'https://forumcrypto.fr/topic/1522-quest-ce-que-fairy-cat/', 'page_2': '', 'page_3': '', 'title': 'Qu’est - ce que Fairy Cat?', 'nickName': 'jieke'}, {'page_1': 'https://forums.gamerevolution.com/threads/fairy-cat.35554', 'page_2': '', 'page_3': '', 'title': 'Comment découvrir le métaverse Fairy Cat ?', 'nickName': 'lidi123'}, {'page_1': 'https://www.graffes.com/forums/showthread.php?81878-Fairy-cat&p=1921835#post1921835', 'page_2': 'https://www.graffes.com/forums/forumdisplay.php?6-General-Discussion', 'page_3': '', 'title': 'Fairy cat', 'nickName': 'lidi123'}, {'page_1': 'https://cryptach.com/threads/how-can-i-experience-the-fairy-cat-metaverse.71234/', 'page_2': '', 'page_3': '', 'title': 'How can I experience the Fairy Cat metaverse?', 'nickName': 'xiaolin'}, {'page_1': 'https://forum.gamemaker.io/index.php?threads/how-can-i-experience-the-fairy-cat-metaverse.101377/', 'page_2': '', 'page_3': '', 'title': 'How can I experience the Fairy Cat metaverse?', 'nickName': 'xiaolin'}, {'page_1': 'https://www.tapatalk.com/groups/serebiiforums/viewtopic.php?f=26&t=1077&from_new_topic=1', 'page_2': '', 'page_3': '', 'title': 'Fairy Cat Forest: The Strongest Black Horse in Blockchain Games, emerging to match on the CryptoKitties.', 'nickName': 'jieke'}], 'Sheet2': [], 'Sheet3': []}, '穆清02.08_1.xlsx': {'Sheet1': [{'page_1': 'https://aseannow.com/forum/228-cryptocurrency-news/', 'page_2': '', 'page_3': '', 'title': 'Please help me analyze whether I have been deceived by this game', 'nickName': 'Davy200'}, {'page_1': 'https://vnreview.vn/forums/chia-se-mon-hoi.422281184763053', 'page_2': '', 'page_3': '', 'title': 'FAIRY CAT TRÒ CHƠI CHUỖI KHỐI', 'nickName': 'Azirah Mohamed'}, {'page_1': 'https://www.expat.com/forum/viewforum.php?id=220', 'page_2': '', 'page_3': '', 'title': 'FAIRY CAT BLOCKCHAIN GAME', 'nickName': 'marrypoppin949'}, {'page_1': 'https://coinmarketcap.com/community/', 'page_2': '', 'page_3': '', 'title': 'What is a Fairy cat', 'nickName': 'Marrypoppin'}, {'page_1': 'https://thecryptocurrencyforums.com/community/forums/crypto-news.107/', 'page_2': '', 'page_3': '', 'title': 'What is a Fairy cat', 'nickName': 'mumu500'}, {'page_1': 'https://www.jeuxvideo.com/forums/0-3000472-0-1-0-1-0-jeux-independants.htm', 'page_2': '', 'page_3': '', 'title': 'FAIRY CAT', 'nickName': 'Davy200'}, {'page_1': 'https://forum.telecharger-jeuxpc.fr/index.php?forums/news-informations.4/', 'page_2': '', 'page_3': '', 'title': 'Fairy cat', 'nickName': 'mumu500'}, {'page_1': 'https://forums.gamerevolution.com/forums/gamerev-news.35/', 'page_2': '', 'page_3': '', 'title': 'What is a Fairy cat', 'nickName': 'Azirah'}, {'page_1': 'https://www.xboxforums.com/forums/off-topic-lounge.1123/', 'page_2': '', 'page_3': '', 'title': 'What is a Fairy cat', 'nickName': 'Azirah'}, {'page_1': 'https://www.tapatalk.com/groups/serebiiforums/general-pokemon-discussion-f26/', 'page_2': '', 'page_3': '', 'title': 'What is a Fairy cat', 'nickName': 'mumu500'}, {'page_1': 'https://cryptorum.com/cryptocurrency/mining/', 'page_2': '', 'page_3': '', 'title': 'What is cryptocurrency and how does it work', 'nickName': 'Marry200'}, {'page_1': 'https://bitcoinforum.com/off-topic/', 'page_2': '', 'page_3': '', 'title': 'What is cryptocurrency and how does it work', 'nickName': 'Davy200'}, {'page_1': 'https://satoshigames.io/c/blockchain-games/5', 'page_2': '', 'page_3': '', 'title': 'what is fairy cat blockchain game', 'nickName': 'Marrypoppin'}, {'page_1': 'https://www.inventoridigiochi.it/forums/forum/idee-di-giochi/', 'page_2': '', 'page_3': '', 'title': "Cos'è un gatto delle fate?", 'nickName': 'Marry Poppin'}, {'page_1': 'https://pc-gaming.it/board/forum/50-tema-libero/', 'page_2': '', 'page_3': '', 'title': "Cos'è un gatto delle fate?", 'nickName': 'Davy200'}, {'page_1': 'https://phcorner.net/forums/forum-games.534/', 'page_2': '', 'page_3': '', 'title': 'Ano ang Fairy Cat?', 'nickName': 'Sheylaka'}]}}
+
+
+
+开始处理审核任务...
+
+
+
+李迪0208.xlsx > Sheet1 > 当前的进度: 1 / 21
+李迪0208.xlsx > Sheet1 > 帖子的标题: How can I experience the Fairy Cat metaverse?
+李迪0208.xlsx > Sheet1 > 发帖人昵称: jieke
+李迪0208.xlsx > Sheet1 > 论坛的地址: https://www.jeuxvideo.com/forums/0-52-0-1-0-1-0-blabla-25-35-ans.htm
+李迪0208.xlsx > Sheet1 > 论坛的名字: jeuxvideo
+李迪0208.xlsx > Sheet1 > 重复的对象: 1 (穆清02.08_1.xlsx)
+李迪0208.xlsx > Sheet1 > 论坛的处理: 审核失败
+李迪0208.xlsx > Sheet1 > 处理的结果: 审核不通过 (总数: 21  通过: 13  不通过: 8  重复: 5  重复率:23.81%)
+
+
+李迪0208.xlsx > Sheet1 > 当前的进度: 2 / 21
+李迪0208.xlsx > Sheet1 > 帖子的标题: The future of blockchain games
+李迪0208.xlsx > Sheet1 > 发帖人昵称: jieke
+李迪0208.xlsx > Sheet1 > 论坛的地址: https://www.mobox.io/community/article/63e1bdee03c7ca6ec9e899e6
+李迪0208.xlsx > Sheet1 > 论坛的名字: mobox
+李迪0208.xlsx > Sheet1 > 论坛的处理: 审核失败
+李迪0208.xlsx > Sheet1 > 处理的结果: 审核不通过 (总数: 21  通过: 13  不通过: 8  重复: 5  重复率:23.81%)
+
+
+李迪0208.xlsx > Sheet1 > 当前的进度: 3 / 21
+李迪0208.xlsx > Sheet1 > 帖子的标题: The future of blockchain games
+李迪0208.xlsx > Sheet1 > 发帖人昵称: jieke
+李迪0208.xlsx > Sheet1 > 论坛的地址: https://pcgameforum.com/threads/the-future-of-blockchain-games.3422/
+李迪0208.xlsx > Sheet1 > 论坛的名字: pcgameforum
+李迪0208.xlsx > Sheet1 > 论坛的处理: 这个地址处理过
+李迪0208.xlsx > Sheet1 > 处理的结果: 审核不通过 (总数: 21  通过: 13  不通过: 8  重复: 5  重复率:23.81%)
+
+
+李迪0208.xlsx > Sheet1 > 当前的进度: 4 / 21
+李迪0208.xlsx > Sheet1 > 帖子的标题: The future of blockchain games
+李迪0208.xlsx > Sheet1 > 发帖人昵称: lixiao
+李迪0208.xlsx > Sheet1 > 论坛的地址: https://www.wallstreetoasis.com/forum/crypto/the-future-of-blockchain-games-1
+李迪0208.xlsx > Sheet1 > 论坛的名字: wallstreetoasis
+李迪0208.xlsx > Sheet1 > 论坛的处理: 审核失败
+李迪0208.xlsx > Sheet1 > 处理的结果: 审核不通过 (总数: 21  通过: 13  不通过: 8  重复: 5  重复率:23.81%)
+
+
+李迪0208.xlsx > Sheet1 > 当前的进度: 5 / 21
+李迪0208.xlsx > Sheet1 > 帖子的标题: The future of blockchain games
+李迪0208.xlsx > Sheet1 > 发帖人昵称: Miranahh
+李迪0208.xlsx > Sheet1 > 论坛的地址: https://bitco.in/forum/threads/the-future-of-blockchain-games.32559/
+李迪0208.xlsx > Sheet1 > 论坛的名字: bitco
+李迪0208.xlsx > Sheet1 > 论坛的处理: 这个地址处理过
+李迪0208.xlsx > Sheet1 > 处理的结果: 审核不通过 (总数: 21  通过: 13  不通过: 8  重复: 5  重复率:23.81%)
+
+
+李迪0208.xlsx > Sheet1 > 当前的进度: 6 / 21
+李迪0208.xlsx > Sheet1 > 帖子的标题: The future of blockchain games
+李迪0208.xlsx > Sheet1 > 发帖人昵称: xialin
+李迪0208.xlsx > Sheet1 > 论坛的地址: https://gold.forum/forum/136-%F0%9F%8E%B1-crypto-games/?do=add
+李迪0208.xlsx > Sheet1 > 论坛的名字: gold
+李迪0208.xlsx > Sheet1 > 论坛的处理: 审核失败
+李迪0208.xlsx > Sheet1 > 处理的结果: 审核不通过 (总数: 21  通过: 13  不通过: 8  重复: 5  重复率:23.81%)
+
+
+李迪0208.xlsx > Sheet1 > 当前的进度: 7 / 21
+李迪0208.xlsx > Sheet1 > 帖子的标题: The future of blockchain games
+李迪0208.xlsx > Sheet1 > 发帖人昵称: xxiaolin
+李迪0208.xlsx > Sheet1 > 论坛的地址: https://elderscrollsrp.net/threads/the-future-of-blockchain-games.389/
+李迪0208.xlsx > Sheet1 > 论坛的名字: elderscrollsrp
+李迪0208.xlsx > Sheet1 > 论坛的处理: 这个地址处理过
+李迪0208.xlsx > Sheet1 > 处理的结果: 审核不通过 (总数: 21  通过: 13  不通过: 8  重复: 5  重复率:23.81%)
+
+
+李迪0208.xlsx > Sheet1 > 当前的进度: 8 / 21
+李迪0208.xlsx > Sheet1 > 帖子的标题: The future of blockchain games
+李迪0208.xlsx > Sheet1 > 发帖人昵称: xxiaolin
+李迪0208.xlsx > Sheet1 > 论坛的地址: https://emmates.proboards.com/thread/2925/future-blockchain-games
+李迪0208.xlsx > Sheet1 > 论坛的名字: emmates
+李迪0208.xlsx > Sheet1 > 论坛的处理: 这个地址处理过
+李迪0208.xlsx > Sheet1 > 处理的结果: 审核不通过 (总数: 21  通过: 13  不通过: 8  重复: 5  重复率:23.81%)
+
+
+李迪0208.xlsx > Sheet1 > 当前的进度: 9 / 21
+李迪0208.xlsx > Sheet1 > 帖子的标题: The future of blockchain games
+李迪0208.xlsx > Sheet1 > 发帖人昵称: li xiao
+李迪0208.xlsx > Sheet1 > 论坛的地址: https://medium.com/@xiao97303/the-future-of-blockchain-games-446a042efa47
+李迪0208.xlsx > Sheet1 > 论坛的名字: medium
+李迪0208.xlsx > Sheet1 > 论坛的处理: 这个地址处理过
+李迪0208.xlsx > Sheet1 > 处理的结果: 审核不通过 (总数: 21  通过: 13  不通过: 8  重复: 5  重复率:23.81%)
+
+
+李迪0208.xlsx > Sheet1 > 当前的进度: 10 / 21
+李迪0208.xlsx > Sheet1 > 帖子的标题: How can I experience the Fairy Cat metaverse?
+李迪0208.xlsx > Sheet1 > 发帖人昵称: xiaoxialinlin
+李迪0208.xlsx > Sheet1 > 论坛的地址: https://www.pinoyexchange.com/discussion/960872/how-can-i-experience-the-fairy-cat-metaverse
+李迪0208.xlsx > Sheet1 > 论坛的名字: pinoyexchange
+李迪0208.xlsx > Sheet1 > 论坛的处理: 这个地址处理过
+李迪0208.xlsx > Sheet1 > 处理的结果: 审核不通过 (总数: 21  通过: 13  不通过: 8  重复: 5  重复率:23.81%)
+
+
+李迪0208.xlsx > Sheet1 > 当前的进度: 11 / 21
+李迪0208.xlsx > Sheet1 > 帖子的标题: How can I experience the Fairy Cat metaverse?
+李迪0208.xlsx > Sheet1 > 发帖人昵称: jieke
+李迪0208.xlsx > Sheet1 > 论坛的地址: https://www.quora.com/profile/%E5%85%8B-%E6%9D%B0-7/How-can-I-experience-the-Fairy-Cat-metaverse-A-Debuting-in-January-2023-Fairy-Cat-is-one-of-the-most-popular-crypto-1
+李迪0208.xlsx > Sheet1 > 论坛的名字: quora
+李迪0208.xlsx > Sheet1 > 论坛的处理: 这个地址处理过
+李迪0208.xlsx > Sheet1 > 处理的结果: 审核不通过 (总数: 21  通过: 13  不通过: 8  重复: 5  重复率:23.81%)
+
+
+李迪0208.xlsx > Sheet1 > 当前的进度: 12 / 21
+李迪0208.xlsx > Sheet1 > 帖子的标题: what is Fairy cat
+李迪0208.xlsx > Sheet1 > 发帖人昵称: jieke
+李迪0208.xlsx > Sheet1 > 论坛的地址: https://forum.telecharger-jeuxpc.fr/index.php?threads/what-is-fairy-cat.231/
+李迪0208.xlsx > Sheet1 > 论坛的名字: telecharger-jeuxpc
+李迪0208.xlsx > Sheet1 > 论坛的处理: 这个地址处理过
+李迪0208.xlsx > Sheet1 > 处理的结果: 审核不通过 (总数: 21  通过: 13  不通过: 8  重复: 5  重复率:23.81%)
+
+
+李迪0208.xlsx > Sheet1 > 当前的进度: 13 / 21
+李迪0208.xlsx > Sheet1 > 帖子的标题: How can I experience the Fairy Cat metaverse?
+李迪0208.xlsx > Sheet1 > 发帖人昵称: xiao97303
+李迪0208.xlsx > Sheet1 > 论坛的地址: https://www.nvidia.com/en-us/geforce/forums/off-topic/25/510415/how-can-i-experience-the-fairy-cat-metaverse/
+李迪0208.xlsx > Sheet1 > 论坛的名字: nvidia
+李迪0208.xlsx > Sheet1 > 论坛的处理: 审核失败
+李迪0208.xlsx > Sheet1 > 处理的结果: 审核不通过 (总数: 21  通过: 13  不通过: 8  重复: 5  重复率:23.81%)
+
+
+李迪0208.xlsx > Sheet1 > 当前的进度: 14 / 21
+李迪0208.xlsx > Sheet1 > 帖子的标题: How can I experience the Fairy Cat metaverse?
+李迪0208.xlsx > Sheet1 > 发帖人昵称: jieke
+李迪0208.xlsx > Sheet1 > 论坛的地址: https://yuneec-forum.com/threads/how-can-i-experience-the-fairy-cat-metaverse.10729/
+李迪0208.xlsx > Sheet1 > 论坛的名字: yuneec-forum
+李迪0208.xlsx > Sheet1 > 论坛的处理: 审核失败
+李迪0208.xlsx > Sheet1 > 处理的结果: 审核不通过 (总数: 21  通过: 13  不通过: 8  重复: 5  重复率:23.81%)
+
+
+李迪0208.xlsx > Sheet1 > 当前的进度: 15 / 21
+李迪0208.xlsx > Sheet1 > 帖子的标题: Qu’est - ce que Fairy Cat?
+李迪0208.xlsx > Sheet1 > 发帖人昵称: jieke
+李迪0208.xlsx > Sheet1 > 论坛的地址: https://btcforum.fr/viewtopic.php?f=126&t=46260
+李迪0208.xlsx > Sheet1 > 论坛的名字: btcforum
+李迪0208.xlsx > Sheet1 > 论坛的处理: 这个地址处理过
+李迪0208.xlsx > Sheet1 > 处理的结果: 审核不通过 (总数: 21  通过: 13  不通过: 8  重复: 5  重复率:23.81%)
+
+
+李迪0208.xlsx > Sheet1 > 当前的进度: 16 / 21
+李迪0208.xlsx > Sheet1 > 帖子的标题: Qu’est - ce que Fairy Cat?
+李迪0208.xlsx > Sheet1 > 发帖人昵称: jieke
+李迪0208.xlsx > Sheet1 > 论坛的地址: https://forumcrypto.fr/topic/1522-quest-ce-que-fairy-cat/
+李迪0208.xlsx > Sheet1 > 论坛的名字: forumcrypto
+李迪0208.xlsx > Sheet1 > 论坛的处理: 这个地址处理过
+李迪0208.xlsx > Sheet1 > 处理的结果: 审核不通过 (总数: 21  通过: 13  不通过: 8  重复: 5  重复率:23.81%)
+
+
+李迪0208.xlsx > Sheet1 > 当前的进度: 17 / 21
+李迪0208.xlsx > Sheet1 > 帖子的标题: Comment découvrir le métaverse Fairy Cat ?
+李迪0208.xlsx > Sheet1 > 发帖人昵称: lidi123
+李迪0208.xlsx > Sheet1 > 论坛的地址: https://forums.gamerevolution.com/threads/fairy-cat.35554
+李迪0208.xlsx > Sheet1 > 论坛的名字: gamerevolution
+李迪0208.xlsx > Sheet1 > 论坛的处理: 这个地址处理过
+李迪0208.xlsx > Sheet1 > 处理的结果: 审核不通过 (总数: 21  通过: 13  不通过: 8  重复: 5  重复率:23.81%)
+
+
+李迪0208.xlsx > Sheet1 > 当前的进度: 18 / 21
+李迪0208.xlsx > Sheet1 > 帖子的标题: Fairy cat
+李迪0208.xlsx > Sheet1 > 发帖人昵称: lidi123
+李迪0208.xlsx > Sheet1 > 论坛的地址: https://www.graffes.com/forums/showthread.php?81878-Fairy-cat&p=1921835#post1921835
+李迪0208.xlsx > Sheet1 > 论坛的名字: graffes
+李迪0208.xlsx > Sheet1 > 论坛的处理: 审核失败
+李迪0208.xlsx > Sheet1 > 论坛的地址: https://www.graffes.com/forums/forumdisplay.php?6-General-Discussion
+李迪0208.xlsx > Sheet1 > 论坛的名字: graffes
+李迪0208.xlsx > Sheet1 > 论坛的处理: 审核失败
+李迪0208.xlsx > Sheet1 > 处理的结果: 审核不通过 (总数: 21  通过: 13  不通过: 8  重复: 5  重复率:23.81%)
+
+
+李迪0208.xlsx > Sheet1 > 当前的进度: 19 / 21
+李迪0208.xlsx > Sheet1 > 帖子的标题: How can I experience the Fairy Cat metaverse?
+李迪0208.xlsx > Sheet1 > 发帖人昵称: xiaolin
+李迪0208.xlsx > Sheet1 > 论坛的地址: https://cryptach.com/threads/how-can-i-experience-the-fairy-cat-metaverse.71234/
+李迪0208.xlsx > Sheet1 > 论坛的名字: cryptach
+李迪0208.xlsx > Sheet1 > 论坛的处理: 这个地址处理过
+李迪0208.xlsx > Sheet1 > 处理的结果: 审核不通过 (总数: 21  通过: 13  不通过: 8  重复: 5  重复率:23.81%)
+
+
+李迪0208.xlsx > Sheet1 > 当前的进度: 20 / 21
+李迪0208.xlsx > Sheet1 > 帖子的标题: How can I experience the Fairy Cat metaverse?
+李迪0208.xlsx > Sheet1 > 发帖人昵称: xiaolin
+李迪0208.xlsx > Sheet1 > 论坛的地址: https://forum.gamemaker.io/index.php?threads/how-can-i-experience-the-fairy-cat-metaverse.101377/
+李迪0208.xlsx > Sheet1 > 论坛的名字: gamemaker
+李迪0208.xlsx > Sheet1 > 论坛的处理: 审核失败
+李迪0208.xlsx > Sheet1 > 处理的结果: 审核不通过 (总数: 21  通过: 13  不通过: 8  重复: 5  重复率:23.81%)
+
+
+李迪0208.xlsx > Sheet1 > 当前的进度: 21 / 21
+李迪0208.xlsx > Sheet1 > 帖子的标题: Fairy Cat Forest: The Strongest Black Horse in Blockchain Games, emerging to match on the CryptoKitties.
+李迪0208.xlsx > Sheet1 > 发帖人昵称: jieke
+李迪0208.xlsx > Sheet1 > 论坛的地址: https://www.tapatalk.com/groups/serebiiforums/viewtopic.php?f=26&t=1077&from_new_topic=1
+李迪0208.xlsx > Sheet1 > 论坛的名字: tapatalk
+李迪0208.xlsx > Sheet1 > 论坛的处理: 这个地址处理过
+李迪0208.xlsx > Sheet1 > 处理的结果: 审核不通过 (总数: 21  通过: 13  不通过: 8  重复: 5  重复率:23.81%)
+
+
+========== 李迪0208.xlsx ==========
+
+处理总数: 21 (通过 13  不通过 8  和别人重复 5  重复率 23.81%)
+
+通过的论坛: 13
+https://pcgameforum.com/threads/the-future-of-blockchain-games.3422/
+https://bitco.in/forum/threads/the-future-of-blockchain-games.32559/
+https://elderscrollsrp.net/threads/the-future-of-blockchain-games.389/
+https://emmates.proboards.com/thread/2925/future-blockchain-games
+https://medium.com/@xiao97303/the-future-of-blockchain-games-446a042efa47
+https://www.pinoyexchange.com/discussion/960872/how-can-i-experience-the-fairy-cat-metaverse
+https://www.quora.com/profile/%E5%85%8B-%E6%9D%B0-7/How-can-I-experience-the-Fairy-Cat-metaverse-A-Debuting-in-January-2023-Fairy-Cat-is-one-of-the-most-popular-crypto-1
+https://forum.telecharger-jeuxpc.fr/index.php?threads/what-is-fairy-cat.231/
+https://btcforum.fr/viewtopic.php?f=126&t=46260
+https://forumcrypto.fr/topic/1522-quest-ce-que-fairy-cat/
+https://forums.gamerevolution.com/threads/fairy-cat.35554
+https://cryptach.com/threads/how-can-i-experience-the-fairy-cat-metaverse.71234/
+https://www.tapatalk.com/groups/serebiiforums/viewtopic.php?f=26&t=1077&from_new_topic=1
+
+不通过的论坛: 8
+https://www.jeuxvideo.com/forums/0-52-0-1-0-1-0-blabla-25-35-ans.htm
+https://www.mobox.io/community/article/63e1bdee03c7ca6ec9e899e6
+https://www.wallstreetoasis.com/forum/crypto/the-future-of-blockchain-games-1
+https://gold.forum/forum/136-%F0%9F%8E%B1-crypto-games/?do=add
+https://www.nvidia.com/en-us/geforce/forums/off-topic/25/510415/how-can-i-experience-the-fairy-cat-metaverse/
+https://yuneec-forum.com/threads/how-can-i-experience-the-fairy-cat-metaverse.10729/
+https://www.graffes.com/forums/showthread.php?81878-Fairy-cat&p=1921835#post1921835
+https://forum.gamemaker.io/index.php?threads/how-can-i-experience-the-fairy-cat-metaverse.101377/
+
+重复的论坛: 5
+https://www.jeuxvideo.com/forums/0-52-0-1-0-1-0-blabla-25-35-ans.htm
+https://bitco.in/forum/threads/the-future-of-blockchain-games.32559/
+https://forum.telecharger-jeuxpc.fr/index.php?threads/what-is-fairy-cat.231/
+https://forums.gamerevolution.com/threads/fairy-cat.35554
+https://www.tapatalk.com/groups/serebiiforums/viewtopic.php?f=26&t=1077&from_new_topic=1
+
+
+
+穆清02.08_1.xlsx > Sheet1 > 当前的进度: 1 / 16
+穆清02.08_1.xlsx > Sheet1 > 帖子的标题: Please help me analyze whether I have been deceived by this game
+穆清02.08_1.xlsx > Sheet1 > 发帖人昵称: Davy200
+穆清02.08_1.xlsx > Sheet1 > 论坛的地址: https://aseannow.com/forum/228-cryptocurrency-news/
+穆清02.08_1.xlsx > Sheet1 > 论坛的名字: aseannow
+穆清02.08_1.xlsx > Sheet1 > 论坛的处理: 审核失败
+穆清02.08_1.xlsx > Sheet1 > 处理的结果: 审核不通过 (总数: 16  通过: 9  不通过: 7  重复: 4  重复率:25.00%)
+
+
+穆清02.08_1.xlsx > Sheet1 > 当前的进度: 2 / 16
+穆清02.08_1.xlsx > Sheet1 > 帖子的标题: FAIRY CAT TRÒ CHƠI CHUỖI KHỐI
+穆清02.08_1.xlsx > Sheet1 > 发帖人昵称: Azirah Mohamed
+穆清02.08_1.xlsx > Sheet1 > 论坛的地址: https://vnreview.vn/forums/chia-se-mon-hoi.422281184763053
+穆清02.08_1.xlsx > Sheet1 > 论坛的名字: vnreview
+穆清02.08_1.xlsx > Sheet1 > 论坛的处理: 审核失败
+穆清02.08_1.xlsx > Sheet1 > 处理的结果: 审核不通过 (总数: 16  通过: 9  不通过: 7  重复: 4  重复率:25.00%)
+
+
+穆清02.08_1.xlsx > Sheet1 > 当前的进度: 3 / 16
+穆清02.08_1.xlsx > Sheet1 > 帖子的标题: FAIRY CAT BLOCKCHAIN GAME
+穆清02.08_1.xlsx > Sheet1 > 发帖人昵称: marrypoppin949
+穆清02.08_1.xlsx > Sheet1 > 论坛的地址: https://www.expat.com/forum/viewforum.php?id=220
+穆清02.08_1.xlsx > Sheet1 > 论坛的名字: expat
+穆清02.08_1.xlsx > Sheet1 > 论坛的处理: 审核失败
+穆清02.08_1.xlsx > Sheet1 > 处理的结果: 审核不通过 (总数: 16  通过: 9  不通过: 7  重复: 4  重复率:25.00%)
+
+
+穆清02.08_1.xlsx > Sheet1 > 当前的进度: 4 / 16
+穆清02.08_1.xlsx > Sheet1 > 帖子的标题: What is a Fairy cat
+穆清02.08_1.xlsx > Sheet1 > 发帖人昵称: Marrypoppin
+穆清02.08_1.xlsx > Sheet1 > 论坛的地址: https://coinmarketcap.com/community/
+穆清02.08_1.xlsx > Sheet1 > 论坛的名字: coinmarketcap
+穆清02.08_1.xlsx > Sheet1 > 论坛的处理: 审核失败
+穆清02.08_1.xlsx > Sheet1 > 处理的结果: 审核不通过 (总数: 16  通过: 9  不通过: 7  重复: 4  重复率:25.00%)
+
+
+穆清02.08_1.xlsx > Sheet1 > 当前的进度: 5 / 16
+穆清02.08_1.xlsx > Sheet1 > 帖子的标题: What is a Fairy cat
+穆清02.08_1.xlsx > Sheet1 > 发帖人昵称: mumu500
+穆清02.08_1.xlsx > Sheet1 > 论坛的地址: https://thecryptocurrencyforums.com/community/forums/crypto-news.107/
+穆清02.08_1.xlsx > Sheet1 > 论坛的名字: thecryptocurrencyforums
+穆清02.08_1.xlsx > Sheet1 > 论坛的处理: 这个地址处理过
+穆清02.08_1.xlsx > Sheet1 > 处理的结果: 审核不通过 (总数: 16  通过: 9  不通过: 7  重复: 4  重复率:25.00%)
+
+
+穆清02.08_1.xlsx > Sheet1 > 当前的进度: 6 / 16
+穆清02.08_1.xlsx > Sheet1 > 帖子的标题: FAIRY CAT
+穆清02.08_1.xlsx > Sheet1 > 发帖人昵称: Davy200
+穆清02.08_1.xlsx > Sheet1 > 论坛的地址: https://www.jeuxvideo.com/forums/0-3000472-0-1-0-1-0-jeux-independants.htm
+穆清02.08_1.xlsx > Sheet1 > 论坛的名字: jeuxvideo
+穆清02.08_1.xlsx > Sheet1 > 论坛的处理: 这个地址处理过
+穆清02.08_1.xlsx > Sheet1 > 处理的结果: 审核不通过 (总数: 16  通过: 9  不通过: 7  重复: 4  重复率:25.00%)
+
+
+穆清02.08_1.xlsx > Sheet1 > 当前的进度: 7 / 16
+穆清02.08_1.xlsx > Sheet1 > 帖子的标题: Fairy cat
+穆清02.08_1.xlsx > Sheet1 > 发帖人昵称: mumu500
+穆清02.08_1.xlsx > Sheet1 > 论坛的地址: https://forum.telecharger-jeuxpc.fr/index.php?forums/news-informations.4/
+穆清02.08_1.xlsx > Sheet1 > 论坛的名字: telecharger-jeuxpc
+穆清02.08_1.xlsx > Sheet1 > 论坛的处理: 这个地址处理过
+穆清02.08_1.xlsx > Sheet1 > 处理的结果: 审核不通过 (总数: 16  通过: 9  不通过: 7  重复: 4  重复率:25.00%)
+
+
+穆清02.08_1.xlsx > Sheet1 > 当前的进度: 8 / 16
+穆清02.08_1.xlsx > Sheet1 > 帖子的标题: What is a Fairy cat
+穆清02.08_1.xlsx > Sheet1 > 发帖人昵称: Azirah
+穆清02.08_1.xlsx > Sheet1 > 论坛的地址: https://forums.gamerevolution.com/forums/gamerev-news.35/
+穆清02.08_1.xlsx > Sheet1 > 论坛的名字: gamerevolution
+穆清02.08_1.xlsx > Sheet1 > 论坛的处理: 这个地址处理过
+穆清02.08_1.xlsx > Sheet1 > 处理的结果: 审核不通过 (总数: 16  通过: 9  不通过: 7  重复: 4  重复率:25.00%)
+
+
+穆清02.08_1.xlsx > Sheet1 > 当前的进度: 9 / 16
+穆清02.08_1.xlsx > Sheet1 > 帖子的标题: What is a Fairy cat
+穆清02.08_1.xlsx > Sheet1 > 发帖人昵称: Azirah
+穆清02.08_1.xlsx > Sheet1 > 论坛的地址: https://www.xboxforums.com/forums/off-topic-lounge.1123/
+穆清02.08_1.xlsx > Sheet1 > 论坛的名字: xboxforums
+穆清02.08_1.xlsx > Sheet1 > 论坛的处理: 这个地址处理过
+穆清02.08_1.xlsx > Sheet1 > 处理的结果: 审核不通过 (总数: 16  通过: 9  不通过: 7  重复: 4  重复率:25.00%)
+
+
+穆清02.08_1.xlsx > Sheet1 > 当前的进度: 10 / 16
+穆清02.08_1.xlsx > Sheet1 > 帖子的标题: What is a Fairy cat
+穆清02.08_1.xlsx > Sheet1 > 发帖人昵称: mumu500
+穆清02.08_1.xlsx > Sheet1 > 论坛的地址: https://www.tapatalk.com/groups/serebiiforums/general-pokemon-discussion-f26/
+穆清02.08_1.xlsx > Sheet1 > 论坛的名字: tapatalk
+穆清02.08_1.xlsx > Sheet1 > 论坛的处理: 这个地址处理过
+穆清02.08_1.xlsx > Sheet1 > 处理的结果: 审核不通过 (总数: 16  通过: 9  不通过: 7  重复: 4  重复率:25.00%)
+
+
+穆清02.08_1.xlsx > Sheet1 > 当前的进度: 11 / 16
+穆清02.08_1.xlsx > Sheet1 > 帖子的标题: What is cryptocurrency and how does it work
+穆清02.08_1.xlsx > Sheet1 > 发帖人昵称: Marry200
+穆清02.08_1.xlsx > Sheet1 > 论坛的地址: https://cryptorum.com/cryptocurrency/mining/
+穆清02.08_1.xlsx > Sheet1 > 论坛的名字: cryptorum
+穆清02.08_1.xlsx > Sheet1 > 论坛的处理: 审核失败
+穆清02.08_1.xlsx > Sheet1 > 处理的结果: 审核不通过 (总数: 16  通过: 9  不通过: 7  重复: 4  重复率:25.00%)
+
+
+穆清02.08_1.xlsx > Sheet1 > 当前的进度: 12 / 16
+穆清02.08_1.xlsx > Sheet1 > 帖子的标题: What is cryptocurrency and how does it work
+穆清02.08_1.xlsx > Sheet1 > 发帖人昵称: Davy200
+穆清02.08_1.xlsx > Sheet1 > 论坛的地址: https://bitcoinforum.com/off-topic/
+穆清02.08_1.xlsx > Sheet1 > 论坛的名字: bitcoinforum
+穆清02.08_1.xlsx > Sheet1 > 论坛的处理: 这个地址处理过
+穆清02.08_1.xlsx > Sheet1 > 处理的结果: 审核不通过 (总数: 16  通过: 9  不通过: 7  重复: 4  重复率:25.00%)
+
+
+穆清02.08_1.xlsx > Sheet1 > 当前的进度: 13 / 16
+穆清02.08_1.xlsx > Sheet1 > 帖子的标题: what is fairy cat blockchain game
+穆清02.08_1.xlsx > Sheet1 > 发帖人昵称: Marrypoppin
+穆清02.08_1.xlsx > Sheet1 > 论坛的地址: https://satoshigames.io/c/blockchain-games/5
+穆清02.08_1.xlsx > Sheet1 > 论坛的名字: satoshigames
+穆清02.08_1.xlsx > Sheet1 > 论坛的处理: 这个地址处理过
+穆清02.08_1.xlsx > Sheet1 > 处理的结果: 审核不通过 (总数: 16  通过: 9  不通过: 7  重复: 4  重复率:25.00%)
+
+
+穆清02.08_1.xlsx > Sheet1 > 当前的进度: 14 / 16
+穆清02.08_1.xlsx > Sheet1 > 帖子的标题: Cos'è un gatto delle fate?
+穆清02.08_1.xlsx > Sheet1 > 发帖人昵称: Marry Poppin
+穆清02.08_1.xlsx > Sheet1 > 论坛的地址: https://www.inventoridigiochi.it/forums/forum/idee-di-giochi/
+穆清02.08_1.xlsx > Sheet1 > 论坛的名字: inventoridigiochi
+穆清02.08_1.xlsx > Sheet1 > 论坛的处理: 这个地址处理过
+穆清02.08_1.xlsx > Sheet1 > 处理的结果: 审核不通过 (总数: 16  通过: 9  不通过: 7  重复: 4  重复率:25.00%)
+
+
+穆清02.08_1.xlsx > Sheet1 > 当前的进度: 15 / 16
+穆清02.08_1.xlsx > Sheet1 > 帖子的标题: Cos'è un gatto delle fate?
+穆清02.08_1.xlsx > Sheet1 > 发帖人昵称: Davy200
+穆清02.08_1.xlsx > Sheet1 > 论坛的地址: https://pc-gaming.it/board/forum/50-tema-libero/
+穆清02.08_1.xlsx > Sheet1 > 论坛的名字: pc-gaming
+穆清02.08_1.xlsx > Sheet1 > 论坛的处理: 审核失败
+穆清02.08_1.xlsx > Sheet1 > 处理的结果: 审核不通过 (总数: 16  通过: 9  不通过: 7  重复: 4  重复率:25.00%)
+
+
+穆清02.08_1.xlsx > Sheet1 > 当前的进度: 16 / 16
+穆清02.08_1.xlsx > Sheet1 > 帖子的标题: Ano ang Fairy Cat?
+穆清02.08_1.xlsx > Sheet1 > 发帖人昵称: Sheylaka
+穆清02.08_1.xlsx > Sheet1 > 论坛的地址: https://phcorner.net/forums/forum-games.534/
+穆清02.08_1.xlsx > Sheet1 > 论坛的名字: phcorner
+穆清02.08_1.xlsx > Sheet1 > 论坛的处理: 审核失败
+穆清02.08_1.xlsx > Sheet1 > 处理的结果: 审核不通过 (总数: 16  通过: 9  不通过: 7  重复: 4  重复率:25.00%)
+
+
+========== 穆清02.08_1.xlsx ==========
+
+处理总数: 16 (通过 9  不通过 7  和别人重复 4  重复率 25.00%)
+
+通过的论坛: 9
+https://thecryptocurrencyforums.com/community/forums/crypto-news.107/
+https://www.jeuxvideo.com/forums/0-3000472-0-1-0-1-0-jeux-independants.htm
+https://forum.telecharger-jeuxpc.fr/index.php?forums/news-informations.4/
+https://forums.gamerevolution.com/forums/gamerev-news.35/
+https://www.xboxforums.com/forums/off-topic-lounge.1123/
+https://www.tapatalk.com/groups/serebiiforums/general-pokemon-discussion-f26/
+https://bitcoinforum.com/off-topic/
+https://satoshigames.io/c/blockchain-games/5
+https://www.inventoridigiochi.it/forums/forum/idee-di-giochi/
+
+不通过的论坛: 7
+https://aseannow.com/forum/228-cryptocurrency-news/
+https://vnreview.vn/forums/chia-se-mon-hoi.422281184763053
+https://www.expat.com/forum/viewforum.php?id=220
+https://coinmarketcap.com/community/
+https://cryptorum.com/cryptocurrency/mining/
+https://pc-gaming.it/board/forum/50-tema-libero/
+https://phcorner.net/forums/forum-games.534/
+
+重复的论坛: 4
+https://www.jeuxvideo.com/forums/0-3000472-0-1-0-1-0-jeux-independants.htm
+https://forum.telecharger-jeuxpc.fr/index.php?forums/news-informations.4/
+https://forums.gamerevolution.com/forums/gamerev-news.35/
+https://www.tapatalk.com/groups/serebiiforums/general-pokemon-discussion-f26/
+
+
+

@@ -1,12 +1,18 @@
+import json
 import os
 import hashlib
-from servers.consol import consol
 
 
 class file:
     '''
     文件和文件夹处理
     '''
+    # 判断文件夹是否存在
+    def isHaveDir(path:str, isMake:bool = False):
+        have_file = os.path.exists(path)
+        if not have_file and isMake:
+            os.makedirs(path)
+        return have_file
 
     # 拿到文件后缀
     def suffix(path: str):
@@ -17,28 +23,23 @@ class file:
         return string_list[len(string_list) - 1]
 
     # 去除非文件夹的方法
-    def get_folder(files: list[str], path: str):
+    def getFolder(files: list[str], path: str):
         '''
         ### 得到文件夹的方法
         - 去除非文件夹
         '''
         index = 0
         while index < len(files):
-            consol.log('正在检查路径是否为可用文件夹: [ %s ]' % files[index])
             if not os.path.isdir(os.path.join(path, files[index])):
-                consol.err('这不是一个文件夹, 从数据中移除...')
                 files.remove(files[index])
 
             elif files[index][0] == '.' or files[index][0] == '_':
-                consol.err('这个文件夹用不了, 从数据中移除...')
                 files.remove(files[index])
 
             elif files[index] == 'server':
-                consol.err('server 是服务文件夹, 用不了, 从数据中移除...')
                 files.remove(files[index])
             else:
                 index += 1
-                consol.suc('用文件夹....')
 
     # 去除垃圾文件
     def del_illegal(files: list[str]):
@@ -74,8 +75,6 @@ class file:
         index = 0
         for file in files:
             # 判断根目录是不是有特殊字符
-            consol.log('正在检查文件路径是否合法: %s' % (os.path.join(path, file)))
-
             new = ''
             for i in file:
                 if i.isalnum(
@@ -83,10 +82,30 @@ class file:
                     new += i
                 elif i == ' ':
                     new += '_'
-            if file == new:
-                consol.suc('路径名称正常...')
-            else:
-                consol.err('检查到路径名称不合法, 名称更改为: [ %s ]\033[0m' % new)
+            if file != new:
                 os.rename(os.path.join(path, file), os.path.join(path, new))
                 files[index] = new
             index += 1
+
+    def write(path:str, content:str, type:str='a+'):
+        '''
+        ## 文件的写入方法
+        ### type:
+        + 'a' 在文件的末尾追加写入
+        + 'r' 读取模式（默认值）
+        + 'w' 写入模式
+        + 'x' 独占写入模式
+        + 'a' 附加模式
+        + 'b' 二进制模式（与其他模式结合使用）
+        + 't' 文本模式（默认值，与其他模式结合使用）
+        + '+' 读写模式（与其他模式结合使用）
+        '''
+        with open(path, type,newline='\n') as f:
+            f.write('%s\n' % (content))
+        f.close()
+
+    def read(path:str):
+        with open(path) as f:
+            content_info = json.loads(f.read().strip())
+        f.close()
+        return content_info

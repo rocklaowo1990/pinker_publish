@@ -10,10 +10,17 @@ import pandas as pd
 
 
 class exls:
-
-    def toExcel(path: str, data: map, sheet_name: str):
+    
+    
+    def toExcel(path: str, data: dict, sheet_name: str):
+        '''
+            {
+                '列标题':[]',
+                '列标题':[]
+            }
+        '''
         df = pd.DataFrame(data)
-        df.to_excel(path, sheet_name=sheet_name, index=False)
+        df.to_excel(path, sheet_name=sheet_name,index=False)
 
     def read(path: str):
         df = pd.read_excel(path, sheet_name=None)
