@@ -12,7 +12,7 @@ import pandas as pd
 class exls:
     
     
-    def toExcel(path: str, data: dict, sheet_name: str):
+    def write(path: str, data: dict, sheet_name: str):
         '''
             {
                 '列标题':[]',

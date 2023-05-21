@@ -158,9 +158,9 @@ for root_file in root_files:
                           media_path)
                     exit()
 
-                check_video = MyUtil.checkVideo(media_path)
+                isVideo = MyUtil.checkVideo(media_path)
 
-                if check_video == -1:
+                if isVideo == -1:
                     continue
                 else:
                     content_data_video = media_path
@@ -497,8 +497,8 @@ while index < index_max:
                     continue
 
                 # 检查视频文件的完整性
-                check_video = MyUtil.checkVideo(video_path)
-                if check_video == -1:
+                isVideo = MyUtil.checkVideo(video_path)
+                if isVideo == -1:
                     print('\033[0;37;41m视频文件存在问题,请检查视频文件: ' + video_path +
                           '\033[0m')
                     continue

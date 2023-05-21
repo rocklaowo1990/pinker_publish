@@ -6,7 +6,7 @@ from servers.consol import consol
 
 class media:
 
-    def check_video(path: str):
+    def isVideo(path: str):
         '''
         检查视频文件是否完整
         True: 说明完整
@@ -28,7 +28,7 @@ class media:
             return False
 
     # 检查图片是否损坏
-    def check_image(path: str):
+    def isImage(path: str):
         consol.log('正在检查图片文件的完整性: %s' % path)
 
         try:
@@ -40,15 +40,15 @@ class media:
             consol.err('图片文件存在问题')
             return False
 
-    def resize_image(path: str):
+    def resizeImage(path: str):
         """修改图片尺寸       
         :param infile: 图片源文件       
         :param outfile: 重设尺寸文件保存地址       
         :param x_s: 设置的宽度       
         :return:    
         """
-        check_image = media.check_image(path)
-        if not check_image:
+        isImage = media.isImage(path)
+        if not isImage:
             return False
 
         im = Image.open(path)

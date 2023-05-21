@@ -15,7 +15,7 @@ class ffmpeg:
     '''
 
     # 压缩视频文件
-    def compres_video(video_path: str):
+    def compres(video_path: str):
         '''
         - -i 输入的视频文件 
         - -r 每一秒的帧数,一秒 25 帧大概就是人眼的速度 
@@ -46,7 +46,7 @@ class ffmpeg:
         return _out_path
 
     # 添加水印
-    def water_mark(video_path: str, water_mark_path: str):
+    def water(video_path: str, water_path: str):
         '''
         -i ：一般表示输入 
         -filter_complex: 相比-vf, filter_complex适合开发复杂的滤镜功能，如同时对视频进行裁剪并旋转。参数之间使用逗号（，）隔开即可
@@ -83,12 +83,12 @@ class ffmpeg:
         y = x
 
         video_names = video_path.split('.')
-        _out_path = '%s_water_mark.mp4' % video_names[0]
+        _out_path = '%s_water.mp4' % video_names[0]
 
         # compres = 'ffmpeg -y -i %s -i %s -filter_complex "overlay=main_w-overlay_w-10:main_h-overlay_h-10" %s' % (
         #     video_path, image_path, out_name)
         compres = 'ffmpeg -y -i %s -i %s -filter_complex "[1:v] scale=%d:%d [logo];[0:v][logo]overlay=x=%d:y=%d"  %s' % (
-            video_path, water_mark_path, water_width, water_height, x, y,
+            video_path, water_path, water_width, water_height, x, y,
             _out_path)
 
         isRun = os.system(compres)

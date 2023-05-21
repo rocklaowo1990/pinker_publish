@@ -6,12 +6,26 @@ from servers.consol import consol
 from servers.exls import exls
 from servers.file import file
 from servers.response import response
-
+from selenium import webdriver
+from selenium.webdriver.common.by import By
 # 第一步: 读取文件
 # 1、读取历史文件
 # 2、读取表格文件, 并且把数据储存到临时数据
 # 3、处理数据
 # 保存历史
+
+# 打包
+# pyinstaller -F forum.py --clean
+
+
+def get(url: str):
+    driver = webdriver.Chrome()
+    driver.implicitly_wait(300)  # seconds
+    try:
+        driver.get(url)
+        return driver.page_source
+    except:
+        return None
 
 
 def getForumName(url: str):
@@ -23,6 +37,10 @@ def getForumName(url: str):
     domain = domain.replace('www.', '')
     domain = domain.replace('//forum.', '')
     domain = domain.replace('//forums.', '')
+    domain = domain.replace('//news.', '')
+    domain = domain.replace('//new.', '')
+    domain = domain.replace('//foro.', '')
+    domain = domain.replace('//foros.', '')
     domain = domain.replace('//', '')
     domain = domain.split(':')[-1]
     domain = domain.split('.')[0]
@@ -42,24 +60,22 @@ def getString(keywords):
         return keywordsTemp
 
 
-# 找出根目录里所有的文件/文件夹
-filesRoot = os.listdir()
-
 # 这个是判断有没有正确输入目标目录
 isInput = False
-
-# 输入目标目录名称
-pathTaget = ''
 
 # 一直要求输入目标文件夹的名称, 直到正确输入
 while not isInput:
     pathTaget = input('请输入目录名称 : ')
     if pathTaget != '':
-        if pathTaget in filesRoot:
+        if file.isHave(pathTaget):
             consol.suc('目录查找成功: %s' % (pathTaget))
+            consol.suc(os.listdir(pathTaget))
             isInput = True
+
         elif pathTaget == 'exit':
             exit()
+        elif pathTaget == 'exit':
+            consol.log(os.listdir(pathTaget))
         else:
             consol.err('没有找到相关的目录, 请重新输入')
     else:
@@ -138,7 +154,7 @@ pathSuccessful = os.path.join('', '成功统计表.xlsx')
 pathFailure = os.path.join('', '失败统计表.xlsx')
 pathRepeated = os.path.join('', '重复统计表.xlsx')
 
-if file.isHaveDir(pathSuccessful):
+if file.isHave(pathSuccessful):
     # 开始读取表格信息
     # 读取的是单个表格文件的所有 sheet
     successfulRead = exls.read(pathSuccessful)
@@ -155,7 +171,7 @@ if file.isHaveDir(pathSuccessful):
 
 consol.suc('成功统计表读取成功: %s\n' % successful, pathTaget)
 
-if file.isHaveDir(pathFailure):
+if file.isHave(pathFailure):
     # 开始读取表格信息
     # 读取的是单个表格文件的所有 sheet
     failureRead = exls.read(pathFailure)
@@ -172,7 +188,7 @@ if file.isHaveDir(pathFailure):
 
 consol.suc('失败统计表读取成功: %s\n' % failure, pathTaget)
 
-if file.isHaveDir(pathRepeated):
+if file.isHave(pathRepeated):
     # 开始读取表格信息
     # 读取的是单个表格文件的所有 sheet
     repeatedRead = exls.read(pathRepeated)
@@ -417,8 +433,10 @@ for dk, dv in data.items():  #文件 也是这个人
                 requests = response.get(url)
                 if not requests is None:
 
-                    isImportTitle = keywords.upper() in requests.upper()
-                    isImportNick = str(nick).upper() in requests.upper()
+                    isImportTitle = keywords.upper(
+                    ) in requests.page_source.upper()
+                    isImportNick = str(
+                        nick).upper() in requests.page_source.upper()
 
                     if isImportTitle or isImportNick:
                         isPass = True
@@ -556,12 +574,12 @@ pathHistory = os.path.join(pathTaget, 'history.json')
 file.write(pathHistory, json.dumps(history), 'w+')
 
 xlsxData = {'成功统计': successful}
-exls.toExcel(pathSuccessful, xlsxData, '成功统计表')
+exls.write(pathSuccessful, xlsxData, '成功统计表')
 
 xlsxData = {'失败统计': failure}
-exls.toExcel(pathFailure, xlsxData, '失败统计表')
+exls.write(pathFailure, xlsxData, '失败统计表')
 
 xlsxData = {'重复统计': repeated}
-exls.toExcel(pathRepeated, xlsxData, '重复统计表')
+exls.write(pathRepeated, xlsxData, '重复统计表')
 
 consol.suc('写入完成...')

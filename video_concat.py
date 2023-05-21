@@ -18,7 +18,7 @@ horizontal_end = ''
 vertical_end = ''
 
 # 水印路径
-water_mark_path = ''
+water_path = ''
 
 # 目标
 targets: list[str] = []
@@ -48,7 +48,7 @@ for media_file in media_files:
         assets = os.listdir(assets_path)
         for asset in assets:
             if asset == 'logo.png':
-                water_mark_path = os.path.join(assets_path, asset)
+                water_path = os.path.join(assets_path, asset)
             elif asset == 'horizontal_start.mp4':
                 horizontal_start = os.path.join(assets_path, asset)
             elif asset == 'vertical_start.mp4':
@@ -74,9 +74,8 @@ for media_file in media_files:
 # 从历史记录里剔除已经处理过的视频
 _index = 0
 while _index < len(targets):
-    if targets[
-            _index] in historys or 'water_mark_mpg_concat_compres' in targets[
-                _index] or 'water_mark' in targets[_index]:
+    if targets[_index] in historys or 'water_mpg_concat_compres' in targets[
+            _index] or 'water' in targets[_index]:
         consol.err('发现已经处理过的文件：%s' % (targets[_index]))
         targets.remove(targets[_index])
     else:
@@ -90,7 +89,7 @@ if horizontal_end == '' and vertical_end == '':
     consol.err('没有找到片尾文件，程序退出...')
     exit()
 
-if water_mark_path == '':
+if water_path == '':
     consol.err('没有找到水印文件，程序退出...')
     exit()
 
@@ -104,28 +103,28 @@ index = 1
 for target in targets:
     consol.log('正在处理第 %d 个视频' % (index))
 
-    water_mark_out_path = ffmpeg.water_mark(target, water_mark_path)
+    water_out_path = ffmpeg.water(target, water_path)
     concats = []
 
-    capture = cv2.VideoCapture(water_mark_out_path)
+    capture = cv2.VideoCapture(water_out_path)
     capture_width = capture.get(cv2.CAP_PROP_FRAME_WIDTH)
     capture_height = capture.get(cv2.CAP_PROP_FRAME_HEIGHT)
 
     if capture_width > capture_height:
         concats.append(
             horizontal_start if horizontal_start != '' else vertical_start)
-        concats.append(water_mark_out_path)
+        concats.append(water_out_path)
         concats.append(
             horizontal_end if horizontal_end != '' else vertical_end)
     else:
         concats.append(
             vertical_start if vertical_start != '' else horizontal_start)
-        concats.append(water_mark_out_path)
+        concats.append(water_out_path)
         concats.append(vertical_end if vertical_end != '' else horizontal_end)
 
     concat_temp = ffmpeg.concat(concats, 2)
 
-    ffmpeg.compres_video(concat_temp)
+    ffmpeg.compres(concat_temp)
 
     consol.log('写入历史记录...%s' % (target))
     with open(os.path.join('', 'history.txt'), 'a') as f:
@@ -136,7 +135,7 @@ for target in targets:
     consol.log('删除文件：%s' % (concat_temp))
     os.remove(concat_temp)
 
-    consol.log('删除文件：%s' % (water_mark_out_path))
-    os.remove(water_mark_out_path)
+    consol.log('删除文件：%s' % (water_out_path))
+    os.remove(water_out_path)
 
 consol.suc('任务全部处理完成, 程序退出...')

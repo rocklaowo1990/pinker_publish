@@ -174,8 +174,8 @@ for data in datas:
     print('----\033[0;32;40m文件下载完成   ' + path + '   (' +
           time.strftime("%Y-%m-%d %H:%M:%S", time.localtime()) + ')\033[0m')
 
-    resize_image = MyUtil.resize_image(path)
-    if resize_image == -1:
+    resizeImage = MyUtil.resizeImage(path)
+    if resizeImage == -1:
         continue
     else:
         new_path = path + '.jpg'

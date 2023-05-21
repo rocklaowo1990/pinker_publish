@@ -8,7 +8,7 @@ class file:
     文件和文件夹处理
     '''
     # 判断文件夹是否存在
-    def isHaveDir(path:str, isMake:bool = False):
+    def isHave(path:str, isMake:bool = False):
         have_file = os.path.exists(path)
         if not have_file and isMake:
             os.makedirs(path)
@@ -42,7 +42,7 @@ class file:
                 index += 1
 
     # 去除垃圾文件
-    def del_illegal(files: list[str]):
+    def clear(files: list[str]):
         '''
         去除非法文件
         '''
@@ -100,7 +100,7 @@ class file:
         + 't' 文本模式（默认值，与其他模式结合使用）
         + '+' 读写模式（与其他模式结合使用）
         '''
-        with open(path, type,newline='\n') as f:
+        with open(path, type,newline='\n',encoding='utf-8') as f:
             f.write('%s\n' % (content))
         f.close()
 

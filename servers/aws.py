@@ -1,15 +1,15 @@
 import time
-from server.util import MyUtil
 import boto3
 from boto3.session import Session
 from botocore.config import Config
 from boto3.s3.transfer import TransferConfig
+from servers.file import file
 
 
-class MyAws:
+class aws:
 
     # 上传文件到S3,通过打开文件后上传
-    def upload_s3(file_path: str, type: str, access_key: str, secret_key: str,
+    def uploadLow(file_path: str, type: str, access_key: str, secret_key: str,
                   region: str, bucket: str):
         session = Session(aws_access_key_id=access_key,
                           aws_secret_access_key=secret_key,
@@ -17,7 +17,7 @@ class MyAws:
 
         s3 = session.resource("s3")
         upload_data = open(file_path, 'rb')
-        file_md5 = MyUtil.getFileMd5(file_path)
+        file_md5 = file.getFileMd5(file_path)
 
         upload_key = ''
         if (type == 'mp4'):
@@ -56,7 +56,7 @@ class MyAws:
     def upload(file_path: str, type: str, access_key: str, secret_key: str,
                region: str, bucket: str):
         # 处理文件
-        file_md5 = MyUtil.getFileMd5(file_path)
+        file_md5 = file.getFileMd5(file_path)
 
         upload_key = ''
         if (type == 'mp4'):
@@ -113,7 +113,7 @@ class MyAws:
             return '-1'
 
     # 下载
-    def downLoad(file_path: str, file_name: str, access_key: str,
+    def download(file_path: str, file_name: str, access_key: str,
                  secret_key: str, region: str, bucket: str):
         # aws 信息
         s3 = boto3.client("s3",

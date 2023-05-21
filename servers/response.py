@@ -1,17 +1,12 @@
 from selenium import webdriver
 
-from servers.timer import timer
-
-
 class response:
 
     def get(url: str):
-        options = webdriver.ChromeOptions()
-        options.add_argument('--headless')
-        driver = webdriver.Chrome(chrome_options=options)
-        driver.implicitly_wait(60)  # seconds
+        driver = webdriver.Chrome()
+        driver.implicitly_wait(30)  # seconds
         try:
             driver.get(url)
-            return driver.page_source
+            return driver
         except:
             return None
